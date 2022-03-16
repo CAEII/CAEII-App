@@ -11,7 +11,7 @@ import javax.persistence.Id;
 @Entity
 @Table(name = "users")
 @Getter @Setter
-public class user {
+public class User {
 
     // Atributos que tendremos en la base de datos.
     @Id
@@ -26,11 +26,11 @@ public class user {
     private String linkedInProfile;
 
     // Contructor vacío.
-    public user() {
+    public User() {
     }
 
     // Constructor con todos los atributos.
-    public user(Long id, String email, String password, String firstName, String lastName, Boolean consent, String linkedInProfile) {
+    public User(Long id, String email, String password, String firstName, String lastName, Boolean consent, String linkedInProfile) {
         this.id = id;
         this.email = email;
         this.password = password;

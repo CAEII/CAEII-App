@@ -1,0 +1,12 @@
+version: '3.1'
+services:
+  CAEII-database:
+    image: mysql
+    container_name: CAEII-database
+    restart: unless-stopped
+    environment:
+      - MYSQL_ALLOW_EMPTY_PASSWORD=yes
+      - MYSQL_USER=CAEII
+      - MYSQL_PASSWORD=''
+    ports:
+      - 3306:3306

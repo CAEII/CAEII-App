@@ -4,21 +4,25 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Getter @Setter
-public class userDTO {
+public class UserDTO {
 
     // Atributos que mandaremos al Front.
     private String email;
     private String firstName;
     private String lastName;
+    private Boolean consent;
+    private String linkedInProfile;
 
     // Contructor vacío.
-    public userDTO() {
+    public UserDTO() {
     }
 
     // Constructor con todos los atributos.
-    public userDTO(String email, String firstName, String lastName) {
+    public UserDTO(String email, String firstName, String lastName, Boolean consent, String linkedInProfile) {
         this.email = email;
         this.firstName = firstName;
         this.lastName = lastName;
+        this.consent = consent;
+        this.linkedInProfile = linkedInProfile;
     }
 }
