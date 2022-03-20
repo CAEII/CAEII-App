@@ -53,7 +53,7 @@ public class UserRESTController {
      * @TODO: add only admin / authorized users to use this endpoint
      */
     @GetMapping("/User/{id}")
-    public Optional<UserDTO> getUser(@PathVariable Long id) {
+    public UserDTO getUser(@PathVariable Long id) {
         log.debug("REST request to get a User");
         return userService.findById(id);
     }
