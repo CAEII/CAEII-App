@@ -7,6 +7,7 @@ import lombok.Setter;
 public class UserDTO {
 
     // Atributos que mandaremos al Front.
+    private Long id;
     private String email;
     private String firstName;
     private String lastName;
@@ -18,7 +19,8 @@ public class UserDTO {
     }
 
     // Constructor con todos los atributos.
-    public UserDTO(String email, String firstName, String lastName, Boolean consent, String linkedInProfile) {
+    public UserDTO(Long id, String email, String firstName, String lastName, Boolean consent, String linkedInProfile) {
+        this.id = id;
         this.email = email;
         this.firstName = firstName;
         this.lastName = lastName;

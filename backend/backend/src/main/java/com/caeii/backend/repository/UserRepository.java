@@ -9,10 +9,4 @@ import org.springframework.stereotype.Repository;
  * Spring Data SQL repository for the User entity.
  */
 @Repository
-public interface UserRepository extends JpaRepository<User, Long> {
-
-     // TODO: when JWT implement this part correctly
-    @Query("select User from User User where User.email = ?#{principal.email}")
-    User findByCurrentUser();
-
-}
+public interface UserRepository extends JpaRepository<User, Long> {}
