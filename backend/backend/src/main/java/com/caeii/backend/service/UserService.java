@@ -16,6 +16,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Objects;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
@@ -71,7 +72,7 @@ public class UserService {
     public UserDTO update(Long id, @NotNull UserDTO userDTO) throws UserNotFoundException {
         log.debug("Request to update User : {} with : {}", id, userDTO);
         this.findIfExists(id);
-        userDTO.setId(id);
+        Objects.requireNonNull(userDTO).setId(id);
         return save(userDTO);
     }
 
@@ -85,7 +86,8 @@ public class UserService {
      */
     public UserDTO partialUpdate(Long id, @NotNull UserDTO userDTO) throws UserNotFoundException {
         log.debug("Request to partially update User : {} with : {}", id, userDTO);
-        User user = this.findIfExists(id);
+        User user;
+        user = this.findIfExists(id);
         userDTO.setId(id);
         userMapper.partialUpdate(user, userDTO);
         return userMapper.toDto(user);

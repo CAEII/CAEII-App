@@ -27,4 +27,8 @@ public class UserDTO {
         this.consent = consent;
         this.linkedInProfile = linkedInProfile;
     }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
 }
