@@ -25,11 +25,9 @@ public class User {
     private Boolean consent;
     private String linkedInProfile;
 
-    // Contructor vacío.
     public User() {
     }
 
-    // Constructor con todos los atributos.
     public User(Long id, String email, String password, String firstName, String lastName, Boolean consent, String linkedInProfile) {
         this.id = id;
         this.email = email;
