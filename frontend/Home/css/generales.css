@@ -1,0 +1,62 @@
+@font-face {
+    /* fuente general */
+    font-family: 'Montserrat-Regular';
+    src: url(../fonts/Montserrat-Regular.ttf) format('truetype');
+}
+@font-face {
+    /* fuente de los h1 */
+    font-family: 'Montserrat-Italic';
+    src: url(../fonts/Montserrat-Italic.ttf) format('truetype');
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: var(--texto1);
+    font-family: 'Montserrat-Regular', sans-serif;
+}
+html, body {
+    height: 100%;
+    min-width: 260px;
+}
+html{
+    background: url('../img/fondo.jpg');
+    background-size: cover;
+}
+
+header{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px 200px;
+}
+main{
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 90px;
+    z-index: -1;
+
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    font-family: 'Montserrat-Italic', sans-serif;
+}
+button{
+    height: 100px;
+    width: 300px;
+    background-color: var(--boton_input);
+    color: var(--texto1);
+    border-radius: 50px;
+    border-style: hidden;
+    font-size: 2.5rem;
+}

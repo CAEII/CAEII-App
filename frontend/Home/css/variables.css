@@ -1,0 +1,10 @@
+:root {
+    --boton_input: #464099;
+    --fondoTitulo: #46409996; 
+    --fondoTituloHome: #151518; 
+    --fondoTargeta: #1b138aa9;
+    --fondoTituloTargeta: #1b138a;
+    --fondoLogo: #393386d0; 
+    --texto1: #ffffff;   /* color de texto general */
+    --texto2: #c9c9c9;   /* usado en links y placeholder */
+}
