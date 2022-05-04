@@ -1,10 +1,12 @@
 :root {
-    --boton_input: #464099;
-    --fondoTitulo: #46409996; 
-    --fondoTituloHome: #151518; 
-    --fondoTargeta: #1b138aa9;
-    --fondoTituloTargeta: #1b138a;
+    --boton_input: #464099;     /* fondo de botones, inputs y articles */
+    --fondoTitulo: #46409996;   /* fondo del titulo para login, ingresar */
+    --fondoTituloHome: rgba(21, 21, 24, 0.90);  /* fondo del titulo de home */
+    --fondoTargeta: rgba(10, 5, 115, 0.6);     /* fondo de la tarjeta del login, fondo de las secciones de home y fondo del sistema solar de home */
+    --fondoTituloTargeta: #221E73;  /* fondo del h2 en las secciones de home */
     --fondoLogo: #393386d0; 
+    --sol_planetas: #2f2b69;
+    --orbitas: rgba(70, 64, 153, 1);
     --texto1: #ffffff;   /* color de texto general */
     --texto2: #c9c9c9;   /* usado en links y placeholder */
 }
