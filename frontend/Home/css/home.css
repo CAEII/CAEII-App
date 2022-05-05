@@ -7,7 +7,9 @@ html{
 header{
     grid-template-rows: 75px 200px;
 }
-
+nav{
+    grid-column: 1/4;
+}
 .title{
     grid-column: 1/4;
     grid-row: 2;
@@ -17,7 +19,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 20;
+    z-index: 15;
 }
 svg{
     height: 130px;
@@ -56,19 +58,45 @@ section button{
     font-size: 1rem;
 }
 section article{
-    height: 120px;
+    height: 150px;
     margin: 5%;
     background-color: var(--boton_input);
 
-    border-radius: 60px;
+    border-radius: 100px;
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 40% 60%;
 }
+.imgOrbit{
+    height: 130px;
+    width: 130px;
+
+    position: absolute;
+    left: 40px;
+
+    border: 5px solid var(--fondoTituloTargeta);
+    border-radius: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgOrbit .planet {
+    background: var(--fondoTituloTargeta);
+    border-radius: 100%;
+    width: 15px;
+    height: 15px;
+
+    position: absolute;
+    top: -10px;
+}
 article img{
     height: 80%;
-    margin: 10%;
+    border-radius: 100%;
+}
+article .img{
+    height: 100%;
 }
 article h3, article .img{
     display: flex;
@@ -96,4 +124,3 @@ article .img{
     background-color: transparent;
     font-size: 1.5rem;
 }
-
