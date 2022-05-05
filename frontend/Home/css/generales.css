@@ -1,0 +1,182 @@
+@font-face {
+    /* fuente general */
+    font-family: 'Montserrat-Regular';
+    src: url(../fonts/Montserrat-Regular.ttf) format('truetype');
+}
+@font-face {
+    /* fuente de los h1 */
+    font-family: 'Montserrat-Italic';
+    src: url(../fonts/Montserrat-Italic.ttf) format('truetype');
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: var(--texto1);
+    font-family: 'Montserrat-Regular', sans-serif;
+}
+html, body {
+    height: 100%;
+    min-width: 260px;
+}
+html{
+    background: url('../img/fondo.jpg');
+    background-size: cover;
+}
+
+header{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px 200px;
+}
+main{
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 90px;
+    z-index: -1;
+
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    font-family: 'Montserrat-Italic', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+button{
+    height: 100px;
+    width: 300px;
+    background-color: var(--boton_input);
+    color: var(--texto1);
+    border-radius: 50px;
+    border-style: hidden;
+    font-size: 2.5rem;
+}
+
+
+.hyperspan {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+.button {
+    position: relative;
+    height: 100px;
+    width: 300px;
+    z-index: 1;
+
+    border-radius: 50px;
+    background-color: var(--boton_input);
+
+    display: flex;
+    justify-content: left;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+}
+
+.button .texto {
+    position: relative;
+    top: -55%;
+    left: 13%;
+    z-index: 2;
+
+    font-size: 1.5rem;
+}
+
+
+.button .circle {
+    width: 80px;
+    height: 80px;
+    z-index: 1;
+
+    margin-top: 3%;
+    margin-left: 3%;
+
+    background: #151518;
+    border-radius: 50%;
+
+    overflow: hidden;
+}
+
+.button .circle2 {
+    width: 80px;
+    height: 80px;
+
+    position: relative;
+    top: 30%;
+    z-index: 2;
+
+    background: #2b379f;
+    border-radius: 50%;
+}
+
+.button .rocket_container {
+    position: relative;
+    top: 40%;
+    z-index: 3;
+}
+
+.button svg {
+    height: 11px;
+    transform: rotate(-30deg);
+
+    position: relative;
+    top: 70%;
+}
+
+.button:hover .rocket_container {
+    animation: orbit 1s 1 ease-in-out;
+}
+
+.button:hover svg {
+    animation: toRight 1s 1 ease-in-out;
+}
+
+
+@keyframes toRight {
+    0% {
+        left: 0%;
+    }
+
+    25% {
+        left: 100%;
+    }
+
+    50% {
+        left: 100%;
+    }
+
+    100% {
+        left: 0%;
+        transform: rotate(-180deg);
+    }
+}
+
+@keyframes orbit {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(-150deg);
+    }
+
+    100% {
+        transform: rotate(-220deg);
+    }
+}
