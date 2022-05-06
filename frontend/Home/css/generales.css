@@ -8,6 +8,16 @@
     font-family: 'Montserrat-Italic';
     src: url(../fonts/Montserrat-Italic.ttf) format('truetype');
 }
+@font-face {
+    /* fuente de los h2 */
+    font-family: 'Montserrat-Black';
+    src: url(../fonts/Montserrat-Black.ttf) format('truetype');
+}
+@font-face {
+    /* fuente de los links del menu de home */
+    font-family: 'Montserrat-MediumItalic';
+    src: url(../fonts/Montserrat-MediumItalic.ttf) format('truetype');
+}
 * {
     box-sizing: border-box;
     margin: 0;
@@ -20,8 +30,11 @@ html, body {
     min-width: 260px;
 }
 html{
-    background: url('../img/fondo.jpg');
-    background-size: cover;
+    background-image:  url('../img/fondo.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    scroll-behavior: smooth;
 }
 
 header{

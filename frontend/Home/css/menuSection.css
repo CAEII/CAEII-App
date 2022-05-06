@@ -3,7 +3,11 @@
     overflow: visible;
     height: 45vh;
 }
-
+#menu a{
+    font-family: 'Montserrat-MediumItalic', sans-serif;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
 #menu ul {
     list-style-type: none;
     
@@ -58,20 +62,20 @@ ul :hover .line_container,
 ul :active .line_container {
     padding-left: 0%;
     padding-right: 0%;
-    transition: padding-right 0.3s, padding-left 0.3s;
+    transition: padding-right 0.4s, padding-left 0.4s;
 }
 
 .line {
     height: 4px;
     width: inherit;
     border-radius: 100px;
-    background-color: white;
+    background-color: white;  
 }
 
 .line_container {
-    padding-left: 50%;
-    padding-right: 50%;
-    transition: padding-right 0.3s, padding-left 0.3s;
+    padding-left: 51%;
+    padding-right: 51%;
+    transition: padding-right 0.4s, padding-left 0.4s;
 }
 
 

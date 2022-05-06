@@ -9,27 +9,6 @@
 .navbar .menu-items {
   display: flex;
 }
-
-
-/*
-.navbar .nav-container li {
-  list-style: none;
-}
-
-.navbar .nav-container a {
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 1.2rem;
-  padding: 0.7rem;
-}
-
-.navbar .nav-container a:hover{
-    font-weight: bolder;
-}
-*/
-
-
-
 .nav-container {
   display: block;
   position: relative;
@@ -92,7 +71,7 @@
     height: fit-content;
     width: 100%;
 
-    background-color: rgba(34, 30, 115, 0.8);
+    background-color: rgba(34, 30, 115, 0.94);
     text-align: center;
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;

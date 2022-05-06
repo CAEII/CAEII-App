@@ -1,9 +1,3 @@
-html{
-    background-image:  url('../img/fondo.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    scroll-behavior: smooth;
-}
 header{
     grid-template-rows: 75px 200px;
 }
@@ -44,18 +38,41 @@ section h2{
 
     margin-bottom: 5%;
     background-color: var(--fondoTituloTargeta);
+
+    font-family: 'Montserrat-Black', sans-serif;
     
     display: flex;
     justify-content: center;
     align-items: center;
 }
-section button{
+.leermas{
     height: 50px;
     width: 150px;
     margin-top: 5%;
     margin-bottom: 10%;
-
+}
+.leermas .texto {
+    position: relative;
+    top: -70%;
     font-size: 1rem;
+}
+.leermas .circle {
+    width: 45px;
+    height: 45px;
+    margin-top: 2%;
+}
+
+.leermas .circle2 {
+    width: 45px;
+    height: 45px;
+
+}
+.leermas svg {
+    height: 7px;
+    transform: rotate(-30deg);
+
+    position: relative;
+    top: 70%;
 }
 section article{
     height: 150px;
@@ -63,6 +80,7 @@ section article{
     background-color: var(--boton_input);
 
     border-radius: 100px;
+    border: 1px solid black;
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -72,8 +90,8 @@ section article{
     height: 130px;
     width: 130px;
 
-    position: absolute;
-    left: 40px;
+    position: relative;
+    left: 5px;
 
     border: 5px solid var(--fondoTituloTargeta);
     border-radius: 100%;
@@ -81,6 +99,9 @@ section article{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.derecha .imgOrbit{
+    left: -5px;
 }
 .imgOrbit .planet {
     background: var(--fondoTituloTargeta);
@@ -98,29 +119,55 @@ article img{
 article .img{
     height: 100%;
 }
-article h3, article .img{
+article .img{
     display: flex;
     justify-content: center;
     align-items: center;
 }
+#estaciones .imgOrbit{
+    border-style: hidden;
+}
+#estaciones img{
+    height: 90%;
+    border-radius: 0;
+}
 article h3, article p{
     grid-column: 2/4;
+    text-align: left;
 }
 article .img{
     grid-column: 1/2;
     grid-row: 1/3;
 }
+article p {
+    font-size: 0.8rem;
+    margin-left: 6%;
+    margin-right: 6%;
+}
+article h3{
+    display: flex;
+    align-items: center;
+    margin-left: 6%;
+    margin-right: 6%;
+}
 .derecha h3, .derecha p{
+    text-align: right;
     grid-column: 1/3;
+}
+.derecha h3{
+    flex-direction: row-reverse;
 }
 .derecha .img{
     grid-column: 3/4;
     grid-row: 1/3;;
 }
 
-
 #registrarse{
     margin-top: 200px;
     background-color: transparent;
     font-size: 1.5rem;
+}
+#sponsors img{
+    height: 30vh;
+    margin-bottom: 5%;
 }
