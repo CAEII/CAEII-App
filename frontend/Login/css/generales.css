@@ -8,6 +8,11 @@
     font-family: 'Montserrat-Italic';
     src: url(../fonts/Montserrat-Italic.ttf) format('truetype');
 }
+@font-face {
+    /*Fuente de botón*/
+    font-family: 'Montserrat-Bold';
+    src: url(../fonts/Montserrat-Bold.ttf);
+}
 * {
     box-sizing: border-box;
     margin: 0;
@@ -15,7 +20,7 @@
     color: var(--texto1);
     font-family: 'Montserrat-Regular', sans-serif;
 }
-html, body {
+html, body { /*Este tipo de selectores pueden causar colisiones de estilos cuando los juntemos con otras páginas. Recomiendo usar clases o ids para evitar problemas a largo plazo.*/
     height: 100%;
 
     min-width: 260px;
