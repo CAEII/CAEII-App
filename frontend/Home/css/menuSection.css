@@ -28,6 +28,8 @@ li {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    overflow: hidden;
 }
 #uno, #seis{
     grid-column: 5/13;
