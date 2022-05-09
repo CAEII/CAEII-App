@@ -12,13 +12,14 @@
     <link rel="stylesheet" href="css/menuSection.css">
     <link rel="stylesheet" href="css/hambuerger.css">
     <link rel="stylesheet" href="css/pantallasChicas.css">
+    <link rel="stylesheet" href="css/desktop.css">
 
     <title>CAEII XX</title>
 </head>
-<body>
+<body id="home">
     <header>
         <nav>
-            <div class="navbar">
+            <div class="movile_navbar">
               <div class="nav-container">
                   <input class="checkbox" type="checkbox" name="" id="" />
                   <div class="hamburger-lines">
@@ -61,6 +62,39 @@
                     </ul>
                 </div>
               </div>
+            </div>
+            <div class="desktop_navbar">
+                <ul>
+                    <li>
+                        <div>
+                            <a href="">INGRESAR</a>
+                            <div class="line_container"><div class="line"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <a href="">REGISTRARSE</a>
+                            <div class="line_container"><div class="line"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <a href="">NOSOTROS</a>
+                            <div class="line_container"><div class="line"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <a href="">CONTACTO</a>
+                            <div class="line_container"><div class="line"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="img/home/logo-aareii-desktop.png" alt="logo AArEII">
+                        </a>
+                    </li>
+                </ul>
             </div>
         </nav>
         <div class="title">
@@ -144,7 +178,8 @@
         <section id="estaciones">
             <h2> Estaciones </h2>
             <article id="1">
-                <h3> Odisea estelar </h3>
+                <h3 class="movile"> Odisea estelar </h3>
+                <h3 class="desktop"> Odisea estelar: poniendo a prueba nuestros límites </h3>
                 <p> En este pilar propone poner en evidencia cómo
                     gracias a la ingeniería se están ampliando los horizontes del conocimiento ...  </p>
                 <div class="img">
@@ -154,7 +189,8 @@
                 </div>
             </article>
             <article id="2" class="derecha">
-                <h3> Logística 4.0 </h3>
+                <h3 class="movile"> Logística 4.0 </h3>
+                <h3 class="desktop"> Logística 4.0: Integración digital de los procesos productivos </h3>
                 <p> La logística 4.0, nacida con la llegada de la cuarta
                     revolución industrial, plantea una nueva realidad
                     ...   </p>
@@ -165,7 +201,8 @@
                 </div>
             </article>
             <article id="3">
-                <h3> Próximo destino </h3>
+                <h3 class="movile"> Próximo destino </h3>
+                <h3 class="desktop"> Próximo destino: La ingeniería del mañana </h3>
                 <p> La velocidad de transformación tecnológica
                     impacta en todos los ámbitos, y cada profesional
                     debe seguir estas tendencias ...
@@ -177,7 +214,8 @@
                 </div>
             </article>
             <article id="4" class="derecha">
-                <h3> Desarrollo urbano sustentable </h3>
+                <h3 class="movile"> Desarrollo urbano sustentable </h3>
+                <h3 class="desktop"> Desarrollo urbano sustentable </h3>
                 <p> Impartiremos conocimientos sobre cómo las
                     ciudades inteligentes usan la información
                     para mejorar la calidad de vida ...   </p>
@@ -464,17 +502,20 @@
             </div>
         </section>
         <section id="sponsors">
-            <h2> Feria de empleo </h2>
+            <h2> Sponsors </h2>
             <div class="imgs">
-                <img src="img/sponsors/panAmerican.png" alt="Pan American Energy" style="width: 90vw;">
+                <img src="img/sponsors/panAmerican.png" alt="Pan American Energy">
                 <img src="img/sponsors/UNCUYO.png" alt="universidad nacional de cuyo">
                 <img src="img/sponsors/UM.png" alt="Universidad de Mendoza">
             </div>
         </section>
     </main>
-    <footer></footer>
+    <footer>
+        <a href="#home">
+            <div class="homecircle">
+                <img src="img/home/icono-home.svg" alt="link al inicio">
+            </div>
+        </a>
+    </footer>
 </body>
 </html>
-
-
-

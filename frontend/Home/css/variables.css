@@ -7,6 +7,8 @@
     --fondoLogo: #393386d0; 
     --sol_planetas: #2f2b69;
     --orbitas: rgba(70, 64, 153, 1);
+    --hamburger_scrolHandle: rgba(161, 152, 223, 1); /* lineas del boton para abrir el menu desplegable y Handle del scroolbar (en home)*/
+    --fondoMenuDesplegable: rgba(34, 30, 115, 0.94);
     --texto1: #ffffff;   /* color de texto general */
     --texto2: #c9c9c9;   /* usado en links y placeholder */
 }
