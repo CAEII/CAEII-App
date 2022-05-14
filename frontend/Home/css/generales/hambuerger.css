@@ -48,7 +48,7 @@
   height: 4px;
   width: 100%;
   border-radius: 10px;
-  background: var(--hamburger_scrolHandle);
+  background: var(--hamburger_scrolHandle_home);
 }
 
 .nav-container .hamburger-lines .line1 {

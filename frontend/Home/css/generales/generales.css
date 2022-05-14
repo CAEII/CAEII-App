@@ -30,7 +30,6 @@ html, body {
     min-width: 260px;
 }
 html{
-    background-image:  url('../img/fondo.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
