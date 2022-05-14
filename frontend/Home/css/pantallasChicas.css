@@ -45,3 +45,9 @@
     left: 0;
   }
 }
+
+@media (max-width: 862px) and (max-height: 550px) {
+  #menu {
+    height: 80vh;
+  }
+}
