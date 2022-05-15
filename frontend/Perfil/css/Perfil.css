@@ -27,20 +27,29 @@ header{
     font-size: 2.3rem;
     text-transform: uppercase;
 }
-section{
+#cronograma{
     margin: 0px;
+    padding-bottom: 20px;
 }
-.title_cronograma{
+.title_card_perfil{
     background-color: var(--fondoTituloTargeta);
     display: grid;
-    grid-template-columns: 30% 70%;
-    grid-template-rows: repeat(3, 1fr);
     padding-left: 10%;
     padding-right: 10%;
 }
-.title_cronograma h2{
+.title_cronograma{
+    grid-template-columns: 30% 70%;
+    grid-template-rows: repeat(3, 1fr);
+}
+.title_mapas{
+    grid-template-columns: 40% 60%;
+    grid-template-rows: repeat(4, 1fr);
+}
+.title_card_perfil h2{
     grid-row: 1;
     grid-column: 1/3;
+    margin: 0;
+    height: 68px;
 
     font-size: 2rem;
 }
@@ -49,6 +58,51 @@ section{
 
     display: flex;
     align-items: center;
+}
+
+
+select {
+    appearance: none;
+    background-color: var(--boton_input);
+    border: none;
+    padding: 0 1em 0 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: inherit;
+    line-height: inherit;
+    outline: none;
+}
+select::-ms-expand {
+    display: none;
+}
+.select {
+    width: 100%;
+    height: 70%;
+    margin-top: 5%;
+    padding: 0.25em 0.5em;
+    font-size: 1.25rem;
+    background-color: var(--boton_input);
+    cursor: pointer;
+    line-height: 1.1;
+    display: grid;
+    grid-template-areas: "select";
+    align-items: center;
+}
+.select::after {
+    content: "";
+    width: 0.8em;
+    height: 0.5em;
+    background-color: var(--texto1);
+    clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+    justify-self: end;
+
+}
+select,
+.select:after {
+  grid-area: select;
 }
 
 .content_cronograma{
@@ -65,7 +119,7 @@ th,td{
 }
 .actividad, th{
     font-size: 1.3rem;
-    padding: 20px;
+    padding: 15px;
     padding-left: 0;
     padding-right: 0;
 }
@@ -79,7 +133,15 @@ th,td{
     font-family: 'Montserrat-MediumItalic', sans-serif !important;
 }
 
-
+.content_mapas{
+    height: fit-content;
+    padding-bottom: 40px;
+}
+iframe{
+    width: 300px;
+    height: 300px;
+    margin-top: 40px;
+}
 
 .coheteconteiner{
     grid-column: 1/4;
@@ -90,9 +152,74 @@ th,td{
     justify-content: center;
     align-items: center;
 }
-.kk{
+.coheteconteiner .button{
+    margin: 0;
     height: 200px;
     width: 200px;
-    border-radius: 100%;
-    background-color: var(--texto_oscuro1);
+
+    background-color: transparent;
+}
+.coheteconteiner .hyperspan{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    pointer-events: none
+}
+.coheteconteiner .button .circle {
+    width: 200px;
+    height: 200px;
+    margin: 0;
+}
+.coheteconteiner .button .circle2 {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top: 30%;
+
+    background-image: url('../img/perfil/fondo\ planeta.jpg');
+    background-size: contain;
+}
+.coheteconteiner .texto{
+    display: none;
+}
+
+.coheteconteiner .button svg {
+    height: 30px;
+    transform: rotate(-30deg);
+    position: relative;
+    top: 70%;
+    left: 25%;
+}
+
+.button:hover .rocket_container{
+    animation: orbit 1.5s 1 ease-in-out;
+}
+.button:hover svg{
+    animation: toRight 1.5s 1 ease-in-out;
+}
+
+@keyframes toRight {
+    0% {
+        left: 25%;
+    }
+    25% {
+        left: 100%;
+    }
+    50% {
+        left: 100%;
+    }
+    100% {
+        left: 25%;
+        transform: rotate(-180deg);
+    }
+}
+
+#logo{
+    background-color: transparent;
+    margin-bottom: 50px;
+}
+
+#logo img{
+    height: 100px;
 }

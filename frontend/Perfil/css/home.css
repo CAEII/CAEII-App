@@ -218,27 +218,3 @@ article h3{
 ::-webkit-scrollbar-thumb:hover {
     background: var(--boton_input);
 }
-
-
-
-footer{
-    height: 70px;
-    justify-content: flex-end;
-
-    z-index: 50;
-}
-.homecircle{
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    margin-right: 10px;
-    background-color: var(--boton_input); 
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.homecircle img{
-    height: 30px;
-}
-
