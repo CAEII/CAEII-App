@@ -219,8 +219,8 @@ li {
 
 
 /* SUBRRAYADO */
-ul :hover .line_container,
-ul :active .line_container {
+.linea:hover .line_container,
+.linea:active .line_container {
     padding-left: 0%;
     padding-right: 0%;
     transition: padding-right 0.4s, padding-left 0.4s;
