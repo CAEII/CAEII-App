@@ -205,16 +205,3 @@ article h3{
     width: auto;
     margin-bottom: 5%;
 }
-
-::-webkit-scrollbar {
-    width: 10px;
-}
-::-webkit-scrollbar-track {
-    background: var(--sol_planetas); 
-}
-::-webkit-scrollbar-thumb {
-    background: var(--hamburger_scrolHandle_home);
-}
-::-webkit-scrollbar-thumb:hover {
-    background: var(--boton_input);
-}

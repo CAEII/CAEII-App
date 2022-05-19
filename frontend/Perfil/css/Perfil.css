@@ -34,6 +34,8 @@ header{
 .title_card_perfil{
     background-color: var(--fondoTituloTargeta);
     display: grid;
+    height: 282px;
+    padding-top: 10px;
     padding-left: 10%;
     padding-right: 10%;
 }
@@ -81,7 +83,7 @@ select::-ms-expand {
 .select {
     width: 100%;
     height: 70%;
-    margin-top: 5%;
+    margin-top: 5px;
     padding: 0.25em 0.5em;
     font-size: 1.25rem;
     background-color: var(--boton_input);

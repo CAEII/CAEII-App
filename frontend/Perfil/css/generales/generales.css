@@ -86,7 +86,7 @@ nav{
 .desktop_navbar{
     display: none;
 
-    background-color: var(--fondoMenuDesplegable);
+    background-color: var(--fondoNavBar);
     height: 80%;
     margin-top: -5px;
     border-bottom-left-radius: 50px;
@@ -264,7 +264,7 @@ li {
     border: 5px solid var(--orbitas);
     position: absolute;
     border-radius: 100%;
-
+    z-index: -4;
     animation: orbiting infinite linear;
 }
 .fondo {
@@ -445,4 +445,18 @@ footer{
 }
 .homecircle img{
     height: 30px;
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: var(--sol_planetas); 
+}
+::-webkit-scrollbar-thumb {
+    background: var(--hamburger_scrolHandle_home);
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--boton_input);
 }
