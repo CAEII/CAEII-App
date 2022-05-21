@@ -5,31 +5,7 @@ html{
 header{
     grid-template-rows: 75px 200px;
 }
-nav{
-    grid-column: 1/4;
-}
-.desktop_navbar{
-    display: none;
 
-    background-color: var(--fondoMenuDesplegable);
-    height: 80%;
-    margin-top: -5px;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
-}
-.desktop_navbar ul{
-    padding-top: 20px;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-
-    font-size: 1.3rem;
-}
-.desktop_navbar img{
-    height: 70px;
-}
-.desktop_navbar a {
-    font-family: "Montserrat-MediumItalic", sans-serif;
-}
 .title{
     grid-column: 1/4;
     grid-row: 2;
@@ -44,32 +20,6 @@ nav{
 svg{
     height: 130px;
     margin: 5%;
-}
-
-
-main{
-    height: fit-content;
-    flex-direction: column;
-}
-section{
-    width: 100%;
-    margin-top: 100px;
-    background-color: var(--fondoTargeta);
-    border-radius: 50px;
-    text-align: center;
-    overflow: hidden;
-}
-section h2{
-    height: 80px;
-
-    margin-bottom: 5%;
-    background-color: var(--fondoTituloTargeta);
-
-    font-family: 'Montserrat-Black', sans-serif;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .leermas{
     height: 50px;
@@ -175,16 +125,7 @@ article .img{
     position: absolute;
 }
 
-li {
-    margin-top: 5px;
-    height: 66px;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    overflow: hidden;
-}
 #uno, #seis{
     grid-column: 5/13;
 }
@@ -263,40 +204,4 @@ article h3{
     max-height: 30vh;
     width: auto;
     margin-bottom: 5%;
-}
-
-::-webkit-scrollbar {
-    width: 10px;
-}
-::-webkit-scrollbar-track {
-    background: var(--sol_planetas); 
-}
-::-webkit-scrollbar-thumb {
-    background: var(--hamburger_scrolHandle_home);
-}
-::-webkit-scrollbar-thumb:hover {
-    background: var(--boton_input);
-}
-
-
-
-footer{
-    height: 70px;
-    justify-content: flex-end;
-
-    z-index: 50;
-}
-.homecircle{
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    margin-right: 10px;
-    background-color: var(--boton_input); 
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.homecircle img{
-    height: 30px;
 }

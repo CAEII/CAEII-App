@@ -15,6 +15,8 @@
         grid-template-columns: repeat(2, 1fr);
         column-gap: 100px
     }
+
+    /* HOME */
     .sistema_solar{
         top: 620px;
     }
@@ -97,6 +99,71 @@
     }
     #estaciones .derecha *{
         text-align: left;
+    }
+
+    /* PERFIL */
+    header{
+        height: 100vh;
+    }
+    .perfil .sistema_solar {
+        top: -370px;
+    }
+    .perfil .sol {
+        background: var(--sol_planetas);
+        border-radius: 100%;
+        width: 450px;
+        height: 450px;
+        z-index: -5;
+    }
+    .perfil .orbit_1 {
+        width: 680px;
+        height: 680px;
+        margin: -110px auto;
+    }
+    .perfil .orbit_2 {
+        width: 880px;
+        height: 880px;
+        margin: -210px auto;
+    }
+    .perfil .orbit_3 {
+        width: 1080px;
+        height: 1080px;
+        margin: -310px auto;
+    }
+    .perfil .planet {
+        width: 75px;
+        height: 75px;
+    }
+    .perfil .orbit_1 .planet {
+        margin: 8%;
+    }
+    .cuote {
+        grid-row: 4;
+        padding-top: 15%;
+    }
+    .coheteconteiner{
+        display: none;
+    }
+    #mapas, #cronograma{
+        height: 145vh;
+        margin: 0;
+    }
+    .actividad, th {
+        font-size: 1.7rem;
+        padding: 30px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    iframe{
+        width: 40vw;
+        height: 50vh;
+        margin-top: 40px;
+    }
+    #logo{
+        grid-column: 1/3;
+    }
+    #logo img {
+        height: 150px;
     }
 }
 @media (min-width: 1300px) {
