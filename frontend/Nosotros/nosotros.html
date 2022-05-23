@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="css/generales/pantallasChicas.css">
     <link rel="stylesheet" href="css/generales/desktop.css">
 
+    <!-- AOS libreria para animaciones -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <title>CAEII XX</title>
 </head>
 <body id="home" class="nosotros">
@@ -103,7 +106,7 @@
     <main>
         <h1> Orbitando hacia el futuro... </h1>
         <section id="que_es_caeii">
-            <div class="info">
+            <div class="info" data-aos="fade-up">
                 <h2> ¿Qué es CAEII? </h2>
                 <p>
                     El Congreso Argentino de Estudiantes
@@ -116,10 +119,10 @@
                     aproximadamente.
                 </p>
             </div>
-            <img src="./img/PLACE HOLDER gris.png" alt="imagen representativa">
+            <img src="./img/PLACE HOLDER gris.png" alt="imagen representativa" data-aos="fade-up">
         </section>
         <section id="cual_es_su_objetivo">
-            <div class="info">
+            <div class="info" data-aos="fade-up">
                 <h2> ¿Cuál es su objetivo? </h2>
                 <p>
                     En el CAEII se busca promover el crecimiento
@@ -134,10 +137,10 @@
                     entre otras.
                 </p>
             </div>
-            <img src="./img/PLACE HOLDER gris.png" alt="imagen representativa">
+            <img src="./img/PLACE HOLDER gris.png" alt="imagen representativa" data-aos="fade-up">
         </section>
         <section id="que_es_aareii">
-            <div class="info">
+            <div class="info" data-aos="fade-up">
                 <h2> ¿Qué es AArEII? </h2>
                 <p>
                     Asociación nacional sin fines de lucro formada e integrada por estudiantes de ingeniería. La
@@ -149,10 +152,10 @@
                     <div class="line_container"><div class="line"></div></div>
                 </div>
             </div>
-            <img src="./img/PLACE HOLDER gris.png" alt="imagen representativa">
+            <img src="./img/PLACE HOLDER gris.png" alt="imagen representativa" data-aos="fade-up">
         </section>
         <section id="que_son_los_pilares">
-            <div class="info">
+            <div class="info"  data-aos="fade-up">
                 <h2> ¿Qué son los pilares? </h2>
                 <p>
                     Son los ejes temáticos que se abordarán en el evento. Todos los CAEII se centran en 4 pilares diferentes a través de charlas, talleres y conferencias, entre otros. Los pilares de este año son:
@@ -184,19 +187,19 @@
                     </div>
                 </div>
             </div>
-            <img src="./img/PLACE HOLDER gris.png" alt="imagen representativa">
+            <img src="./img/PLACE HOLDER gris.png" alt="imagen representativa"  data-aos="fade-up">
         </section>
         <section id="cuando_donde">
-            <div class="info">
+            <div class="info"  data-aos="fade-up">
                 <h2> ¿Cuándo y dónde? </h2>
                 <p>
                     En la ciudad de Mendoza, desde el 25 hasta el 28 de Agosto. Se desarrollarán varias actividades en diferentes lugares de la ciudad.
                 </p>
             </div>
-            <img src="./img/PLACE HOLDER gris.png" alt="imagen representativa">
+            <img src="./img/PLACE HOLDER gris.png" alt="imagen representativa"  data-aos="fade-up">
         </section>
         <section id="como_participar">
-            <div class="info">
+            <div class="info"  data-aos="fade-up">
                 <h2> ¿Cómo participar? </h2>
                 <p>
                     ¡Inscribite ahora y reservá un lugar en el mejor congreso del año!
@@ -213,10 +216,10 @@
                     </a>
                 </div>
             </div>
-            <img src="./img/PLACE HOLDER gris.png" alt="imagen representativa">
+            <img src="./img/PLACE HOLDER gris.png" alt="imagen representativa"  data-aos="fade-up">
         </section>
         <section id="saber_mas">
-            <div class="info">
+            <div class="info"  data-aos="fade-up">
                 <h2> ¿Querés saber más del evento? </h2>
                 <p>
                     Podés volver a la home y leer todo sobre las actividades que podrás disfrutar durante todo el evento.
@@ -233,7 +236,7 @@
                     </a>
                 </div>
             </div>
-            <img src="./img/PLACE HOLDER gris.png" alt="imagen representativa">
+            <img src="./img/PLACE HOLDER gris.png" alt="imagen representativa" data-aos="fade-up">
         </section>
         <section id="sponsors">
             <h2> Sponsors </h2>
@@ -252,4 +255,13 @@
         </a>
     </footer>
 </body>
+<!-- AOS libreria para animaciones -->
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+        duration: 1500,
+        once: true
+    });
+  </script>
 </html>
