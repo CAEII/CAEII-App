@@ -102,7 +102,7 @@
     }
 
     /* PERFIL */
-    header{
+    .perfil header{
         height: 100vh;
     }
     .perfil .sistema_solar {
