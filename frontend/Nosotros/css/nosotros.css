@@ -1,0 +1,76 @@
+html{
+    background-image:  url(../img/home/fondoHome.jpg);
+}
+.title{
+    grid-column: 1/4;
+    grid-row: 2;
+    height: 100%;
+    background-color: var(--fondoTituloHome);
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 15;
+}
+svg{
+    height: 130px;
+    margin: 5%;
+}
+
+.nosotros h1{
+    font-size: 1.7rem;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 100px;
+}
+.nosotros section{
+    background-color: transparent;
+    padding: 20px;
+    margin: 0;
+}
+.nosotros section h2{
+    background-color: transparent;
+}
+.info{
+    background-color: var(--boton_input);
+    border-radius: 100px;
+    padding: 30px;
+    padding-top: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.nosotros section img{
+    width: 100%;
+
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.nosotros .linea{
+    margin-top: 20px;
+    width: fit-content;
+}
+
+.nosotros .links{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+.nosotros .links .link{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.nosotros .button{
+    background-color: var(--fondoTituloTargeta);
+}
+
+#sponsors{
+    background-color: var(--fondoTargeta);
+    padding: 0;
+}
+#sponsors h2{
+    background-color: var(--fondoTituloTargeta);
+}
