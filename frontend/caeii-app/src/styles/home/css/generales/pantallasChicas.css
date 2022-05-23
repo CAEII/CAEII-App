@@ -1,0 +1,53 @@
+@media only screen and (max-width: 400px){
+  #uno .line_container {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+}
+@media only screen and (max-width: 370px){
+  article h3{
+    font-size: 1rem;
+  }
+  article p{
+    font-size: 0.7rem;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  #menu{
+    background-color: var(--fondoTargeta);
+    height: 48vh;
+  }
+  .sistema_solar{
+    display:none;
+  }
+  li{
+    grid-column: 2/12 !important;
+  }
+  #registrarse {
+    margin-top: 50px;
+  }
+  article .img{
+    display: none;
+  }
+  article p, article h3, .derecha p, .derecha h3{
+    grid-column: 1/4;
+    text-align: center;
+  }
+  article h3{
+    justify-content: center;
+  }
+  .leermas .circle{
+    display: none;
+  }
+  .leermas .texto{
+    top: 30%;
+    left: 0;
+  }
+}
+
+@media (max-width: 862px) and (max-height: 550px) {
+  #menu {
+    height: 80vh;
+  }
+}

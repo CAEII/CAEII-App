@@ -1,0 +1,24 @@
+:root {
+    /* GENERALES */
+    --texto1: rgb(255, 255, 255);   /* color de texto general */
+    --texto2: rgb(201, 201, 201);   /* usado en links y placeholder */
+    --texto_oscuro1: rgba(21, 18, 72, 1); /* usado en el h1 del perfil de usuario */
+    --boton_input: rgb(70, 64, 153);     /* fondo de botones, inputs y articles */
+    --fondoTargeta: rgba(10, 5, 115, 0.6);     /* fondo de la tarjeta del login, fondo de las secciones de home y fondo del sistema solar de home */
+    --fondoNavBar: rgba(34, 30, 115, 0.8);
+
+        /* SISTEMA SOLAR */
+        --sol_planetas: rgb(47, 43, 105);    /* color del sol y planes en home */
+        --orbitas: rgba(70, 64, 153, 1);    /* color de las orbitas en home */
+        /* HAMBURGER MENU */
+        --fondoMenuDesplegable: rgba(34, 30, 115, 0.94);
+        --hamburger_scrolHandle_home: rgba(161, 152, 223, 1); /* lineas del boton para abrir el menu desplegable y Handle del scroolbar (en home)*/
+        --hamburger_scrolHandle_Mapas_Perfil: rgba(21, 18, 72, 1); /* lineas del boton para abrir el menu desplegable y Handle del scroolbar (en mapas y perfil de usuario)*/
+        
+    /* LOGIN */
+    --fondoTitulo: rgba(70, 64, 153, 0.588);   /* fondo del titulo para login, ingresar */
+
+    /* HOME */
+    --fondoTituloHome: rgba(21, 21, 24, 0.90);  /* fondo del titulo de home */
+    --fondoTituloTargeta: rgb(34, 30, 115);  /* fondo del h2 en las secciones de home */  
+}
