@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Nacho-Ugarte/CAEII-App/static/css/main.5659932b.css",
-    "main.js": "/Nacho-Ugarte/CAEII-App/static/js/main.1286ad82.js",
+    "main.js": "/Nacho-Ugarte/CAEII-App/static/js/main.07267d9a.js",
     "static/js/787.8c822ef0.chunk.js": "/Nacho-Ugarte/CAEII-App/static/js/787.8c822ef0.chunk.js",
     "static/media/Montserrat-Black.ttf": "/Nacho-Ugarte/CAEII-App/static/media/Montserrat-Black.46e8b3d6aad654578958.ttf",
     "static/media/Montserrat-Italic.ttf": "/Nacho-Ugarte/CAEII-App/static/media/Montserrat-Italic.e7728c27ba36b97eb82f.ttf",
@@ -23,11 +23,11 @@
     "index.html": "/Nacho-Ugarte/CAEII-App/index.html",
     "static/media/icono-BotonHome.svg": "/Nacho-Ugarte/CAEII-App/static/media/icono-BotonHome.30d209bc472efb8b244806ac39489eac.svg",
     "main.5659932b.css.map": "/Nacho-Ugarte/CAEII-App/static/css/main.5659932b.css.map",
-    "main.1286ad82.js.map": "/Nacho-Ugarte/CAEII-App/static/js/main.1286ad82.js.map",
+    "main.07267d9a.js.map": "/Nacho-Ugarte/CAEII-App/static/js/main.07267d9a.js.map",
     "787.8c822ef0.chunk.js.map": "/Nacho-Ugarte/CAEII-App/static/js/787.8c822ef0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5659932b.css",
-    "static/js/main.1286ad82.js"
+    "static/js/main.07267d9a.js"
   ]
 }
