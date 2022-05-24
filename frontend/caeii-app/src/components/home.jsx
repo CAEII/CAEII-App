@@ -1,10 +1,11 @@
 import { Link } from 'react-router-dom'
 import "../styles/home/css/fuentes.css"
-import "../styles/home/css/home.css"
-import "../styles/home/css/generales/desktop.css"
-import "../styles/home/css/generales/generales.css"
-import "../styles/home/css/generales/pantallasChicas.css"
+
 import "../styles/home/css/generales/variables.css"
+import "../styles/home/css/generales/generales.css"
+import "../styles/home/css/home.css"
+import "../styles/home/css/generales/pantallasChicas.css"
+import "../styles/home/css/generales/desktop.css"
 import homeIcon from "../styles/home/img/icono-BotonHome.svg"
 import title from "../styles/home/img/caeii-title.svg"
 import estacion1 from "../styles/home/img/estaciones/odiseaEstelar.png"
@@ -39,7 +40,7 @@ function Home() {
                                     </li>
                                     <li>
                                         <div>
-                                            <a href="">REGISTRARSE</a>
+                                            <a href="https://inscripciones.aareii.org.ar/index.php/register">REGISTRARSE</a>
                                             <div class="line_container"><div class="line" /></div>
                                         </div>
                                     </li>
@@ -69,13 +70,13 @@ function Home() {
                         <ul>
                             <li>
                                 <div>
-                                    <a href="">INGRESAR</a>
+                                    <Link to="/login">INGRESAR</Link>
                                     <div class="line_container"><div class="line" /></div>
                                 </div>
                             </li>
                             <li>
                                 <div>
-                                    <a href="">REGISTRARSE</a>
+                                    <a href="https://inscripciones.aareii.org.ar/index.php/register">REGISTRARSE</a>
                                     <div class="line_container"><div class="line" /></div>
                                 </div>
                             </li>
@@ -92,7 +93,7 @@ function Home() {
                                 </div>
                             </li>
                             <li>
-                                <a href="">
+                                <a href="https://www.aareii.org.ar/">
                                     <img src={logoAareii} alt="logo AArEII" />
                                 </a>
                             </li>
@@ -139,7 +140,7 @@ function Home() {
                         </li>
                         <li id="tres">
                             <div>
-                                <a href="#talleres">TAlleres</a>
+                                <a href="#talleres">Talleres</a>
                                 <div class="line_container"><div class="line" /></div>
                             </div>
                         </li>
@@ -166,10 +167,10 @@ function Home() {
                 <section id="registrarse">
                     <h1>¿Estás preparado para el despegue?</h1>
                     <div class="button">
-                        <a href="" class="hyperspan">
+                        <a href="https://inscripciones.aareii.org.ar/index.php/register" class="hyperspan">
                             <div class="circle">
                                 <div class="rocket_container">
-
+                                    
                                 </div>
                                 <div class="circle2"></div>
                             </div>

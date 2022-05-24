@@ -23,15 +23,15 @@ function Login() {
                     <input type="password" name="pass" placeholder="Contraseña" id="" />
                     <a href="" className="no_contra" >¿olvidaste tu contraseña?</a>
                     <button type="submit">Ingresar</button>
-                    <a href="">Registrate</a>
+                    <a href="https://inscripciones.aareii.org.ar/index.php/register">Registrate</a>
                 </form>
             </div>
         </main>
-        <footer>
+        <footer id="footer-login">
             <div className="logo">
-                <img src={logoAareii} alt="Logo de AArEII" />
+                <a href="https://www.aareii.org.ar/"><img src={logoAareii} alt="Logo de AArEII" /></a>
             </div>
-            <img id="logo_aareii_desktop" src={logoAareiiDesktop} alt="Logo de AArEII" />
+            <a href="https://www.aareii.org.ar/"><img id="logo_aareii_desktop" src={logoAareiiDesktop} alt="Logo de AArEII" /></a>
         </footer>
     </>);
 

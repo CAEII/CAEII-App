@@ -31,7 +31,7 @@ svg{
 .login-card{
     margin-left: 5%;
     margin-right: 5%;
-
+    margin-top: 5%;
     background-color: var(--fondoTargeta);
     border-radius: 50px;
 }
@@ -102,6 +102,11 @@ form a{
     display: none;
 }
 
+#footer-login {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 
 /**********Desktop***********/
 
@@ -119,8 +124,8 @@ form a{
 
     .login-card {
         position: absolute;
-        top: 10vh;
-        margin-left: 15vw;
+        top: 3vh;
+        left: 22vw;
         height: 85vh;
         width: 55vw;
     }
