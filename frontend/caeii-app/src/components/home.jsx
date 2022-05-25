@@ -12,9 +12,10 @@ import estacion1 from "../styles/home/img/estaciones/odiseaEstelar.png"
 import estacion2 from "../styles/home/img/estaciones/Logística 4.0.png"
 import estacion3 from "../styles/home/img/estaciones/Próximo destino.png"
 import estacion4 from "../styles/home/img/estaciones/Desarrollo urbano.png"
-import placeholder from "../styles/img/PLACE HOLDER.png"
-import placeholder2 from "../styles/img/PLACE HOLDER cuadrado.png"
+import placeholder from "../styles/home/img/PLACE HOLDER.png"
+import placeholder2 from "../styles/home/img/PLACE HOLDER cuadrado.png"
 import logoAareii from "../styles/home/img/logo-aareii-desktop.png"
+import cohete from "../styles/home/img/cohete-botones.svg"
 
 function Home() {
 
@@ -33,31 +34,31 @@ function Home() {
                             <div class="menu-items">
                                 <ul>
                                     <li>
-                                        <div>
+                                        <div class="linea">
                                             <Link to="/login">INGRESAR</Link>
                                             <div class="line_container"><div class="line" /></div>
                                         </div>
                                     </li>
                                     <li>
-                                        <div>
+                                        <div class="linea">
                                             <a href="https://inscripciones.aareii.org.ar/index.php/register">REGISTRARSE</a>
                                             <div class="line_container"><div class="line" /></div>
                                         </div>
                                     </li>
                                     <li>
-                                        <div>
+                                        <div class="linea">
                                             <a href="">NOSOTROS</a>
                                             <div class="line_container"><div class="line" /></div>
                                         </div>
                                     </li>
                                     <li>
-                                        <div>
+                                        <div class="linea">
                                             <a href="">AAREII</a>
                                             <div class="line_container"><div class="line" /></div>
                                         </div>
                                     </li>
                                     <li>
-                                        <div>
+                                        <div class="linea">
                                             <a href="">CONTACTO</a>
                                             <div class="line_container"><div class="line" /></div>
                                         </div>
@@ -69,25 +70,25 @@ function Home() {
                     <div class="desktop_navbar">
                         <ul>
                             <li>
-                                <div>
+                                <div class="linea">
                                     <Link to="/login">INGRESAR</Link>
                                     <div class="line_container"><div class="line" /></div>
                                 </div>
                             </li>
                             <li>
-                                <div>
+                                <div class="linea">
                                     <a href="https://inscripciones.aareii.org.ar/index.php/register">REGISTRARSE</a>
                                     <div class="line_container"><div class="line" /></div>
                                 </div>
                             </li>
                             <li>
-                                <div>
+                                <div class="linea">
                                     <a href="">NOSOTROS</a>
                                     <div class="line_container"><div class="line" /></div>
                                 </div>
                             </li>
                             <li>
-                                <div>
+                                <div class="linea">
                                     <a href="">CONTACTO</a>
                                     <div class="line_container"><div class="line" /></div>
                                 </div>
@@ -127,37 +128,37 @@ function Home() {
                     </div>
                     <ul>
                         <li id="uno">
-                            <div>
+                            <div class="linea">
                                 <a href="#conferencias_1">Charlas Magistrales</a>
                                 <div class="line_container"><div class="line" /></div>
                             </div>
                         </li>
                         <li id="dos">
-                            <div>
+                            <div class="linea">
                                 <a href="#visitas">Visitas técnicas</a>
                                 <div class="line_container"><div class="line" /></div>
                             </div>
                         </li>
                         <li id="tres">
-                            <div>
+                            <div class="linea">
                                 <a href="#talleres">Talleres</a>
                                 <div class="line_container"><div class="line" /></div>
                             </div>
                         </li>
                         <li id="cuatro">
-                            <div>
+                            <div class="linea">
                                 <a href="#hackaton">Hackaton</a>
                                 <div class="line_container"><div class="line" /></div>
                             </div>
                         </li>
                         <li id="cinco">
-                            <div>
+                            <div class="linea">
                                 <a href="#conferencias_2">Conferencias profesionales</a>
                                 <div class="line_container"><div class="line" /></div>
                             </div>
                         </li>
                         <li id="seis">
-                            <div>
+                            <div class="linea">
                                 <a href="#feria">Feria de empleo</a>
                                 <div class="line_container"><div class="line" /></div>
                             </div>
@@ -170,7 +171,7 @@ function Home() {
                         <a href="https://inscripciones.aareii.org.ar/index.php/register" class="hyperspan">
                             <div class="circle">
                                 <div class="rocket_container">
-                                    
+                                    <img src={cohete}></img>
                                 </div>
                                 <div class="circle2"></div>
                             </div>
@@ -232,7 +233,7 @@ function Home() {
                         <a href="" class="hyperspan">
                             <div class="circle">
                                 <div class="rocket_container">
-
+                                    <img src={cohete}></img>
                                 </div>
                                 <div class="circle2"></div>
                             </div>
@@ -276,7 +277,7 @@ function Home() {
                         <a href="" class="hyperspan">
                             <div class="circle">
                                 <div class="rocket_container">
-
+                                    <img src={cohete}></img>
                                 </div>
                                 <div class="circle2"></div>
                             </div>
@@ -320,7 +321,7 @@ function Home() {
                         <a href="" class="hyperspan">
                             <div class="circle">
                                 <div class="rocket_container">
-
+                                    <img src={cohete}></img>
                                 </div>
                                 <div class="circle2"></div>
                             </div>
@@ -364,7 +365,7 @@ function Home() {
                         <a href="" class="hyperspan">
                             <div class="circle">
                                 <div class="rocket_container">
-
+                                    <img src={cohete}></img>
                                 </div>
                                 <div class="circle2"></div>
                             </div>
@@ -408,7 +409,7 @@ function Home() {
                         <a href="" class="hyperspan">
                             <div class="circle">
                                 <div class="rocket_container">
-
+                                    <img src={cohete}></img>        
                                 </div>
                                 <div class="circle2"></div>
                             </div>
@@ -452,7 +453,7 @@ function Home() {
                         <a href="" class="hyperspan">
                             <div class="circle">
                                 <div class="rocket_container">
-
+                                    <img src={cohete}></img>
                                 </div>
                                 <div class="circle2"></div>
                             </div>
@@ -496,7 +497,7 @@ function Home() {
                         <a href="" class="hyperspan">
                             <div class="circle">
                                 <div class="rocket_container">
-
+                                    <img src={cohete}></img>
                                 </div>
                                 <div class="circle2"></div>
                             </div>
