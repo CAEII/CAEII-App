@@ -15,6 +15,7 @@ import estacion4 from "../styles/home/img/estaciones/Desarrollo urbano.png"
 import placeholder from "../styles/img/PLACE HOLDER.png"
 import placeholder2 from "../styles/img/PLACE HOLDER cuadrado.png"
 import logoAareii from "../styles/home/img/logo-aareii-desktop.png"
+import cohete from "../styles/home/img/cohete-botones.svg"
 
 function Home() {
 
@@ -170,7 +171,7 @@ function Home() {
                         <a href="https://inscripciones.aareii.org.ar/index.php/register" class="hyperspan">
                             <div class="circle">
                                 <div class="rocket_container">
-                                    
+                                    <img src={cohete}></img>
                                 </div>
                                 <div class="circle2"></div>
                             </div>
@@ -232,7 +233,7 @@ function Home() {
                         <a href="" class="hyperspan">
                             <div class="circle">
                                 <div class="rocket_container">
-
+                                    <img src={cohete}></img>
                                 </div>
                                 <div class="circle2"></div>
                             </div>
@@ -276,7 +277,7 @@ function Home() {
                         <a href="" class="hyperspan">
                             <div class="circle">
                                 <div class="rocket_container">
-
+                                    <img src={cohete}></img>
                                 </div>
                                 <div class="circle2"></div>
                             </div>
@@ -320,7 +321,7 @@ function Home() {
                         <a href="" class="hyperspan">
                             <div class="circle">
                                 <div class="rocket_container">
-
+                                    <img src={cohete}></img>
                                 </div>
                                 <div class="circle2"></div>
                             </div>
@@ -364,7 +365,7 @@ function Home() {
                         <a href="" class="hyperspan">
                             <div class="circle">
                                 <div class="rocket_container">
-
+                                    <img src={cohete}></img>
                                 </div>
                                 <div class="circle2"></div>
                             </div>
@@ -408,7 +409,7 @@ function Home() {
                         <a href="" class="hyperspan">
                             <div class="circle">
                                 <div class="rocket_container">
-
+                                    <img src={cohete}></img>        
                                 </div>
                                 <div class="circle2"></div>
                             </div>
@@ -452,7 +453,7 @@ function Home() {
                         <a href="" class="hyperspan">
                             <div class="circle">
                                 <div class="rocket_container">
-
+                                    <img src={cohete}></img>
                                 </div>
                                 <div class="circle2"></div>
                             </div>
@@ -496,7 +497,7 @@ function Home() {
                         <a href="" class="hyperspan">
                             <div class="circle">
                                 <div class="rocket_container">
-
+                                    <img src={cohete}></img>
                                 </div>
                                 <div class="circle2"></div>
                             </div>
