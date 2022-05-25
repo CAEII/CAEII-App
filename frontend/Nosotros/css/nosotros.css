@@ -23,6 +23,9 @@ svg{
     margin-top: 70px;
     margin-bottom: 100px;
 }
+.nosotros .h1_title_desktop{
+    display: none;
+}
 .nosotros section{
     background-color: transparent;
     padding: 20px;
@@ -30,6 +33,9 @@ svg{
 }
 .nosotros section h2{
     background-color: transparent;
+}
+.nosotros section h2, .nosotros a{
+    text-shadow: -2px -2px 1px var(--fondoMenuDesplegable);
 }
 .info{
     background-color: var(--boton_input);
@@ -65,12 +71,44 @@ svg{
 }
 .nosotros .button{
     background-color: var(--fondoTituloTargeta);
+    width: 220px;
+    height: 75px;
 }
-
+.nosotros .circle{
+    height: 55px;
+    width: 55px;
+    margin-top: 4%;
+    margin-left: 4%;
+}
+.nosotros .button .circle2 {
+    height: 55px;
+    width: 55px;
+}
+.nosotros .rocket_container svg{
+    height: 9px;
+}
+.nosotros .button .texto {
+    font-size: 1.2rem;
+    top: -50%;
+}
+#saber_mas .circle{  
+    margin-left: 71%;
+}
+#saber_mas .texto{
+    left: -13%;
+}
+#saber_mas h2{
+    margin-top: 20px;
+}
 #sponsors{
     background-color: var(--fondoTargeta);
     padding: 0;
 }
 #sponsors h2{
     background-color: var(--fondoTituloTargeta);
+}
+#sponsors img{
+    max-height: 30vh;
+    width: auto;
+    margin-bottom: 5%;
 }
