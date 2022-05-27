@@ -85,6 +85,7 @@ nav{
 }
 .desktop_navbar{
     display: none;
+
     background-color: var(--fondoNavBar);
     height: 80%;
     margin-top: -5px;
@@ -176,7 +177,7 @@ li {
     top: 40%;
     z-index: 3;
 }
-.button svg {
+.button img {
     height: 11px;
     transform: rotate(-30deg);
 
@@ -186,7 +187,7 @@ li {
 .button:hover .rocket_container {
     animation: orbit 1s 1 ease-in-out;
 }
-.button:hover svg {
+.button:hover img {
     animation: toRight 1s 1 ease-in-out;
 }
 @keyframes toRight {
@@ -424,7 +425,7 @@ li {
     transform: rotate(-45deg);
 }
 
-/* FOOTER */
+
 footer{
     height: 70px;
     justify-content: flex-end;
@@ -459,4 +460,3 @@ footer{
 ::-webkit-scrollbar-thumb:hover {
     background: var(--boton_input);
 }
-
