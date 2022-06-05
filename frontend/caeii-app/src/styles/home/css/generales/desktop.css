@@ -7,6 +7,10 @@
     }
     .desktop_navbar{
         display: block;
+        position: fixed;
+        height: 110px;
+        width: 100vw;
+        z-index: 50;
     }
     main {
         padding: 40px;
