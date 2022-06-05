@@ -6,7 +6,6 @@ html{
 }
 header{
     overflow: hidden;
-    grid-template-rows: 100px 100px 200px 300px;
 }
 .sistema_solar {
     position: relative;
