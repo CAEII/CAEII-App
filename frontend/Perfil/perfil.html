@@ -136,12 +136,65 @@
         </div>
     </header>
     <main>
+        <section id="credencial">
+            <h2> Tu credencial</h2>
+            <div class="top_asistencia">
+                <img src="./img/perfil/astronauta.png" alt="astronauta de caeii" class="astronauta_de_caeii">
+                <div class="asistencia">
+                    <button class="circulo_qr">
+                        <img src="./img/perfil/qrs/qr.png" alt="'link del QR'">
+                    </button>
+                    <h3 id="porcentaje_asistencia"> ASISTENCIA: 98%</h3>
+                </div>
+            </div>
+            <div class="comidas">
+                <div class="almuerzos">
+                    <h3>Tus almuerzos: </h3>
+                    <div class="iconos">
+                        <button class="icono" id="taco">
+                            <img src="./img/perfil/taco.png" alt="Taco / qr del primer almuerzo">
+                        </button>
+                        <button class="icono_disabled">
+                            <img src="./img/perfil/taco_dessaturado.png" alt="Taco / qr del segundo almuerzo">
+                        </button>
+                    </div>
+                </div>
+                <div class="coffees">
+                    <h3> Tus coffees: </h3>
+                    <div class="iconos">
+                        <button class="icono" id="coffee_1">
+                            <img src="./img/perfil/coffee.png" alt="Taco / qr del coffee">
+                        </button>
+                        <button class="icono" id="coffee_2">
+                            <img src="./img/perfil/coffee.png" alt="Taco / qr del coffee">
+                        </button>
+                        <button class="icono_disabled" id="coffee_3">
+                            <img src="./img/perfil/coffee_dessaturado.png" alt="Taco / qr del coffee">
+                        </button>
+                        <button class="icono_disabled" id="coffee_4">
+                            <img src="./img/perfil/coffee_dessaturado.png" alt="Taco / qr del coffee">
+                        </button>
+                    </div>
+                </div>
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <span class="close">&times;</span>
+                      </div>
+                      <div class="modal-body">
+                        <img id="qr" src="" alt="">
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section id="cronograma">
             <div class="title_card_perfil title_cronograma">
                 <h2> cronograma </h2>
                 <label for="dia" class="title_text">Día: </label>
                 <div class="select" id="dia">
                     <select>
+                        <option value="Jueves">Jueves</option>
                         <option value="viernes">Viernes</option>
                         <option value="sabado">Sabado</option>
                         <option value="domingo">Domingo</option>
@@ -274,5 +327,6 @@
             </div>
         </a>
     </footer>
+    <script type="text/javascript" src="js/modals.js"></script>
 </body>
 </html>
