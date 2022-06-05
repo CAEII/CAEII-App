@@ -56,7 +56,7 @@ export default function HeaderBar() {
                 </li>
                 <li>
                   <div class="linea">
-                    <a href="">CONTACTO</a>
+                    <a href="https://www.instagram.com/caeii_oficial/?igshid=YmMyMTA2M2Y%3D">CONTACTO</a>
                     <div class="line_container"><div class="line" /></div>
                   </div>
                 </li>
@@ -92,7 +92,7 @@ export default function HeaderBar() {
             </li>
             <li>
               <div class="linea">
-                <a href="">CONTACTO</a>
+                <a href="https://www.instagram.com/caeii_oficial/?igshid=YmMyMTA2M2Y%3D">CONTACTO</a>
                 <div class="line_container"><div class="line" /></div>
               </div>
             </li>

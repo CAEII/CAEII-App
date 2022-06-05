@@ -3,13 +3,12 @@ html{
     background-image:  url(../img/fondoHome.jpg);
 }
 header{
-    grid-template-rows: 75px 200px;
+    grid-template-rows: 75px;
 }
 
 .title{
-    grid-column: 1/4;
-    grid-row: 2;
     height: 100%;
+    width: 100%;
     background-color: var(--fondoTituloHome);
   
     display: flex;
@@ -59,7 +58,7 @@ section article{
     border: 1px solid black;
 
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    
     grid-template-rows: 40% 60%;
 }
 .imgOrbit{
@@ -96,6 +95,8 @@ article .img{
     height: 100%;
 }
 article .img{
+    grid-column: 1/2;
+    grid-row: 1/3;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -167,10 +168,6 @@ article .img{
 article h3, article p{
     grid-column: 2/4;
     text-align: left;
-}
-article .img{
-    grid-column: 1/2;
-    grid-row: 1/3;
 }
 article p {
     font-size: 0.8rem;

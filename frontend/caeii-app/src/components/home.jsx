@@ -16,7 +16,7 @@ import BaseLayout from "./layout"
 
 function Home() {
   return (<>
-    <body id="home">
+    <body id="home" className="home">
       <BaseLayout>
         <main>
           <div class="title">
