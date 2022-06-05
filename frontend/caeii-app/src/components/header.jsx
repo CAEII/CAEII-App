@@ -26,6 +26,12 @@ export default function HeaderBar() {
               <ul>
                 <li>
                   <div class="linea">
+                    <a href="/">INICIO</a>
+                    <div class="line_container"><div class="line" /></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="linea">
                     <Link to="/login">INGRESAR</Link>
                     <div class="line_container"><div class="line" /></div>
                   </div>
@@ -60,6 +66,12 @@ export default function HeaderBar() {
         </div>
         <div class="desktop_navbar">
           <ul>
+            <li>
+                  <div class="linea">
+                    <a href="/">INICIO</a>
+                    <div class="line_container"><div class="line" /></div>
+                  </div>
+                </li>
             <li>
               <div class="linea">
                 <Link to="/login">INGRESAR</Link>

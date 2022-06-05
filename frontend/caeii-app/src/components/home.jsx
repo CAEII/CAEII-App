@@ -18,7 +18,6 @@ function Home() {
   return (<>
     <body id="home">
       <BaseLayout>
-
         <main>
           <div class="title">
             <img src={title}></img>

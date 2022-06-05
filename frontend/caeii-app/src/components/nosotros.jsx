@@ -1,5 +1,5 @@
 import BaseLayout from "./layout";
-import { ReactComponent as RocketAnim } from '../styles/img/rocket.svg'
+import cohete from "../styles/home/img/cohete-botones.svg"
 
 export default function Nosotros() {
   return (
@@ -109,7 +109,7 @@ export default function Nosotros() {
               <a href="" class="hyperspan">  
                 <div class="circle">        
                   <div class="rocket_container">
-                    <RocketAnim/>
+                    <img src={cohete}></img>
                   </div>
                   <div class="circle2"></div>
                 </div>
@@ -129,7 +129,7 @@ export default function Nosotros() {
               <a href="" class="hyperspan">  
                 <div class="circle">        
                   <div class="rocket_container">
-                    <RocketAnim/>
+                    <img src={cohete}></img>
                   </div>
                   <div class="circle2"></div>
                 </div>
