@@ -35,7 +35,7 @@ function Home() {
                                 <ul>
                                     <li>
                                         <div class="linea">
-                                            <Link to="/login">INGRESAR</Link>
+                                            {/* <Link to="/login"> */}INGRESAR{/* </Link> */}
                                             <div class="line_container"><div class="line" /></div>
                                         </div>
                                     </li>
@@ -71,7 +71,7 @@ function Home() {
                         <ul>
                             <li>
                                 <div class="linea">
-                                    <Link to="/login">INGRESAR</Link>
+                                    {/* <Link to="/login"> */}INGRESAR{/* </Link> */}
                                     <div class="line_container"><div class="line" /></div>
                                 </div>
                             </li>
@@ -229,7 +229,7 @@ function Home() {
                             </div>
                         </div>
                     </article>
-                    <div class="button leermas">
+                    {/* <div class="button leermas">
                         <a href="" class="hyperspan">
                             <div class="circle">
                                 <div class="rocket_container">
@@ -239,8 +239,9 @@ function Home() {
                             </div>
                             <div class="texto"> Leer mas </div>
                         </a>
-                    </div>
+                    </div> */}
                 </section>
+{/*
                 <section id="conferencias_1">
                     <h2> Conferencias magistrales </h2>
                     <article id="1">
@@ -505,6 +506,7 @@ function Home() {
                         </a>
                     </div>
                 </section>
+
                 <section id="sponsors">
                     <h2> Sponsors </h2>
                     <div class="imgs">
@@ -513,6 +515,7 @@ function Home() {
                         <img src={placeholder2} alt="Universidad de Mendoza" />
                     </div>
                 </section>
+*/}
             </main>
             <footer>
                 <a href="#home">
