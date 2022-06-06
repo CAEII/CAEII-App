@@ -14,7 +14,7 @@ import cual_es_su_objetivo from "../styles/nosotros/img/Objetivos.jpeg"
 export default function Nosotros() {
   return (
     <BaseLayout>
-      <main className="nosotros">
+      <main className="nosotros" id="home">
         <div class="title">
           <img src={title}></img>
           <h1 className="h1_title_desktop" > Orbitando hacia el futuro... </h1>
