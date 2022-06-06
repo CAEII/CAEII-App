@@ -107,7 +107,47 @@
     #estaciones .derecha *{
         text-align: left;
     }
-
+    /* NOSOTROS */
+    .nosotros{
+        row-gap: 50px;
+    }
+    .nosotros .title{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .nosotros .h1_title_mobile{
+        display: none;
+    }
+    .nosotros .h1_title_desktop{
+        display: block !important;
+        margin: 0;
+    }
+    .nosotros .nosotros_section{
+        grid-column: 1/3;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .nosotros .reverse {
+        flex-direction: row-reverse;
+    }
+    .nosotros .nosotros_section img {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        width: 40%;
+        max-height: 350px;
+        margin-left: 80px;
+        margin-right: 0px;
+    }
+    .nosotros .reverse img {
+        margin-left: 0px;
+        margin-right: 80px;
+    }
+    .nosotros .info {
+        width: 40%;
+        height: 350px;
+    }
     /* PERFIL */
     .perfil header{
         height: 100vh;
