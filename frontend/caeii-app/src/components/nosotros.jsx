@@ -1,11 +1,26 @@
 import BaseLayout from "./layout";
 import cohete from "../styles/home/img/cohete-botones.svg"
+// agrego el import del svg del titulo, el css de nosotros y imagenes
+import title from "../styles/home/img/caeii-title.svg"
+import "../styles/nosotros/css/nosotros.css"
+import placeholder from "../styles/nosotros/img/PLACE HOLDER gris.png"
+import que_es_caeii from "../styles/nosotros/img/¿Qué es CAEII.jpg"
+import que_es_aareii from "../styles/nosotros/img/¿que es AArEII.jpg"
+import que_son_los_pilares from "../styles/nosotros/img/QUE SON LOS PILARES.png"
+import cuando_donde from "../styles/nosotros/img/cUANDO Y DONDE.jpg"
+import como_participar from "../styles/nosotros/img/Como participar.jpg"
+import cual_es_su_objetivo from "../styles/nosotros/img/Objetivos.jpeg"
+import { Link } from "react-router-dom";
 
 export default function Nosotros() {
   return (
     <BaseLayout>
-      <main>
-        <h1> Orbitando hacia el futuro... </h1>
+      <main className="nosotros" id="home">
+        <div class="title">
+          <img src={title}></img>
+          <h1 className="h1_title_desktop" > Orbitando hacia el futuro... </h1>
+        </div>
+        <h1 className="h1_title_mobile"> Orbitando hacia el futuro... </h1>
         <section id="que_es_caeii" class="nosotros_section">
           <div class="info" data-aos="fade-up">
             <h2> ¿Qué es CAEII? </h2>
@@ -20,7 +35,7 @@ export default function Nosotros() {
               aproximadamente.
             </p>
           </div>
-          <img src="./img/PLACE HOLDER gris.png" alt="imagen representativa" data-aos="fade-up"/>
+          <img src={que_es_caeii} alt="imagen representativa" data-aos="fade-up"/>
         </section>
         <section id="cual_es_su_objetivo" class="nosotros_section reverse">
           <div class="info" data-aos="fade-up">
@@ -38,7 +53,7 @@ export default function Nosotros() {
               entre otras.
             </p>
           </div>
-          <img src="./img/PLACE HOLDER gris.png" alt="imagen representativa" data-aos="fade-up"/>
+          <img src={cual_es_su_objetivo} alt="imagen representativa" data-aos="fade-up"/>
         </section>
         <section id="que_es_aareii" class="nosotros_section">
           <div class="info" data-aos="fade-up">
@@ -49,11 +64,11 @@ export default function Nosotros() {
               40 Universidades Activas, las cuales poseen representantes que coordinan cada delegación.
             </p>
             <div class="linea">
-              <a href="">{" Conocé más >"}</a>
+              <a href="https://www.aareii.org.ar/">{" Conocé más >"}</a>
               <div class="line_container"><div class="line"></div></div>
             </div>
           </div>
-          <img src="./img/PLACE HOLDER gris.png" alt="imagen representativa" data-aos="fade-up"/>
+          <img src={que_es_aareii} alt="imagen representativa" data-aos="fade-up"/>
         </section>
         <section id="que_son_los_pilares" class="nosotros_section reverse">
           <div class="info"  data-aos="fade-up">
@@ -64,31 +79,31 @@ export default function Nosotros() {
             <div class="links">
               <div class="link">
                 <div class="linea">
-                  <a href="">{" Logística 4.0 >"}</a>
+                  <Link to="/home/#estaciones">{" Logística 4.0 >"}</Link>
                   <div class="line_container"><div class="line"></div></div>
                 </div>
               </div>
               <div class="link">
                 <div class="linea">
-                  <a href="">{" Odisea Espacial >"}</a>
+                  <Link to="/home/#estaciones">{" Odisea Espacial >"}</Link>
                   <div class="line_container"><div class="line"></div></div>
                 </div>
               </div>
               <div class="link">
                 <div class="linea">
-                  <a href="">{" Ingeniería del mañana >"}</a>
+                  <Link to="/home/#estaciones">{" Ingeniería del mañana >"}</Link>
                   <div class="line_container"><div class="line"></div></div>
                 </div>
               </div>
               <div class="link">
                 <div class="linea">
-                  <a href="">{" Desarrollo urbano sustentable >"}</a>
+                  <Link to="/home/#estaciones">{" Desarrollo urbano sustentable >"}</Link>
                   <div class="line_container"><div class="line"></div></div>
                 </div>
               </div>
             </div>
           </div>
-          <img src="./img/PLACE HOLDER gris.png" alt="imagen representativa"  data-aos="fade-up"/>
+          <img src={que_son_los_pilares} alt="imagen representativa"  data-aos="fade-up"/>
         </section>
         <section id="cuando_donde" class="nosotros_section">
           <div class="info"  data-aos="fade-up">
@@ -96,8 +111,12 @@ export default function Nosotros() {
             <p>
               En la ciudad de Mendoza, desde el 25 hasta el 28 de Agosto. Se desarrollarán varias actividades en diferentes lugares de la ciudad.
             </p>
+            <h2> ¿Precio? </h2>
+            <p>
+              El precio es de solo $9900 y podrás vivir 4 días innolvidables con talleres, charlas, salidas y más.
+            </p>
           </div>
-          <img src="./img/PLACE HOLDER gris.png" alt="imagen representativa"  data-aos="fade-up"/>
+          <img src={cuando_donde} alt="imagen representativa"  data-aos="fade-up"/>
         </section>
         <section id="como_participar" class="nosotros_section reverse">
           <div class="info"  data-aos="fade-up">
@@ -106,7 +125,7 @@ export default function Nosotros() {
               ¡Inscribite ahora y reservá un lugar en el mejor congreso del año!
             </p>
             <div class="button">
-              <a href="" class="hyperspan">  
+              <a href="https://forms.gle/44mSGexGyiB84LMh6" class="hyperspan">  
                 <div class="circle">        
                   <div class="rocket_container">
                     <img src={cohete}></img>
@@ -117,7 +136,7 @@ export default function Nosotros() {
               </a>
             </div>
           </div>
-          <img src="./img/PLACE HOLDER gris.png" alt="imagen representativa"  data-aos="fade-up"/>
+          <img src={como_participar} alt="imagen representativa"  data-aos="fade-up"/>
         </section>
         <section id="saber_mas" class="nosotros_section">
           <div class="info"  data-aos="fade-up">
@@ -126,7 +145,7 @@ export default function Nosotros() {
               Podés volver a la home y leer todo sobre las actividades que podrás disfrutar durante todo el evento.
             </p>
             <div class="button">
-              <a href="" class="hyperspan">  
+              <Link to="/home" class="hyperspan">  
                 <div class="circle">        
                   <div class="rocket_container">
                     <img src={cohete}></img>
@@ -134,19 +153,19 @@ export default function Nosotros() {
                   <div class="circle2"></div>
                 </div>
                 <div class="texto"> volver al home </div>
-              </a>
+              </Link>
             </div>
           </div>
-          <img src="./img/PLACE HOLDER gris.png" alt="imagen representativa" data-aos="fade-up"/>
+          <img src={placeholder} alt="imagen representativa" data-aos="fade-up"/>
         </section>
-        <section id="sponsors">
+{/*         <section id="sponsors">
           <h2> Sponsors </h2>
           <div class="imgs">
             <img src="img/home/sponsors/panAmerican.png" alt="Pan American Energy"/>
             <img src="img/home/sponsors/UNCUYO.png" alt="universidad nacional de cuyo"/>
             <img src="img/home/sponsors/UM.png" alt="Universidad de Mendoza"/>
           </div>
-        </section>
+        </section> */}
       </main>
     </BaseLayout>
   )

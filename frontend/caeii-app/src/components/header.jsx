@@ -32,13 +32,13 @@ export default function HeaderBar() {
                 </li>
                 <li>
                   <div class="linea">
-                    <Link to="/login">INGRESAR</Link>
+                    {/* <Link to="/login"> */}INGRESAR{/* </Link> */}
                     <div class="line_container"><div class="line" /></div>
                   </div>
                 </li>
                 <li>
                   <div class="linea">
-                    <a href="https://inscripciones.aareii.org.ar/index.php/register">REGISTRARSE</a>
+                    <a href="https://forms.gle/44mSGexGyiB84LMh6">REGISTRARSE</a>
                     <div class="line_container"><div class="line" /></div>
                   </div>
                 </li>
@@ -50,7 +50,7 @@ export default function HeaderBar() {
                 </li>
                 <li>
                   <div class="linea">
-                    <a href="">AAREII</a>
+                    <a href="https://www.aareii.org.ar/">AAREII</a>
                     <div class="line_container"><div class="line" /></div>
                   </div>
                 </li>
@@ -74,13 +74,13 @@ export default function HeaderBar() {
                 </li>
             <li>
               <div class="linea">
-                <Link to="/login">INGRESAR</Link>
+                {/* <Link to="/login"> */}INGRESAR{/* </Link> */}
                 <div class="line_container"><div class="line" /></div>
               </div>
             </li>
             <li>
               <div class="linea">
-                <a href="https://inscripciones.aareii.org.ar/index.php/register">REGISTRARSE</a>
+                <a href="https://forms.gle/44mSGexGyiB84LMh6">REGISTRARSE</a>
                 <div class="line_container"><div class="line" /></div>
               </div>
             </li>

@@ -15,7 +15,9 @@ import title from "../styles/home/img/caeii-title.svg"
 import BaseLayout from "./layout"
 
 function Home() {
-  return (<>
+
+    return (<>
+        
     <body id="home" className="home">
       <BaseLayout>
         <main>
@@ -84,7 +86,7 @@ function Home() {
           <section id="registrarse">
             <h1>¿Estás preparado para el despegue?</h1>
             <div class="button">
-              <a href="https://inscripciones.aareii.org.ar/index.php/register" class="hyperspan">
+              <a href="https://forms.gle/44mSGexGyiB84LMh6" class="hyperspan">
                 <div class="circle">
                   <div class="rocket_container">
                     <img src={cohete}></img>
@@ -145,7 +147,7 @@ function Home() {
                 </div>
               </div>
             </article>
-            <div class="button leermas">
+            {/* <div class="button leermas">
               <a href="" class="hyperspan">
                 <div class="circle">
                   <div class="rocket_container">
@@ -155,8 +157,8 @@ function Home() {
                 </div>
                 <div class="texto"> Leer mas </div>
               </a>
-            </div>
-          </section>
+            </div> */}
+          </section>{/* 
           <section id="conferencias_1">
             <h2> Conferencias magistrales </h2>
             <article id="1">
@@ -428,8 +430,8 @@ function Home() {
               <img src={placeholder} alt="universidad nacional de cuyo" />
               <img src={placeholder2} alt="Universidad de Mendoza" />
             </div>
-          </section>
-        </main>
+          </section>*/}
+        </main> 
       </BaseLayout>
     </body>
   </>)
