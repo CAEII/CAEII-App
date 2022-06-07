@@ -136,7 +136,7 @@
     .nosotros .reverse {
         flex-direction: row-reverse;
     }
-    .nosotros .nosotros_section img {
+    .nosotros .nosotros_section .img_representativa{
         margin-top: 0px;
         margin-bottom: 0px;
         width: 40%;
@@ -144,13 +144,22 @@
         margin-left: 80px;
         margin-right: 0px;
     }
-    .nosotros .reverse img {
+    .nosotros .reverse .img_representativa {
         margin-left: 0px;
         margin-right: 80px;
     }
     .nosotros .info {
         width: 40%;
         height: 350px;
+    }
+    .nosotros .button .circle2 {
+        top: 30% !important;
+    }
+    .nosotros .rocket_container {
+        top: 40% !important;
+    }
+    .nosotros .rocket_container img {
+        height: 10px !important;
     }
     /* PERFIL */
     .perfil header{

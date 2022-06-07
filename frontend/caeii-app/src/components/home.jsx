@@ -11,7 +11,8 @@ import estacion4 from "../styles/home/img/estaciones/Desarrollo urbano.png"
 import placeholder from "../styles/home/img/PLACE HOLDER.png"
 import placeholder2 from "../styles/home/img/PLACE HOLDER cuadrado.png"
 import cohete from "../styles/home/img/cohete-botones.svg"
-import title from "../styles/home/img/caeii-title.svg"
+//import title from "../styles/home/img/caeii-title.svg"
+import title from "../styles/home/img/caeii-title.png"
 import BaseLayout from "./layout"
 
 function Home() {

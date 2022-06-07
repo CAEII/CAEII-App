@@ -47,7 +47,7 @@ svg{
     flex-direction: column;
     align-items: center;
 }
-.nosotros section img{
+.nosotros section .img_representativa{
     width: 100%;
 
     margin-top: 60px;
@@ -83,11 +83,9 @@ svg{
 .nosotros .button .circle2 {
     height: 55px;
     width: 55px;
-    top: -190%;
+
 }
-.nosotros .rocket_container{
-    top: -63%;
-}
+
 .nosotros .rocket_container svg{
     height: 9px;
 }
