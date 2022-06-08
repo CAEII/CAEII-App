@@ -1,0 +1,114 @@
+html{
+    background-image:  url(../img/home/fondoHome.jpg);
+}
+.title{
+    grid-column: 1/4;
+    grid-row: 2;
+    height: 100%;
+    background-color: var(--fondoTituloHome);
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 15;
+}
+svg{
+    height: 130px;
+    margin: 5%;
+}
+
+.nosotros h1{
+    font-size: 1.7rem;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 100px;
+}
+.nosotros .h1_title_desktop{
+    display: none;
+}
+.nosotros section{
+    background-color: transparent;
+    padding: 20px;
+    margin: 0;
+}
+.nosotros section h2{
+    background-color: transparent;
+}
+.nosotros section h2, .nosotros a{
+    text-shadow: -2px -2px 1px var(--fondoMenuDesplegable);
+}
+.info{
+    background-color: var(--boton_input);
+    border-radius: 100px;
+    padding: 30px;
+    padding-top: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.nosotros section img{
+    width: 100%;
+
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.nosotros .linea{
+    margin-top: 20px;
+    width: fit-content;
+}
+
+.nosotros .links{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+.nosotros .links .link{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.nosotros .button{
+    background-color: var(--fondoTituloTargeta);
+    width: 220px;
+    height: 75px;
+}
+.nosotros .circle{
+    height: 55px;
+    width: 55px;
+    margin-top: 4%;
+    margin-left: 4%;
+}
+.nosotros .button .circle2 {
+    height: 55px;
+    width: 55px;
+}
+.nosotros .rocket_container svg{
+    height: 9px;
+}
+.nosotros .button .texto {
+    font-size: 1.2rem;
+    top: -50%;
+}
+#saber_mas .circle{  
+    margin-left: 71%;
+}
+#saber_mas .texto{
+    left: -13%;
+}
+#saber_mas h2{
+    margin-top: 20px;
+}
+#sponsors{
+    background-color: var(--fondoTargeta);
+    padding: 0;
+}
+#sponsors h2{
+    background-color: var(--fondoTituloTargeta);
+}
+#sponsors img{
+    max-height: 30vh;
+    width: auto;
+    margin-bottom: 5%;
+}

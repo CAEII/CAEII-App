@@ -85,7 +85,6 @@ nav{
 }
 .desktop_navbar{
     display: none;
-
     background-color: var(--fondoNavBar);
     height: 80%;
     margin-top: -5px;
@@ -425,7 +424,7 @@ li {
     transform: rotate(-45deg);
 }
 
-
+/* FOOTER */
 footer{
     height: 70px;
     justify-content: flex-end;
@@ -460,3 +459,4 @@ footer{
 ::-webkit-scrollbar-thumb:hover {
     background: var(--boton_input);
 }
+

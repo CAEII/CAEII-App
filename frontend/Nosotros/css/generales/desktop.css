@@ -7,6 +7,10 @@
     }
     .desktop_navbar{
         display: block;
+        position: fixed;
+        height: 110px;
+        width: 100vw;
+        z-index: 50;
     }
     main {
         padding: 40px;
@@ -165,6 +169,52 @@
     #logo img {
         height: 150px;
     }
+
+    /* nosotros */
+    .nosotros main h1{
+        display: none;
+    }
+    .nosotros h1{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .nosotros .h1_title_desktop{
+        display: block;
+    }
+    .nosotros .nosotros_section{
+        grid-column: 1/3;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .nosotros main{
+        row-gap: 80px;
+    }
+    .nosotros .nosotros_section img {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        width: 40%;
+        margin-left: 80px;
+        margin-right: 0px;
+    }
+    .nosotros .reverse{
+        flex-direction: row-reverse;
+    }
+    .nosotros .reverse img{
+        margin-left: 0px;
+        margin-right: 80px;
+    }
+    .info{
+        width: 40%;
+    }
+    .nosotros main{
+        padding-top: 80px;
+    }
+    .title {
+        align-items: center;
+        justify-content: space-evenly;
+    }   
 }
 @media (min-width: 1300px) {
     .imgOrbit{
@@ -172,6 +222,18 @@
     }
     .derecha .imgOrbit {
         left: 2vw;
+    }
+    .nosotros .nosotros_section img {
+        width: 30%;
+        margin-left: 200px;
+        margin-right: 0;
+    }
+    .nosotros .reverse img{
+        margin-left: 0px;
+        margin-right: 200px;
+    }
+    .info{
+        width: 30%;
     }
 }
 @media only screen and (max-width: 1260px){
