@@ -23,7 +23,7 @@ function Login() {
                     <input type="password" name="pass" placeholder="Contraseña" id="" />
                     <a href="" className="no_contra" >¿olvidaste tu contraseña?</a>
                     <button type="submit">Ingresar</button>
-                    <a href="https://forms.gle/44mSGexGyiB84LMh6">Registrate</a>
+                    <a href="https://inscripciones.aareii.org.ar/index.php/register">Registrate</a>
                 </form>
             </div>
         </main>

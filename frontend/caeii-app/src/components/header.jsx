@@ -38,7 +38,7 @@ export default function HeaderBar() {
                 </li>
                 <li>
                   <div class="linea">
-                    <a href="https://forms.gle/44mSGexGyiB84LMh6">REGISTRARSE</a>
+                    <a href="https://inscripciones.aareii.org.ar/index.php/register">REGISTRARSE</a>
                     <div class="line_container"><div class="line" /></div>
                   </div>
                 </li>
@@ -80,7 +80,7 @@ export default function HeaderBar() {
             </li>
             <li>
               <div class="linea">
-                <a href="https://forms.gle/44mSGexGyiB84LMh6">REGISTRARSE</a>
+                <a href="https://inscripciones.aareii.org.ar/index.php/register">REGISTRARSE</a>
                 <div class="line_container"><div class="line" /></div>
               </div>
             </li>

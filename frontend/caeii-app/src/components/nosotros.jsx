@@ -125,7 +125,7 @@ export default function Nosotros() {
               ¡Inscribite ahora y reservá un lugar en el mejor congreso del año!
             </p>
             <div class="button">
-              <a href="https://forms.gle/44mSGexGyiB84LMh6" class="hyperspan">  
+              <a href="https://inscripciones.aareii.org.ar/index.php/register" class="hyperspan">  
                 <div class="circle">        
                   <div class="rocket_container">
                     <img src={cohete} alt="cohete"></img>
