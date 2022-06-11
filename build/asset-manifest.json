@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/Nacho-Ugarte/CAEII-App/static/css/main.5659932b.css",
+    "main.js": "/Nacho-Ugarte/CAEII-App/static/js/main.6963a9d3.js",
+    "static/js/787.8c822ef0.chunk.js": "/Nacho-Ugarte/CAEII-App/static/js/787.8c822ef0.chunk.js",
+    "static/media/Montserrat-Black.ttf": "/Nacho-Ugarte/CAEII-App/static/media/Montserrat-Black.46e8b3d6aad654578958.ttf",
+    "static/media/Montserrat-Italic.ttf": "/Nacho-Ugarte/CAEII-App/static/media/Montserrat-Italic.e7728c27ba36b97eb82f.ttf",
+    "static/media/Montserrat-LightItalic.ttf": "/Nacho-Ugarte/CAEII-App/static/media/Montserrat-LightItalic.d79f80a4862fa88db7c2.ttf",
+    "static/media/Montserrat-Regular.ttf": "/Nacho-Ugarte/CAEII-App/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
+    "static/media/Montserrat-Bold.ttf": "/Nacho-Ugarte/CAEII-App/static/media/Montserrat-Bold.079ca05d3ded9bc107ab.ttf",
+    "static/media/fondo.jpg": "/Nacho-Ugarte/CAEII-App/static/media/fondo.7c6eaacb52a25c0e074d.jpg",
+    "static/media/fondoHome.jpg": "/Nacho-Ugarte/CAEII-App/static/media/fondoHome.7c6eaacb52a25c0e074d.jpg",
+    "static/media/caeii.svg": "/Nacho-Ugarte/CAEII-App/static/media/caeii.1c9329be3a4803a49d4159d68c99580b.svg",
+    "static/media/logo-aareii-desktop.svg": "/Nacho-Ugarte/CAEII-App/static/media/logo-aareii-desktop.2324950efea69dadd2f4d5bad79834f8.svg",
+    "static/media/Logística 4.0.png": "/Nacho-Ugarte/CAEII-App/static/media/Logística 4.0.2dfa88e75f46705a74e9.png",
+    "static/media/logo-caeii-desktop.svg": "/Nacho-Ugarte/CAEII-App/static/media/logo-caeii-desktop.c25ec2af660dbad5c812ea13bc45e62d.svg",
+    "static/media/caeii-title.svg": "/Nacho-Ugarte/CAEII-App/static/media/caeii-title.83019de0cd9910afe4cca7caca9458e1.svg",
+    "static/media/logo-aareii-desktop.png": "/Nacho-Ugarte/CAEII-App/static/media/logo-aareii-desktop.e7f97e0d13c4ffe5447b.png",
+    "static/media/Desarrollo urbano.png": "/Nacho-Ugarte/CAEII-App/static/media/Desarrollo urbano.0837190c7c0540b7f101.png",
+    "static/media/odiseaEstelar.png": "/Nacho-Ugarte/CAEII-App/static/media/odiseaEstelar.ecafacb35157a5e63030.png",
+    "static/media/Próximo destino.png": "/Nacho-Ugarte/CAEII-App/static/media/Próximo destino.f0cd9993dd8d5e107487.png",
+    "static/media/logo.svg": "/Nacho-Ugarte/CAEII-App/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/Nacho-Ugarte/CAEII-App/index.html",
+    "static/media/icono-BotonHome.svg": "/Nacho-Ugarte/CAEII-App/static/media/icono-BotonHome.30d209bc472efb8b244806ac39489eac.svg",
+    "main.5659932b.css.map": "/Nacho-Ugarte/CAEII-App/static/css/main.5659932b.css.map",
+    "main.6963a9d3.js.map": "/Nacho-Ugarte/CAEII-App/static/js/main.6963a9d3.js.map",
+    "787.8c822ef0.chunk.js.map": "/Nacho-Ugarte/CAEII-App/static/js/787.8c822ef0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5659932b.css",
+    "static/js/main.6963a9d3.js"
+  ]
+}

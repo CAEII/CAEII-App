@@ -1,0 +1,204 @@
+html{
+   
+    background-image:  url(../img/fondoHome.jpg);
+}
+header{
+    grid-template-rows: 75px;
+}
+
+.title{
+    height: 100%;
+    width: 100%;
+    background-color: var(--fondoTituloHome);
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 15;
+}
+svg{
+    height: 130px;
+    margin: 5%;
+}
+.leermas{
+    height: 50px;
+    width: 150px;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+.leermas .texto {
+    position: relative;
+    top: -70%;
+    font-size: 1rem;
+}
+.leermas .circle {
+    width: 45px;
+    height: 45px;
+    margin-top: 2%;
+}
+
+.leermas .circle2 {
+    width: 45px;
+    height: 45px;
+
+}
+.leermas svg {
+    height: 7px;
+    transform: rotate(-30deg);
+
+    position: relative;
+    top: 70%;
+}
+section article{
+    height: 150px;
+    margin: 5%;
+    background-color: var(--boton_input);
+
+    border-radius: 100px;
+    border: 1px solid black;
+
+    display: grid;
+    
+    grid-template-rows: 40% 60%;
+}
+.imgOrbit{
+    height: 130px;
+    width: 130px;
+
+    position: relative;
+    left: 5px;
+
+    border: 5px solid var(--fondoTituloTargeta);
+    border-radius: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.derecha .imgOrbit{
+    left: -5px;
+}
+.imgOrbit .planet {
+    background: var(--fondoTituloTargeta);
+    border-radius: 100%;
+    width: 15px;
+    height: 15px;
+
+    position: absolute;
+    top: -10px;
+}
+article img{
+    height: 80%;
+    border-radius: 100%;
+}
+article .img{
+    height: 100%;
+}
+article .img{
+    grid-column: 1/2;
+    grid-row: 1/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#menu{
+    background-color: transparent;
+    overflow: visible;
+    height: 45vh;
+}
+#menu a{
+    font-family: 'Montserrat-MediumItalic', sans-serif;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+#menu ul {
+    list-style-type: none;
+    
+    font-size: 1.3rem;
+    text-align: center;
+    margin-left: 10px;
+    
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    position: absolute;
+}
+
+
+#uno, #seis{
+    grid-column: 5/13;
+}
+#dos, #cinco{
+    grid-column: 6/13;
+}
+#tres, #cuatro{
+    grid-column: 7/13;
+}
+#uno{
+    grid-row: 1;
+}
+#dos{
+    grid-row: 2;
+}
+#tres{
+    grid-row: 3;
+}
+#cuatro{
+    grid-row: 4;
+}
+#cinco{
+    grid-row: 5;
+}
+#seis{
+    grid-row: 6;
+}
+
+#estaciones .imgOrbit{
+    border-style: hidden;
+}
+#estaciones img{
+    height: 90%;
+    border-radius: 0;
+}
+#estaciones .desktop{
+    display: none;
+}
+article h3, article p{
+    grid-column: 2/4;
+    text-align: left;
+}
+article p {
+    font-size: 0.8rem;
+    margin-left: 6%;
+    margin-right: 6%;
+}
+article h3{
+    display: flex;
+    align-items: center;
+    margin-left: 6%;
+    margin-right: 6%;
+}
+.derecha h3, .derecha p{
+    text-align: right;
+    grid-column: 1/3;
+}
+.derecha h3{
+    flex-direction: row-reverse;
+}
+.derecha .img{
+    grid-column: 3/4;
+    grid-row: 1/3;;
+}
+
+#registrarse{
+    margin-top: 200px;
+    background-color: transparent;
+    font-size: 1.5rem;
+}
+#sponsors img{
+    max-height: 30vh;
+    width: auto;
+    margin-bottom: 5%;
+}
