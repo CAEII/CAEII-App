@@ -4,9 +4,11 @@ phases:
   pre_build:
     commands:
       - npm install
+      - chmod +x ./node_modules/.bin/react-scripts  
   build:
     commands:
       - npm run build
+  
 
 artifacts:
   files:
