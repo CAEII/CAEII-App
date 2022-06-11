@@ -1,0 +1,235 @@
+@media (min-width: 1024px) {
+    header{
+        grid-template-rows: 150px;
+    }
+    .movile_navbar{
+        display: none;
+    }
+    .desktop_navbar{
+        display: block;
+        position: fixed;
+        height: 110px;
+        width: 100vw;
+        z-index: 50;
+    }
+    main {
+        padding-top: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 100px
+    }
+
+    /* HOME */
+    .sistema_solar{
+        top: 620px;
+    }
+    .fondo {
+        width: 100vw;
+        height: 100vw;
+        margin: -50vw;
+    }
+    .title{
+        grid-column: 1/3;
+    }
+    li{
+        margin-top: 0;
+        height: 75px;
+    }
+    #menu{
+        grid-column: 1/2;
+    }
+    #registrarse{
+        grid-column: 2/3;
+    }
+    #menu a {
+        font-size: 1.8rem;
+    }
+    #uno, #seis{
+        grid-column: 1/9;
+    }
+    #dos, #cinco{
+        grid-column: 3/8;
+    }
+    #tres, #cuatro{
+        grid-column: 2/9;
+    }
+
+    #estaciones, #sponsors{
+        grid-column: 1/3;
+    }
+    section{
+        margin-right: 10%;
+    }
+    section h2{
+        height: 110px;
+        font-size: 2rem;
+    }
+
+    #estaciones article{
+        grid-template-rows: 100% !important;
+        grid-template-columns: 40% 20% 40%;
+    }
+    #estaciones article h3, #estaciones .derecha p{
+        grid-column: 1/2;
+    }
+    #estaciones article h3{
+        font-size: 1.5rem;
+        justify-content: center;
+    }
+    #estaciones article .img, #estaciones .derecha .img{
+        grid-column: 2/3;
+    }
+    #estaciones article p, #estaciones .derecha h3{
+        grid-column: 3/4;
+    }
+    #estaciones article p{
+        font-size: 1.1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #estaciones .derecha p, #estaciones .derecha h3{
+        grid-row: 1;
+    }
+    #estaciones .imgOrbit {
+        height: 150px;
+        width: 150px;
+        left: 0;
+    }
+    #estaciones .leermas{
+        margin: 0;
+        position: absolute;
+        top: 1015px;
+        left: 80vw;
+    }
+    #estaciones .desktop{
+        display: flex;
+    }
+    #estaciones .movile{
+        display: none;
+    }
+    #estaciones .derecha *{
+        text-align: left;
+    }
+    /* NOSOTROS */
+    .nosotros{
+        row-gap: 50px;
+    }
+    .nosotros .title{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .nosotros .h1_title_mobile{
+        display: none;
+    }
+    .nosotros .h1_title_desktop{
+        display: block !important;
+        margin: 0;
+    }
+    .nosotros .nosotros_section{
+        grid-column: 1/3;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .nosotros .reverse {
+        flex-direction: row-reverse;
+    }
+    .nosotros .nosotros_section .img_representativa{
+        margin-top: 0px;
+        margin-bottom: 0px;
+        width: 40%;
+        max-height: 350px;
+        margin-left: 80px;
+        margin-right: 0px;
+    }
+    .nosotros .reverse .img_representativa {
+        margin-left: 0px;
+        margin-right: 80px;
+    }
+    .nosotros .info {
+        width: 40%;
+        height: 350px;
+    }
+    .nosotros .button .circle2 {
+        top: 30% !important;
+    }
+    .nosotros .rocket_container {
+        top: 40% !important;
+    }
+    .nosotros .rocket_container img {
+        height: 10px !important;
+    }
+    /* PERFIL */
+    .perfil header{
+        height: 100vh;
+    }
+    .perfil .sistema_solar {
+        top: -370px;
+    }
+    .perfil .sol {
+        background: var(--sol_planetas);
+        border-radius: 100%;
+        width: 450px;
+        height: 450px;
+        z-index: -5;
+    }
+    .perfil .orbit_1 {
+        width: 680px;
+        height: 680px;
+        margin: -110px auto;
+    }
+    .perfil .orbit_2 {
+        width: 880px;
+        height: 880px;
+        margin: -210px auto;
+    }
+    .perfil .orbit_3 {
+        width: 1080px;
+        height: 1080px;
+        margin: -310px auto;
+    }
+    .perfil .planet {
+        width: 75px;
+        height: 75px;
+    }
+    .perfil .orbit_1 .planet {
+        margin: 8%;
+    }
+    .cuote {
+        grid-row: 4;
+        padding-top: 15%;
+    }
+    .coheteconteiner{
+        display: none;
+    }
+    #mapas, #cronograma{
+        height: 145vh;
+        margin: 0;
+    }
+    .actividad, th {
+        font-size: 1.7rem;
+        padding: 30px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    iframe{
+        width: 40vw;
+        height: 50vh;
+        margin-top: 40px;
+    }
+    #logo{
+        grid-column: 1/3;
+    }
+    #logo img {
+        height: 150px;
+    }
+}
+
+@media only screen and (max-width: 1260px){
+    #cinco .line_container {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}
