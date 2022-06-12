@@ -109,11 +109,11 @@ export default function Nosotros() {
           <div class="info"  data-aos="fade-up">
             <h2> ¿Cuándo y dónde? </h2>
             <p>
-              En la ciudad de Mendoza, desde el 25 hasta el 28 de Agosto. Se desarrollarán varias actividades en diferentes lugares de la ciudad.
+              En la ciudad de Mendoza, desde el 25 hasta el 28 de agosto. Se desarrollarán varias actividades en diferentes lugares de la ciudad.
             </p>
             <h2> ¿Precio? </h2>
             <p>
-              El precio es de solo $9900 y podrás vivir 4 días innolvidables con talleres, charlas, salidas y más.
+              El precio para la primer fecha de inscripción es de $9990. El periodo de inscripción será del 7 al 15 de junio. <strong>Próximamente abrimos el segundo periodo de inscripción.</strong>
             </p>
           </div>
           <img src={cuando_donde} className="img_representativa" alt="imagen representativa"  data-aos="fade-up"/>
