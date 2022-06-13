@@ -6,9 +6,11 @@ import logoAareiiDesktop from "../styles/img/logo-aareii-desktop.svg"
 import logoAareii from "../styles/img/aareii.png"
 import logoCaeii from "../styles/img/caeii.svg"
 
+import BaseLayout from "./layout"
+
 function Login() {
 
-    return (<>
+    return (<BaseLayout>
         <header>
             <div className="title-login">
                 <img src={logoCaeii}/>
@@ -33,7 +35,7 @@ function Login() {
             </div>
             <a href="https://www.aareii.org.ar/"><img id="logo_aareii_desktop" src={logoAareiiDesktop} alt="Logo de AArEII" /></a>
         </footer>
-    </>);
+    </BaseLayout>);
 
 }
 
