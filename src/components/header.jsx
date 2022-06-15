@@ -5,7 +5,6 @@ import "../styles/home/css/generales/generales.css"
 import "../styles/home/css/home.css"
 import "../styles/home/css/generales/pantallasChicas.css"
 import "../styles/home/css/generales/desktop.css"
-import title from "../styles/home/img/caeii-title.svg"
 import logoAareii from "../styles/home/img/logo-aareii-desktop.png"
 
 

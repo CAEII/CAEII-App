@@ -13,7 +13,7 @@ function Login() {
     return (<BaseLayout>
         <header>
             <div className="title-login">
-                <img src={logoCaeii}/>
+                <img src={logoCaeii} alt="Logo caeii"/>
             </div>
             <img id="logo_caeii_desktop" src={logoCaeiiDesktop} alt="Logo de CAEII XX" />
         </header>

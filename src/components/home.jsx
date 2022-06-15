@@ -8,8 +8,8 @@ import estacion1 from "../styles/home/img/estaciones/odiseaEstelar.png"
 import estacion2 from "../styles/home/img/estaciones/Logística 4.0.png"
 import estacion3 from "../styles/home/img/estaciones/Próximo destino.png"
 import estacion4 from "../styles/home/img/estaciones/Desarrollo urbano.png"
-import placeholder from "../styles/home/img/PLACE HOLDER.png"
-import placeholder2 from "../styles/home/img/PLACE HOLDER cuadrado.png"
+//import placeholder from "../styles/home/img/PLACE HOLDER.png"
+//import placeholder2 from "../styles/home/img/PLACE HOLDER cuadrado.png"
 import cohete from "../styles/home/img/cohete-botones.svg"
 //import title from "../styles/home/img/caeii-title.svg"
 import title from "../styles/home/img/caeii-title.png"
@@ -23,7 +23,7 @@ function Home() {
       <BaseLayout>
         <main>
           <div class="title">
-            <img src={title}></img>
+            <img src={title} alt="Logo caeii"></img>
           </div>
           <section id="menu">
             <div class="sistema_solar">
@@ -90,7 +90,7 @@ function Home() {
               <a href="https://inscripciones.aareii.org.ar/index.php/register" class="hyperspan">
                 <div class="circle">
                   <div class="rocket_container">
-                    <img src={cohete}></img>
+                    <img src={cohete} alt="cohete caeii"></img>
                   </div>
                   <div class="circle2"></div>
                 </div>
@@ -107,7 +107,7 @@ function Home() {
                 gracias a la ingeniería se están ampliando los horizontes del conocimiento ...  </p>
               <div class="img">
                 <div class="imgOrbit">
-                  <img src={estacion1} alt="Conferencia 1" />
+                  <img src={estacion1} alt="Odisea estelar" />
                 </div>
               </div>
             </article>
@@ -119,12 +119,12 @@ function Home() {
                 ...   </p>
               <div class="img">
                 <div class="imgOrbit">
-                  <img src={estacion2} />
+                  <img src={estacion2} alt="Logística 4.0"/>
                 </div>
               </div>
             </article>
             <article id="3">
-              <h3 class="movile"> Próximo destino </h3>
+              <h3 class="movile"> Ingeniería del mañana </h3>
               <h3 class="desktop"> Próximo destino: La ingeniería del mañana </h3>
               <p> La velocidad de transformación tecnológica
                 impacta en todos los ámbitos, y cada profesional
@@ -132,7 +132,7 @@ function Home() {
               </p>
               <div class="img">
                 <div class="imgOrbit">
-                  <img src={estacion3} alt="Conferencia 1" />
+                  <img src={estacion3} alt="Ingeniería del mañana" />
                 </div>
               </div>
             </article>
@@ -144,7 +144,7 @@ function Home() {
                 para mejorar la calidad de vida ...   </p>
               <div class="img">
                 <div class="imgOrbit">
-                  <img src={estacion4} alt="Conferencia 1" />
+                  <img src={estacion4} alt="Desarrollo urbano sustentable" />
                 </div>
               </div>
             </article>
