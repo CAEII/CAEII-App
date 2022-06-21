@@ -5,6 +5,7 @@ import './App.css';
 import Home from './components/home';
 import HeaderBar from './components/header';
 import Nosotros from './components/nosotros';
+import Perfil  from "./components/perfil"
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/home" element={<Home/>} />
+        <Route path='/perfil' element={<Perfil />}/>
         {/* <Route path="/login" element={<Login/>}/> */}
         <Route path="/nosotros" element={<Nosotros/>}/>
       </Routes>
