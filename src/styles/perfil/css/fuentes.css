@@ -13,10 +13,10 @@
     font-family: 'Montserrat-Black';
     src: url(../fonts/Montserrat-Black.ttf) format('truetype');
 }
-@font-face {
+@font-face { 
     /* fuente de los links del menu de home */
-    font-family: 'Montserrat-MediumItalic';
-    src: url(../fonts\Montserrat-Italic.ttf) format('truetype');
+     font-family: 'Montserrat-MediumItalic';
+    src: url(../fonts/Montserrat-MediumItalic.ttf) format('truetype');
 }
 @font-face {
     font-family: 'Montserrat-LightItalic';
