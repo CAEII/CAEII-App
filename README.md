@@ -1,4 +1,4 @@
-![Logo](https://github.com/Noelia-Elizabeth/CAEII-App/blob/augusto/logos/CAEII_LOGO_READ_ME.png)
+![Logo](https://github.com/Noelia-Elizabeth/CAEII-App/blob/augusto/public/CAEII_LOGO_READ_ME.png)
 
 
 ## Descripción
