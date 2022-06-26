@@ -5,7 +5,7 @@ import './App.css';
 import Home from './components/home';
 import HeaderBar from './components/header';
 import Nosotros from './components/nosotros';
-import Perfil  from "./components/perfil"
+import Perfil  from './components/perfil'
 
 function App() {
   return (
@@ -13,8 +13,10 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home/>} />
-        <Route path="/home" element={<Home/>} />
-        <Route path='/perfil' element={<Perfil />}/>
+        <Route path="/home" element={<Home/>} />     
+        <Route path="/perfil" element={<Perfil/>} />     
+        {/* <Route path="/perfil/:id" element={<Perfil/>}/>   perfil con parametro de ids para generar el qr */}
+        {/*<Route path="/user/:id" element={<Asistencia/>}/>   url para marcar asistencia */}
         {/* <Route path="/login" element={<Login/>}/> */}
         <Route path="/nosotros" element={<Nosotros/>}/>
       </Routes>
