@@ -5,7 +5,6 @@ import "../styles/home/css/generales/generales.css"
 import "../styles/home/css/home.css"
 import "../styles/home/css/generales/pantallasChicas.css"
 import "../styles/home/css/generales/desktop.css"
-import title from "../styles/home/img/caeii-title.svg"
 import logoAareii from "../styles/home/img/logo-aareii-desktop.png"
 
 
@@ -38,7 +37,7 @@ export default function HeaderBar() {
                 </li>
                 <li>
                   <div class="linea">
-                    <a href="https://inscripciones.aareii.org.ar/index.php/register">REGISTRARSE</a>
+                    <a href="https://bit.ly/3MXGBeJ">REGISTRARSE</a>
                     <div class="line_container"><div class="line" /></div>
                   </div>
                 </li>
@@ -50,13 +49,13 @@ export default function HeaderBar() {
                 </li>
                 <li>
                   <div class="linea">
-                    <a href="https://www.aareii.org.ar/">AAREII</a>
+                    <a href="https://bit.ly/3OsUra5">AAREII</a>
                     <div class="line_container"><div class="line" /></div>
                   </div>
                 </li>
                 <li>
                   <div class="linea">
-                    <a href="https://www.instagram.com/caeii_oficial/?igshid=YmMyMTA2M2Y%3D">CONTACTO</a>
+                    <a href="https://bit.ly/3QuVI27">CONTACTO</a>
                     <div class="line_container"><div class="line" /></div>
                   </div>
                 </li>
@@ -67,11 +66,11 @@ export default function HeaderBar() {
         <div class="desktop_navbar">
           <ul>
             <li>
-                  <div class="linea">
-                    <a href="/">INICIO</a>
-                    <div class="line_container"><div class="line" /></div>
-                  </div>
-                </li>
+              <div class="linea">
+                <a href="/">INICIO</a>
+                <div class="line_container"><div class="line" /></div>
+              </div>
+            </li>
             <li>
               <div class="linea">
                 {/* <Link to="/login"> */}INGRESAR{/* </Link> */}
@@ -80,7 +79,7 @@ export default function HeaderBar() {
             </li>
             <li>
               <div class="linea">
-                <a href="https://inscripciones.aareii.org.ar/index.php/register">REGISTRARSE</a>
+                <a href="https://bit.ly/3MXGBeJ">REGISTRARSE</a>
                 <div class="line_container"><div class="line" /></div>
               </div>
             </li>
@@ -92,12 +91,12 @@ export default function HeaderBar() {
             </li>
             <li>
               <div class="linea">
-                <a href="https://www.instagram.com/caeii_oficial/?igshid=YmMyMTA2M2Y%3D">CONTACTO</a>
+                <a href="https://bit.ly/3QuVI27">CONTACTO</a>
                 <div class="line_container"><div class="line" /></div>
               </div>
             </li>
             <li>
-              <a href="https://www.aareii.org.ar/">
+              <a href="https://bit.ly/3OsUra5">
                 <img src={logoAareii} alt="logo AArEII" />
               </a>
             </li>

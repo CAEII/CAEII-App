@@ -1,18 +1,30 @@
 import BaseLayout from "./layout";
-import cohete from "../styles/home/img/cohete-botones.svg"
-// agrego el import del svg del titulo, el css de nosotros y imagenes
-//import title from "../styles/home/img/caeii-title.svg"
-import title from "../styles/home/img/caeii-title.png"
+// STYLES
 import "../styles/nosotros/css/nosotros.css"
+//  IMAGENES
+import title from "../styles/home/img/caeii-title.png"
+import cohete from "../styles/home/img/cohete-botones.svg"
 import que_es_caeii from "../styles/nosotros/img/¿Qué es CAEII.jpg"
 import que_es_aareii from "../styles/home/img/logo-aareii-desktop-textogrande.png"
 import que_son_los_pilares from "../styles/nosotros/img/QUE SON LOS PILARES.jpg"
 import cuando_donde from "../styles/nosotros/img/cUANDO Y DONDE.jpg"
 import como_participar from "../styles/nosotros/img/Como participar.jpg"
 import cual_es_su_objetivo from "../styles/nosotros/img/Objetivos.jpeg"
+//  AOS  (animaciones) 
+import AOS from 'aos';
+import "aos/dist/aos.css";
+import React, { useEffect } from "react";
+
 import { Link } from "react-router-dom";
 
+
 export default function Nosotros() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1500, // values from 0 to 3000, with step 50ms
+      once: true, // whether animation should happen only once - while scrolling down
+    });
+  }, []);
   return (
     <BaseLayout>
       <main className="nosotros" id="home">
