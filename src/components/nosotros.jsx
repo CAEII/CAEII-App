@@ -5,6 +5,7 @@ import "../styles/nosotros/css/nosotros.css"
 import title from "../styles/home/img/caeii-title.png"
 import cohete from "../styles/home/img/cohete-botones.svg"
 import que_es_caeii from "../styles/nosotros/img/¿Qué es CAEII.jpg"
+import Que_incluye from "../styles/nosotros/img/Que_incluye.png"
 import que_es_aareii from "../styles/home/img/logo-aareii-desktop-textogrande.png"
 import que_son_los_pilares from "../styles/nosotros/img/QUE SON LOS PILARES.jpg"
 import cuando_donde from "../styles/nosotros/img/cUANDO Y DONDE.jpg"
@@ -33,7 +34,7 @@ export default function Nosotros() {
           <h1 className="h1_title_desktop" > Orbitando hacia el futuro... </h1>
         </div>
         <h1 className="h1_title_mobile"> Orbitando hacia el futuro... </h1>
-        <section id="que_es_caeii" class="nosotros_section">
+        <section id="que_es_caeii" class="nosotros_section reverse">
           <div class="info" data-aos="fade-up">
             <h2> ¿Qué es CAEII? </h2>
             <p>
@@ -48,6 +49,18 @@ export default function Nosotros() {
             </p>
           </div>
           <img src={que_es_caeii} className="img_representativa" alt="imagen representativa" data-aos="fade-up"/>
+        </section>
+        <section id="Que_incluye" class="nosotros_section">
+          <div class="info" data-aos="fade-up">
+            <h2> ¿Qué incluye? </h2>
+            <p>
+              El evento incluye no solo talleres, visita técnica, charlas, seguro y coffee, sino también cocktail de bienvenida,
+              merchandising, cena de gala, sorteos, noches de boliche y mucho más.
+              <br/><br/>
+              <b>*No incluye gastos no especificados en la imagen.</b>
+            </p>
+          </div>
+          <img src={Que_incluye} className="img_representativa" alt="imagen representativa" data-aos="fade-up"/>
         </section>
         <section id="cual_es_su_objetivo" class="nosotros_section reverse">
           <div class="info" data-aos="fade-up">

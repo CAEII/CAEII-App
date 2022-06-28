@@ -291,35 +291,15 @@ function Home() {
                 <div class="texto"> Leer mas </div>
               </a>
             </div>
-          </section>
+          </section> */}
           <section id="hackaton">
             <h2> Hackaton </h2>
             <article id="1">
               <h3> #hackaton #1 </h3>
-              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo dapibus purus.  </p>
+              <p> Hackaton es una metodología de innovación abierta que posee la capacidad de incluir diferentes metodologías para creación de soluciones de forma colaborativa.   </p>
               <div class="img">
                 <div class="imgOrbit">
-                  <img src={placeholder} alt="Hackaton 1" />
-                  <div class="planet"></div>
-                </div>
-              </div>
-            </article>
-            <article id="2" class="derecha">
-              <h3> #hackaton #2 </h3>
-              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo dapibus purus.  </p>
-              <div class="img">
-                <div class="imgOrbit">
-                  <img src={placeholder2} alt="Hackaton 2" />
-                  <div class="planet"></div>
-                </div>
-              </div>
-            </article>
-            <article id="3">
-              <h3> #hackaton #3 </h3>
-              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo dapibus purus.  </p>
-              <div class="img">
-                <div class="imgOrbit">
-                  <img src={placeholder} alt="Hackaton 3" />
+                  {/* <img src={placeholder} alt="Hackaton 1" /> */}
                   <div class="planet"></div>
                 </div>
               </div>
@@ -328,14 +308,14 @@ function Home() {
               <a href="" class="hyperspan">
                 <div class="circle">
                   <div class="rocket_container">
-                    <img src={cohete}></img>        
+                    <img src={cohete} alt='cohete CAEII'></img>        
                   </div>
                   <div class="circle2"></div>
                 </div>
                 <div class="texto"> Leer mas </div>
               </a>
             </div>
-          </section>
+          </section> {/*
           <section id="conferencias_2">
             <h2> Conferencias profesionales </h2>
             <article id="1">
@@ -379,35 +359,15 @@ function Home() {
                 <div class="texto"> Leer mas </div>
               </a>
             </div>
-          </section>
+          </section> */}
           <section id="feria">
             <h2> Feria de empleo </h2>
             <article id="1">
               <h3> #feria #1 </h3>
-              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo dapibus purus.  </p>
+              <p> La feria está dirigida principalmente a estudiantes y jóvenes profesionales de Ingenierías y carreras afines.  </p>
               <div class="img">
                 <div class="imgOrbit">
-                  <img src={placeholder} alt="feria 1" />
-                  <div class="planet"></div>
-                </div>
-              </div>
-            </article>
-            <article id="2" class="derecha">
-              <h3> #feria #2 </h3>
-              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo dapibus purus.  </p>
-              <div class="img">
-                <div class="imgOrbit">
-                  <img src={placeholder2} alt="feria 2" />
-                  <div class="planet"></div>
-                </div>
-              </div>
-            </article>
-            <article id="3">
-              <h3> #feria #3 </h3>
-              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo dapibus purus.  </p>
-              <div class="img">
-                <div class="imgOrbit">
-                  <img src={placeholder} alt="feria 3" />
+                  {/* <img src={placeholder} alt="feria 1" /> */}
                   <div class="planet"></div>
                 </div>
               </div>
@@ -416,7 +376,7 @@ function Home() {
               <a href="" class="hyperspan">
                 <div class="circle">
                   <div class="rocket_container">
-                    <img src={cohete}></img>
+                    {/* <img src={cohete}></img> */}
                   </div>
                   <div class="circle2"></div>
                 </div>
@@ -427,11 +387,11 @@ function Home() {
           <section id="sponsors">
             <h2> Sponsors </h2>
             <div class="imgs">
-              <img src={placeholder2} alt="Pan American Energy" />
+              {/* <img src={placeholder2} alt="Pan American Energy" />
               <img src={placeholder} alt="universidad nacional de cuyo" />
-              <img src={placeholder2} alt="Universidad de Mendoza" />
+              <img src={placeholder2} alt="Universidad de Mendoza" /> */}
             </div>
-          </section>*/}
+          </section>
         </main> 
       </BaseLayout>
     </body>
