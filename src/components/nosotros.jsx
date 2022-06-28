@@ -39,8 +39,8 @@ export default function Nosotros() {
             <h2> ¿Qué es CAEII? </h2>
             <p>
               El Congreso Argentino de Estudiantes
-              de Ingeniería Industrial y carreras afines,
-              o CAEII, es el evento más importante de AArEII. Tiene
+              de Ingeniería Industrial y carreras afines
+              (CAEII) es el evento más importante de AArEII. Tiene
               una duración de cuatro días, donde se disfrutan y
               aprovechan diversas actividades académicas. El
               mismo tiene lugar en el mes de agosto de cada año y
