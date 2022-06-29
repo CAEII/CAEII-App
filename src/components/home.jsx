@@ -304,7 +304,7 @@ function Home() {
                 </div>
               </div>
             </article>
-            <div class="button leermas">
+            {/* <div class="button leermas">
               <a href="" class="hyperspan">
                 <div class="circle">
                   <div class="rocket_container">
@@ -314,7 +314,7 @@ function Home() {
                 </div>
                 <div class="texto"> Leer mas </div>
               </a>
-            </div>
+            </div> */}
           </section> {/*
           <section id="conferencias_2">
             <h2> Conferencias profesionales </h2>
@@ -372,25 +372,17 @@ function Home() {
                 </div>
               </div>
             </article>
-            <div class="button leermas">
+            {/* <div class="button leermas">
               <a href="" class="hyperspan">
                 <div class="circle">
                   <div class="rocket_container">
-                    {/* <img src={cohete}></img> */}
+                    <img src={cohete}></img> 
                   </div>
                   <div class="circle2"></div>
                 </div>
                 <div class="texto"> Leer mas </div>
               </a>
-            </div>
-          </section>
-          <section id="sponsors">
-            <h2> Sponsors </h2>
-            <div class="imgs">
-              {/* <img src={placeholder2} alt="Pan American Energy" />
-              <img src={placeholder} alt="universidad nacional de cuyo" />
-              <img src={placeholder2} alt="Universidad de Mendoza" /> */}
-            </div>
+            </div> */}
           </section>
         </main> 
       </BaseLayout>
