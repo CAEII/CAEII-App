@@ -1,3 +1,4 @@
+import LeerMas from "./leerMas"
 import "../styles/home/css/fuentes.css"
 import "../styles/home/css/generales/variables.css"
 import "../styles/home/css/generales/generales.css"
@@ -14,6 +15,8 @@ import cohete from "../styles/home/img/cohete-botones.svg"
 //import title from "../styles/home/img/caeii-title.svg"
 import title from "../styles/home/img/caeii-title.png"
 import BaseLayout from "./layout"
+
+
 
 function Home() {
 
@@ -148,17 +151,9 @@ function Home() {
                 </div>
               </div>
             </article>
-            {/* <div class="button leermas">
-              <a href="" class="hyperspan">
-                <div class="circle">
-                  <div class="rocket_container">
-                    <img src={cohete}></img>
-                  </div>
-                  <div class="circle2"></div>
-                </div>
-                <div class="texto"> Leer mas </div>
-              </a>
-            </div> */}
+
+            <LeerMas type="interno" link="Estaciones"/>
+            
           </section>{/* 
           <section id="conferencias_1">
             <h2> Conferencias magistrales </h2>
@@ -295,7 +290,7 @@ function Home() {
           <section id="hackaton">
             <h2> Hackaton </h2>
             <article id="1">
-              <h3> #hackaton #1 </h3>
+              <h3> Hackaton </h3>
               <p> Hackaton es una metodología de innovación abierta que posee la capacidad de incluir diferentes metodologías para creación de soluciones de forma colaborativa.   </p>
               <div class="img">
                 <div class="imgOrbit">
@@ -363,7 +358,7 @@ function Home() {
           <section id="feria">
             <h2> Feria de empleo </h2>
             <article id="1">
-              <h3> #feria #1 </h3>
+              <h3> Feria de empleo </h3>
               <p> La feria está dirigida principalmente a estudiantes y jóvenes profesionales de Ingenierías y carreras afines.  </p>
               <div class="img">
                 <div class="imgOrbit">

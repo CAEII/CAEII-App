@@ -1,6 +1,6 @@
 @media (min-width: 1024px) {
     header{
-        grid-template-rows: 150px;
+        height: 150px !important;
     }
     .movile_navbar{
         display: none;

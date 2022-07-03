@@ -1,9 +1,8 @@
 html{
-   
     background-image:  url(../img/fondoHome.jpg);
 }
 header{
-    grid-template-rows: 75px;
+    height: 75px;
 }
 
 .title{
@@ -19,35 +18,6 @@ header{
 svg{
     height: 130px;
     margin: 5%;
-}
-.leermas{
-    height: 50px;
-    width: 150px;
-    margin-top: 5%;
-    margin-bottom: 10%;
-}
-.leermas .texto {
-    position: relative;
-    top: -70%;
-    font-size: 1rem;
-}
-.leermas .circle {
-    width: 45px;
-    height: 45px;
-    margin-top: 2%;
-}
-
-.leermas .circle2 {
-    width: 45px;
-    height: 45px;
-
-}
-.leermas svg {
-    height: 7px;
-    transform: rotate(-30deg);
-
-    position: relative;
-    top: 70%;
 }
 section article{
     height: 150px;
@@ -153,6 +123,10 @@ article .img{
 }
 #seis{
     grid-row: 6;
+}
+
+#registrarse img {
+    height: 17px;
 }
 
 #estaciones .imgOrbit{
