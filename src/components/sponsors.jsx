@@ -14,7 +14,7 @@ import UNCUYO from "../styles/sponsors/img/UNCUYO.png"
 //                      )
 export default function Sponsors(props) {
     return(
-        // uso ptop.type para completar el id, luego para completar el h2 y eleguir el tipo de carrucel
+        // uso props.type para completar el id, luego para completar el h2 y eleguir el tipo de carrucel
         <section id={"Sponsors_" + props.type}>
             <h2> Sponsors {props.type} </h2>
             <SponsorsBody type={props.type}/>
@@ -176,4 +176,3 @@ function Carrucel(props) {
         )   
     }
 }
-
