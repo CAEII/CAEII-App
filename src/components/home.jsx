@@ -8,11 +8,13 @@ import "../styles/home/css/generales/generales.css"
 import "../styles/home/css/home.css"
 import "../styles/home/css/generales/pantallasChicas.css"
 import "../styles/home/css/generales/desktop.css"
-// imgs
+// IMGS
 import estacion1 from "../styles/home/img/estaciones/odiseaEstelar.png"
 import estacion2 from "../styles/home/img/estaciones/Logística 4.0.png"
 import estacion3 from "../styles/home/img/estaciones/Próximo destino.png"
 import estacion4 from "../styles/home/img/estaciones/Desarrollo urbano.png"
+import hackaton from "../styles/home/img/hackaton.jpg"
+import feria from "../styles/home/img/feria.jpeg"
 // import placeholder from "../styles/home/img/PLACE HOLDER.png"
 // import placeholder2 from "../styles/home/img/PLACE HOLDER cuadrado.png"
 import cohete from "../styles/home/img/cohete-botones.svg"
@@ -279,7 +281,7 @@ function Home() {
               <p> Hackaton es una metodología de innovación abierta que posee la capacidad de incluir diferentes metodologías para creación de soluciones de forma colaborativa.   </p>
               <div class="img">
                 <div class="imgOrbit">
-                  {/* <img src={placeholder} alt="Hackaton 1" /> */}
+                  <img src={hackaton} alt="Hackaton 1" />
                   <div class="planet"></div>
                 </div>
               </div>
@@ -333,7 +335,7 @@ function Home() {
               <p> La feria está dirigida principalmente a estudiantes y jóvenes profesionales de Ingenierías y carreras afines.  </p>
               <div class="img">
                 <div class="imgOrbit">
-                  {/* <img src={placeholder} alt="feria 1" /> */}
+                  <img src={feria} alt="feria 1" />
                   <div class="planet"></div>
                 </div>
               </div>

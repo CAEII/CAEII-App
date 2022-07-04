@@ -58,7 +58,8 @@ section article{
     top: -10px;
 }
 article img{
-    height: 80%;
+    height: 90%;
+    width: 90%;
     border-radius: 100%;
 }
 article .img{
