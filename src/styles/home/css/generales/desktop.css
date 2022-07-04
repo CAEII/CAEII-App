@@ -96,12 +96,12 @@
         width: 150px;
         left: 0;
     }
-    #estaciones .leermas{
+    /* #estaciones .leermas{
         margin: 0;
         position: absolute;
         top: 1015px;
         left: 80vw;
-    }
+    } */
     #estaciones .desktop{
         display: flex;
     }

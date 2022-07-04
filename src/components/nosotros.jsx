@@ -1,7 +1,14 @@
+// react
+import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
+//  AOS  (animaciones) 
+import AOS from 'aos';
+import "aos/dist/aos.css";
+// components
 import BaseLayout from "./layout";
 // STYLES
 import "../styles/nosotros/css/nosotros.css"
-//  IMAGENES
+// IMAGENES
 import title from "../styles/home/img/caeii-title.png"
 import cohete from "../styles/home/img/cohete-botones.svg"
 import que_es_caeii from "../styles/nosotros/img/¿Qué es CAEII.jpg"
@@ -11,12 +18,6 @@ import que_son_los_pilares from "../styles/nosotros/img/QUE SON LOS PILARES.jpg"
 import cuando_donde from "../styles/nosotros/img/cUANDO Y DONDE.jpg"
 import como_participar from "../styles/nosotros/img/Como participar.jpg"
 import cual_es_su_objetivo from "../styles/nosotros/img/Objetivos.jpeg"
-//  AOS  (animaciones) 
-import AOS from 'aos';
-import "aos/dist/aos.css";
-import React, { useEffect } from "react";
-
-import { Link } from "react-router-dom";
 
 
 export default function Nosotros() {
@@ -104,25 +105,25 @@ export default function Nosotros() {
             <div class="links">
               <div class="link">
                 <div class="linea">
-                  <Link to="/home/#estaciones">{" Logística 4.0 >"}</Link>
+                  <Link to="/info/Estaciones">{" Logística 4.0 >"}</Link>
                   <div class="line_container"><div class="line"></div></div>
                 </div>
               </div>
               <div class="link">
                 <div class="linea">
-                  <Link to="/home/#estaciones">{" Odisea Espacial >"}</Link>
+                  <Link to="/info/Estaciones">{" Odisea Espacial >"}</Link>
                   <div class="line_container"><div class="line"></div></div>
                 </div>
               </div>
               <div class="link">
                 <div class="linea">
-                  <Link to="/home/#estaciones">{" Ingeniería del mañana >"}</Link>
+                  <Link to="/info/Estaciones">{" Ingeniería del mañana >"}</Link>
                   <div class="line_container"><div class="line"></div></div>
                 </div>
               </div>
               <div class="link">
                 <div class="linea">
-                  <Link to="/home/#estaciones">{" Desarrollo urbano sustentable >"}</Link>
+                  <Link to="/info/Estaciones">{" Desarrollo urbano sustentable >"}</Link>
                   <div class="line_container"><div class="line"></div></div>
                 </div>
               </div>
@@ -138,7 +139,8 @@ export default function Nosotros() {
             </p>
             <h2> ¿Precio? </h2>
             <p>
-              El precio para la primer fecha de inscripción es de $9990. El periodo de inscripción será del 7 al 15 de junio. <strong>Próximamente abrimos el segundo periodo de inscripción.</strong>
+              El precio para la segundo fecha de inscripción es de $10.990. El segundo periodo de inscripción será del 11 julio a las 8:00 hs al 18 julio a las 20:00 hs
+              <br/> <strong> solo hay 500 cupos disponibles </strong>.
             </p>
           </div>
           <img src={cuando_donde} className="img_representativa" alt="imagen representativa"  data-aos="fade-up"/>
