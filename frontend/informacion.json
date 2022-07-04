@@ -1,0 +1,258 @@
+[
+    {
+        "category": "Estaciones",
+        "data": [
+            {
+                "title": "Odisea estelar: poniendo a prueba nuestros límites",
+                "img": "../styles/home/img/estaciones/odiseaEstelar.png",
+                "desciption": "En este pilar se propone poner en evidencia cómo gracias a la ingeniería se están ampliando los horizontes del conocimiento y está siendo posible que aquellos sueños que nos parecían nada más que ciencia ficción, se vuelvan una realidad al alcance de nuestras manos. Se harán visibles aquellas oportunidades que tenemos de ser parte de esta innovación para motivar a los asistentes a que despeguen su propia nave y emprendan una odisea estelar.",
+                "items": [
+                    "Taller 1",
+                    "Conferencia 2",
+                    "Taller 32"
+                ]
+            },
+            {
+                "title": "Logística 4.0: Integración digital de los procesos productivos",
+                "img": "../styles/home/img/estaciones/Logística 4.0.png",
+                "desciption": "La logística 4.0, nacida con la llegada de la cuarta revolución industrial, plantea una nueva realidad donde la optimización de la cadena de suministros será posible mediante la hiperconectividad y la implementación de las nuevas tecnologías. Este desafío consiste en la aplicación de avanzados métodos como lo son el análisis predictivo para reducción de errores, la evaluación en tiempo real de inclemencias del entorno para una mayor adaptabilidad logística, detección y prevención de fallas en cada etapa, entre otros. En este pilar proponemos analizar la importancia de los avances de la robotización, la automatización y estandarización de procesos productivos, para lograr que los clientes reciban los productos adecuados en el momento preciso.",
+                "items": [
+                    "Taller 1",
+                    "Conferencia 2",
+                    "Taller 32"
+                ]
+            },
+            {
+                "title": "Próximo destino: La ingeniería del mañana",
+                "img": "../styles/home/img/estaciones/Próximo destino.png",
+                "desciption": "La velocidad de transformación tecnológica impacta en todos los ámbitos, y cada profesional debe seguir estas tendencias, saliendo capacitado para adaptarse con facilidad a las nuevas tecnologías y estrategias que día a día se van desarrollando y nos obligan a mantenernos actualizados constantemente. Veremos que el sistema revolucionario del Blockchain es mucho más que una simple base de datos. También seremos protagonistas de la forma en que el uso de herramientas, como metodologías ágiles, el coaching ejecutivo o la implementación de la inteligencia artificial en distintos ámbitos, puede llevar tu productividad a la luna.",
+                "items": [
+                    "Taller 1",
+                    "Conferencia 2",
+                    "Taller 32"
+                ]
+            },
+            {
+                "title": "Desarrollo urbano sustentable",
+                "img": "../styles/home/img/estaciones/Desarrollo urbano.png",
+                "desciption": "Impartiremos conocimientos sobre cómo las ciudades inteligentes usan la información, las tecnologías de la comunicación y otros medios para mejorar la calidad de vida y la eficiencia de los servicios. Haremos hincapié en la importancia de la promoción de una movilidad sostenible que garantice la accesibilidad, los sistemas de transporte y la disminución del actual impacto ambiental.",
+                "items": [
+                    "Taller 1",
+                    "Conferencia 2",
+                    "Taller 32"
+                ]
+            }
+        ]
+    },
+    {
+        "category": "Visitas técnicas",
+        "data": [
+            {
+                "title": "",
+                "img": "",
+                "desciption": "",
+                "items": [
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            {
+                "title": "",
+                "img": "",
+                "desciption": "",
+                "items": [
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            {
+                "title": "",
+                "img": "",
+                "desciption": "",
+                "items": [
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            {
+                "title": "",
+                "img": "",
+                "desciption": "",
+                "items": [
+                    "",
+                    "",
+                    ""
+                ]
+            }
+        ]
+    },
+    {
+        "category": "Conferencias magistrales",
+        "data": [
+            {
+                "title": "",
+                "img": "",
+                "desciption": "",
+                "items": [
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            {
+                "title": "",
+                "img": "",
+                "desciption": "",
+                "items": [
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            {
+                "title": "",
+                "img": "",
+                "desciption": "",
+                "items": [
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            {
+                "title": "",
+                "img": "",
+                "desciption": "",
+                "items": [
+                    "",
+                    "",
+                    ""
+                ]
+            }
+        ]
+    },
+    {
+        "category": "Conferencias profesionales",
+        "data": [
+            {
+                "title": "",
+                "img": "",
+                "desciption": "",
+                "items": [
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            {
+                "title": "",
+                "img": "",
+                "desciption": "",
+                "items": [
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            {
+                "title": "",
+                "img": "",
+                "desciption": "",
+                "items": [
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            {
+                "title": "",
+                "img": "",
+                "desciption": "",
+                "items": [
+                    "",
+                    "",
+                    ""
+                ]
+            }
+        ]
+    },
+    {
+        "category": "Talleres",
+        "data": [
+            {
+                "title": "",
+                "img": "",
+                "desciption": "",
+                "items": [
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            {
+                "title": "",
+                "img": "",
+                "desciption": "",
+                "items": [
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            {
+                "title": "",
+                "img": "",
+                "desciption": "",
+                "items": [
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            {
+                "title": "",
+                "img": "",
+                "desciption": "",
+                "items": [
+                    "",
+                    "",
+                    ""
+                ]
+            }
+        ]
+    },
+    {
+        "category": "Hackaton",
+        "data": [
+            {
+                "title": "¿Qué es el Hackaton?",
+                "img": "",
+                "desciption": "Hackaton es una metodología de innovación abierta que posee la capacidad de incluir diferentes metodologías para creación de soluciones de forma colaborativa.  Los participantes trabajan en pequeños grupos en un entorno diseñado donde se fomenta el pensamiento creativo y conduce a nuevos conceptos, prototipos e ideas sorprendentemente innovadoras, para trabajar con el enfoque de crear un producto o una idea novedosa a raíz de una problemática central.",
+                "items": [
+                    "",
+                    "",
+                    ""
+                ]
+            }
+
+        ]
+    },
+    {
+        "category": "Feria de empleo",
+        "data": [
+            {
+                "title": "¿Qué es la feria de empleo?",
+                "img": "",
+                "desciption": "La feria está dirigida principalmente a estudiantes y jóvenes profesionales de Ingenierías y carreras afines. Es un espacio donde las empresas obtienen visibilidad al relacionarse con los futuros protagonistas de la profesión, creando así, un posicionamiento en el mundo empresarial. Está diseñado para garantizar que la totalidad de los asistentes pasen por los diferentes stands, permitiendo a los representantes de la empresa brindar información y estar en contacto directo con más de 1500 estudiantes de todo el país.",
+                "items": [
+                    "",
+                    "",
+                    ""
+                ]
+            }
+        ]
+    }
+]
