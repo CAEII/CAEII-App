@@ -17,6 +17,8 @@ import estacion4 from "../styles/home/img/estaciones/Desarrollo urbano.png"
 // import placeholder2 from "../styles/home/img/PLACE HOLDER cuadrado.png"
 import cohete from "../styles/home/img/cohete-botones.svg"
 import title from "../styles/home/img/caeii-title.png"
+// json
+import json from "../informacion.json"
 
 function Home() {
   return (
@@ -275,8 +277,8 @@ function Home() {
           <section id="hackaton">
             <h2> Hackaton </h2>
             <article id="1">
-              <h3> Hackaton </h3>
-              <p> Hackaton es una metodología de innovación abierta que posee la capacidad de incluir diferentes metodologías para creación de soluciones de forma colaborativa.   </p>
+            <h3> {json[5].data[0].title} </h3>
+              <p> {json[5].data[0].short} </p>
               <div class="img">
                 <div class="imgOrbit">
                   {/* <img src={placeholder} alt="Hackaton 1" /> */}
@@ -329,8 +331,8 @@ function Home() {
           <section id="feria">
             <h2> Feria de empleo </h2>
             <article id="1">
-              <h3> Feria de empleo </h3>
-              <p> La feria está dirigida principalmente a estudiantes y jóvenes profesionales de Ingenierías y carreras afines.  </p>
+              <h3> {json[6].data[0].title} </h3>
+              <p> {json[6].data[0].short} </p>
               <div class="img">
                 <div class="imgOrbit">
                   {/* <img src={placeholder} alt="feria 1" /> */}
