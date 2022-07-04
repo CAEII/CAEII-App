@@ -1,19 +1,6 @@
-/* css de nosotoros (borrar al pasar a react) */
-.title {
+#info_general{
     grid-column: 1/3;
-    grid-row: 1;
-    height: 100%;
-    width: 100%;
-    background-color: var(--fondoTituloHome);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 15;
 }
-.title img {
-    height: 175px;
-}
-/* css de info */
 .info_card{
     height: fit-content;
     border-radius: 50px;

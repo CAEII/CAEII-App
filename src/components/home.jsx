@@ -1,27 +1,26 @@
+// components
+import BaseLayout from "./layout"
 import LeerMas from "./leerMas"
+// styles
 import "../styles/home/css/fuentes.css"
 import "../styles/home/css/generales/variables.css"
 import "../styles/home/css/generales/generales.css"
 import "../styles/home/css/home.css"
 import "../styles/home/css/generales/pantallasChicas.css"
 import "../styles/home/css/generales/desktop.css"
+// imgs
 import estacion1 from "../styles/home/img/estaciones/odiseaEstelar.png"
 import estacion2 from "../styles/home/img/estaciones/Logística 4.0.png"
 import estacion3 from "../styles/home/img/estaciones/Próximo destino.png"
 import estacion4 from "../styles/home/img/estaciones/Desarrollo urbano.png"
-//import placeholder from "../styles/home/img/PLACE HOLDER.png"
-//import placeholder2 from "../styles/home/img/PLACE HOLDER cuadrado.png"
+// import placeholder from "../styles/home/img/PLACE HOLDER.png"
+// import placeholder2 from "../styles/home/img/PLACE HOLDER cuadrado.png"
 import cohete from "../styles/home/img/cohete-botones.svg"
-//import title from "../styles/home/img/caeii-title.svg"
 import title from "../styles/home/img/caeii-title.png"
-import BaseLayout from "./layout"
-
-
 
 function Home() {
+  return (
 
-    return (<>
-        
     <body id="home" className="home">
       <BaseLayout>
         <main>
@@ -87,6 +86,9 @@ function Home() {
               </li>
             </ul>
           </section>
+
+
+
           <section id="registrarse">
             <h1>¿Estás preparado para el despegue?</h1>
             <div class="button">
@@ -101,6 +103,9 @@ function Home() {
               </a>
             </div>
           </section>
+
+
+
           <section id="estaciones">
             <h2> Estaciones </h2>
             <article id="1">
@@ -122,7 +127,7 @@ function Home() {
                 ...   </p>
               <div class="img">
                 <div class="imgOrbit">
-                  <img src={estacion2} alt="Logística 4.0"/>
+                  <img src={estacion2} alt="Logística 4.0" />
                 </div>
               </div>
             </article>
@@ -151,11 +156,12 @@ function Home() {
                 </div>
               </div>
             </article>
+            <LeerMas type="interno" link="Estaciones" />
+          </section>
 
-            <LeerMas type="interno" link="Estaciones"/>
-            
-          </section>{/* 
-          <section id="conferencias_1">
+
+
+          {/* <section id="conferencias_1">
             <h2> Conferencias magistrales </h2>
             <article id="1">
               <h3> #conferencias_1 #1 </h3>
@@ -187,18 +193,11 @@ function Home() {
                 </div>
               </div>
             </article>
-            <div class="button leermas">
-              <a href="" class="hyperspan">
-                <div class="circle">
-                  <div class="rocket_container">
-                    <img src={cohete}></img>
-                  </div>
-                  <div class="circle2"></div>
-                </div>
-                <div class="texto"> Leer mas </div>
-              </a>
-            </div>
+            <LeerMas type="interno" link="" />
           </section>
+
+
+
           <section id="visitas">
             <h2> Visitas técnicas </h2>
             <article id="1">
@@ -231,18 +230,11 @@ function Home() {
                 </div>
               </div>
             </article>
-            <div class="button leermas">
-              <a href="" class="hyperspan">
-                <div class="circle">
-                  <div class="rocket_container">
-                    <img src={cohete}></img>
-                  </div>
-                  <div class="circle2"></div>
-                </div>
-                <div class="texto"> Leer mas </div>
-              </a>
-            </div>
+            <LeerMas type="interno" link="" />
           </section>
+
+
+
           <section id="talleres">
             <h2> Talleres </h2>
             <article id="1">
@@ -275,18 +267,11 @@ function Home() {
                 </div>
               </div>
             </article>
-            <div class="button leermas">
-              <a href="" class="hyperspan">
-                <div class="circle">
-                  <div class="rocket_container">
-                    <img src={cohete}></img>
-                  </div>
-                  <div class="circle2"></div>
-                </div>
-                <div class="texto"> Leer mas </div>
-              </a>
-            </div>
+            <LeerMas type="interno" link="" />
           </section> */}
+
+
+
           <section id="hackaton">
             <h2> Hackaton </h2>
             <article id="1">
@@ -299,19 +284,12 @@ function Home() {
                 </div>
               </div>
             </article>
-            {/* <div class="button leermas">
-              <a href="" class="hyperspan">
-                <div class="circle">
-                  <div class="rocket_container">
-                    <img src={cohete} alt='cohete CAEII'></img>        
-                  </div>
-                  <div class="circle2"></div>
-                </div>
-                <div class="texto"> Leer mas </div>
-              </a>
-            </div> */}
-          </section> {/*
-          <section id="conferencias_2">
+            <LeerMas type="interno" link="Hackaton" />
+          </section>
+          
+          
+           
+          {/* <section id="conferencias_2">
             <h2> Conferencias profesionales </h2>
             <article id="1">
               <h3> #conferencias_2 #1 </h3>
@@ -343,18 +321,11 @@ function Home() {
                 </div>
               </div>
             </article>
-            <div class="button leermas">
-              <a href="" class="hyperspan">
-                <div class="circle">
-                  <div class="rocket_container">
-                    <img src={cohete}></img>
-                  </div>
-                  <div class="circle2"></div>
-                </div>
-                <div class="texto"> Leer mas </div>
-              </a>
-            </div>
+            <LeerMas type="interno" link="" />
           </section> */}
+
+
+
           <section id="feria">
             <h2> Feria de empleo </h2>
             <article id="1">
@@ -367,23 +338,12 @@ function Home() {
                 </div>
               </div>
             </article>
-            {/* <div class="button leermas">
-              <a href="" class="hyperspan">
-                <div class="circle">
-                  <div class="rocket_container">
-                    <img src={cohete}></img> 
-                  </div>
-                  <div class="circle2"></div>
-                </div>
-                <div class="texto"> Leer mas </div>
-              </a>
-            </div> */}
+            <LeerMas type="interno" link="Feria de empleo" />
           </section>
-        </main> 
+        </main>
       </BaseLayout>
     </body>
-  </>)
-
+  )
 }
 
 export default Home;
