@@ -50,7 +50,7 @@ function InfoBody(params) {
                 <div class="info_card">
                     <div class="info_card_text">
                         <div class="info_card_circle">
-                            <img src={info.img} alt="" />      {/*la ruta de las imagenes no funciona, no se porque */}
+                            <img src={info.img} alt="" />
                         </div>
                         <h3> {info.title} </h3>
                         <p> {info.desciption} </p>
