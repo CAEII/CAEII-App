@@ -158,7 +158,7 @@ function Home() {
                 </div>
               </div>
             </article>
-            <LeerMas type="interno" link="Estaciones" />
+            <LeerMas type="interno" link="Estaciones" className="estaciones_leermas"/>
           </section>
 
 

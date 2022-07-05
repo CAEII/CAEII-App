@@ -96,12 +96,26 @@
         width: 150px;
         left: 0;
     }
-    /* #estaciones .leermas{
-        margin: 0;
-        position: absolute;
-        top: 1015px;
-        left: 80vw;
-    } */
+    #estaciones .leermas{
+        height: 100px;
+        width: 300px;
+    }
+    #estaciones .leermas .texto {
+        top: -62%;
+        font-size: 1.5rem;
+    }
+    #estaciones .leermas .circle {
+        width: 90px;
+        height: 90px;
+        margin-top: 2%;
+    }
+    #estaciones .leermas .circle2 {
+        width: 90px;
+        height: 90px;
+    }
+    #estaciones .cohete_leer_mas{
+        height: 20px !important;
+    }
     #estaciones .desktop{
         display: flex;
     }
