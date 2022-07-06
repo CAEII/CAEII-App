@@ -2,10 +2,10 @@
     grid-column: 1/3;
 }
 .info_card{
-    height: fit-content;
+    min-height: 300px;
     border-radius: 50px;
     background-color: var(--boton_input);
-    padding: 5%;
+    padding: 40px;
     margin: 5px;
     margin-bottom: 100px;
 }
@@ -16,9 +16,12 @@
     max-width: 200px;
     max-height: 200px;
 
-    margin-right: 6vw;
+    /* margin-right: 6vw;
+    margin-bottom:  40px; */
+    margin: 20px;
+    margin-right: 0;
     border-radius: 100%;
-    float: left;
+    float: right;
     overflow: hidden;
     shape-outside: circle();
 }
@@ -33,7 +36,8 @@
 
 .info_card p{
     margin-top: 5%;
-    font-size: 0.8rem;
+    font-size: 1rem;
+    text-align: left;
 }
 
 .info_card .info_items{
@@ -45,9 +49,34 @@
 
 .info_card .info_items li{
     margin-top: 5%;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     text-decoration: dotted;
     display: list-item;
     height: fit-content;
     overflow: visible;
+}
+
+
+@media (min-width: 1024px) {
+    /* INFO GENERAL */
+    .info_card{
+        margin-bottom: 7%;
+    }
+    .info_card h3{
+        font-size: 1.9rem;
+    }
+    .info_card p{
+        font-size: 1.5rem;
+    }
+    .info_card .info_items li{
+        font-size: 1.7rem;
+    }
+    #info_general .cards_container{
+        margin: 3%;
+        margin-top: 0;
+        margin-bottom: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 3%;
+    }
 }

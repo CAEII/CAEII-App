@@ -219,6 +219,17 @@
     #logo img {
         height: 150px;
     }
+
+    /* INFO GENERAL */
+    .info_card h3{
+        font-size: 1.9rem;
+    }
+    .info_card p{
+        font-size: 1.5rem;
+    }
+    .info_card .info_items li{
+        font-size: 1.7rem;
+    }
 }
 @media (min-width: 1300px) {
     .imgOrbit{

@@ -1,7 +1,11 @@
 // react
 import { useParams } from "react-router-dom";
+import { useEffect } from "react";
 // components
 import BaseLayout from "./layout";
+// AOS
+import AOS from 'aos';
+import "aos/dist/aos.css";
 // styles
 import "../styles/info/css/info.css"
 // imgs
@@ -30,8 +34,10 @@ export default function Info_general() {
                         <img src={title} alt="Logo caeii"></img>
                     </div>
                     <section id="info_general"> 
-                        <h2> {category} </h2>         
-                        <InfoBody params={jsonData}/>         
+                        <h2> {category} </h2>  
+                        <div className="cards_container">
+                            <InfoBody params={jsonData}/> 
+                        </div>               
                     </section>   
                 </main>
             </BaseLayout>
@@ -44,15 +50,22 @@ export default function Info_general() {
 
 
 function InfoBody(params) {
+    useEffect(() => {
+        AOS.init({
+          duration: 1500, // values from 0 to 3000, with step 50ms
+          once: true, // whether animation should happen only once - while scrolling down
+        });
+      }, []);
     return(
         params.params.map(info => {         // recorro la info del json y por cada item en la lista devuelvo un div class="info_card"
             return (
-                <div class="info_card">
+                <div class="info_card"  data-aos="fade-up">
                     <div class="info_card_text">
+                        
+                        <h3> {info.title} </h3>
                         <div class="info_card_circle">
                             <img src={info.img} alt="" />
                         </div>
-                        <h3> {info.title} </h3>
                         <p> {info.desciption} </p>
                     </div>
     
