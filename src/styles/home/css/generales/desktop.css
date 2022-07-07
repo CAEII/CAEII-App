@@ -20,6 +20,9 @@
     }
 
     /* HOME */
+    html{
+        background-image: url(/src/styles/home/img/desktop_backgraund.jpg);
+    }
     .sistema_solar{
         top: 620px;
     }
@@ -150,7 +153,10 @@
     .nosotros .reverse {
         flex-direction: row-reverse;
     }
-    .nosotros .nosotros_section .img_representativa{
+    .nosotros .nosotros_img_conteiner{
+        overflow: hidden;
+    }
+    .nosotros .nosotros_section .nosotros_img_conteiner{
         margin-top: 0px;
         margin-bottom: 0px;
         width: 40%;
@@ -158,9 +164,30 @@
         margin-left: 80px;
         margin-right: 0px;
     }
-    .nosotros .reverse .img_representativa {
+    .nosotros .reverse .nosotros_img_conteiner{
         margin-left: 0px;
         margin-right: 80px;
+    }
+    /* .nosotros .nosotros_section .img_representativa{
+        margin-top: 0px;
+        margin-bottom: 0px;
+        width: 40%;
+        max-height: 350px;
+        margin-left: 80px;
+        margin-right: 0px;
+    } */
+    /* .nosotros .reverse .img_representativa {
+        margin-left: 0px;
+        margin-right: 80px;
+    } */
+
+    .nosotros section .img_representativa {
+        max-width: 650px;
+        max-height: 350px;
+        /* height: 350px; */
+        width: auto !important;
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
     }
     .nosotros .info {
         width: 40%;

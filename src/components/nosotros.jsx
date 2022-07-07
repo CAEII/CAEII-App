@@ -49,7 +49,9 @@ export default function Nosotros() {
               aproximadamente.
             </p>
           </div>
-          <img src={que_es_caeii} className="img_representativa" alt="imagen representativa" data-aos="fade-up"/>
+          <div className="nosotros_img_conteiner"  data-aos="fade-up">
+            <img src={que_es_caeii} className="img_representativa" alt="imagen representativa"/> 
+          </div>
         </section>
         <section id="Que_incluye" class="nosotros_section">
           <div class="info" data-aos="fade-up">
@@ -61,7 +63,10 @@ export default function Nosotros() {
               <b>*No incluye gastos no especificados en la imagen.</b>
             </p>
           </div>
-          <img src={Que_incluye} className="img_representativa" alt="imagen representativa" data-aos="fade-up"/>
+          <div className="nosotros_img_conteiner" data-aos="fade-up">
+            <img src={Que_incluye} className="img_representativa" alt="imagen representativa"/>
+          </div>
+          
         </section>
         <section id="cual_es_su_objetivo" class="nosotros_section reverse">
           <div class="info" data-aos="fade-up">
@@ -79,7 +84,10 @@ export default function Nosotros() {
               entre otras.
             </p>
           </div>
-          <img src={cual_es_su_objetivo} className="img_representativa" alt="imagen representativa" data-aos="fade-up"/>
+          <div className="nosotros_img_conteiner" data-aos="fade-up">
+            <img src={cual_es_su_objetivo} className="img_representativa" alt="imagen representativa"/>
+          </div>
+         
         </section>
         <section id="que_es_aareii" class="nosotros_section">
           <div class="info" data-aos="fade-up">
@@ -94,7 +102,10 @@ export default function Nosotros() {
               <div class="line_container"><div class="line"></div></div>
             </div>
           </div>
-          <img src={que_es_aareii} className="img_representativa" alt="imagen representativa" data-aos="fade-up"/>
+          <div className="nosotros_img_conteiner"  data-aos="fade-up">
+            <img src={que_es_aareii} className="img_representativa que_es_aareii" alt="imagen representativa"/>
+          </div>
+         
         </section>
         <section id="que_son_los_pilares" class="nosotros_section reverse">
           <div class="info"  data-aos="fade-up">
@@ -129,7 +140,10 @@ export default function Nosotros() {
               </div>
             </div>
           </div>
-          <img src={que_son_los_pilares} className="img_representativa" alt="imagen representativa"  data-aos="fade-up"/>
+          <div className="nosotros_img_conteiner"  data-aos="fade-up">
+            <img src={que_son_los_pilares} className="img_representativa" alt="imagen representativa"/>
+          </div>
+          
         </section>
         <section id="cuando_donde" class="nosotros_section">
           <div class="info"  data-aos="fade-up">
@@ -143,7 +157,10 @@ export default function Nosotros() {
               <br/> <strong> solo hay 500 cupos disponibles </strong>.
             </p>
           </div>
-          <img src={cuando_donde} className="img_representativa" alt="imagen representativa"  data-aos="fade-up"/>
+          <div className="nosotros_img_conteiner"   data-aos="fade-up">
+            <img src={cuando_donde} className="img_representativa" alt="imagen representativa"/>
+          </div>
+          
         </section>
         <section id="como_participar" class="nosotros_section reverse">
           <div class="info"  data-aos="fade-up">
@@ -163,7 +180,10 @@ export default function Nosotros() {
               </a>
             </div>
           </div>
-          <img src={como_participar} className="img_representativa" alt="imagen representativa"  data-aos="fade-up"/>
+          <div className="nosotros_img_conteiner"  data-aos="fade-up">
+            <img src={como_participar} className="img_representativa" alt="imagen representativa"/>
+          </div>
+         
         </section>
         {/* 
         <section id="saber_mas" class="nosotros_section">
