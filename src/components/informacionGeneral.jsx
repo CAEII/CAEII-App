@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import { useEffect } from "react";
 // components
 import BaseLayout from "./layout";
-// AOS
+// AOS  (animaciones)
 import AOS from 'aos';
 import "aos/dist/aos.css";
 // styles
@@ -33,13 +33,14 @@ export default function Info_general() {
                     <div class="title">
                         <img src={title} alt="Logo caeii"></img>
                     </div>
-                    
-                    {jsonData.map((visita) => {
+
+                    { jsonData.map((rubro) => {                      // recorros los rubros de la categoria (si los hay) y creo una section por cada uno
+                        let id = "info_general_" + rubro.title       // inicialiso la variable id con "info_general_" y el titulo del rubro
                         return (
-                            <section id="info_general"> 
-                                <h2> {visita.title} </h2>  
+                            <section id={id}> 
+                                <h2> {rubro.title} </h2>  
                                 <div className="cards_container">
-                                    <InfoBody params={visita.info}/> 
+                                    <InfoBody params={rubro.info}/> 
                                 </div>               
                             </section> 
                         )
@@ -72,7 +73,10 @@ function InfoBody(params) {
                         <div class="info_card_circle">
                             <img src={info.img} alt="" />
                         </div>
-                        <p> {info.desciption} </p>
+                        <p> 
+                            {info.desciption} 
+                            {/* {info.desciption.replace(";", <br/>)   // intento de agregar saltos de linea } */}  
+                        </p>
                     </div>
     
                     <Lists items={info.items}/>

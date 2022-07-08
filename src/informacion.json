@@ -43,13 +43,30 @@
                         "title": "IMPSA",
                         "img": "/imgs/Visitas Técnicas/IMPSA.jpg",
                         "short": "",
-                        "desciption": "IMPSA  es una empresa que ofrece soluciones integrales para la generación de energía a partir de recursos renovables, así como equipos para la industria de procesos y la energía nuclear. Desarrolla el diseño, la ingeniería, fabricación, montaje y puesta en marcha, ejecutando los proyectos bajo modalidad llave en mano. IMPSA es la única compañía en Latinoamérica con tecnología propia para equipos de generación hidráulica y eólica, y con certificación ASME III para el diseño y fabricación de componentes nucleares."
+                        "desciption": "IMPSA  es una empresa que ofrece soluciones integrales para la generación de energía a partir de recursos renovables, así como equipos para la industria de procesos y la energía nuclear. Desarrolla el diseño, la ingeniería, fabricación, montaje y puesta en marcha, ejecutando los proyectos bajo modalidad llave en mano. IMPSA es la única compañía en Latinoamérica con tecnología propia para equipos de generación hidráulica y eólica, y con certificación ASME III para el diseño y fabricación de componentes nucleares.",
+                        "items": [
+                            "https://www.impsa.com/",
+                            "https://www.linkedin.com/company/impsa/?originalSubdomain=ar",
+                            "https://www.instagram.com/impsaoficial/"
+                        ]
                     },
                     {
                         "title": "Log Metal",
                         "img": "/imgs/Visitas Técnicas/Log Metal.png",
                         "short": "",
                         "desciption": "LOGMETAL SRL es una empresa líder en la construcción industrial, nace en el año 2005 como fabricante de estructuras metálicas. Los servicios que ofrece actualmente abarcan desde el diseño y la ingeniería hasta la fabricación, montaje y ejecución integral de los proyectos con obras a lo largo y ancho de toda la Argentina."
+                    },
+                    {
+                        "title": "Tra.ter coop",
+                        "img": "/imgs/Visitas Técnicas/Tra.ter coop.png",
+                        "short": "",
+                        "desciption": "Desarrollo de Ingeniería y asistencia técnica: Engranajes y cajas reductoras de alta exigencia; Tallado y rectificado calidad AGMA 13 (ø 2600mm.); Máquina de control de engranajes MAAG 160; Temple por Inducción hasta 4 mm. de penetración. Tratamientos térmicos en atmósfera controlada. Cementación gaseosa hasta 3 mm. de capa. Fabricación de piñones, coronas y ejes para ferrocarriles. Proveedor de las principales Industrias del país"
+                    },
+                    {
+                        "title": "AEROPAC S.A.",
+                        "img": "/imgs/Visitas Técnicas/Aeropac.jpg",
+                        "short": "",
+                        "desciption": "Durante un tiempo, la empresa se concentró en el diseño y construcción de componentes para estructuras de misiles, etapas completas, maquetas de investigación, carros de transporte, dispositivos de elevación y contenedores de transporte para los componentes antes mencionados. Aeropac fabricó importantes plantillas para ensamblar el Embraer/Fama de CBA-123. aviones de cercanías), subconjuntos de fuselaje, así como muchas otras plantillas y accesorios. Hoy en dia tambien se dedican a la fabricación de equipos de envasado asépticos de ultima generación, los cuales se adaptan a una gran variedad de productos de las industrias actuales."
                     }
                 ]
             },
@@ -57,10 +74,16 @@
                 "title": "Alimenticia",
                 "info": [
                     {
-                        "title": "",
-                        "img": "",
+                        "title": "Chocolezza",
+                        "img": "/imgs/Visitas Técnicas/Chocolezza.jpg",
                         "short": "",
-                        "desciption": ""
+                        "desciption": "Chocolezza es una empresa familiar que produce alfajores y chocolates artesanales desde el año 1979.  Con el paso del tiempo y manteniendo la tradicional receta de la familia, con mucho esfuerzo y dedicación se logró un equipo de trabajo sólido que llevó a producir más de 40 variedades de productos, hoy en día 50 familias viven de ello. "
+                    },
+                    {
+                        "title": "Olivícola LAUR",
+                        "img": "/imgs/Visitas Técnicas/Olivícola LAUR.png",
+                        "short": "",
+                        "desciption": "Fundada en 1889, Laur fue pionera en la implantación de olivares en la provincia de Mendoza como así también en la elaboración de aceite de oliva. En el año 2021 fue nombrada por el EVOO WORLD RANKING como la olivícola número 1 del mundo. El medallero de la olivícola mendocina crece año tras año, fortaleciendo su posicionamiento como una de las top 10 del mundo y la número 1 de Argentina."
                     }
                 ]
             },
@@ -68,10 +91,16 @@
                 "title": "Servicios",
                 "info": [
                     {
-                        "title": "",
-                        "img": "",
+                        "title": "Andesmar Cargas",
+                        "img": "/imgs/Visitas Técnicas/Andesmar Cargas.png",
                         "short": "",
-                        "desciption": ""
+                        "desciption": "Buscamos facilitar a nuestros clientes las actividades de abastecimiento de insumos y venta de productos en todas las etapas de su cadena productiva. Nuestro personal altamente capacitado y profesional constituye la mejor garantía de calidad, eficiencia y rapidez en el servicio preferencial que diariamente se brinda a nuestros clientes. Creada en 1983, contamos con una gran experiencia en las actividades de transporte, almacenamiento y warehouse a nivel nacional.La base de la excelencia e integralidad en la prestación de nuestros servicios es lograda por las diferentes unidades de negocio de nuestra estructura: almacenes, express, transporte, frío, vinos y ecommerce.Nuestra principal fortaleza radica en la gran estructura con la que contamos. Con 300 puntos de ventas, más de 1000 destinos, 700 unidades y 55.000 m2 de depósitos propios podemos transportar y almacenar tus productos más valorados con total tranquilidad."
+                    },
+                    {
+                        "title": "Centro de Reciclaje de Guaymallen",
+                        "img": "/imgs/Visitas Técnicas/Centro de Reciclaje de Guaymallen.png",
+                        "short": "",
+                        "desciption": "El Centro de Reciclaje de Guaymallen es una planta de tratamiento de residuos secos separados en origen, que se constituye a la vez como un espacio educativo con una importante función de promoción ambiental. Tiene una capacidad de procesamiento de 500 toneladas y permite el acopio de materiales en las condiciones que los requiere la industria recicladora, alcanzando parámetros de calidad y cantidad superiores, fortaleciendo la frecuencia de venta y aumentando el poder de negociación. A este polo ambiental, se suma una huerta agroecológica modelo."
                     }
                 ]
             },
