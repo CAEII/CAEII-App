@@ -56,6 +56,16 @@
     overflow: visible;
 }
 
+.info_card .info_links{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.info_card .info_links img{
+    height: 40px;
+    width: 40px;
+}
+
 
 @media (min-width: 1024px) {
     /* INFO GENERAL */

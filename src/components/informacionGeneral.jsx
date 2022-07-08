@@ -98,37 +98,21 @@ function InfoBody(params) {
                             {/* {info.desciption.replace(";", <br/>)   // intento de agregar saltos de linea } */}  
                         </p>
                     </div>
-    
-                    <Lists items={info.items}/>
-                    
+                    <Links links={info.links}/>                 
                 </div>
             )
         })
     )
 }
 
-function Lists(params){
-    if (params.items) {         // reviso si "params.items" existe
-        var mitad;              // declaro la variable "mitad"
 
-        if (params.items.length % 2 === 0) {                    // le doy a "mitad" el valor de la mitad del largo de "params.items" si es par
-            mitad = Math.floor(params.items.length / 2);
-        } else {
-            mitad = (Math.floor(params.items.length / 2))+1;    // si no es par le doy el varlor de la mitad mas uno del largo de "params.items"
-        }
 
-        const inicio = params.items.slice(0, mitad);            // declaro la constante "inicio" como un array con la primer mitad de "params.items"
-        const final = params.items.slice(mitad);                // declaro la constante "final" como un array con la segunda mitad de "params.items"
-
+function Links(params) {
+    if (params.links[0].type !== '') {         // reviso si "params.items" existe
         return(
-            <div class="info_items">
-                <ul class="izquierda">
-                    {inicio.map(item => <li> {item} </li>)}
-                </ul>
-                <ul class="derecha">
-                    {final.map(item => <li> {item} </li>)}
-                </ul>
-            </div>
+            <ul class="info_links">
+                {params.links.map(link => <li> <a href={link.link}> <img src={link.icono} alt={link.type} /> </a> </li>)}
+            </ul>
         )
     } 
 }
