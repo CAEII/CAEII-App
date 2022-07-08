@@ -3,47 +3,32 @@
         "category": "Estaciones",
         "data": [
             {
-                "title": "Odisea estelar: poniendo a prueba nuestros límites",
-                "img": "/imgs/estaciones/odiseaEstelar.png",
-                "short": "",
-                "desciption": "En este pilar se propone poner en evidencia cómo gracias a la ingeniería se están ampliando los horizontes del conocimiento y está siendo posible que aquellos sueños que nos parecían nada más que ciencia ficción, se vuelvan una realidad al alcance de nuestras manos. Se harán visibles aquellas oportunidades que tenemos de ser parte de esta innovación para motivar a los asistentes a que despeguen su propia nave y emprendan una odisea estelar.",
-                "items": [
-                    "Taller 1",
-                    "Conferencia 2",
-                    "Taller 32"
-                ]
-            },
-            {
-                "title": "Logística 4.0: Integración digital de los procesos productivos",
-                "img": "/imgs/estaciones/Logística 4.0.png",
-                "short": "",
-                "desciption": "La logística 4.0, nacida con la llegada de la cuarta revolución industrial, plantea una nueva realidad donde la optimización de la cadena de suministros será posible mediante la hiperconectividad y la implementación de las nuevas tecnologías. Este desafío consiste en la aplicación de avanzados métodos como lo son el análisis predictivo para reducción de errores, la evaluación en tiempo real de inclemencias del entorno para una mayor adaptabilidad logística, detección y prevención de fallas en cada etapa, entre otros. En este pilar proponemos analizar la importancia de los avances de la robotización, la automatización y estandarización de procesos productivos, para lograr que los clientes reciban los productos adecuados en el momento preciso.",
-                "items": [
-                    "Taller 1",
-                    "Conferencia 2",
-                    "Taller 32"
-                ]
-            },
-            {
-                "title": "Próximo destino: La ingeniería del mañana",
-                "img": "/imgs/estaciones/Próximo destino.png",
-                "short": "",
-                "desciption": "La velocidad de transformación tecnológica impacta en todos los ámbitos, y cada profesional debe seguir estas tendencias, saliendo capacitado para adaptarse con facilidad a las nuevas tecnologías y estrategias que día a día se van desarrollando y nos obligan a mantenernos actualizados constantemente. Veremos que el sistema revolucionario del Blockchain es mucho más que una simple base de datos. También seremos protagonistas de la forma en que el uso de herramientas, como metodologías ágiles, el coaching ejecutivo o la implementación de la inteligencia artificial en distintos ámbitos, puede llevar tu productividad a la luna.",
-                "items": [
-                    "Taller 1",
-                    "Conferencia 2",
-                    "Taller 32"
-                ]
-            },
-            {
-                "title": "Desarrollo urbano sustentable",
-                "img": "/imgs/estaciones/Desarrollo urbano.png",
-                "short": "",
-                "desciption": "Impartiremos conocimientos sobre cómo las ciudades inteligentes usan la información, las tecnologías de la comunicación y otros medios para mejorar la calidad de vida y la eficiencia de los servicios. Haremos hincapié en la importancia de la promoción de una movilidad sostenible que garantice la accesibilidad, los sistemas de transporte y la disminución del actual impacto ambiental.",
-                "items": [
-                    "Taller 1",
-                    "Conferencia 2",
-                    "Taller 32"
+                "title": "Estaciones",
+                "info": [
+                    {
+                        "title": "Odisea estelar: poniendo a prueba nuestros límites",
+                        "img": "/imgs/estaciones/odiseaEstelar.png",
+                        "short": "",
+                        "desciption": "En este pilar se propone poner en evidencia cómo gracias a la ingeniería se están ampliando los horizontes del conocimiento y está siendo posible que aquellos sueños que nos parecían nada más que ciencia ficción, se vuelvan una realidad al alcance de nuestras manos. Se harán visibles aquellas oportunidades que tenemos de ser parte de esta innovación para motivar a los asistentes a que despeguen su propia nave y emprendan una odisea estelar."
+                    },
+                    {
+                        "title": "Logística 4.0: Integración digital de los procesos productivos",
+                        "img": "/imgs/estaciones/Logística 4.0.png",
+                        "short": "",
+                        "desciption": "La logística 4.0, nacida con la llegada de la cuarta revolución industrial, plantea una nueva realidad donde la optimización de la cadena de suministros será posible mediante la hiperconectividad y la implementación de las nuevas tecnologías. Este desafío consiste en la aplicación de avanzados métodos como lo son el análisis predictivo para reducción de errores, la evaluación en tiempo real de inclemencias del entorno para una mayor adaptabilidad logística, detección y prevención de fallas en cada etapa, entre otros. En este pilar proponemos analizar la importancia de los avances de la robotización, la automatización y estandarización de procesos productivos, para lograr que los clientes reciban los productos adecuados en el momento preciso."
+                    },
+                    {
+                        "title": "Próximo destino: La ingeniería del mañana",
+                        "img": "/imgs/estaciones/Próximo destino.png",
+                        "short": "",
+                        "desciption": "La velocidad de transformación tecnológica impacta en todos los ámbitos, y cada profesional debe seguir estas tendencias, saliendo capacitado para adaptarse con facilidad a las nuevas tecnologías y estrategias que día a día se van desarrollando y nos obligan a mantenernos actualizados constantemente. Veremos que el sistema revolucionario del Blockchain es mucho más que una simple base de datos. También seremos protagonistas de la forma en que el uso de herramientas, como metodologías ágiles, el coaching ejecutivo o la implementación de la inteligencia artificial en distintos ámbitos, puede llevar tu productividad a la luna."
+                    },
+                    {
+                        "title": "Desarrollo urbano sustentable",
+                        "img": "/imgs/estaciones/Desarrollo urbano.png",
+                        "short": "",
+                        "desciption": "Impartiremos conocimientos sobre cómo las ciudades inteligentes usan la información, las tecnologías de la comunicación y otros medios para mejorar la calidad de vida y la eficiencia de los servicios. Haremos hincapié en la importancia de la promoción de una movilidad sostenible que garantice la accesibilidad, los sistemas de transporte y la disminución del actual impacto ambiental."
+                    }
                 ]
             }
         ]
@@ -52,64 +37,65 @@
         "category": "Visitas técnicas",
         "data": [
             {
-                "title": "IMPSA",
-                "img": "/imgs/Visitas Técnicas/IMPSA.jpg",
-                "short": "",
-                "desciption": "IMPSA  es una empresa que ofrece soluciones integrales para la generación de energía a partir de recursos renovables, así como equipos para la industria de procesos y la energía nuclear. Desarrolla el diseño, la ingeniería, fabricación, montaje y puesta en marcha, ejecutando los proyectos bajo modalidad llave en mano. IMPSA es la única compañía en Latinoamérica con tecnología propia para equipos de generación hidráulica y eólica, y con certificación ASME III para el diseño y fabricación de componentes nucleares."
+                "title": "Metalmecánica",
+                "info": [
+                    {
+                        "title": "IMPSA",
+                        "img": "/imgs/Visitas Técnicas/IMPSA.jpg",
+                        "short": "",
+                        "desciption": "IMPSA  es una empresa que ofrece soluciones integrales para la generación de energía a partir de recursos renovables, así como equipos para la industria de procesos y la energía nuclear. Desarrolla el diseño, la ingeniería, fabricación, montaje y puesta en marcha, ejecutando los proyectos bajo modalidad llave en mano. IMPSA es la única compañía en Latinoamérica con tecnología propia para equipos de generación hidráulica y eólica, y con certificación ASME III para el diseño y fabricación de componentes nucleares."
+                    },
+                    {
+                        "title": "Log Metal",
+                        "img": "/imgs/Visitas Técnicas/Log Metal.png",
+                        "short": "",
+                        "desciption": "LOGMETAL SRL es una empresa líder en la construcción industrial, nace en el año 2005 como fabricante de estructuras metálicas. Los servicios que ofrece actualmente abarcan desde el diseño y la ingeniería hasta la fabricación, montaje y ejecución integral de los proyectos con obras a lo largo y ancho de toda la Argentina."
+                    }
+                ]
             },
             {
-                "title": "FeCoViTa",
-                "img": "/imgs/Visitas Técnicas/FeCoViTa.jpg",
-                "short": "",
-                "desciption": "Fecovita es uno de los principales grupos vitivinícolas a nivel mundial. Nuclea a más de 5.000 productores integrados en 29 cooperativas, que trabajan unas 25.000 hectáreas de viñedos en las zonas vitivinícolas más apreciadas de Mendoza, generando un futuro sustentable a miles de familias, mediante la inversión genuina, el aporte de la tecnología, la mejora continua de la calidad y la proyección internacional de sus productos, de la mano de marcas emblemáticas."
+                "title": "Alimenticia",
+                "info": [
+                    {
+                        "title": "",
+                        "img": "",
+                        "short": "",
+                        "desciption": ""
+                    }
+                ]
             },
             {
-                "title": "Log Metal",
-                "img": "/imgs/Visitas Técnicas/Log Metal.png",
-                "short": "",
-                "desciption": "LOGMETAL SRL es una empresa líder en la construcción industrial, nace en el año 2005 como fabricante de estructuras metálicas. Los servicios que ofrece actualmente abarcan desde el diseño y la ingeniería hasta la fabricación, montaje y ejecución integral de los proyectos con obras a lo largo y ancho de toda la Argentina."
+                "title": "Servicios",
+                "info": [
+                    {
+                        "title": "",
+                        "img": "",
+                        "short": "",
+                        "desciption": ""
+                    }
+                ]
             },
             {
-                "title": "Aeropac",
-                "img": "/imgs/Visitas Técnicas/Aeropac.jpg",
-                "short": "",
-                "desciption": "envases o misiles??"
+                "title": "Mediombiental",
+                "info": [
+                    {
+                        "title": "",
+                        "img": "",
+                        "short": "",
+                        "desciption": ""
+                    }
+                ]
             },
             {
-                "title": "Aeropac",
-                "img": "/imgs/Visitas Técnicas/Aeropac.jpg",
-                "short": "",
-                "desciption": "envases o misiles??"
-            },
-            {
-                "title": "Aeropac",
-                "img": "/imgs/Visitas Técnicas/Aeropac.jpg",
-                "short": "",
-                "desciption": "envases o misiles??"
-            },
-            {
-                "title": "Aeropac",
-                "img": "/imgs/Visitas Técnicas/Aeropac.jpg",
-                "short": "",
-                "desciption": "envases o misiles??"
-            },
-            {
-                "title": "Aeropac",
-                "img": "/imgs/Visitas Técnicas/Aeropac.jpg",
-                "short": "",
-                "desciption": "envases o misiles??"
-            },
-            {
-                "title": "Aeropac",
-                "img": "/imgs/Visitas Técnicas/Aeropac.jpg",
-                "short": "",
-                "desciption": "envases o misiles??"
-            },
-            {
-                "title": "Aeropac",
-                "img": "/imgs/Visitas Técnicas/Aeropac.jpg",
-                "short": "",
-                "desciption": "envases o misiles??"
+                "title": "Vitivinícola/cervecera",
+                "info": [
+                    {
+                        "title": "FeCoViTa",
+                        "img": "/imgs/Visitas Técnicas/FeCoViTa.jpg",
+                        "short": "",
+                        "desciption": "Fecovita es uno de los principales grupos vitivinícolas a nivel mundial. Nuclea a más de 5.000 productores integrados en 29 cooperativas, que trabajan unas 25.000 hectáreas de viñedos en las zonas vitivinícolas más apreciadas de Mendoza, generando un futuro sustentable a miles de familias, mediante la inversión genuina, el aporte de la tecnología, la mejora continua de la calidad y la proyección internacional de sus productos, de la mano de marcas emblemáticas."
+                    }
+                ]
             }
         ]
     },
@@ -117,180 +103,98 @@
         "category": "Conferencias magistrales",
         "data": [
             {
-                "title": "",
-                "img": "",
-                "short": "",
-                "desciption": "",
-                "items": [
-                    "",
-                    "",
-                    ""
+                "title": "esto podria ser el pilar",
+                "info": [
+                    {
+                        "title": "",
+                        "img": "",
+                        "short": "",
+                        "desciption": ""
+                    },
+                    {
+                        "title": "",
+                        "img": "",
+                        "short": "",
+                        "desciption": ""
+                    }
                 ]
-            },
-            {
-                "title": "",
-                "img": "",
-                "short": "",
-                "desciption": "",
-                "items": [
-                    "",
-                    "",
-                    ""
-                ]
-            },
-            {
-                "title": "",
-                "img": "",
-                "short": "",
-                "desciption": "",
-                "items": [
-                    "",
-                    "",
-                    ""
-                ]
-            },
-            {
-                "title": "",
-                "img": "",
-                "short": "",
-                "desciption": "",
-                "items": [
-                    "",
-                    "",
-                    ""
-                ]
-            }
+            } 
         ]
     },
     {
         "category": "Conferencias profesionales",
         "data": [
             {
-                "title": "",
-                "img": "",
-                "short": "",
-                "desciption": "",
-                "items": [
-                    "",
-                    "",
-                    ""
+                "title": "esto podria ser el pilar",
+                "info": [
+                    {
+                        "title": "",
+                        "img": "",
+                        "short": "",
+                        "desciption": ""
+                    },
+                    {
+                        "title": "",
+                        "img": "",
+                        "short": "",
+                        "desciption": ""
+                    }
                 ]
-            },
-            {
-                "title": "",
-                "img": "",
-                "short": "",
-                "desciption": "",
-                "items": [
-                    "",
-                    "",
-                    ""
-                ]
-            },
-            {
-                "title": "",
-                "img": "",
-                "short": "",
-                "desciption": "",
-                "items": [
-                    "",
-                    "",
-                    ""
-                ]
-            },
-            {
-                "title": "",
-                "img": "",
-                "short": "",
-                "desciption": "",
-                "items": [
-                    "",
-                    "",
-                    ""
-                ]
-            }
+            } 
         ]
     },
     {
         "category": "Talleres",
         "data": [
             {
-                "title": "",
-                "img": "",
-                "short": "",
-                "desciption": "",
-                "items": [
-                    "",
-                    "",
-                    ""
+                "title": "esto podria ser el pilar",
+                "info": [
+                    {
+                        "title": "",
+                        "img": "",
+                        "short": "",
+                        "desciption": ""
+                    },
+                    {
+                        "title": "",
+                        "img": "",
+                        "short": "",
+                        "desciption": ""
+                    }
                 ]
-            },
-            {
-                "title": "",
-                "img": "",
-                "short": "",
-                "desciption": "",
-                "items": [
-                    "",
-                    "",
-                    ""
-                ]
-            },
-            {
-                "title": "",
-                "img": "",
-                "short": "",
-                "desciption": "",
-                "items": [
-                    "",
-                    "",
-                    ""
-                ]
-            },
-            {
-                "title": "",
-                "img": "",
-                "short": "",
-                "desciption": "",
-                "items": [
-                    "",
-                    "",
-                    ""
-                ]
-            }
+            } 
         ]
     },
     {
         "category": "Hackaton",
         "data": [
             {
-                "title": "¿Qué es el Hackaton?",
-                "img": "/imgs/hackaton.jpg",
-                "short": "Hackaton es una metodología de innovación abierta que posee la capacidad de incluir diferentes metodologías para creación de soluciones de forma colaborativa.",
-                "desciption": "Hackaton es una metodología de innovación abierta que posee la capacidad de incluir diferentes metodologías para creación de soluciones de forma colaborativa.  Los participantes trabajan en pequeños grupos en un entorno diseñado donde se fomenta el pensamiento creativo y conduce a nuevos conceptos, prototipos e ideas sorprendentemente innovadoras, para trabajar con el enfoque de crear un producto o una idea novedosa a raíz de una problemática central.",
-                "items": [
-                    "",
-                    "",
-                    ""
+                "title": "Hackaton",
+                "info": [
+                    {
+                        "title": "¿Qué es el Hackaton?",
+                        "img": "/imgs/hackaton.jpg",
+                        "short": "Hackaton es una metodología de innovación abierta que posee la capacidad de incluir diferentes metodologías para creación de soluciones de forma colaborativa.",
+                        "desciption": "Hackaton es una metodología de innovación abierta que posee la capacidad de incluir diferentes metodologías para creación de soluciones de forma colaborativa.  Los participantes trabajan en pequeños grupos en un entorno diseñado donde se fomenta el pensamiento creativo y conduce a nuevos conceptos, prototipos e ideas sorprendentemente innovadoras, para trabajar con el enfoque de crear un producto o una idea novedosa a raíz de una problemática central."
+                    }
                 ]
-            }
-
+            } 
         ]
     },
     {
         "category": "Feria de empleo",
         "data": [
             {
-                "title": "¿Qué es la feria de empleo?",
-                "img": "/imgs/feria.jpeg",
-                "short": "Es un espacio donde las empresas obtienen visibilidad al relacionarse con los futuros protagonistas de la profesión.",
-                "desciption": "La feria está dirigida principalmente a estudiantes y jóvenes profesionales de Ingenierías y carreras afines. Es un espacio donde las empresas obtienen visibilidad al relacionarse con los futuros protagonistas de la profesión, creando así, un posicionamiento en el mundo empresarial. Está diseñado para garantizar que la totalidad de los asistentes pasen por los diferentes stands, permitiendo a los representantes de la empresa brindar información y estar en contacto directo con más de 1500 estudiantes de todo el país.",
-                "items": [
-                    "",
-                    "",
-                    ""
+                "title": "Feria de empleo",
+                "info": [
+                    {
+                        "title": "¿Qué es la feria de empleo?",
+                        "img": "/imgs/feria.jpeg",
+                        "short": "Es un espacio donde las empresas obtienen visibilidad al relacionarse con los futuros protagonistas de la profesión.",
+                        "desciption": "La feria está dirigida principalmente a estudiantes y jóvenes profesionales de Ingenierías y carreras afines. Es un espacio donde las empresas obtienen visibilidad al relacionarse con los futuros protagonistas de la profesión, creando así, un posicionamiento en el mundo empresarial. Está diseñado para garantizar que la totalidad de los asistentes pasen por los diferentes stands, permitiendo a los representantes de la empresa brindar información y estar en contacto directo con más de 1500 estudiantes de todo el país."
+                    }
                 ]
-            }
+            } 
         ]
     }
 ]

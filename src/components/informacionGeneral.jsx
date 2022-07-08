@@ -33,12 +33,18 @@ export default function Info_general() {
                     <div class="title">
                         <img src={title} alt="Logo caeii"></img>
                     </div>
-                    <section id="info_general"> 
-                        <h2> {category} </h2>  
-                        <div className="cards_container">
-                            <InfoBody params={jsonData}/> 
-                        </div>               
-                    </section>   
+                    
+                    {jsonData.map((visita) => {
+                        return (
+                            <section id="info_general"> 
+                                <h2> {visita.title} </h2>  
+                                <div className="cards_container">
+                                    <InfoBody params={visita.info}/> 
+                                </div>               
+                            </section> 
+                        )
+                    })}
+                      
                 </main>
             </BaseLayout>
         )
