@@ -203,33 +203,33 @@ function Home() {
 
 
           <section id="visitas">
-            <h2> Visitas técnicas </h2>
+            <h2> {json[1].category} </h2>
             <article id="1">
-              <h3> #visitas #1 </h3>
-              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo dapibus purus.  </p>
+              <h3> {json[1].data[0].info[0].title} </h3>
+              <p> {json[1].data[0].info[0].short} </p>
               <div class="img">
                 <div class="imgOrbit">
-                  {/* <img src={placeholder} alt="visitas 1" /> */}
+                  <img src={json[1].data[0].info[0].img} alt="visitas 1" />
                   <div class="planet"></div>
                 </div>
               </div>
             </article>
             <article id="2" class="derecha">
-              <h3> #visitas #2 </h3>
-              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo dapibus purus.  </p>
+              <h3> {json[1].data[1].info[1].title} </h3>
+              <p> {json[1].data[1].info[1].short} </p>
               <div class="img">
                 <div class="imgOrbit">
-                  {/* <img src={placeholder2} alt="visitas 2" /> */}
+                  <img src={json[1].data[1].info[1].img} alt="visitas 2" />
                   <div class="planet"></div>
                 </div>
               </div>
             </article>
             <article id="3">
-              <h3> #visitas #3 </h3>
-              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo dapibus purus.  </p>
+              <h3> {json[1].data[3].info[0].title} </h3>
+              <p> {json[1].data[3].info[0].short} </p>
               <div class="img">
                 <div class="imgOrbit">
-                  {/* <img src={placeholder} alt="visitas 3" /> */}
+                  <img src={json[1].data[3].info[0].img} alt="visitas 3" />
                   <div class="planet"></div>
                 </div>
               </div>
