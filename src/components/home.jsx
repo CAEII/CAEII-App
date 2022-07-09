@@ -198,7 +198,7 @@ function Home() {
               </div>
             </article>
             <LeerMas type="interno" link="" />
-          </section>
+          </section>  */}
 
 
 
@@ -209,7 +209,7 @@ function Home() {
               <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo dapibus purus.  </p>
               <div class="img">
                 <div class="imgOrbit">
-                  <img src={placeholder} alt="visitas 1" />
+                  {/* <img src={placeholder} alt="visitas 1" /> */}
                   <div class="planet"></div>
                 </div>
               </div>
@@ -219,7 +219,7 @@ function Home() {
               <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo dapibus purus.  </p>
               <div class="img">
                 <div class="imgOrbit">
-                  <img src={placeholder2} alt="visitas 2" />
+                  {/* <img src={placeholder2} alt="visitas 2" /> */}
                   <div class="planet"></div>
                 </div>
               </div>
@@ -229,16 +229,16 @@ function Home() {
               <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo dapibus purus.  </p>
               <div class="img">
                 <div class="imgOrbit">
-                  <img src={placeholder} alt="visitas 3" />
+                  {/* <img src={placeholder} alt="visitas 3" /> */}
                   <div class="planet"></div>
                 </div>
               </div>
             </article>
-            <LeerMas type="interno" link="" />
+            <LeerMas type="interno" link="Visitas técnicas" />
           </section>
 
 
-
+ {/*
           <section id="talleres">
             <h2> Talleres </h2>
             <article id="1">
@@ -272,15 +272,15 @@ function Home() {
               </div>
             </article>
             <LeerMas type="interno" link="" />
-          </section> */}
+          </section> 
 
 
-
+*/}
           <section id="hackaton">
             <h2> Hackaton </h2>
             <article id="1">
-            <h3> {json[5].data[0].title} </h3>
-              <p> {json[5].data[0].short} </p>
+            <h3> {json[5].data[0].info[0].title} </h3>
+              <p> {json[5].data[0].info[0].short} </p>
               <div class="img">
                 <div class="imgOrbit">
                   <img src={hackaton} alt="Hackaton 1" />
@@ -333,8 +333,8 @@ function Home() {
           <section id="feria">
             <h2> Feria de empleo </h2>
             <article id="1">
-              <h3> {json[6].data[0].title} </h3>
-              <p> {json[6].data[0].short} </p>
+              <h3> {json[6].data[0].info[0].title} </h3>
+              <p> {json[6].data[0].info[0].short} </p>
               <div class="img">
                 <div class="imgOrbit">
                   <img src={feria} alt="feria 1" />
