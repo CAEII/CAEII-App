@@ -23,7 +23,7 @@ function App() {
           {/* <Route path="/login" element={<Login/>}/> */}
           <Route path="/nosotros" element={<Nosotros/>}/>
           <Route path="/info/:category" element={<Info/>}/>
-          <Route path="/info_prueba/:category" element={<InfoPrueba/>}/>
+          {/* <Route path="/info_prueba/:category" element={<InfoPrueba/>}/> */}
         </Routes>
       </BrowserRouter> 
     </div>

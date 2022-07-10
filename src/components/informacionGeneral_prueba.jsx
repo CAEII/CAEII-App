@@ -45,7 +45,7 @@ export default function Info_general() {
                                 let className = "navbutton " + rubro.title
                                 return (
                                     // <button className="navbutton" onClick={() => setRubro(rubro.title)}> {rubro.title} </button>
-                                    <div className={className} onClick={() => setRubro(rubro.title)}> <p> {rubro.title} </p> </div>
+                                    <div className={className}> <p> {rubro.title} </p> <input type="radio" name="kk" className="navbar_radio" id={rubro.title} onClick={() => setRubro(rubro.title)}/> </div>
                                 )
                             })}
                         </div>
