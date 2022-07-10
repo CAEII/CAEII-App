@@ -44,9 +44,12 @@ export default function Info_general() {
                             {jsonDataCategory.map((rubro) => {                      // recorros los rubros de la categoria (si los hay) y creo un boton por cada uno
                                 let className = "navbutton " + rubro.title
                                 return (
-                                    // <button className="navbutton" onClick={() => setRubro(rubro.title)}> {rubro.title} </button>
-                                    <div className={className}> <p> {rubro.title} </p> <input type="radio" name="kk" className="navbar_radio" id={rubro.title} onClick={() => setRubro(rubro.title)}/> </div>
+                                    <div className={className}> 
+                                        <p> {rubro.title} </p> 
+                                        <input type="radio" name="kk" className="navbar_radio" id={rubro.title} onClick={() => setRubro(rubro.title)}/> 
+                                    </div>
                                 )
+                                
                             })}
                         </div>
 
@@ -81,6 +84,10 @@ function InfoBody(params) {
     var rubro = params.rubro                // inicializo la variable rubro con el valor pasado por parametros
     if (params.rubro === "default") {       // si el valor pasado por parametros para el rubro es igual a "default" le doy a la variable el titulo del primer rubro en la respectiva categoria del json
         rubro = params.jsonData[0].title
+        
+        setTimeout(() => {          // pongo un timeout de 5 segundos
+            document.getElementById(params.jsonData[0].title).checked = true;
+        }, 100);
     }
 
     for (let i = 0; i < params.jsonData.length; i++) {      // recorro el json 
