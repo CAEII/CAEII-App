@@ -287,10 +287,11 @@
                 "title": "esto podria ser el pilar",
                 "info": [
                     {
-                        "title": "",
-                        "img": "",
+                        "title": "¿Cómo entrenar a tu robot RPA?",
+                        "img": "/imgs/magistrales/belen.jpg",
+                        "disertante": "Belén Rodríguez | RPA Project Leader",
                         "short": "",
-                        "desciption": "",
+                        "desciption": "RPA, “Robotic Process Automation” es la automatización de los procesos de negocio que replica las acciones de un ser humano interactuando con sistemas informáticos con interfaz de usuario. Vamos a desmitificar que “Entrenar” a tu robot RPA sea algo complejo y que sólo programadores pueden realizar. RPA está al alcance de todos y todo pueden ser parte.",
                         "links": [
                             {
                                 "type": "",

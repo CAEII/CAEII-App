@@ -157,19 +157,19 @@ function Home() {
 
 
 
-          {/* <section id="conferencias_1">
-            <h2> Conferencias magistrales </h2>
+          <section id="conferencias_1">
+            <h2> {json[2].category} </h2>
             <article id="1">
-              <h3> #conferencias_1 #1 </h3>
-              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo dapibus purus.  </p>
+              <h3> {json[2].data[0].info[0].title} </h3>
+              <p> {json[2].data[0].info[0].disertante} </p>
               <div class="img">
                 <div class="imgOrbit">
-                  <img src={placeholder} alt="Conferencia 1" />
+                  <img src={json[2].data[0].info[0].img} alt="Conferencia 1" />
                   <div class="planet"></div>
                 </div>
               </div>
             </article>
-            <article id="2" class="derecha">
+            {/* <article id="2" class="derecha">
               <h3> #conferencias_1 #2 </h3>
               <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo dapibus purus.  </p>
               <div class="img">
@@ -188,46 +188,13 @@ function Home() {
                   <div class="planet"></div>
                 </div>
               </div>
-            </article>
-            <LeerMas type="interno" link="" />
-          </section>  */}
+            </article> */}
+            <LeerMas type="interno" link="Conferencias magistrales" />
+          </section> 
 
 
 
-          <section id="visitas">
-            <h2> {json[1].category} </h2>
-            <article id="1">
-              <h3> {json[1].data[0].info[0].title} </h3>
-              <p> {json[1].data[0].info[0].short} </p>
-              <div class="img">
-                <div class="imgOrbit">
-                  <img src={json[1].data[0].info[0].img} alt="visitas 1" />
-                  <div class="planet"></div>
-                </div>
-              </div>
-            </article>
-            <article id="2" class="derecha">
-              <h3> {json[1].data[1].info[1].title} </h3>
-              <p> {json[1].data[1].info[1].short} </p>
-              <div class="img">
-                <div class="imgOrbit">
-                  <img src={json[1].data[1].info[1].img} alt="visitas 2" />
-                  <div class="planet"></div>
-                </div>
-              </div>
-            </article>
-            <article id="3">
-              <h3> {json[1].data[3].info[0].title} </h3>
-              <p> {json[1].data[3].info[0].short} </p>
-              <div class="img">
-                <div class="imgOrbit">
-                  <img src={json[1].data[3].info[0].img} alt="visitas 3" />
-                  <div class="planet"></div>
-                </div>
-              </div>
-            </article>
-            <LeerMas type="interno" link="Visitas técnicas" />
-          </section>
+          
 
 
  {/*
@@ -302,6 +269,41 @@ function Home() {
               </div>
             </article> */}
             <LeerMas type="interno" link="Conferencias profesionales" />
+          </section>
+
+          <section id="visitas">
+            <h2> {json[1].category} </h2>
+            <article id="1">
+              <h3> {json[1].data[0].info[0].title} </h3>
+              <p> {json[1].data[0].info[0].short} </p>
+              <div class="img">
+                <div class="imgOrbit">
+                  <img src={json[1].data[0].info[0].img} alt="visitas 1" />
+                  <div class="planet"></div>
+                </div>
+              </div>
+            </article>
+            <article id="2" class="derecha">
+              <h3> {json[1].data[1].info[1].title} </h3>
+              <p> {json[1].data[1].info[1].short} </p>
+              <div class="img">
+                <div class="imgOrbit">
+                  <img src={json[1].data[1].info[1].img} alt="visitas 2" />
+                  <div class="planet"></div>
+                </div>
+              </div>
+            </article>
+            <article id="3">
+              <h3> {json[1].data[3].info[0].title} </h3>
+              <p> {json[1].data[3].info[0].short} </p>
+              <div class="img">
+                <div class="imgOrbit">
+                  <img src={json[1].data[3].info[0].img} alt="visitas 3" />
+                  <div class="planet"></div>
+                </div>
+              </div>
+            </article>
+            <LeerMas type="interno" link="Visitas técnicas" />
           </section>
 
           <section id="hackaton">
