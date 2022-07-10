@@ -1,6 +1,30 @@
 #info_general{
     grid-column: 1/3;
 }
+.section_info_general{
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.sections_navbar{
+    /* background-color: var(--fondoTituloTargeta); */
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.sections_navbar .navbutton{
+    height: 80px;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sections_navbar p{
+    width: 100%;
+    font-size: 0.7rem;
+    word-wrap: break-word;
+}
 .info_card{
     min-height: 300px;
     border-radius: 50px;
