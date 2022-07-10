@@ -260,7 +260,7 @@
                     },
                     {
                         "title": "Rødder Brewing Company",
-                        "img": "/imgs/Visitas Técnicas/rodder.jfif",
+                        "img": "/imgs/Visitas Técnicas/rodder.png",
                         "short": "",
                         "desciption": "Empresa de cuádruple impacto (Ambiental, Social, Económico y Cultural) que se dedica a la producción de cerveza artesanal. Podrás aprender del proceso de producción de la cerveza y realizar una degustación al final.",
                         "links": [
@@ -271,7 +271,7 @@
                             },  
                             {
                                 "type": "Linkedin",
-                                "link": "",
+                                "link": "https://www.linkedin.com/company/r%C3%B8dder-brewing-company/about/",
                                 "icono": "/imgs/iconos/linkedin.png"
                             }
                         ]
@@ -284,7 +284,7 @@
         "category": "Conferencias magistrales",
         "data": [
             {
-                "title": "esto podria ser el pilar",
+                "title": "Conferencias magistrales",
                 "info": [
                     {
                         "title": "¿Cómo entrenar a tu robot RPA?",
@@ -294,9 +294,9 @@
                         "desciption": "RPA, “Robotic Process Automation” es la automatización de los procesos de negocio que replica las acciones de un ser humano interactuando con sistemas informáticos con interfaz de usuario. Vamos a desmitificar que “Entrenar” a tu robot RPA sea algo complejo y que sólo programadores pueden realizar. RPA está al alcance de todos y todo pueden ser parte.",
                         "links": [
                             {
-                                "type": "",
-                                "link": "",
-                                "icono": ""
+                                "type": "Linkedin",
+                                "link": "https://www.linkedin.com/in/belrodriguez/",
+                                "icono": "/imgs/iconos/linkedin.png"
                             }
                         ]
                     }
@@ -318,9 +318,14 @@
                         "desciption": "Definiciones básicas de EC ,  vinculación con la industria, las empresas de triple impacto y la sosteniblidad.",
                         "links": [
                             {
-                                "type": "",
-                                "link": "",
-                                "icono": ""
+                                "type": "Instagram",
+                                "link": "https://www.instagram.com/andreanallimspeaker/",
+                                "icono": "/imgs/iconos/instagram.png"
+                            }, 
+                            {
+                                "type": "Linkedin",
+                                "link": "https://www.linkedin.com/in/mariana-andrea-nallim-ponte/",
+                                "icono": "/imgs/iconos/linkedin.png"
                             }
                         ]
                     }
