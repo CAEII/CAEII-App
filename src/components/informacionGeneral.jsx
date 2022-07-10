@@ -1,11 +1,13 @@
 // react
-import { useParams } from "react-router-dom";
 import { useEffect } from "react";
+import { useParams } from "react-router-dom";
 // components
 import BaseLayout from "./layout";
-// AOS
+// AOS  (animaciones)
 import AOS from 'aos';
 import "aos/dist/aos.css";
+// react-plock (responsive masonry layout)
+import { Plock } from "react-plock";
 // styles
 import "../styles/info/css/info.css"
 // imgs
@@ -16,6 +18,7 @@ import json from "../informacion.json"
 // componente informacion general
 export default function Info_general() {
     const { category } = useParams()            // guardo en una constante la categoria del url 
+    
 
     for (let i = 0; i < json.length; i++) {     // recorro el json 
         if (json[i].category === category) {    // busco una categoria que coinsida con la de la url
@@ -27,18 +30,39 @@ export default function Info_general() {
     }
 
     if (jsonData) {         // si exixte la variable jsonData (significa que la categoria de la url existe dentro del json), devuelvo el componente, si no existe devuelvo un error
+
+        var columns = 2                 // inicializo la variable "columns" con valor 2
+        if (jsonData.length < 2) {      // reviso si la cantidad de rubros es menor que 2
+            columns = 1                 // si lo es le doy el valor 1 a la variable "columns"
+        }
+
+        const breakpoints = [                       // breackpoints para el "masonry layout"  (cantidad de columnas por resolucion)
+            { size: 640, columns: 1 },
+            { size: 1024, columns: columns },
+            { size: 1280, columns: columns },
+        ];
+            
         return (        
             <BaseLayout>
                 <main className="info_pag" id="home">
                     <div class="title">
                         <img src={title} alt="Logo caeii"></img>
                     </div>
-                    <section id="info_general"> 
-                        <h2> {category} </h2>  
-                        <div className="cards_container">
-                            <InfoBody params={jsonData}/> 
-                        </div>               
-                    </section>   
+                   <Plock  breakpoints={breakpoints} debounce={0} gap="5vw" className="an-happy-class">       {/*componente del masonry layout, PARAMETROS: breackpoints=cunatas columnas hay segun la resolucion, debounce=tiempo en ms para actualizar, gao=espacio entre columnas */}
+
+                        { jsonData.map((rubro) => {                      // recorros los rubros de la categoria (si los hay) y creo una section por cada uno
+                            let id = "info_general_" + rubro.title       // inicialiso la variable id con "info_general_" y el titulo del rubro
+                            return (
+                                <section id={id}> 
+                                    <h2> {rubro.title} </h2>  
+                                    <div className="cards_container">
+                                        <InfoBody params={rubro.info}/> 
+                                    </div>               
+                                </section> 
+                            )
+                        })}
+
+                    </Plock>     
                 </main>
             </BaseLayout>
         )
@@ -56,49 +80,42 @@ function InfoBody(params) {
           once: true, // whether animation should happen only once - while scrolling down
         });
       }, []);
+
+
     return(
         params.params.map(info => {         // recorro la info del json y por cada item en la lista devuelvo un div class="info_card"
             return (
-                <div class="info_card"  data-aos="fade-up">
+                // <div class="info_card"  data-aos="zoom-in-up">
+                <div class="info_card">
                     <div class="info_card_text">
                         
                         <h3> {info.title} </h3>
                         <div class="info_card_circle">
                             <img src={info.img} alt="" />
                         </div>
-                        <p> {info.desciption} </p>
+                        <p> 
+                            {info.disertante != "" ? info.disertante : ""}
+                            <br/>
+                            <br/>
+                            {info.desciption} 
+                            {/* {info.desciption.replace(";", <br/>)   // intento de agregar saltos de linea } */}  
+                        </p>
                     </div>
-    
-                    <Lists items={info.items}/>
-                    
+                    <Links links={info.links}/>                 
                 </div>
             )
         })
     )
 }
 
-function Lists(params){
-    if (params.items) {         // reviso si "params.items" existe
-        var mitad;              // declaro la variable "mitad"
 
-        if (params.items.length % 2 === 0) {                    // le doy a "mitad" el valor de la mitad del largo de "params.items" si es par
-            mitad = Math.floor(params.items.length / 2);
-        } else {
-            mitad = (Math.floor(params.items.length / 2))+1;    // si no es par le doy el varlor de la mitad mas uno del largo de "params.items"
-        }
 
-        const inicio = params.items.slice(0, mitad);            // declaro la constante "inicio" como un array con la primer mitad de "params.items"
-        const final = params.items.slice(mitad);                // declaro la constante "final" como un array con la segunda mitad de "params.items"
-
+function Links(params) {
+    if (params.links[0].type !== '') {         // reviso si "params.items" existe
         return(
-            <div class="info_items">
-                <ul class="izquierda">
-                    {inicio.map(item => <li> {item} </li>)}
-                </ul>
-                <ul class="derecha">
-                    {final.map(item => <li> {item} </li>)}
-                </ul>
-            </div>
+            <ul class="info_links">
+                {params.links.map(link => <li> <a href={link.link}> <img src={link.icono} alt={link.type} /> </a> </li>)}
+            </ul>
         )
     } 
 }

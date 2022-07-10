@@ -113,50 +113,42 @@ function Home() {
           <section id="estaciones">
             <h2> Estaciones </h2>
             <article id="1">
-              <h3 class="movile"> Odisea estelar </h3>
-              <h3 class="desktop"> Odisea estelar: poniendo a prueba nuestros límites </h3>
-              <p> En este pilar propone poner en evidencia cómo
-                gracias a la ingeniería se están ampliando los horizontes del conocimiento ...  </p>
+              <h3 class="movile"> {json[0].data[0].info[0].mobile} </h3>
+              <h3 class="desktop"> {json[0].data[0].info[0].title} </h3>
+              <p> {json[0].data[0].info[0].short} </p>
               <div class="img">
                 <div class="imgOrbit">
-                  <img src={estacion1} alt="Odisea estelar" />
+                  <img src={json[0].data[0].info[0].img} alt="Odisea estelar" />
                 </div>
               </div>
             </article>
             <article id="2" class="derecha">
-              <h3 class="movile"> Logística 4.0 </h3>
-              <h3 class="desktop"> Logística 4.0: Integración digital de los procesos productivos </h3>
-              <p> La logística 4.0, nacida con la llegada de la cuarta
-                revolución industrial, plantea una nueva realidad
-                ...   </p>
+              <h3 class="movile"> {json[0].data[0].info[1].mobile} </h3>
+              <h3 class="desktop"> {json[0].data[0].info[1].title} </h3>
+              <p> {json[0].data[0].info[1].short} </p>
               <div class="img">
                 <div class="imgOrbit">
-                  <img src={estacion2} alt="Logística 4.0" />
+                  <img src={json[0].data[0].info[1].img} alt="Logística 4.0" />
                 </div>
               </div>
             </article>
             <article id="3">
-              <h3 class="movile"> Ingeniería del mañana </h3>
-              <h3 class="desktop"> Próximo destino: La ingeniería del mañana </h3>
-              <p> La velocidad de transformación tecnológica
-                impacta en todos los ámbitos, y cada profesional
-                debe seguir estas tendencias ...
-              </p>
+              <h3 class="movile"> {json[0].data[0].info[2].mobile} </h3>
+              <h3 class="desktop"> {json[0].data[0].info[2].title} </h3>
+              <p> {json[0].data[0].info[2].short} </p>
               <div class="img">
                 <div class="imgOrbit">
-                  <img src={estacion3} alt="Ingeniería del mañana" />
+                  <img src={json[0].data[0].info[2].img} alt="Ingeniería del mañana" />
                 </div>
               </div>
             </article>
             <article id="4" class="derecha">
-              <h3 class="movile"> Desarrollo urbano sustentable </h3>
-              <h3 class="desktop"> Desarrollo urbano sustentable </h3>
-              <p> Impartiremos conocimientos sobre cómo las
-                ciudades inteligentes usan la información
-                para mejorar la calidad de vida ...   </p>
+              <h3 class="movile"> {json[0].data[0].info[3].mobile} </h3>
+              <h3 class="desktop"> {json[0].data[0].info[3].title} </h3>
+              <p> {json[0].data[0].info[3].short} </p>
               <div class="img">
                 <div class="imgOrbit">
-                  <img src={estacion4} alt="Desarrollo urbano sustentable" />
+                  <img src={json[0].data[0].info[3].img} alt="Desarrollo urbano sustentable" />
                 </div>
               </div>
             </article>
@@ -165,19 +157,19 @@ function Home() {
 
 
 
-          {/* <section id="conferencias_1">
-            <h2> Conferencias magistrales </h2>
+          <section id="conferencias_1">
+            <h2> {json[2].category} </h2>
             <article id="1">
-              <h3> #conferencias_1 #1 </h3>
-              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo dapibus purus.  </p>
+              <h3> {json[2].data[0].info[0].title} </h3>
+              <p> {json[2].data[0].info[0].disertante} </p>
               <div class="img">
                 <div class="imgOrbit">
-                  <img src={placeholder} alt="Conferencia 1" />
+                  <img src={json[2].data[0].info[0].img} alt="Conferencia 1" />
                   <div class="planet"></div>
                 </div>
               </div>
             </article>
-            <article id="2" class="derecha">
+            {/* <article id="2" class="derecha">
               <h3> #conferencias_1 #2 </h3>
               <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo dapibus purus.  </p>
               <div class="img">
@@ -196,49 +188,16 @@ function Home() {
                   <div class="planet"></div>
                 </div>
               </div>
-            </article>
-            <LeerMas type="interno" link="" />
-          </section>
+            </article> */}
+            <LeerMas type="interno" link="Conferencias magistrales" />
+          </section> 
 
 
 
-          <section id="visitas">
-            <h2> Visitas técnicas </h2>
-            <article id="1">
-              <h3> #visitas #1 </h3>
-              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo dapibus purus.  </p>
-              <div class="img">
-                <div class="imgOrbit">
-                  <img src={placeholder} alt="visitas 1" />
-                  <div class="planet"></div>
-                </div>
-              </div>
-            </article>
-            <article id="2" class="derecha">
-              <h3> #visitas #2 </h3>
-              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo dapibus purus.  </p>
-              <div class="img">
-                <div class="imgOrbit">
-                  <img src={placeholder2} alt="visitas 2" />
-                  <div class="planet"></div>
-                </div>
-              </div>
-            </article>
-            <article id="3">
-              <h3> #visitas #3 </h3>
-              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo dapibus purus.  </p>
-              <div class="img">
-                <div class="imgOrbit">
-                  <img src={placeholder} alt="visitas 3" />
-                  <div class="planet"></div>
-                </div>
-              </div>
-            </article>
-            <LeerMas type="interno" link="" />
-          </section>
+          
 
 
-
+ {/*
           <section id="talleres">
             <h2> Talleres </h2>
             <article id="1">
@@ -272,40 +231,24 @@ function Home() {
               </div>
             </article>
             <LeerMas type="interno" link="" />
-          </section> */}
+          </section> 
 
 
-
-          <section id="hackaton">
-            <h2> Hackaton </h2>
-            <article id="1">
-            <h3> {json[5].data[0].title} </h3>
-              <p> {json[5].data[0].short} </p>
-              <div class="img">
-                <div class="imgOrbit">
-                  <img src={hackaton} alt="Hackaton 1" />
-                  <div class="planet"></div>
-                </div>
-              </div>
-            </article>
-            <LeerMas type="interno" link="Hackaton" />
-          </section>
-          
-          
+*/}          
            
-          {/* <section id="conferencias_2">
+          <section id="conferencias_2">
             <h2> Conferencias profesionales </h2>
             <article id="1">
-              <h3> #conferencias_2 #1 </h3>
-              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo dapibus purus.  </p>
+              <h3> {json[3].data[0].info[0].title} </h3>
+              <p> {json[3].data[0].info[0].disertante} </p>
               <div class="img">
                 <div class="imgOrbit">
-                  <img src={placeholder} alt="Conferencia 1" />
+                    <img src={json[3].data[0].info[0].img} alt="Conferencia 1" />
                   <div class="planet"></div>
                 </div>
               </div>
             </article>
-            <article id="2" class="derecha">
+            {/* <article id="2" class="derecha">
               <h3> #conferencias_2 #2 </h3>
               <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo dapibus purus.  </p>
               <div class="img">
@@ -324,17 +267,65 @@ function Home() {
                   <div class="planet"></div>
                 </div>
               </div>
+            </article> */}
+            <LeerMas type="interno" link="Conferencias profesionales" />
+          </section>
+
+          <section id="visitas">
+            <h2> {json[1].category} </h2>
+            <article id="1">
+              <h3> {json[1].data[0].info[0].title} </h3>
+              <p> {json[1].data[0].info[0].short} </p>
+              <div class="img">
+                <div class="imgOrbit">
+                  <img src={json[1].data[0].info[0].img} alt="visitas 1" />
+                  <div class="planet"></div>
+                </div>
+              </div>
             </article>
-            <LeerMas type="interno" link="" />
-          </section> */}
+            <article id="2" class="derecha">
+              <h3> {json[1].data[1].info[1].title} </h3>
+              <p> {json[1].data[1].info[1].short} </p>
+              <div class="img">
+                <div class="imgOrbit">
+                  <img src={json[1].data[1].info[1].img} alt="visitas 2" />
+                  <div class="planet"></div>
+                </div>
+              </div>
+            </article>
+            <article id="3">
+              <h3> {json[1].data[3].info[0].title} </h3>
+              <p> {json[1].data[3].info[0].short} </p>
+              <div class="img">
+                <div class="imgOrbit">
+                  <img src={json[1].data[3].info[0].img} alt="visitas 3" />
+                  <div class="planet"></div>
+                </div>
+              </div>
+            </article>
+            <LeerMas type="interno" link="Visitas técnicas" />
+          </section>
 
-
+          <section id="hackaton">
+            <h2> Hackaton </h2>
+            <article id="1">
+            <h3> {json[5].data[0].info[0].title} </h3>
+              <p> {json[5].data[0].info[0].short} </p>
+              <div class="img">
+                <div class="imgOrbit">
+                  <img src={hackaton} alt="Hackaton 1" />
+                  <div class="planet"></div>
+                </div>
+              </div>
+            </article>
+            <LeerMas type="interno" link="Hackaton" />
+          </section>
 
           <section id="feria">
             <h2> Feria de empleo </h2>
             <article id="1">
-              <h3> {json[6].data[0].title} </h3>
-              <p> {json[6].data[0].short} </p>
+              <h3> {json[6].data[0].info[0].title} </h3>
+              <p> {json[6].data[0].info[0].short} </p>
               <div class="img">
                 <div class="imgOrbit">
                   <img src={feria} alt="feria 1" />
