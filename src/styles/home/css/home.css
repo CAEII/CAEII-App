@@ -133,10 +133,10 @@ article .img{
 #estaciones .imgOrbit{
     border-style: hidden;
 }
-#estaciones img{
+/* #estaciones img{
     height: 90%;
     border-radius: 0;
-}
+} */
 #estaciones .desktop{
     display: none;
 }
@@ -149,11 +149,18 @@ article p {
     margin-left: 6%;
     margin-right: 6%;
 }
+#estaciones article p {
+    font-size: 0.67rem;
+}
 article h3{
     display: flex;
     align-items: center;
     margin-left: 6%;
     margin-right: 6%;
+    font-size: 1rem;
+}
+#conferencias_1 article h3, #conferencias_2 article h3, #conferencias_1 article p, #conferencias_2 article p{
+    margin-top: 11%;
 }
 .derecha h3, .derecha p{
     text-align: right;
