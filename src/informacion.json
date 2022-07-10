@@ -7,8 +7,9 @@
                 "info": [
                     {
                         "title": "Odisea estelar: poniendo a prueba nuestros límites",
+                        "mobile": "Odisea estelar",
                         "img": "/imgs/estaciones/odiseaEstelar.png",
-                        "short": "",
+                        "short": "Gracias a la ingeniería se están ampliando los horizontes del conocimiento y está siendo posible que aquellos sueños que nos parecían nada más que ciencia ficción, se vuelvan una realidad...",
                         "desciption": "En este pilar se propone poner en evidencia cómo gracias a la ingeniería se están ampliando los horizontes del conocimiento y está siendo posible que aquellos sueños que nos parecían nada más que ciencia ficción, se vuelvan una realidad al alcance de nuestras manos. Se harán visibles aquellas oportunidades que tenemos de ser parte de esta innovación para motivar a los asistentes a que despeguen su propia nave y emprendan una odisea estelar.",
                         "links": [
                             {
@@ -20,8 +21,9 @@
                     },
                     {
                         "title": "Logística 4.0: Integración digital de los procesos productivos",
+                        "mobile": "Logística 4.0",
                         "img": "/imgs/estaciones/Logística 4.0.png",
-                        "short": "",
+                        "short": "La logística 4.0 plantea una nueva realidad donde la optimización de la cadena de suministros será posible mediante la hiperconectividad...",
                         "desciption": "La logística 4.0, nacida con la llegada de la cuarta revolución industrial, plantea una nueva realidad donde la optimización de la cadena de suministros será posible mediante la hiperconectividad y la implementación de las nuevas tecnologías. Este desafío consiste en la aplicación de avanzados métodos como lo son el análisis predictivo para reducción de errores, la evaluación en tiempo real de inclemencias del entorno para una mayor adaptabilidad logística, detección y prevención de fallas en cada etapa, entre otros. En este pilar proponemos analizar la importancia de los avances de la robotización, la automatización y estandarización de procesos productivos, para lograr que los clientes reciban los productos adecuados en el momento preciso.",
                         "links": [
                             {
@@ -33,8 +35,9 @@
                     },
                     {
                         "title": "Próximo destino: La ingeniería del mañana",
+                        "mobile": "Ingeniería del mañana",
                         "img": "/imgs/estaciones/Próximo destino.png",
-                        "short": "",
+                        "short": "Seremos protagonistas de la forma en que el uso de herramientas innovadores (metodologías ágiles, blockchain o inteligencia artificial, entre otras) puede llevar tu productividad a la luna...",
                         "desciption": "La velocidad de transformación tecnológica impacta en todos los ámbitos, y cada profesional debe seguir estas tendencias, saliendo capacitado para adaptarse con facilidad a las nuevas tecnologías y estrategias que día a día se van desarrollando y nos obligan a mantenernos actualizados constantemente. Veremos que el sistema revolucionario del Blockchain es mucho más que una simple base de datos. También seremos protagonistas de la forma en que el uso de herramientas, como metodologías ágiles, el coaching ejecutivo o la implementación de la inteligencia artificial en distintos ámbitos, puede llevar tu productividad a la luna.",
                         "links": [
                             {
@@ -45,9 +48,10 @@
                         ]
                     },
                     {
-                        "title": "Desarrollo urbano sustentable",
+                        "title": "Desarrollo Sostenible: Smart City",
+                        "mobile": "Smart City",
                         "img": "/imgs/estaciones/Desarrollo urbano.png",
-                        "short": "",
+                        "short": "Haremos hincapié en la importancia de la promoción de una movilidad sostenible que garantice la accesibilidad y los sistemas de transporte...",
                         "desciption": "Impartiremos conocimientos sobre cómo las ciudades inteligentes usan la información, las tecnologías de la comunicación y otros medios para mejorar la calidad de vida y la eficiencia de los servicios. Haremos hincapié en la importancia de la promoción de una movilidad sostenible que garantice la accesibilidad, los sistemas de transporte y la disminución del actual impacto ambiental.",
                         "links": [
                             {
@@ -253,6 +257,24 @@
                                 "icono": "/imgs/iconos/linkedin.png"
                             }
                         ]
+                    },
+                    {
+                        "title": "Rødder Brewing Company",
+                        "img": "/imgs/Visitas Técnicas/rodder.jfif",
+                        "short": "",
+                        "desciption": "Empresa de cuádruple impacto (Ambiental, Social, Económico y Cultural) que se dedica a la producción de cerveza artesanal. Podrás aprender del proceso de producción de la cerveza y realizar una degustación al final.",
+                        "links": [
+                            {
+                                "type": "Instagram",
+                                "link": "https://www.instagram.com/rodderbrewingco/?hl=es",
+                                "icono": "/imgs/iconos/instagram.png"
+                            },  
+                            {
+                                "type": "Linkedin",
+                                "link": "",
+                                "icono": "/imgs/iconos/linkedin.png"
+                            }
+                        ]
                     }
                 ]
             }
@@ -285,13 +307,14 @@
         "category": "Conferencias profesionales",
         "data": [
             {
-                "title": "esto podria ser el pilar",
+                "title": "Desarrollo Sostenible: Smart City",
                 "info": [
                     {
-                        "title": "",
-                        "img": "",
+                        "title": "¿La economía circular está vinculada con la industria 4.0?",
+                        "img": "/imgs/profesionales/Andrea8.jpg",
                         "short": "",
-                        "desciption": "",
+                        "disertante": "Mariana Andrea Nallim | Licenciada en Administración",
+                        "desciption": "Definiciones básicas de EC ,  vinculación con la industria, las empresas de triple impacto y la sosteniblidad.",
                         "links": [
                             {
                                 "type": "",

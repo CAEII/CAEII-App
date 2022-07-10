@@ -94,6 +94,9 @@ function InfoBody(params) {
                             <img src={info.img} alt="" />
                         </div>
                         <p> 
+                            {info.disertante != "" ? info.disertante : ""}
+                            <br/>
+                            <br/>
                             {info.desciption} 
                             {/* {info.desciption.replace(";", <br/>)   // intento de agregar saltos de linea } */}  
                         </p>
