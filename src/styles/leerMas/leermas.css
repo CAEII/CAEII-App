@@ -1,0 +1,28 @@
+.leermas{
+    height: 50px;
+    width: 150px;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+.leermas .texto {
+    position: relative;
+    top: -70%;
+    font-size: 1rem;
+}
+.leermas .circle {
+    width: 45px;
+    height: 45px;
+    margin-top: 2%;
+}
+.leermas .circle2 {
+    width: 45px;
+    height: 45px;
+
+}
+.leermas .cohete_leer_mas {
+    height: 11px !important;
+    transform: rotate(-30deg);
+
+    position: relative;
+    top: 70%;
+}

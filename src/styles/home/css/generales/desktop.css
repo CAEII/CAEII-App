@@ -1,6 +1,12 @@
 @media (min-width: 1024px) {
+    #visitas {
+        grid-column: 1/3;
+    }
+    #visitas>article>.movile {
+        display: none;
+    }
     header{
-        grid-template-rows: 150px;
+        height: 150px !important;
     }
     .movile_navbar{
         display: none;
@@ -20,6 +26,9 @@
     }
 
     /* HOME */
+    html{
+        background-image: url(/src/styles/home/img/desktop_backgraund.jpg);
+    }
     .sistema_solar{
         top: 620px;
     }
@@ -97,10 +106,24 @@
         left: 0;
     }
     #estaciones .leermas{
-        margin: 0;
-        position: absolute;
-        top: 1015px;
-        left: 80vw;
+        height: 100px;
+        width: 300px;
+    }
+    #estaciones .leermas .texto {
+        top: -62%;
+        font-size: 1.5rem;
+    }
+    #estaciones .leermas .circle {
+        width: 90px;
+        height: 90px;
+        margin-top: 2%;
+    }
+    #estaciones .leermas .circle2 {
+        width: 90px;
+        height: 90px;
+    }
+    #estaciones .cohete_leer_mas{
+        height: 20px !important;
     }
     #estaciones .desktop{
         display: flex;
@@ -136,7 +159,10 @@
     .nosotros .reverse {
         flex-direction: row-reverse;
     }
-    .nosotros .nosotros_section .img_representativa{
+    .nosotros .nosotros_img_conteiner{
+        overflow: hidden;
+    }
+    .nosotros .nosotros_section .nosotros_img_conteiner{
         margin-top: 0px;
         margin-bottom: 0px;
         width: 40%;
@@ -144,9 +170,30 @@
         margin-left: 80px;
         margin-right: 0px;
     }
-    .nosotros .reverse .img_representativa {
+    .nosotros .reverse .nosotros_img_conteiner{
         margin-left: 0px;
         margin-right: 80px;
+    }
+    /* .nosotros .nosotros_section .img_representativa{
+        margin-top: 0px;
+        margin-bottom: 0px;
+        width: 40%;
+        max-height: 350px;
+        margin-left: 80px;
+        margin-right: 0px;
+    } */
+    /* .nosotros .reverse .img_representativa {
+        margin-left: 0px;
+        margin-right: 80px;
+    } */
+
+    .nosotros section .img_representativa {
+        max-width: 650px;
+        max-height: 350px;
+        /* height: 350px; */
+        width: auto !important;
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
     }
     .nosotros .info {
         width: 40%;
@@ -228,6 +275,9 @@
 }
 
 @media only screen and (max-width: 1260px){
+    #visitas>article>.desktop {
+        display: none;
+    }
     #cinco .line_container {
         margin-left: 15%;
         margin-right: 15%;

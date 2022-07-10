@@ -95,7 +95,7 @@ nav{
 .desktop_navbar ul{
     padding-top: 20px;
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(5, 1fr);
 
     font-size: 1.3rem;
 }

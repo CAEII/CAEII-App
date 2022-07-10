@@ -53,7 +53,10 @@ svg{
     margin-top: 60px;
     margin-bottom: 60px;
 }
-
+.que_es_aareii{
+    height: 40vh !important;
+    width: auto !important;
+}
 .nosotros .linea{
     margin-top: 20px;
     width: fit-content;

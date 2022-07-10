@@ -32,8 +32,8 @@ html{
 
 header{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 100px 200px;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: 100px 200px; 
 }
 main{
     height: 60%;
