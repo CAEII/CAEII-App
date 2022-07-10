@@ -54,7 +54,7 @@ function Home() {
             <ul>
               <li id="uno">
                 <div class="linea">
-                  <a href="#conferencias_1">Charlas Magistrales</a>
+                  <a href="#conferencias_1">Conferencias Magistrales</a>
                   <div class="line_container"><div class="line" /></div>
                 </div>
               </li>
@@ -275,7 +275,8 @@ function Home() {
             <h2> {json[1].category} </h2>
             <article id="1">
               <h3> {json[1].data[0].info[0].title} </h3>
-              <p> {json[1].data[0].info[0].short} </p>
+              <p class="movile"> {json[1].data[0].info[0].short} </p>
+              <p class="desktop"> {json[1].data[0].info[0].desciption} </p>
               <div class="img">
                 <div class="imgOrbit">
                   <img src={json[1].data[0].info[0].img} alt="visitas 1" />
@@ -285,7 +286,8 @@ function Home() {
             </article>
             <article id="2" class="derecha">
               <h3> {json[1].data[1].info[1].title} </h3>
-              <p> {json[1].data[1].info[1].short} </p>
+              <p class="movile"> {json[1].data[1].info[1].short} </p>
+              <p class="desktop"> {json[1].data[1].info[1].desciption} </p>
               <div class="img">
                 <div class="imgOrbit">
                   <img src={json[1].data[1].info[1].img} alt="visitas 2" />
@@ -295,7 +297,8 @@ function Home() {
             </article>
             <article id="3">
               <h3> {json[1].data[3].info[0].title} </h3>
-              <p> {json[1].data[3].info[0].short} </p>
+              <p class="movile"> {json[1].data[3].info[0].short} </p>
+              <p class="desktop"> {json[1].data[3].info[0].desciption} </p>
               <div class="img">
                 <div class="imgOrbit">
                   <img src={json[1].data[3].info[0].img} alt="visitas 3" />
