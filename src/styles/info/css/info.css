@@ -3,16 +3,20 @@
 }
 
 .sections_navbar{
+    height: 17vh;
     background-color: var(--fondoTituloTargeta);
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    padding-top: 20px;
+    padding-top: 30px;
     padding-bottom: 20px;
     margin-bottom: 20px;
 }
+.sections_navbar.thin{
+    height: 0px;
+}
 .navbar_radio{
-    height: 80px;
+    height: 140px;
     width: 70px;
     position: absolute;
     pointer-events: all;
@@ -23,17 +27,31 @@
     width: 70px;
     display: flex;
     align-items: center;
-    justify-content: center;
-
+    /* justify-content: center; */
+    flex-direction: column;
     pointer-events: none;
 }
-.sections_navbar p{
+.sections_navbar .nav_buttons_title{
+    display: flex;
+    justify-content: center;
     width: 100%;
-    font-size: 0.7rem;
-    word-wrap: break-word;
-    z-index: 2;
-    display: none;
+    font-size: 2.5vw;
+    z-index: 3;
 }
+.checkmark {
+    height: 73px;
+    width: 73px;
+    margin-top: 33px;
+    position: absolute;
+    background-color: #A198DF;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 1;
+}
+.navbar_radio:checked~.checkmark{
+    background-color: #464099;
+}
+
 .info_card{
     min-height: 300px;
     border-radius: 50px;
@@ -129,5 +147,19 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: 3%;
+    }
+    .sections_navbar .nav_buttons_title{
+        font-size: 1.5vw;
+    }
+    .sections_navbar .navbutton{
+        width: 200px;
+    }
+}
+@media (min-width: 1267px) {
+    .sections_navbar .nav_buttons_title{
+        font-size: 1vw;
+    }
+    .sections_navbar .navbutton{
+        width: 250px;
     }
 }

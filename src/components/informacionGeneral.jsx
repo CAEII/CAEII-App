@@ -7,8 +7,6 @@ import BaseLayout from "./layout";
 // AOS  (animaciones)
 import AOS from 'aos';
 import "aos/dist/aos.css";
-// react-plock (responsive masonry layout)
-import { Plock } from "react-plock";
 // styles
 import "../styles/info/css/info.css"
 // imgs
@@ -40,23 +38,12 @@ export default function Info_general() {
                         <img src={title} alt="Logo caeii"></img>
                     </div>
                     <section className="section_info_general">
-                        <div className="sections_navbar">
-                            {jsonDataCategory.map((rubro) => {                      // recorros los rubros de la categoria (si los hay) y creo un boton por cada uno
-                                let className = "navbutton " + rubro.title
-                                return (
-                                    <div className={className}> 
-                                        <p> {rubro.title} </p> 
-                                        <input type="radio" name="kk" className="navbar_radio" id={rubro.title} onClick={() => setRubro(rubro.title)}/> 
-                                    </div>
-                                )
-                                
-                            })}
-                        </div>
+                        
+                        <Navbar info={jsonDataCategory} setRubro={setRubro}/>
 
                         <div className="cards_container">
                             <InfoBody rubro={Rubro} jsonData={jsonDataCategory}/>
                         </div>
-
                     </section>
                 </main>
             </BaseLayout>
@@ -67,9 +54,35 @@ export default function Info_general() {
 }
 
 
-// function Navbar(params) {
-    
-// }
+function Navbar(params) {
+    if (params.info.length > 1) {           // reviso si la cantidad de rubros es mayor a uno, si lo es devuelvo el navbar, si no lo es devuelvo un "secions_navbar" con la clase "thin"
+        return(
+            <div className="sections_navbar">             
+                {
+                    params.info.map((rubro, index) => {                      // recorros los rubros de la categoria (si los hay) y creo un boton por cada uno
+                        return (
+                            <NavButton title={rubro.title} setRubro={params.setRubro} index={index}/>
+                        ) 
+                    })
+                }
+            </div>
+        )
+    } else {
+        return ( <div className="sections_navbar thin"> </div>  )
+    }
+}
+
+function NavButton(params){
+    // const [Ischecked, setIschecked] = useState(`navbar_radio navbar_radio_${params.index}`);
+    const className = "navbutton " + params.title
+    return (
+        <div className={className}> 
+            <p className="nav_buttons_title"> {params.title.replace("/", " ")} </p> 
+            <input type="radio" name="kk" className="navbar_radio" id={params.title} onClick={() => {params.setRubro(params.title)}}/> 
+            <span class="checkmark"></span>          
+        </div>
+    ) 
+}
 
 
 
@@ -85,7 +98,7 @@ function InfoBody(params) {
     if (params.rubro === "default") {       // si el valor pasado por parametros para el rubro es igual a "default" le doy a la variable el titulo del primer rubro en la respectiva categoria del json
         rubro = params.jsonData[0].title
         
-        setTimeout(() => {          // pongo un timeout de 5 segundos
+        setTimeout(() => {          // pongo un timeout de 100 milisegundos
             document.getElementById(params.jsonData[0].title).checked = true;
         }, 100);
     }
@@ -126,7 +139,7 @@ function InfoBody(params) {
 
 
 function Links(params) {
-    if (params.links[0].type !== '') {         // reviso si "params.items" existe
+    if (params.links[0].type !== '') {         // reviso si "params.links" existe
         return(
             <ul class="info_links">
                 {params.links.map(link => <li> <a href={link.link}> <img src={link.icono} alt={link.type} /> </a> </li>)}
