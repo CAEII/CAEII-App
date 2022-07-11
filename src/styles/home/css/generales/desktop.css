@@ -1,7 +1,8 @@
 @media (min-width: 1024px) {
-    #visitas {
+    /*Descomentar para que ocupe toda la pantalla*/
+    /* #visitas {
         grid-column: 1/3;
-    }
+    } */
     #visitas>article>.movile {
         display: none;
     }

@@ -174,7 +174,7 @@
                     {
                         "title": "Olivícola LAUR",
                         "img": "/imgs/Visitas Técnicas/Olivícola LAUR.png",
-                        "short": "Pionera en la implantación de olivares en la provincia de Mendoza como así también en la elaboración de aceite de oliva...",
+                        "short": "Pionera en la implantación de olivares en Mendoza y en la elaboración de aceite de oliva...",
                         "desciption": "Fundada en 1889, Laur fue pionera en la implantación de olivares en la provincia de Mendoza como así también en la elaboración de aceite de oliva. En el año 2021 fue nombrada por el EVOO WORLD RANKING como la olivícola número 1 del mundo. El medallero de la olivícola mendocina crece año tras año, fortaleciendo su posicionamiento como una de las top 10 del mundo y la número 1 de Argentina.",
                         "links": [
                             {
@@ -287,16 +287,16 @@
                 "title": "Conferencias magistrales",
                 "info": [
                     {
-                        "title": "¿Cómo entrenar a tu robot RPA?",
-                        "img": "/imgs/magistrales/belen.jpg",
-                        "disertante": "Belén Rodríguez | RPA Project Leader",
+                        "title": "",
+                        "img": "",
+                        "disertante": "",
                         "short": "",
-                        "desciption": "RPA, “Robotic Process Automation” es la automatización de los procesos de negocio que replica las acciones de un ser humano interactuando con sistemas informáticos con interfaz de usuario. Vamos a desmitificar que “Entrenar” a tu robot RPA sea algo complejo y que sólo programadores pueden realizar. RPA está al alcance de todos y todo pueden ser parte.",
+                        "desciption": "",
                         "links": [
                             {
-                                "type": "Linkedin",
-                                "link": "https://www.linkedin.com/in/belrodriguez/",
-                                "icono": "/imgs/iconos/linkedin.png"
+                                "type": "",
+                                "link": "",
+                                "icono": ""
                             }
                         ]
                     }
@@ -325,6 +325,20 @@
                             {
                                 "type": "Linkedin",
                                 "link": "https://www.linkedin.com/in/mariana-andrea-nallim-ponte/",
+                                "icono": "/imgs/iconos/linkedin.png"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "¿Cómo entrenar a tu robot RPA?",
+                        "img": "/imgs/magistrales/belen.jpg",
+                        "disertante": "Belén Rodríguez | RPA Project Leader",
+                        "short": "",
+                        "desciption": "RPA, “Robotic Process Automation” es la automatización de los procesos de negocio que replica las acciones de un ser humano interactuando con sistemas informáticos con interfaz de usuario. Vamos a desmitificar que “Entrenar” a tu robot RPA sea algo complejo y que sólo programadores pueden realizar. RPA está al alcance de todos y todo pueden ser parte.",
+                        "links": [
+                            {
+                                "type": "Linkedin",
+                                "link": "https://www.linkedin.com/in/belrodriguez/",
                                 "icono": "/imgs/iconos/linkedin.png"
                             }
                         ]
@@ -365,7 +379,7 @@
                     {
                         "title": "¿Qué es el Hackaton?",
                         "img": "/imgs/hackaton.jpg",
-                        "short": "Hackaton es una metodología de innovación abierta que posee la capacidad de incluir diferentes metodologías para creación de soluciones de forma colaborativa.",
+                        "short": "Hackaton es una metodología de innovación abierta que busca fomentar la creación de soluciones de forma colaborativa.",
                         "desciption": "Hackaton es una metodología de innovación abierta que posee la capacidad de incluir diferentes metodologías para creación de soluciones de forma colaborativa.  Los participantes trabajan en pequeños grupos en un entorno diseñado donde se fomenta el pensamiento creativo y conduce a nuevos conceptos, prototipos e ideas sorprendentemente innovadoras, para trabajar con el enfoque de crear un producto o una idea novedosa a raíz de una problemática central.",
                         "links": [
                             {
