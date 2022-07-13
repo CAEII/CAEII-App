@@ -134,7 +134,7 @@ export default function Nosotros() {
               </div>
               <div class="link">
                 <div class="linea">
-                  <Link to="/info/Estaciones">{" Desarrollo urbano sustentable >"}</Link>
+                  <Link to="/info/Estaciones">{" Desarrollo Sustentable: Smart City >"}</Link>
                   <div class="line_container"><div class="line"></div></div>
                 </div>
               </div>
