@@ -5,7 +5,7 @@ import './App.css';
 import Home from './components/home';
 import HeaderBar from './components/header';
 import Nosotros from './components/nosotros';
-import Info from './components/informacionGeneral';
+import Info from './components/Informacion_general/informacionGeneral';
 // import Perfil  from './components/perfil'
 //import PerfilQrsPRUEBA  from './components/perfil_qrs_PRUEBA' // componente de prueba para los qrs
 

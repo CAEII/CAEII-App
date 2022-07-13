@@ -1,10 +1,11 @@
-import { Link } from 'react-router-dom'
+// styles
 import "../styles/home/css/fuentes.css"
 import "../styles/home/css/generales/variables.css"
 import "../styles/home/css/generales/generales.css"
 import "../styles/home/css/home.css"
 import "../styles/home/css/generales/pantallasChicas.css"
 import "../styles/home/css/generales/desktop.css"
+// imgs
 import logoAareii from "../styles/home/img/logo-aareii-desktop.png"
 
 
