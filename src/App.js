@@ -1,13 +1,14 @@
+// React
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import logo from './logo.svg';
-import Login from "./components/login";
-import './App.css';
+// Components
 import Home from './components/home';
-import HeaderBar from './components/header';
+// import Login from './components/login';
 import Nosotros from './components/nosotros';
 import Info from './components/Informacion_general/informacionGeneral';
-// import Perfil  from './components/perfil'
+//import Perfil  from './components/perfil'
 //import PerfilQrsPRUEBA  from './components/perfil_qrs_PRUEBA' // componente de prueba para los qrs
+// Styles
+// import './App.css';
 
 function App() {
   return (
@@ -22,7 +23,6 @@ function App() {
           {/* <Route path="/login" element={<Login/>}/> */}
           <Route path="/nosotros" element={<Nosotros/>}/>
           <Route path="/info/:category" element={<Info/>}/>
-          {/* <Route path="/info_prueba/:category" element={<InfoPrueba/>}/> */}
         </Routes>
       </BrowserRouter> 
     </div>
