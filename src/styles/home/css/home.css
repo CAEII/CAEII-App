@@ -31,6 +31,24 @@ section article{
     
     grid-template-rows: 40% 60%;
 }
+section#conferencias_2 article{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+section#conferencias_2 article.flex_derecha{
+    flex-direction: row;
+}
+section#conferencias_2 article.flex_derecha .img{
+    margin-right: 10px;
+}
+section#conferencias_2 article.flex_derecha .conferencias_2_text{
+    margin-left: 20px;
+    /* width: 50%; */
+}
+
+
+
 .imgOrbit{
     height: 130px;
     width: 130px;
@@ -160,7 +178,7 @@ article h3{
     font-size: 1rem;
 }
 #conferencias_1 article h3, #conferencias_2 article h3, #conferencias_1 article p, #conferencias_2 article p{
-    margin-top: 11%;
+    margin-top: 20px;
 }
 .derecha h3, .derecha p{
     text-align: right;

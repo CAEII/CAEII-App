@@ -239,8 +239,10 @@ function Home() {
           <section id="conferencias_2">
             <h2> Conferencias profesionales </h2>
             <article id="1">
-              <h3> {json[3].data[0].info[0].title} </h3>
-              <p> {json[3].data[0].info[0].disertante} </p>
+              <div className="conferencias_2_text">
+                <h3> {json[3].data[0].info[0].title} </h3>
+                <p> {json[3].data[0].info[0].disertante} </p>
+              </div>
               <div class="img">
                 <div class="imgOrbit">
                     <img src={json[3].data[0].info[0].img} alt="Conferencia 1" />
@@ -248,9 +250,11 @@ function Home() {
                 </div>
               </div>
             </article>
-            <article id="2">
-              <h3> {json[3].data[0].info[1].title} </h3>
-              <p> {json[3].data[0].info[1].disertante} </p>
+            <article id="2" className="flex_derecha">
+              <div className="conferencias_2_text">
+                <h3> {json[3].data[0].info[1].title} </h3>
+                <p> {json[3].data[0].info[1].disertante} </p>
+              </div>
               <div class="img">
                 <div class="imgOrbit">
                     <img src={json[3].data[0].info[1].img} alt="Conferencia 1" />
