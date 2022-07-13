@@ -65,7 +65,7 @@ function Links({links}) {
     if (links[0].type !== '') {         // reviso si "params.links" existe
         return(
             <ul class="info_links">
-                {links.map(link => <li> <a href={link.link}> <img src={link.icono} alt={link.type} /> </a> </li>)}
+                {links.map(link => <li> <a href={link.link} target="_blank" rel="noreferrer"> <img src={link.icono} alt={link.type} /> </a> </li>)}
             </ul>
         )
     } 
