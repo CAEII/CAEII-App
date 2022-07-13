@@ -119,23 +119,28 @@ function InfoBody(params) {
                 <div class="info_card_text">
                     
                     <h3> {card.title} </h3>
-                    <div class="info_card_circle">
-                        <img src={card.img} alt="" />
-                    </div>
+                   {card.img !== "" ? <Img src={card.img}/> : null}        {/*  si la src de la imagen no esta vacia muestro la imagen     */}
                     <p> 
-                        {card.disertante != "" ? card.disertante : ""}
+                        {card.disertante !== "" ? card.disertante : ""}
                         <br/>
                         <br/>
                         {card.desciption} 
-                        {/* {info.desciption.replace(";", <br/>)   // intento de agregar saltos de linea } */}  
                     </p>
                 </div>
+                {card.items.length > 0 ? <Items items={card.items}/> : null}         {/*    si el largo de los items es mayor a 0 los muestro     */}
                 <Links links={card.links}/>                 
             </div>
         )
     })
 }
 
+function Img({src}) {
+    return (
+        <div class="info_card_circle">
+            <img src={src} alt="" />
+        </div>
+    )  
+}
 
 
 function Links(params) {
@@ -146,4 +151,16 @@ function Links(params) {
             </ul>
         )
     } 
+}
+
+
+function Items({items}){
+    return(
+        <div class="info_items">
+            {/* <ul class="izquierda"> */}
+            <ul>
+                {items.map(item => <li> {item} </li>)}
+            </ul>
+        </div>
+    )
 }

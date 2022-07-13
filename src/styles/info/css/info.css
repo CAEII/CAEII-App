@@ -132,8 +132,11 @@
     .info_card p{
         font-size: 1.5rem;
     }
+    .info_card .info_items {
+        margin-top: 2%;
+    }
     .info_card .info_items li{
-        font-size: 1.7rem;
+        font-size: 1rem;
     }
     .title+div{
         grid-column: 1/3;
