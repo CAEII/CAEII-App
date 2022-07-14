@@ -100,7 +100,7 @@
     .nosotros .rocket_container img {
         height: 10px !important;
     }
-    /* PERFIL */
+    /* PERFIL
     .perfil header{
         height: 100vh;
     }
@@ -163,7 +163,7 @@
     }
     #logo img {
         height: 150px;
-    }
+    } */
 }
 
 @media only screen and (max-width: 1260px){
