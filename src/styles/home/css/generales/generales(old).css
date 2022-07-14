@@ -9,11 +9,12 @@ html, body {
     height: 100%;
     min-width: 260px;
 }
-html{
+.App{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     scroll-behavior: smooth;
+    z-index: -1;
 }
 
 header{
@@ -56,7 +57,7 @@ footer{
     bottom: 0;
     width: 100%;
     height: 90px;
-    z-index: -1;
+    /* z-index: -1; */
 
     display: flex;
     justify-content: center;
@@ -128,7 +129,7 @@ li {
     position: relative;
     height: 100px;
     width: 300px;
-    z-index: 1;
+    /* z-index: 1; */
 
     border-radius: 50px;
     background-color: var(--boton_input);
@@ -144,7 +145,7 @@ li {
     position: relative;
     top: -55%;
     left: 13%;
-    z-index: 2;
+    /* z-index: 2; */
 
     font-size: 1.5rem;
 }
@@ -167,7 +168,7 @@ li {
 
     position: relative;
     top: 30%;
-    z-index: 2;
+    /* z-index: 2; */
 
     background: #2b379f;
     border-radius: 50%;
@@ -175,7 +176,7 @@ li {
 .button .rocket_container {
     position: relative;
     top: 40%;
-    z-index: 3;
+    /* z-index: 3; */
 }
 .button img {
     height: 11px;
@@ -264,7 +265,7 @@ li {
     border: 5px solid var(--orbitas);
     position: absolute;
     border-radius: 100%;
-    z-index: -4;
+    /* z-index: -4; */
     animation: orbiting infinite linear;
 }
 .fondo {
@@ -274,7 +275,7 @@ li {
     margin: -80vw;
 
     position: absolute;
-    z-index: -10;
+    /* z-index: -10; */
     border-radius: 100%;
 }
 .planet_container {
@@ -347,7 +348,7 @@ li {
     top: 20px;
     right: 20px;
 
-    z-index: 25;
+    /* z-index: 25; */
     opacity: 0;
     cursor: pointer;
 }
@@ -360,7 +361,7 @@ li {
     top: 17px;
     right: 20px;
 
-    z-index: 24;
+    /* z-index: 24; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -403,7 +404,7 @@ li {
     flex-direction: column;
     transition: transform 0.5s ease-in-out;
 
-    z-index: 20;
+    /* z-index: 20; */
 }
 .movile_navbar .menu-items li {
     margin-bottom: 1.2rem;
@@ -430,7 +431,7 @@ footer{
     height: 70px;
     justify-content: flex-end;
 
-    z-index: 50;
+    /* z-index: 50; */
 }
 .homecircle{
     height: 50px;

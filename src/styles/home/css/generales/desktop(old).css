@@ -27,7 +27,7 @@
     }
 
     /* HOME */
-    html{
+    .App#home{
         background-image: url(/src/styles/home/img/desktop_backgraund.jpg);
     }
     .sistema_solar{

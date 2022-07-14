@@ -33,7 +33,7 @@ export default function Perfil() {
                 <div class="asistencia">
                     <button class="circulo_qr">
                         <QRCodeSVG
-                            value={"https://picturesofpeoplescanningqrcodes.tumblr.com/"}
+                            value={"kk"}
                             size={200}
                             bgColor={"#ffffff"}
                             fgColor={"#9400d4"}

@@ -9,7 +9,7 @@ html, body {
     height: 100%;
     min-width: 260px;
 }
-html{
+.App{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;

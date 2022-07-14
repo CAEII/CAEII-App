@@ -1,0 +1,25 @@
+@font-face {
+    /* fuente general */
+    font-family: 'Montserrat-Regular';
+    /* src: url(../../fonts/Montserrat-Regular.ttf) format('truetype');     old direction */  
+    src: url(../styles/fonts/Montserrat-Regular.ttf) format('truetype');
+}
+@font-face {
+    /* fuente de los h1 */
+    font-family: 'Montserrat-Italic';
+    src: url(../styles/fonts/Montserrat-Italic.ttf) format('truetype');
+}
+@font-face {
+    /* fuente de los h2 */
+    font-family: 'Montserrat-Black';
+    src: url(../styles/fonts/Montserrat-Black.ttf) format('truetype');
+}
+@font-face {
+    /* fuente de los links del menu de home */
+    font-family: 'Montserrat-MediumItalic';
+    src: url(../styles/fonts/Montserrat-Italic.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Montserrat-LightItalic';
+    src: url(../styles/fonts/Montserrat-LightItalic.ttf) format('truetype');
+}

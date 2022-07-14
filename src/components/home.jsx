@@ -2,12 +2,11 @@
 import BaseLayout from "./layout"
 import LeerMas from "./leerMas"
 // styles
-import "../styles/home/css/fuentes.css"
-import "../styles/home/css/generales/variables.css"
-import "../styles/home/css/generales/generales.css"
+// import "../styles/home/css/fuentes.css"
+// import "../styles/home/css/generales/variables.css"
 import "../styles/home/css/home.css"
-import "../styles/home/css/generales/pantallasChicas.css"
-import "../styles/home/css/generales/desktop.css"
+// import "../styles/home/css/generales/pantallasChicas.css"
+
 // IMGS
 // import estacion1 from "../styles/home/img/estaciones/odiseaEstelar.png"
 // import estacion2 from "../styles/home/img/estaciones/Logística 4.0.png"
@@ -24,10 +23,9 @@ import json from "../informacion.json"
 
 function Home() {
   return (
-
-    <body id="home" className="home">
+    <div className="App" id="home">
       <BaseLayout>
-        <main>
+        <main >
           <div class="title">
             <img src={title} alt="Logo caeii"></img>
           </div>
@@ -346,7 +344,7 @@ function Home() {
           </section>
         </main>
       </BaseLayout>
-    </body>
+    </div>
   )
 }
 

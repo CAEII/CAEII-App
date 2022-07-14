@@ -30,21 +30,23 @@ export default function Info_general() {
 
     if (jsonDataCategory) {         // si exixte la variable "jsonDataCategory" (significa que la categoria de la url existe dentro del json), devuelvo el componente, si no existe devuelvo un error
         return(
-            <BaseLayout>
-                <main className="info_pag" id="home">
-                    <div class="title">
-                        <img src={title} alt="Logo caeii"></img>
-                    </div>
-                    <section className="section_info_general">
-                        
-                        <Navbar info={jsonDataCategory} setRubro={setRubro}/>
-
-                        <div className="cards_container">
-                            <InfoBody rubro={Rubro} jsonData={jsonDataCategory}/>
+            <div className="App" id="InfoGeneral">
+                <BaseLayout>
+                    <main className="info_pag" id="home">
+                        <div class="title">
+                            <img src={title} alt="Logo caeii"></img>
                         </div>
-                    </section>
-                </main>
-            </BaseLayout>
+                        <section className="section_info_general">
+                            
+                            <Navbar info={jsonDataCategory} setRubro={setRubro}/>
+
+                            <div className="cards_container">
+                                <InfoBody rubro={Rubro} jsonData={jsonDataCategory}/>
+                            </div>
+                        </section>
+                    </main>
+                </BaseLayout>
+            </div>
         )    
     } else {
         console.error('El parametro "category" de la url de ser: "Estaciones", "Visitas técnicas", "Conferencias magistrales", "Conferencias profesionales", "Talleres", "Hackaton" o "Feria de empleo"');
