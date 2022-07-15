@@ -4,12 +4,12 @@ import React from "react";
 import BaseLayout from "../layout"
 import Credencial from "./Credencial";
 import Cronograma from "./Cronograma";
-import Mapas from "./Mapas";
+import SectionMapas from "./Section_Mapas";
 //styles
 import "../../styles/perfil/css/Perfil.css";
 // imgs
 import title from "../../styles/home/img/caeii-title.png"
-import CaeiiLogo from "../../styles/perfil/img/perfil/CAEII LOGO 1.svg";
+import CaeiiLogo from "../../styles/perfil/img/CAEII LOGO 1.png";
 
 
 export default function Perfil() {
@@ -25,7 +25,7 @@ export default function Perfil() {
 
                     <Cronograma/>
 
-                    <Mapas/>
+                    <SectionMapas/>
 
                     <section id="logo">
                         <img src={CaeiiLogo} alt="logo CAEII" />

@@ -313,6 +313,16 @@ th,td{
     height: fit-content;
     padding-bottom: 40px;
 }
+.map_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.map_container svg{
+    height: fit-content;
+    margin: 0;
+}
 iframe{
     width: 300px;
     height: 300px;
