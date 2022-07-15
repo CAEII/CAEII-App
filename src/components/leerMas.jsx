@@ -1,5 +1,3 @@
-// react
-import { Link } from 'react-router-dom';
 // style
 import "../styles/leerMas/leermas.css"
 // imgs
@@ -18,7 +16,7 @@ export default function LeerMas(params) {
     
     return (
         <div class="button leermas">
-            <Link to={link} class="hyperspan">
+            <a href={link} class="hyperspan">
                 <div class="circle">
                     <div class="rocket_container">
                       <img src={cohete} alt="cohete caeii" class="cohete_leer_mas"></img>
@@ -26,7 +24,7 @@ export default function LeerMas(params) {
                     <div class="circle2"></div>
                 </div>
                 <div class="texto"> Leer mas </div>
-            </Link>
+            </a>
         </div>
   )
 }
