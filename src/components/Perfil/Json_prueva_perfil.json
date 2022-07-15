@@ -1,0 +1,15 @@
+[
+    {
+        "nombre":"Augusto Antonelli",
+        "actividades": [
+            true,
+            true,
+            false,
+            true,
+            true,
+            false,
+            true,
+            true
+        ]
+    }
+]

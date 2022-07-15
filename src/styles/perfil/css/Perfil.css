@@ -1,5 +1,5 @@
 .App#perfil{
-    background-image:  url(../img/perfil/fondoPerfil.jpg);
+    background-image:  url(../img/fondoPerfil.jpg);
 }
 .nav-container .hamburger-lines .line {
     background: var(--hamburger_scrolHandle_Mapas_Perfil);
@@ -37,6 +37,23 @@
 .top_asistencia, .comidas{
     padding: 25px;
     padding-top: 0;
+}
+.asistencia .circulo_qr svg{
+   height: 27vw;
+   width: 27vw;
+}
+progress {
+    border-radius: 50px;
+    width: 80%;
+    height: 22px;
+}
+progress::-webkit-progress-bar {
+    background-color: #ffffff;
+    border-radius: 50px;
+}
+progress::-webkit-progress-value {
+    background-color: #9400d4;
+    border-radius: 50px;
 }
 .comidas{
     margin-top: 30px;
@@ -335,7 +352,7 @@ iframe{
     position: relative;
     top: 30%;
 
-    background-image: url('../img/perfil/fondo\ planeta.jpg');
+    background-image: url("../img/fondo_planeta.jpg");
     background-size: contain;
 }
 .coheteconteiner .texto{

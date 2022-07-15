@@ -7,19 +7,31 @@ import Taco from "../../styles/perfil/img/perfil/taco.png";
 import TacoD from "../../styles/perfil/img/perfil/taco_dessaturado.png"
 import Coffee from "../../styles/perfil/img/perfil/coffee.png";
 import CoffeeD from "../../styles/perfil/img/perfil/coffee_dessaturado.png";
-
-
+// json
+import json from "./Json_prueva_perfil.json"
 
 export default function Credencial() {
+    var asistencia = 0
+    for (let i = 0; i < json[0].actividades.length; i++) {
+        if (json[0].actividades[i] === true) {
+            asistencia += 1
+        }  
+    }
+    asistencia = (asistencia * 100) / json[0].actividades.length;
+
+    // let info_qr = json[0].nombre    // info para codificar en el qr en caso de usar scaners 
+    let info_qr = "https://www.caeii.com.ar/user/" + json[0].nombre   // info para codificar en el qr en caso de no usar scaners 
+
+    
     return(
         <section id="credencial">
-            <h2> Tu credencial</h2>
+            <h2> {json[0].nombre} </h2>
             <div class="top_asistencia">
                 <img src={Astronauta} alt="astronauta de caeii" class="astronauta_de_caeii" />
                 <div class="asistencia">
                     <button class="circulo_qr">
                         <QRCodeSVG
-                            value={"kk"}
+                            value={info_qr}
                             size={200}
                             bgColor={"#ffffff"}
                             fgColor={"#9400d4"}
@@ -34,9 +46,9 @@ export default function Credencial() {
                                 excavate: false,
                             }}
                         />
-                        {/* <img src={QR} alt="'link del QR'" /> */}
                     </button>
-                    <h3 id="porcentaje_asistencia"> ASISTENCIA: 98%</h3>
+                    <h3 id="porcentaje_asistencia"> ASISTENCIA: {asistencia}%</h3>
+                    <progress id="file" value={asistencia} max="100"></progress>
                 </div>
             </div>
             {/* <div class="comidas">
