@@ -1,7 +1,7 @@
 // React
 import {QRCodeSVG} from 'qrcode.react';
 // imgs
-import QR from "../../styles/perfil/img/perfil/qrs/qr.png";
+// import QR from "../../styles/perfil/img/perfil/qrs/qr.png";
 import Astronauta from "../../styles/perfil/img/perfil/astronauta.png";
 import Taco from "../../styles/perfil/img/perfil/taco.png";
 import TacoD from "../../styles/perfil/img/perfil/taco_dessaturado.png"
