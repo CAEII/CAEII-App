@@ -1,16 +1,10 @@
 // styles generales (se aplican a todos los componentes)
 
-// import "../styles/home/css/fuentes.css"
 import "../styles/fuentes.css"
-// import "../styles/home/css/generales/variables.css"
 import "../styles/variables.css"
 import "../styles/generales.css"
-// import "../styles/home/css/generales/generales.css"
-// import "../styles/home/css/home.css"
-// import "../styles/home/css/generales/pantallasChicas.css"
 import "../styles/pantallasChicas.css"
 import "../styles/desktop.css"
-// import "../styles/home/css/generales/desktop.css"
 // imgs
 import logoAareii from "../styles/home/img/logo-aareii-desktop.png"
 

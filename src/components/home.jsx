@@ -2,20 +2,9 @@
 import BaseLayout from "./layout"
 import LeerMas from "./leerMas"
 // styles
-// import "../styles/home/css/fuentes.css"
-// import "../styles/home/css/generales/variables.css"
 import "../styles/home/css/home.css"
-// import "../styles/home/css/generales/pantallasChicas.css"
-
 // IMGS
-// import estacion1 from "../styles/home/img/estaciones/odiseaEstelar.png"
-// import estacion2 from "../styles/home/img/estaciones/Logística 4.0.png"
-// import estacion3 from "../styles/home/img/estaciones/Próximo destino.png"
-// import estacion4 from "../styles/home/img/estaciones/Desarrollo urbano.png"
-// import hackaton from "../styles/home/img/hackaton.jpg"
 import feria from "../styles/home/img/feria.jpeg"
-// import placeholder from "../styles/home/img/PLACE HOLDER.png"
-// import placeholder2 from "../styles/home/img/PLACE HOLDER cuadrado.png"
 import cohete from "../styles/home/img/cohete-botones.svg"
 import title from "../styles/home/img/caeii-title.png"
 // json
