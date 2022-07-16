@@ -1,5 +1,15 @@
 
 /****************Mobile******************/
+.App#login{
+    background-image:  url(/public/imgs/FondoMovile.jpg);
+}
+
+#root,.App#login{
+    height: 100%;
+}
+.App#login main{
+    height: 90%;
+} 
 
 header{
     grid-template-rows: 25px 200px;
@@ -104,13 +114,20 @@ form a{
 
 #footer-login {
     width: 100%;
+    height: 100px;
     display: flex;
     justify-content: center;
 }
 
 /**********Desktop***********/
 
-@media (min-width: 1024px) {
+@media (min-width: 1024px) {   
+    .App#login{
+        background-image:  url(/public/imgs/FondoDesktop.jpg);
+    } 
+    .App#login main{
+        height: 80%;
+    } 
     .title-login {
         display: none;
     }
