@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/CAEII-App/static/css/main.93688a46.css",
-    "main.js": "/CAEII-App/static/js/main.c164ec9c.js",
+    "main.js": "/CAEII-App/static/js/main.305d1586.js",
     "static/js/787.8c822ef0.chunk.js": "/CAEII-App/static/js/787.8c822ef0.chunk.js",
     "static/media/desktop_backgraund.jpg": "/CAEII-App/static/media/desktop_backgraund.c1a06b48afedfcff9016.jpg",
     "static/media/Que_incluye.png": "/CAEII-App/static/media/Que_incluye.da2507114b8b08ddfca7.png",
@@ -33,11 +33,11 @@
     "index.html": "/CAEII-App/index.html",
     "static/media/icono-BotonHome.svg": "/CAEII-App/static/media/icono-BotonHome.30d209bc472efb8b244806ac39489eac.svg",
     "main.93688a46.css.map": "/CAEII-App/static/css/main.93688a46.css.map",
-    "main.c164ec9c.js.map": "/CAEII-App/static/js/main.c164ec9c.js.map",
+    "main.305d1586.js.map": "/CAEII-App/static/js/main.305d1586.js.map",
     "787.8c822ef0.chunk.js.map": "/CAEII-App/static/js/787.8c822ef0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.93688a46.css",
-    "static/js/main.c164ec9c.js"
+    "static/js/main.305d1586.js"
   ]
 }
