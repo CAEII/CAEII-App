@@ -54,7 +54,7 @@ function Home() {
             <ul>
               <li id="uno">
                 <div class="linea">
-                  <a href="#conferencias_1">Charlas Magistrales</a>
+                  <a href="#conferencias_1">Conferencias Magistrales</a>
                   <div class="line_container"><div class="line" /></div>
                 </div>
               </li>
@@ -157,7 +157,7 @@ function Home() {
 
 
 
-          <section id="conferencias_1">
+          {/*<section id="conferencias_1">
             <h2> {json[2].category} </h2>
             <article id="1">
               <h3> {json[2].data[0].info[0].title} </h3>
@@ -169,7 +169,7 @@ function Home() {
                 </div>
               </div>
             </article>
-            {/* <article id="2" class="derecha">
+             <article id="2" class="derecha">
               <h3> #conferencias_1 #2 </h3>
               <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo dapibus purus.  </p>
               <div class="img">
@@ -188,11 +188,11 @@ function Home() {
                   <div class="planet"></div>
                 </div>
               </div>
-            </article> */}
+            </article> 
             <LeerMas type="interno" link="Conferencias magistrales" />
           </section> 
 
-
+*/}
 
           
 
@@ -248,16 +248,17 @@ function Home() {
                 </div>
               </div>
             </article>
-            {/* <article id="2" class="derecha">
-              <h3> #conferencias_2 #2 </h3>
-              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo dapibus purus.  </p>
+            <article id="2">
+              <h3> {json[3].data[0].info[1].title} </h3>
+              <p> {json[3].data[0].info[1].disertante} </p>
               <div class="img">
                 <div class="imgOrbit">
-                  <img src={placeholder2} alt="Conferencia 2" />
+                    <img src={json[3].data[0].info[1].img} alt="Conferencia 1" />
                   <div class="planet"></div>
                 </div>
               </div>
             </article>
+            {/* 
             <article id="3">
               <h3> #conferencias_2 #3 </h3>
               <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo dapibus purus.  </p>
@@ -275,7 +276,8 @@ function Home() {
             <h2> {json[1].category} </h2>
             <article id="1">
               <h3> {json[1].data[0].info[0].title} </h3>
-              <p> {json[1].data[0].info[0].short} </p>
+              <p class="movile"> {json[1].data[0].info[0].short} </p>
+              <p class="desktop"> {json[1].data[0].info[0].short} </p> {/* Si ocupa toda la pantalla debe ir la descripción entera */}
               <div class="img">
                 <div class="imgOrbit">
                   <img src={json[1].data[0].info[0].img} alt="visitas 1" />
@@ -285,7 +287,8 @@ function Home() {
             </article>
             <article id="2" class="derecha">
               <h3> {json[1].data[1].info[1].title} </h3>
-              <p> {json[1].data[1].info[1].short} </p>
+              <p class="movile"> {json[1].data[1].info[1].short} </p>
+              <p class="desktop"> {json[1].data[1].info[1].short} </p> {/* Si ocupa toda la pantalla debe ir la descripción entera */}
               <div class="img">
                 <div class="imgOrbit">
                   <img src={json[1].data[1].info[1].img} alt="visitas 2" />
@@ -293,16 +296,17 @@ function Home() {
                 </div>
               </div>
             </article>
-            <article id="3">
+            {/* <article id="3">
               <h3> {json[1].data[3].info[0].title} </h3>
-              <p> {json[1].data[3].info[0].short} </p>
+              <p class="movile"> {json[1].data[3].info[0].short} </p>
+              <p class="desktop"> {json[1].data[3].info[0].desciption} </p>
               <div class="img">
                 <div class="imgOrbit">
                   <img src={json[1].data[3].info[0].img} alt="visitas 3" />
                   <div class="planet"></div>
                 </div>
               </div>
-            </article>
+            </article> */}
             <LeerMas type="interno" link="Visitas técnicas" />
           </section>
 

@@ -6,6 +6,7 @@ import Home from './components/home';
 import HeaderBar from './components/header';
 import Nosotros from './components/nosotros';
 import Info from './components/informacionGeneral';
+import InfoPrueba from './components/informacionGeneral_prueba';
 // import Perfil  from './components/perfil'
 //import PerfilQrsPRUEBA  from './components/perfil_qrs_PRUEBA' // componente de prueba para los qrs
 
@@ -22,6 +23,7 @@ function App() {
           {/* <Route path="/login" element={<Login/>}/> */}
           <Route path="/nosotros" element={<Nosotros/>}/>
           <Route path="/info/:category" element={<Info/>}/>
+          {/* <Route path="/info_prueba/:category" element={<InfoPrueba/>}/> */}
         </Routes>
       </BrowserRouter> 
     </div>

@@ -28,13 +28,13 @@ export default function HeaderBar() {
                     <a href="/">INICIO</a>
                     <div class="line_container"><div class="line" /></div>
                   </div>
-                </li>
+                </li>{/*
                 <li>
                   <div class="linea">
-                    {/* <Link to="/login"> */}INGRESAR{/* </Link> */}
+                     <Link to="/login"> *INGRESAR </Link> 
                     <div class="line_container"><div class="line" /></div>
                   </div>
-                </li>
+                </li>*/}
                 <li>
                   <div class="linea">
                     <a href="https://bit.ly/3MXGBeJ">REGISTRARSE</a>
@@ -70,13 +70,13 @@ export default function HeaderBar() {
                 <a href="/">INICIO</a>
                 <div class="line_container"><div class="line" /></div>
               </div>
-            </li>
+            </li>{/*
             <li>
               <div class="linea">
-                {/* <Link to="/login"> */}INGRESAR{/* </Link> */}
+                 <Link to="/login"> INGRESAR </Link> 
                 <div class="line_container"><div class="line" /></div>
               </div>
-            </li>
+            </li>*/}
             <li>
               <div class="linea">
                 <a href="https://bit.ly/3MXGBeJ">REGISTRARSE</a>
