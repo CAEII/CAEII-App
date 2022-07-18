@@ -87,18 +87,12 @@ function Mapas({Mapas, sala_resaltada}) {
             {Mapas.map((mapa, index) => {   // Recorro la lista de mapas y cargo el componente correspondiente
                 if (mapa === 'PlantaBaja') {
                     return(
-                        <div className="individual_map">
-                            <h3> Planta Baja </h3>
-                            <PlantaBaja key={index} sala_resaltada={{salida:sala_resaltada.salida, llegada:sala_resaltada.llegada}} colores={colores}/>
-                        </div>
+                        <PlantaBaja key={index} sala_resaltada={{salida:sala_resaltada.salida, llegada:sala_resaltada.llegada}} colores={colores}/>
                     )
                 }
                 if (mapa === 'PimerPiso') {
                     return(
-                        <div className="individual_map">
-                            <h3> Pimer Piso </h3>
-                            <PrimerPiso key={index} sala_resaltada={{salida:sala_resaltada.salida, llegada:sala_resaltada.llegada}} colores={colores}/>
-                        </div>
+                        <PrimerPiso key={index} sala_resaltada={{salida:sala_resaltada.salida, llegada:sala_resaltada.llegada}} colores={colores}/>
                     )
                 }
 

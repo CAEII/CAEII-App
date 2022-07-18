@@ -309,7 +309,7 @@ function Home() {
               <div class="img">
                 <div class="imgOrbit">
                   {/* <img src={hackaton} alt="Hackaton 1" /> */}
-                  <img src="/imgs/hackaton.png" alt="Hackaton 1" />
+                  <img src="/CAEII-App/imgs/hackaton.png" alt="Hackaton 1" />
                   <div class="planet"></div>
                 </div>
               </div>

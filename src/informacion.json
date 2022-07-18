@@ -8,7 +8,7 @@
                     {
                         "title": "Odisea estelar: poniendo a prueba nuestros límites",
                         "mobile": "Odisea estelar",
-                        "img": "/imgs/estaciones/odiseaEstelar.png",
+                        "img": "/CAEII-App/imgs/estaciones/odiseaEstelar.png",
                         "short": "Gracias a la ingeniería se están ampliando los horizontes del conocimiento y está siendo posible que aquellos sueños que nos parecían nada más que ciencia ficción, se vuelvan una realidad...",
                         "desciption": "En este pilar se propone poner en evidencia cómo gracias a la ingeniería se están ampliando los horizontes del conocimiento y está siendo posible que aquellos sueños que nos parecían nada más que ciencia ficción, se vuelvan una realidad al alcance de nuestras manos. Se harán visibles aquellas oportunidades que tenemos de ser parte de esta innovación para motivar a los asistentes a que despeguen su propia nave y emprendan una odisea estelar.",
                         "items":[],
@@ -23,7 +23,7 @@
                     {
                         "title": "Logística 4.0: Integración digital de los procesos productivos",
                         "mobile": "Logística 4.0",
-                        "img": "/imgs/estaciones/Logística 4.0.png",
+                        "img": "/CAEII-App/imgs/estaciones/Logística 4.0.png",
                         "short": "La logística 4.0 plantea una nueva realidad donde la optimización de la cadena de suministros será posible mediante la hiperconectividad...",
                         "desciption": "La logística 4.0, nacida con la llegada de la cuarta revolución industrial, plantea una nueva realidad donde la optimización de la cadena de suministros será posible mediante la hiperconectividad y la implementación de las nuevas tecnologías. Este desafío consiste en la aplicación de avanzados métodos como lo son el análisis predictivo para reducción de errores, la evaluación en tiempo real de inclemencias del entorno para una mayor adaptabilidad logística, detección y prevención de fallas en cada etapa, entre otros. En este pilar proponemos analizar la importancia de los avances de la robotización, la automatización y estandarización de procesos productivos, para lograr que los clientes reciban los productos adecuados en el momento preciso.",
                         "items":[],
@@ -38,7 +38,7 @@
                     {
                         "title": "Próximo destino: La ingeniería del mañana",
                         "mobile": "Ingeniería del mañana",
-                        "img": "/imgs/estaciones/Próximo destino.png",
+                        "img": "/CAEII-App/imgs/estaciones/Próximo destino.png",
                         "short": "Seremos protagonistas de la forma en que el uso de herramientas innovadores (metodologías ágiles, blockchain o inteligencia artificial, entre otras) puede llevar tu productividad a la luna...",
                         "desciption": "La velocidad de transformación tecnológica impacta en todos los ámbitos, y cada profesional debe seguir estas tendencias, saliendo capacitado para adaptarse con facilidad a las nuevas tecnologías y estrategias que día a día se van desarrollando y nos obligan a mantenernos actualizados constantemente. Veremos que el sistema revolucionario del Blockchain es mucho más que una simple base de datos. También seremos protagonistas de la forma en que el uso de herramientas, como metodologías ágiles, el coaching ejecutivo o la implementación de la inteligencia artificial en distintos ámbitos, puede llevar tu productividad a la luna.",
                         "items":[],
@@ -53,7 +53,7 @@
                     {
                         "title": "Desarrollo Sostenible: Smart City",
                         "mobile": "Smart City",
-                        "img": "/imgs/estaciones/Desarrollo urbano.png",
+                        "img": "/CAEII-App/imgs/estaciones/Desarrollo urbano.png",
                         "short": "Haremos hincapié en la importancia de la promoción de una movilidad sostenible que garantice la accesibilidad y los sistemas de transporte...",
                         "desciption": "Impartiremos conocimientos sobre cómo las ciudades inteligentes usan la información, las tecnologías de la comunicación y otros medios para mejorar la calidad de vida y la eficiencia de los servicios. Haremos hincapié en la importancia de la promoción de una movilidad sostenible que garantice la accesibilidad, los sistemas de transporte y la disminución del actual impacto ambiental.",
                         "items":[],
@@ -77,7 +77,7 @@
                 "info": [
                     {
                         "title": "IMPSA",
-                        "img": "/imgs/Visitas Técnicas/IMPSA.jpg",
+                        "img": "/CAEII-App/imgs/Visitas Técnicas/IMPSA.jpg",
                         "short": "Empresa que ofrece soluciones integrales para la generación de energía a partir de recursos renovables...",
                         "desciption": "IMPSA  es una empresa que ofrece soluciones integrales para la generación de energía a partir de recursos renovables, así como equipos para la industria de procesos y la energía nuclear. Desarrolla el diseño, la ingeniería, fabricación, montaje y puesta en marcha, ejecutando los proyectos bajo modalidad llave en mano. IMPSA es la única compañía en Latinoamérica con tecnología propia para equipos de generación hidráulica y eólica, y con certificación ASME III para el diseño y fabricación de componentes nucleares.",
                         "items":[],
@@ -101,7 +101,7 @@
                     },
                     {
                         "title": "Log Metal",
-                        "img": "/imgs/Visitas Técnicas/Log Metal.png",
+                        "img": "/CAEII-App/imgs/Visitas Técnicas/Log Metal.png",
                         "short": "",
                         "desciption": "LOGMETAL SRL es una empresa líder en la construcción industrial, nace en el año 2005 como fabricante de estructuras metálicas. Los servicios que ofrece actualmente abarcan desde el diseño y la ingeniería hasta la fabricación, montaje y ejecución integral de los proyectos con obras a lo largo y ancho de toda la Argentina.",
                         "items":[],
@@ -120,7 +120,7 @@
                     },
                     {
                         "title": "Tra.ter coop",
-                        "img": "/imgs/Visitas Técnicas/Tra.ter coop.png",
+                        "img": "/CAEII-App/imgs/Visitas Técnicas/Tra.ter coop.png",
                         "short": "",
                         "desciption": "Desarrollo de Ingeniería y asistencia técnica: Engranajes y cajas reductoras de alta exigencia; Tallado y rectificado calidad AGMA 13 (ø 2600mm.); Máquina de control de engranajes MAAG 160; Temple por Inducción hasta 4 mm. de penetración. Tratamientos térmicos en atmósfera controlada. Cementación gaseosa hasta 3 mm. de capa. Fabricación de piñones, coronas y ejes para ferrocarriles. Proveedor de las principales Industrias del país",
                         "items":[],
@@ -134,7 +134,7 @@
                     },
                     {
                         "title": "AEROPAC S.A.",
-                        "img": "/imgs/Visitas Técnicas/Aeropac.jpg",
+                        "img": "/CAEII-App/imgs/Visitas Técnicas/Aeropac.jpg",
                         "short": "",
                         "desciption": "Durante un tiempo, la empresa se concentró en el diseño y construcción de componentes para estructuras de misiles, etapas completas, maquetas de investigación, carros de transporte, dispositivos de elevación y contenedores de transporte para los componentes antes mencionados. Aeropac fabricó importantes plantillas para ensamblar el Embraer/Fama de CBA-123. aviones de cercanías), subconjuntos de fuselaje, así como muchas otras plantillas y accesorios. Hoy en dia tambien se dedican a la fabricación de equipos de envasado asépticos de ultima generación, los cuales se adaptan a una gran variedad de productos de las industrias actuales.",
                         "items":[],
@@ -163,7 +163,7 @@
                 "info": [
                     {
                         "title": "Chocolezza",
-                        "img": "/imgs/Visitas Técnicas/Chocolezza.jpg",
+                        "img": "/CAEII-App/imgs/Visitas Técnicas/Chocolezza.jpg",
                         "short": "Empresa familiar que produce alfajores y chocolates artesanales que en la actualidad produce más de 40 variedades de productos.",
                         "desciption": "Chocolezza es una empresa familiar que produce alfajores y chocolates artesanales desde el año 1979.  Con el paso del tiempo y manteniendo la tradicional receta de la familia, con mucho esfuerzo y dedicación se logró un equipo de trabajo sólido que llevó a producir más de 40 variedades de productos, hoy en día 50 familias viven de ello. ",
                         "items":[],
@@ -182,7 +182,7 @@
                     },
                     {
                         "title": "Olivícola LAUR",
-                        "img": "/imgs/Visitas Técnicas/Olivícola LAUR.png",
+                        "img": "/CAEII-App/imgs/Visitas Técnicas/Olivícola LAUR.png",
                         "short": "Pionera en la implantación de olivares en Mendoza y en la elaboración de aceite de oliva...",
                         "desciption": "Fundada en 1889, Laur fue pionera en la implantación de olivares en la provincia de Mendoza como así también en la elaboración de aceite de oliva. En el año 2021 fue nombrada por el EVOO WORLD RANKING como la olivícola número 1 del mundo. El medallero de la olivícola mendocina crece año tras año, fortaleciendo su posicionamiento como una de las top 10 del mundo y la número 1 de Argentina.",
                         "items":[],
@@ -206,7 +206,7 @@
                 "info": [
                     {
                         "title": "Andesmar Cargas",
-                        "img": "/imgs/Visitas Técnicas/Andesmar Cargas.png",
+                        "img": "/CAEII-App/imgs/Visitas Técnicas/Andesmar Cargas.png",
                         "short": "",
                         "desciption": "Buscamos facilitar a nuestros clientes las actividades de abastecimiento de insumos y venta de productos en todas las etapas de su cadena productiva. Nuestro personal altamente capacitado y profesional constituye la mejor garantía de calidad, eficiencia y rapidez en el servicio preferencial que diariamente se brinda a nuestros clientes. Creada en 1983, contamos con una gran experiencia en las actividades de transporte, almacenamiento y warehouse a nivel nacional.La base de la excelencia e integralidad en la prestación de nuestros servicios es lograda por las diferentes unidades de negocio de nuestra estructura: almacenes, express, transporte, frío, vinos y ecommerce.Nuestra principal fortaleza radica en la gran estructura con la que contamos. Con 300 puntos de ventas, más de 1000 destinos, 700 unidades y 55.000 m2 de depósitos propios podemos transportar y almacenar tus productos más valorados con total tranquilidad.",
                         "items":[],
@@ -235,7 +235,7 @@
                 "info": [
                     {
                         "title": "Centro de Reciclaje de Guaymallen",
-                        "img": "/imgs/Visitas Técnicas/Centro de Reciclaje de Guaymallen.png",
+                        "img": "/CAEII-App/imgs/Visitas Técnicas/Centro de Reciclaje de Guaymallen.png",
                         "short": "Planta de tratamiento de residuos secos separados en origen, que se constituye a la vez como un espacio educativo...",
                         "desciption": "El Centro de Reciclaje de Guaymallen es una planta de tratamiento de residuos secos separados en origen, que se constituye a la vez como un espacio educativo con una importante función de promoción ambiental. Tiene una capacidad de procesamiento de 500 toneladas y permite el acopio de materiales en las condiciones que los requiere la industria recicladora, alcanzando parámetros de calidad y cantidad superiores, fortaleciendo la frecuencia de venta y aumentando el poder de negociación. A este polo ambiental, se suma una huerta agroecológica modelo.",
                         "items":[],
@@ -254,7 +254,7 @@
                 "info": [
                     {
                         "title": "FeCoViTa",
-                        "img": "/imgs/Visitas Técnicas/FeCoViTa.jpg",
+                        "img": "/CAEII-App/imgs/Visitas Técnicas/FeCoViTa.jpg",
                         "short": "",
                         "desciption": "Fecovita es uno de los principales grupos vitivinícolas a nivel mundial. Nuclea a más de 5.000 productores integrados en 29 cooperativas, que trabajan unas 25.000 hectáreas de viñedos en las zonas vitivinícolas más apreciadas de Mendoza, generando un futuro sustentable a miles de familias, mediante la inversión genuina, el aporte de la tecnología, la mejora continua de la calidad y la proyección internacional de sus productos, de la mano de marcas emblemáticas.",
                         "items":[],
@@ -273,7 +273,7 @@
                     },
                     {
                         "title": "Rødder Brewing Company",
-                        "img": "/imgs/Visitas Técnicas/rodder.png",
+                        "img": "/CAEII-App/imgs/Visitas Técnicas/rodder.png",
                         "short": "",
                         "desciption": "Empresa de cuádruple impacto (Ambiental, Social, Económico y Cultural) que se dedica a la producción de cerveza artesanal. Podrás aprender del proceso de producción de la cerveza y realizar una degustación al final.",
                         "items":[],
@@ -327,7 +327,7 @@
                 "info": [
                     {
                         "title": "¿La economía circular está vinculada con la industria 4.0?",
-                        "img": "/imgs/profesionales/Andrea8.jpg",
+                        "img": "/CAEII-App/imgs/profesionales/Andrea8.jpg",
                         "short": "",
                         "disertante": "Mariana Andrea Nallim | Licenciada en Administración",
                         "desciption": "Definiciones básicas de EC ,  vinculación con la industria, las empresas de triple impacto y la sosteniblidad.",
@@ -347,7 +347,7 @@
                     },
                     {
                         "title": "¿Cómo entrenar a tu robot RPA?",
-                        "img": "/imgs/magistrales/belen.jpg",
+                        "img": "/CAEII-App/imgs/magistrales/belen.jpg",
                         "disertante": "Belén Rodríguez | RPA Project Leader",
                         "short": "",
                         "desciption": "RPA, “Robotic Process Automation” es la automatización de los procesos de negocio que replica las acciones de un ser humano interactuando con sistemas informáticos con interfaz de usuario. Vamos a desmitificar que “Entrenar” a tu robot RPA sea algo complejo y que sólo programadores pueden realizar. RPA está al alcance de todos y todo pueden ser parte.",
@@ -396,7 +396,7 @@
                 "info": [
                     {
                         "title": "¿Qué es el Hackaton?",
-                        "img": "/imgs/hackaton.png",
+                        "img": "/CAEII-App/imgs/hackaton.png",
                         "short": "Hackaton es una metodología de innovación abierta que busca fomentar la creación de soluciones de forma colaborativa.",
                         "desciption": "Hackaton es una metodología de innovación abierta que posee la capacidad de incluir diferentes metodologías para creación de soluciones de forma colaborativa.  Los participantes trabajan en pequeños grupos en un entorno diseñado donde se fomenta el pensamiento creativo y conduce a nuevos conceptos, prototipos e ideas sorprendentemente innovadoras, para trabajar con el enfoque de crear un producto o una idea novedosa a raíz de una problemática central.",
                         "items":[],
@@ -485,7 +485,7 @@
                 "info": [
                     {
                         "title": "¿Qué es la feria de empleo?",
-                        "img": "/imgs/feria.jpeg",
+                        "img": "/CAEII-App/imgs/feria.jpeg",
                         "short": "Es un espacio donde las empresas obtienen visibilidad al relacionarse con los futuros protagonistas de la profesión.",
                         "desciption": "La feria está dirigida principalmente a estudiantes y jóvenes profesionales de Ingenierías y carreras afines. Es un espacio donde las empresas obtienen visibilidad al relacionarse con los futuros protagonistas de la profesión, creando así, un posicionamiento en el mundo empresarial. Está diseñado para garantizar que la totalidad de los asistentes pasen por los diferentes stands, permitiendo a los representantes de la empresa brindar información y estar en contacto directo con más de 1500 estudiantes de todo el país.",
                         "items":[],

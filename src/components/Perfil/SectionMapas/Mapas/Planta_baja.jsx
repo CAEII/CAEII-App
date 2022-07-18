@@ -276,6 +276,17 @@ export default function PlantaBaja({ sala_resaltada, colores }) {
           />
         </g>
       </g>
+      <text
+        id="titulo"
+        transform="translate(520 150)"
+        className="st2"
+        style={{
+          fontSize: 90,
+          fill: "#ffffff"
+        }}
+      >
+        {"PLANTA BAJA"}
+      </text>
     </svg>
   )
 }

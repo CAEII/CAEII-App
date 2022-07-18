@@ -26,7 +26,7 @@ export default function HeaderBar() {
               <ul>
                 <li>
                   <div class="linea">
-                    <a href="/">INICIO</a>
+                    <a href="/CAEII-App/">INICIO</a>
                     <div class="line_container"><div class="line" /></div>
                   </div>
                 </li>{/*
@@ -44,7 +44,7 @@ export default function HeaderBar() {
                 </li>
                 <li>
                   <div class="linea">
-                    <a href="/nosotros">NOSOTROS</a>
+                    <a href="/CAEII-App/nosotros">NOSOTROS</a>
                     <div class="line_container"><div class="line" /></div>
                   </div>
                 </li>
@@ -68,7 +68,7 @@ export default function HeaderBar() {
           <ul>
             <li>
               <div class="linea">
-                <a href="/">INICIO</a>
+                <a href="/CAEII-App/">INICIO</a>
                 <div class="line_container"><div class="line" /></div>
               </div>
             </li>{/*
@@ -86,7 +86,7 @@ export default function HeaderBar() {
             </li>
             <li>
               <div class="linea">
-                <a href="/nosotros">NOSOTROS</a>
+                <a href="/CAEII-App/nosotros">NOSOTROS</a>
                 <div class="line_container"><div class="line" /></div>
               </div>
             </li>
