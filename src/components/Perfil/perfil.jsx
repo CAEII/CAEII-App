@@ -4,7 +4,7 @@ import React from "react";
 import BaseLayout from "../layout"
 import Credencial from "./Credencial";
 import Cronograma from "./Cronograma";
-import SectionMapas from "./Section_Mapas";
+import SectionMapas from "./SectionMapas/Section_Mapas";
 //styles
 import "../../styles/perfil/css/Perfil.css";
 // imgs
@@ -25,7 +25,7 @@ export default function Perfil() {
 
                     <Cronograma/>
 
-                    <SectionMapas/>
+                    <SectionMapas mapas={["algo","otro algo","otro otro algo"]}/>
 
                     <section id="logo">
                         <img src={CaeiiLogo} alt="logo CAEII" />

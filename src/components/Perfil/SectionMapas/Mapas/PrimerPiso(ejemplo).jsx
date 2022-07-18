@@ -1,57 +1,37 @@
 // react
 import { useEffect, useState } from "react"
 // funciones
-import oscurecer from "./Function_oscurecer"
+// import oscurecer from "./Function_decidir_color"
 
-export default function PrimerPiso({sala_resaltada}) {    
-    // const [sala_resaltada, Set_sala_resaltada] = useState(sala);
+function color_sala(sala, sala_resaltada, colores) {
+    if (sala_resaltada.salida === sala) {
+        return(colores.color_sala_partida)
+    }
+    if (sala_resaltada.llegada === sala) {
+        return(colores.color_sala_llegada)
+    }
+    else{
+        return(colores.color_sala_desactivada)
+    }
+}
 
-    // colores salas
-    const [sanitario_fill, Set_sanitario_fill] = useState("#f28f2b");
-    const [hall_de_expocicion_fill, Set_hall_de_expocicion_fill] = useState("#6abf4b");
-    const [uspallata_fill, Set_uspallata_fill] = useState("#63c3d7");
-    const [magna_central_fill, Set_magna_central_fill] = useState("#ffe952");
-    const [nihuil_fill, Set_nihuil_fill] = useState("#c56dac");
-    const [cacheuta_fill, Set_cacheuta_fill] = useState("#cb5271");
+export default function PrimerPiso({sala_resaltada, colores}) {    
+    // inicializo los useState del color de las salas con el color de la sala desactivada
+    const [sanitario_fill, Set_sanitario_fill] = useState(colores.color_sala_desactivada);
+    const [hall_de_expocicion_fill, Set_hall_de_expocicion_fill] = useState(colores.color_sala_desactivada);
+    const [uspallata_fill, Set_uspallata_fill] = useState(colores.color_sala_desactivada);
+    const [magna_central_fill, Set_magna_central_fill] = useState(colores.color_sala_desactivada);
+    const [nihuil_fill, Set_nihuil_fill] = useState(colores.color_sala_desactivada);
+    const [cacheuta_fill, Set_cacheuta_fill] = useState(colores.color_sala_desactivada);
 
     useEffect(() => {
-        if (sala_resaltada === "sanitario") {
-            Set_sanitario_fill("#f28f2b")
-        } else {
-            Set_sanitario_fill(oscurecer("#ffd20d"))
-        }
-
-        if (sala_resaltada === "hall_de_expocicion") {
-            Set_hall_de_expocicion_fill("#6abf4b")
-        } else {
-            Set_hall_de_expocicion_fill(oscurecer("#6abf4b"))
-        }
-
-        if (sala_resaltada === "uspallata") {
-            Set_uspallata_fill("#63c3d7")
-        } else {
-            Set_uspallata_fill(oscurecer("#63c3d7"))
-        }
-
-        if (sala_resaltada === "magna_central") {
-            Set_magna_central_fill("#ffe952")
-        } else {
-            Set_magna_central_fill(oscurecer("#ffe952"))
-        }
-
-        if (sala_resaltada === "nihuil") {
-            Set_nihuil_fill("#c56dac")
-        } else {
-            Set_nihuil_fill(oscurecer("#c56dac"))
-        }
-
-        if (sala_resaltada === "cacheuta") {
-            Set_cacheuta_fill("#cb5271")
-        } else {
-            Set_cacheuta_fill(oscurecer("#cb5271"))
-        }
-    }, [sala_resaltada])
-
+        Set_sanitario_fill(color_sala("sanitario", sala_resaltada, colores))
+        Set_hall_de_expocicion_fill(color_sala("hall_de_expocicion", sala_resaltada, colores))
+        Set_uspallata_fill(color_sala("uspallata", sala_resaltada, colores))
+        Set_magna_central_fill(color_sala("magna_central", sala_resaltada, colores))
+        Set_nihuil_fill(color_sala("nihuil", sala_resaltada, colores))
+        Set_cacheuta_fill(color_sala("cacheuta", sala_resaltada,colores))
+    }, [sala_resaltada, colores])
 
     return (
         <svg
@@ -95,7 +75,7 @@ export default function PrimerPiso({sala_resaltada}) {
             <g id="asensor">
                 <path
                     style={{
-                        fill: "#78c8cc",
+                        fill: colores.color_sala_desactivada,
                         stroke: "#1a1a18",
                         strokeWidth: 6,
                         strokeMiterlimit: 22.9256,
@@ -263,7 +243,7 @@ export default function PrimerPiso({sala_resaltada}) {
                     style={{
                         fillRule: "evenodd",
                         clipRule: "evenodd",
-                        fill: "#97a2a4",
+                        fill: colores.color_sala_desactivada,
                         stroke: "#1d1d1b",
                         strokeMiterlimit: 10,
                     }}
@@ -281,7 +261,7 @@ export default function PrimerPiso({sala_resaltada}) {
                 <path className="st23" d="M914.9 422.1V198.2M916.9 422.1V198.2" />
                 <path
                     style={{
-                        fill: "#97a2a4",
+                        fill: colores.color_sala_desactivada,
                         stroke: "#1d1d1b",
                         strokeWidth: 6,
                         strokeMiterlimit: 22.9256,
