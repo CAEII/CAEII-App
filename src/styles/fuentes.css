@@ -23,3 +23,7 @@
     font-family: 'Montserrat-LightItalic';
     src: url(../styles/fonts/Montserrat-LightItalic.ttf) format('truetype');
 }
+@font-face {
+    font-family: 'Montserrat-SemiBold';
+    src: url(../styles/fonts/Montserrat-SemiBold.ttf) format('truetype');
+}

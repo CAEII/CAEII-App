@@ -9,11 +9,11 @@ export default function Section_Mapas({mapas}) {
 
     const valores_default =                     // dejo los valores por defecto de salida y llegada, expresados como un objeto (estos valores deberían venir de otro lado)
     {
-        Sala_de_salida: "hall_de_expocicion",
-        Sala_de_llegada: "nihuil"
+        Sala_de_salida: "Hall_Planta_Baja",
+        Sala_de_llegada: "Asensor_Planta_Baja"
     };
 
-    const [Mapa, SetMapa] = useState(["PlantaBaja", "PimerPiso"]);         // lista con los mapas nesesarios, esto depende del cronograma
+    const [Mapa, SetMapa] = useState(["PlantaBaja"]);         // lista con los mapas nesesarios, esto depende del cronograma
 
     const [Sala_salida, Set_Sala_salida] = useState(valores_default.Sala_de_salida);       // Sala de salida o "estoy aqui", el valor por defecto depende del cronograma
     const [Sala_llegada, Set_Sala_llegada] = useState(valores_default.Sala_de_llegada);    // Sala de llegada o "voy a", el valor por defecto depende del cronograma   
@@ -44,7 +44,7 @@ export default function Section_Mapas({mapas}) {
 function Selects({Mapas,_useStates,valores_default}) {
 
     const listas_de_salas = {           // esto deveria venir de otro lado, un json a parte quizas           
-        PlantaBaja: ["Hall_Planta_Baja", "Sanitario", "Restaurante"],
+        PlantaBaja: ["Hall_Planta_Baja", "Sanitario_Planta_baja", "Restaurante", "Asensor_Planta_Baja"],
         PimerPiso: ["Hall_Pimer_Piso", "Uspallata", "Magna_central", "Nihuil", "Cacheuta"]
     }
 
@@ -89,16 +89,22 @@ function Mapas({Mapas, sala_resaltada}) {
     };
 
     return(
-        <div className="map_container">
+        <div className="maps_container">
             {Mapas.map((mapa, index) => {   // Recorro la lista de mapas y cargo el componente correspondiente
                 if (mapa === 'PlantaBaja') {
                     return(
-                        <PlantaBaja key={index} sala_resaltada={{salida:sala_resaltada.salida, llegada:sala_resaltada.llegada}} colores={colores}/>
+                        <div className="individual_map">
+                            <h3> Planta Baja </h3>
+                            <PlantaBaja key={index} sala_resaltada={{salida:sala_resaltada.salida, llegada:sala_resaltada.llegada}} colores={colores}/>
+                        </div>
                     )
                 }
                 if (mapa === 'PimerPiso') {
                     return(
-                        <PrimerPiso key={index} sala_resaltada={{salida:sala_resaltada.salida, llegada:sala_resaltada.llegada}} colores={colores}/>
+                        <div className="individual_map">
+                            <h3> Pimer Piso </h3>
+                            <PrimerPiso key={index} sala_resaltada={{salida:sala_resaltada.salida, llegada:sala_resaltada.llegada}} colores={colores}/>
+                        </div>
                     )
                 }
 

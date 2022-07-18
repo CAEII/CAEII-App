@@ -340,15 +340,20 @@ th,td{
 }
 
 
-.map_container{
+.maps_container{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
-.map_container svg{
+.maps_container svg{
     height: fit-content;
     margin: 0;
+}
+.individual_map{
+    width: 100%;
+    height: fit-content;
+    padding-top: 30px;
 }
 iframe{
     width: 90%;
