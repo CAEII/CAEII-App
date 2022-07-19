@@ -313,3 +313,10 @@ article h3{
         text-align: left;
     }
 }
+
+
+@media (max-height: 730px) and (orientation: landscape) {
+    #estaciones{
+        margin-top: 200px;
+    }
+}
