@@ -85,17 +85,17 @@
                             {
                                 "type": "Sitio web",
                                 "link": "https://www.impsa.com/",
-                                "icono": "/imgs/iconos/web.png"
+                                "icono": "/CAEII-App/imgs/iconos/web.png"
                             },  
                             {
                                 "type": "Linkedin",
                                 "link": "https://www.linkedin.com/company/impsa/?originalSubdomain=ar",
-                                "icono": "/imgs/iconos/linkedin.png"
+                                "icono": "/CAEII-App/imgs/iconos/linkedin.png"
                             },
                             {
                                 "type": "Instagram",
                                 "link": "https://www.instagram.com/impsaoficial/",
-                                "icono": "/imgs/iconos/instagram.png"
+                                "icono": "/CAEII-App/imgs/iconos/instagram.png"
                             }
                         ]
                     },
@@ -109,12 +109,12 @@
                             {
                                 "type": "Sitio web",
                                 "link": "https://logmetal.com.ar/",
-                                "icono": "/imgs/iconos/web.png"
+                                "icono": "/CAEII-App/imgs/iconos/web.png"
                             },
                             {
                                 "type": "Instagram",
                                 "link": "https://www.instagram.com/logmetalsrl/",
-                                "icono": "/imgs/iconos/instagram.png"
+                                "icono": "/CAEII-App/imgs/iconos/instagram.png"
                             }
                         ]
                     },
@@ -142,17 +142,17 @@
                             {
                                 "type": "Sitio web",
                                 "link": "http://www.aeropac.com.ar/",
-                                "icono": "/imgs/iconos/web.png"
+                                "icono": "/CAEII-App/imgs/iconos/web.png"
                             },  
                             {
                                 "type": "Linkedin",
                                 "link": "https://www.linkedin.com/company/aeropac-sa/?originalSubdomain=ar",
-                                "icono": "/imgs/iconos/linkedin.png"
+                                "icono": "/CAEII-App/imgs/iconos/linkedin.png"
                             },
                             {
                                 "type": "Instagram",
                                 "link": "https://www.instagram.com/aeropac_sa/?hl=es",
-                                "icono": "/imgs/iconos/instagram.png"
+                                "icono": "/CAEII-App/imgs/iconos/instagram.png"
                             }
                         ]
                     }
@@ -171,12 +171,12 @@
                             {
                                 "type": "Sitio web",
                                 "link": "https://www.chocolezza.com.ar/",
-                                "icono": "/imgs/iconos/web.png"
+                                "icono": "/CAEII-App/imgs/iconos/web.png"
                             },  
                             {
                                 "type": "Instagram",
                                 "link": "https://www.instagram.com/chocolezza.argentina/?hl=es",
-                                "icono": "/imgs/iconos/instagram.png"
+                                "icono": "/CAEII-App/imgs/iconos/instagram.png"
                             }
                         ]
                     },
@@ -190,12 +190,12 @@
                             {
                                 "type": "Sitio web",
                                 "link": "https://laur.ar/",
-                                "icono": "/imgs/iconos/web.png"
+                                "icono": "/CAEII-App/imgs/iconos/web.png"
                             },  
                             {
                                 "type": "Instagram",
                                 "link": "https://www.instagram.com/olivicolalaur/?hl=es",
-                                "icono": "/imgs/iconos/instagram.png"
+                                "icono": "/CAEII-App/imgs/iconos/instagram.png"
                             }
                         ]
                     }
@@ -214,17 +214,17 @@
                             {
                                 "type": "Sitio web",
                                 "link": "https://www.andesmarcargas.com/",
-                                "icono": "/imgs/iconos/web.png"
+                                "icono": "/CAEII-App/imgs/iconos/web.png"
                             },  
                             {
                                 "type": "Linkedin",
                                 "link": "https://www.linkedin.com/company/andesmar-cargas-s-a/?originalSubdomain=ar",
-                                "icono": "/imgs/iconos/linkedin.png"
+                                "icono": "/CAEII-App/imgs/iconos/linkedin.png"
                             },
                             {
                                 "type": "Instagram",
                                 "link": "https://www.instagram.com/andesmarcargas/?hl=es",
-                                "icono": "/imgs/iconos/instagram.png"
+                                "icono": "/CAEII-App/imgs/iconos/instagram.png"
                             }
                         ]
                     }
@@ -243,7 +243,7 @@
                             {
                                 "type": "Sitio web",
                                 "link": "https://www.guaymallen.gob.ar/dependencias-2/centro-verde/",
-                                "icono": "/imgs/iconos/web.png"
+                                "icono": "/CAEII-App/imgs/iconos/web.png"
                             }
                         ]
                     }
@@ -267,7 +267,7 @@
                             {
                                 "type": "Linkedin",
                                 "link": "https://www.linkedin.com/company/fecovita/?originalSubdomain=ar",
-                                "icono": "/imgs/iconos/linkedin.png"
+                                "icono": "/CAEII-App/imgs/iconos/linkedin.png"
                             }
                         ]
                     },
@@ -281,12 +281,12 @@
                             {
                                 "type": "Instagram",
                                 "link": "https://www.instagram.com/rodderbrewingco/?hl=es",
-                                "icono": "/imgs/iconos/instagram.png"
+                                "icono": "/CAEII-App/imgs/iconos/instagram.png"
                             },  
                             {
                                 "type": "Linkedin",
                                 "link": "https://www.linkedin.com/company/r%C3%B8dder-brewing-company/about/",
-                                "icono": "/imgs/iconos/linkedin.png"
+                                "icono": "/CAEII-App/imgs/iconos/linkedin.png"
                             }
                         ]
                     }
@@ -323,6 +323,66 @@
         "category": "Conferencias profesionales",
         "data": [
             {
+                "title": "Odisea Estelar",
+                "info": [
+                    {
+                        "title": "",
+                        "img": "",
+                        "disertante": "",
+                        "short": "",
+                        "desciption": "",
+                        "items":[],
+                        "links": [
+                            {
+                                "type": "",
+                                "link": "",
+                                "icono": ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "Logistica 4.0",
+                "info": [
+                    {
+                        "title": "¿Cómo entrenar a tu robot RPA?",
+                        "img": "/CAEII-App/imgs/magistrales/belen.jpg",
+                        "disertante": "Belén Rodríguez | RPA Project Leader",
+                        "short": "",
+                        "desciption": "RPA, “Robotic Process Automation” es la automatización de los procesos de negocio que replica las acciones de un ser humano interactuando con sistemas informáticos con interfaz de usuario. Vamos a desmitificar que “Entrenar” a tu robot RPA sea algo complejo y que sólo programadores pueden realizar. RPA está al alcance de todos y todo pueden ser parte.",
+                        "items":[],
+                        "links": [
+                            {
+                                "type": "Linkedin",
+                                "link": "https://www.linkedin.com/in/belrodriguez/",
+                                "icono": "/CAEII-App/imgs/iconos/linkedin.png"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "Ingenieria del mañana",
+                "info": [
+                    {
+                        "title": "",
+                        "img": "",
+                        "disertante": "",
+                        "short": "",
+                        "desciption": "",
+                        "items":[],
+                        "links": [
+                            {
+                                "type": "",
+                                "link": "",
+                                "icono": ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
                 "title": "Desarrollo Sostenible: Smart City",
                 "info": [
                     {
@@ -336,32 +396,32 @@
                             {
                                 "type": "Instagram",
                                 "link": "https://www.instagram.com/andreanallimspeaker/",
-                                "icono": "/imgs/iconos/instagram.png"
+                                "icono": "/CAEII-App/imgs/iconos/instagram.png"
                             }, 
                             {
                                 "type": "Linkedin",
                                 "link": "https://www.linkedin.com/in/mariana-andrea-nallim-ponte/",
-                                "icono": "/imgs/iconos/linkedin.png"
+                                "icono": "/CAEII-App/imgs/iconos/linkedin.png"
                             }
                         ]
                     },
                     {
-                        "title": "¿Cómo entrenar a tu robot RPA?",
-                        "img": "/CAEII-App/imgs/magistrales/belen.jpg",
-                        "disertante": "Belén Rodríguez | RPA Project Leader",
+                        "title": "",
+                        "img": "/CAEII-App/imgs/profesionales/rafael.jpg",
                         "short": "",
-                        "desciption": "RPA, “Robotic Process Automation” es la automatización de los procesos de negocio que replica las acciones de un ser humano interactuando con sistemas informáticos con interfaz de usuario. Vamos a desmitificar que “Entrenar” a tu robot RPA sea algo complejo y que sólo programadores pueden realizar. RPA está al alcance de todos y todo pueden ser parte.",
+                        "disertante": "Rafael Kemelmajer | Licenciado en Economía",
+                        "desciption": "Licenciado en Economía, Master en Digital Business Management. Profesor en innovacion y triple impacto en Universidad Nacional de Cuyo. Cofundador y director de Quinto Impacto (Empresa B Certificada) Consultor internacional en innovación de triple impacto). Cofundador de Epiliquid (empresa dedicada a la investigación para la detección temprana de cáncer), Presidente de Nuestra Mendoza (Organización de la sociedad civil que trabaja por ciudades más justas, democráticas, Sostenibles y transparentes), Miembro Polo TIC Mendoza",
                         "items":[],
-                        "links": [
+                        "links": [ 
                             {
                                 "type": "Linkedin",
-                                "link": "https://www.linkedin.com/in/belrodriguez/",
-                                "icono": "/imgs/iconos/linkedin.png"
+                                "link": "https://www.linkedin.com/in/rafakemelmajer/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=ar",
+                                "icono": "/CAEII-App/imgs/iconos/linkedin.png"
                             }
                         ]
                     }
                 ]
-            } 
+            }
         ]
     },
     {

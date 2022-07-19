@@ -1,8 +1,9 @@
 // react
 import { useState } from "react"
 // components
-import PrimerPiso from "./Mapas/PrimerPiso(ejemplo)"
+import PrimerPiso from "./Mapas/Primer_piso"
 import PlantaBaja from "./Mapas/Planta_baja"
+import AuditorioPrincipal from "./Mapas/AuditorioPrincipal"
 // styles
 
 export default function Section_Mapas({mapas}) {
@@ -13,7 +14,8 @@ export default function Section_Mapas({mapas}) {
         Sala_de_llegada: "Asensor_Planta_Baja"
     };
 
-    const [Mapa, SetMapa] = useState(["PlantaBaja"]);         // lista con los mapas nesesarios, esto depende del cronograma
+    // posibles nombres de mapas "PlantaBaja","AuditorioPrincipal", "PimerPiso"
+    const [Mapa, SetMapa] = useState(["PimerPiso"]);         // lista con los mapas nesesarios, esto depende del cronograma
 
     const [Sala_salida, Set_Sala_salida] = useState(valores_default.Sala_de_salida);       // Sala de salida o "estoy aqui", el valor por defecto depende del cronograma
     const [Sala_llegada, Set_Sala_llegada] = useState(valores_default.Sala_de_llegada);    // Sala de llegada o "voy a", el valor por defecto depende del cronograma   
@@ -40,7 +42,8 @@ export default function Section_Mapas({mapas}) {
 function Selects({Mapas,_useStates,valores_default}) {
     const listas_de_salas = {           // esto deveria venir de otro lado, un json a parte quizas           
         PlantaBaja: ["Hall_Planta_Baja", "Sanitario_Planta_baja", "Restaurante", "Asensor_Planta_Baja"],
-        PimerPiso: ["Hall_Pimer_Piso", "Uspallata", "Magna_central", "Nihuil", "Cacheuta"]
+        AuditorioPrincipal: ["Auditorio_Principal", "Explanada"],
+        PimerPiso: ["Hall_Pimer_Piso", "Sanitario_Primer_Piso", "Sala_Cacheuta", "Sala_Uspallata", "Sala_Nihuil", "Sala_Magna_Central"]
     }
 
     return (
@@ -88,6 +91,11 @@ function Mapas({Mapas, sala_resaltada}) {
                 if (mapa === 'PlantaBaja') {
                     return(
                         <PlantaBaja key={index} sala_resaltada={{salida:sala_resaltada.salida, llegada:sala_resaltada.llegada}} colores={colores}/>
+                    )
+                }
+                if (mapa === 'AuditorioPrincipal') {
+                    return(
+                        <AuditorioPrincipal key={index} sala_resaltada={{salida:sala_resaltada.salida, llegada:sala_resaltada.llegada}} colores={colores}/>
                     )
                 }
                 if (mapa === 'PimerPiso') {

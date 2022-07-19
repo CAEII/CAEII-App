@@ -22,7 +22,7 @@ export default function PlantaBaja({ sala_resaltada, colores }) {
 
   return (
     <svg
-      id="Capa_1"
+      id="PlantaBaja"
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
       x={0}
@@ -35,7 +35,14 @@ export default function PlantaBaja({ sala_resaltada, colores }) {
     >
       <style>
         {
-          `.st2{font-family:'Montserrat-SemiBold'}.st6{font-size:32.2043px}.st7{fill:none;stroke:${Hall.color};stroke-width:6;stroke-linejoin:bevel;stroke-miterlimit:22.9256}.st9{fill:#221e73}.st10{fill:#fff}.st12{font-size:27px}.st16{fill-rule:evenodd;clip-rule:evenodd;fill:${Restaurante.color};stroke:${Restaurante.color};stroke-width:6;stroke-linejoin:bevel;stroke-miterlimit:22.9256}.st17{fill-rule:evenodd;clip-rule:evenodd;fill:${Sanitario.color};stroke:${Sanitario.color};stroke-width:6;stroke-linejoin:bevel;stroke-miterlimit:22.9256}`
+          `#PlantaBaja .st2{font-family:'Montserrat-SemiBold'}
+          #PlantaBaja .st6{font-size:32.2043px}
+          #PlantaBaja .st7{fill:none;stroke:${Hall.color};stroke-width:6;stroke-linejoin:bevel;stroke-miterlimit:22.9256}
+          #PlantaBaja .st9{fill:#221e73}
+          #PlantaBaja .st10{fill:#fff}
+          #PlantaBaja .st12{font-size:27px}
+          #PlantaBaja .st16{fill-rule:evenodd;clip-rule:evenodd;fill:${Restaurante.color};stroke:${Restaurante.color};stroke-width:6;stroke-linejoin:bevel;stroke-miterlimit:22.9256}
+          #PlantaBaja .st17{fill-rule:evenodd;clip-rule:evenodd;fill:${Sanitario.color};stroke:${Sanitario.color};stroke-width:6;stroke-linejoin:bevel;stroke-miterlimit:22.9256}`
         }
       </style>
       <g id="Oficinas">
