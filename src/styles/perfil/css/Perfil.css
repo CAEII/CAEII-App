@@ -1,5 +1,6 @@
 .App#perfil{
     background-image:  url(../img/fondoPerfil.jpg);
+    overflow: hidden;
 }
 .nav-container .hamburger-lines .line {
     background: var(--hamburger_scrolHandle_Mapas_Perfil);
@@ -438,6 +439,23 @@ iframe{
 }
 
 
+#perfil .sistema_solar_container{
+    top: -7vh;
+    left: 38vw;
+    position: relative;
+}
+#perfil .sistema_solar{
+    top: 0px;
+    left: 0vw;
+}
+
+
+
+
+
+
+
+
 @media (min-width: 1024px){
     #credencial {
         grid-column: 1/3;
@@ -508,5 +526,62 @@ iframe{
     }
     #logo img {
         height: 150px;
+    }
+    #perfil .sistema_solar_container{
+        left: 35vw;
+        top: -16vh;
+        /* z-index: 555555; */
+    }
+    #perfil .sistema_solar_container .sol{
+        height: 30vw;
+        width: 30vw;
+    }
+    #perfil .sistema_solar_container .orbit_3 {
+        width: 90vw;
+        height: 90vw;
+        margin: -30vw auto;
+    }
+    #perfil .sistema_solar_container .orbit_3 .planet {
+        margin-left: 30%;
+    }
+    #perfil .sistema_solar_container .orbit_2 {
+        width: 70vw;
+        height: 70vw;
+        margin: -20vw auto;
+    }
+    #perfil .sistema_solar_container .orbit_2 .planet {
+        margin-left: 12%;
+    }
+    #perfil .sistema_solar_container .orbit_1 {
+        width: 50vw;
+        height: 50vw;
+        margin: -10vw auto;
+    }
+    #perfil .sistema_solar_container .orbit_1 .planet {
+        margin-left: 13%;
+    }
+    #perfil .sistema_solar_container .planet {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (min-width: 1245px){
+    #perfil .sistema_solar_container{
+        left: 35vw;
+        top: -45vh;     
+    }
+    #perfil .sistema_solar_container .sol{
+        height: 30vw;
+        width: 30vw;
+    }
+    #perfil .sistema_solar_container .orbit_3 .planet {
+        margin-left: 35%;
+    }
+    #perfil .sistema_solar_container .orbit_2 .planet {
+        margin-left: 16%;
+    }
+    #perfil .sistema_solar_container .orbit_1 .planet {
+        margin-left: 20%;
     }
 }

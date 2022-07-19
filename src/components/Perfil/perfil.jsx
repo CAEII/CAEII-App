@@ -15,11 +15,34 @@ import CaeiiLogo from "../../styles/perfil/img/CAEII LOGO 1.png";
 export default function Perfil() {
     return (
         <div className="App" id="perfil">
+            <div className="sistema_solar_container">
+                        <div class="sistema_solar">
+                            <div class="sol"></div>
+                            <div class="orbits orbit_1">
+                                <div class="planet_container">
+                                    <div class="planet"></div>
+                                </div>
+                            </div>
+                            <div class="orbits orbit_2">
+                                <div class="planet_container">
+                                    <div class="planet"></div>
+                                </div>
+                            </div>
+                            <div class="orbits orbit_3">
+                                <div class="planet_container">
+                                    <div class="planet"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
             <BaseLayout>
                 <main>
+                    
                     <div class="title">
                         <img src={title} alt="Logo caeii"></img>
                     </div>
+
+                    
 
                     <Credencial/>
 
