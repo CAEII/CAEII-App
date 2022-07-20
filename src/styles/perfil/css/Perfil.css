@@ -294,6 +294,15 @@ select,
 th,td{
     font-family: 'Montserrat-LightItalic' , sans-serif;
 }
+/* tr.En_progreso{
+    background-color: rgba(196, 196, 1, 0.5);
+} */
+tr.Terminada{
+    background-color: rgba(39, 39, 39, 0.5);
+}
+/* tr.Por_iniciar{
+    background-color: rgba(172, 255, 47, 0.5);
+} */
 .actividad, th{
     font-size: 1.3rem;
     padding: 15px;

@@ -75,6 +75,27 @@ function Que_dia_es_hoy(){
     return "Domingo"
 }
 
+// funcion para comparar la hora de una actividad con la hora actual
+function comparo_con_la_hora_actual(HoraString){    //  Tomo como argumento "HoraString" un string que deve seguir este formato: (hora1 - hora2) por ejemplo: "08:00 - 09:00"
+    const date = new Date()                         //  creo un objeto Date que me debuelve un objeto con la fecha y hora actual
+    const TimeNow = date.toLocaleTimeString()       //  le doy a "TimeNow" el valor de la hora actual
+
+    const inicio = HoraString.slice(0, 5)           //  Le doy a "inicio" el valor de la primera mitad del string hora (esto representa el inicio de la actividad)
+    const fin = HoraString.slice(8, 13)             //  Le doy a "fin" el valor de la segunda mitad del string hora (esto representa el fin de la actividad)
+
+
+    //  comparo la hora actual con las horas de la actividad para saver si esta en progreso, termino o todavia no comienza
+    if (TimeNow > inicio && TimeNow < fin) {
+        return "En_progreso"
+    };
+    if (TimeNow > fin) {
+        return "Terminada"
+    };
+    if (TimeNow < inicio) {
+        return "Por_iniciar"
+    };
+}
+
 // funcion para averiguar en que mapa estan las salas relevantes
 function en_que_mapa(sala_salida, sala_llegada, listas_de_salas){
     let mapas = [];
@@ -92,6 +113,10 @@ function en_que_mapa(sala_salida, sala_llegada, listas_de_salas){
         };
     };
 
+    mapas = mapas.filter((item,index)=>{
+        return mapas.indexOf(item) === index;
+    })
+
     // console.log(mapas)
     return mapas
 }
@@ -102,3 +127,4 @@ exports.status_color_flag = status_color_flag;
 exports.Que_dia_es_hoy = Que_dia_es_hoy;
 exports.Asistencia = Asistencia;
 exports.en_que_mapa = en_que_mapa;
+exports.comparo_con_la_hora_actual = comparo_con_la_hora_actual;

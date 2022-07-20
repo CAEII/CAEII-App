@@ -1,9 +1,10 @@
+import { useEffect } from "react"
 import { useState } from "react"
 
-import {Que_dia_es_hoy} from "../Suport_functions"
+import {Que_dia_es_hoy, comparo_con_la_hora_actual} from "../Suport_functions"
 
 
-export default function Cronograma({dias, SetSalaLlegada, SetSalas}) {
+export default function Cronograma({dias, SetSalas, Salas}) {
     const [Dia, SetDia] = useState(Que_dia_es_hoy())
 
     let today_activities
@@ -41,7 +42,7 @@ export default function Cronograma({dias, SetSalaLlegada, SetSalas}) {
                         <th>LUGAR</th>
                     </tr>
 
-                    <Lineas today_activities={today_activities} SetSalaLlegada={SetSalaLlegada}/>
+                    <Lineas today_activities={today_activities} SetSalas={SetSalas}  Salas={Salas}/>
                     
                 </tbody>
             </table>
@@ -50,34 +51,34 @@ export default function Cronograma({dias, SetSalaLlegada, SetSalas}) {
 }
 
 
-function Lineas({today_activities,SetSalaLlegada}){
+function Lineas({today_activities,SetSalas,Salas}){
     var className
     return today_activities.map((actividad, index) => {
         if (actividad.titulo === "ALMUERZO" || actividad.titulo === "TIEMPO LIBRE") {
             className = "conLinea resaltado"
         } else {
             className = ""
-        }
-        return(
+        };
+    
+        className = className + " " + comparo_con_la_hora_actual(actividad.horario)
+    
+        return (
             <tr id="L2" className={className} key={index}>
                 <td className="hora"> {actividad.horario} </td>
                 <td className="actividad"> {actividad.titulo} </td>
-
-                { actividad.lugar ? <Donde actividad={actividad} SetSalaLlegada={SetSalaLlegada}/> : null}
+    
+                {actividad.lugar ? <Donde actividad={actividad} SetSalas={SetSalas} Salas={Salas}/> : null}
             </tr>
         )
     })
 }
 
-function Donde({actividad,SetSalaLlegada}){
+function Donde({actividad,SetSalas,Salas}){
     return(
         <td className="lugar linea">
             {/* <a href=""> {actividad.lugar} </a> */}
-            <button onClick={() => {SetSalaLlegada(actividad.lugar)}}> {actividad.lugar} </button>
+            <button onClick={() => {SetSalas({ salida: Salas.salida, llegada:actividad.lugar})}}> {actividad.lugar.replace(/_/g, " ")} </button>
             {/* <div className="line_container" /><div className="line"></div> */}
         </td>
     )
 }
-
-
-

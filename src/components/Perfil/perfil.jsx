@@ -21,10 +21,8 @@ import json from "./Json_prueva_perfil.json"
 
 export default function Perfil() {
     const [Coute, SetCuote] = useState("Bienvenido, ¿listo para el despegue?");
-    const [SalaLlegada, SetSalaLlegada] = useState("Explanada");
-    const [SalaSalida, SetSalaSalida] = useState("Sala_Cacheuta");
 
-    const [Salas, SetSalas] = useState({salida: "Explanada", llegada:"Sala_Cacheuta"});
+    const [Salas, SetSalas] = useState({salida: "Explanada", llegada:"Explanada"});
   
 
     return (
@@ -62,7 +60,7 @@ export default function Perfil() {
 
                     <Credencial nombre={json.nombre} asistencia={Asistencia(json.dias)}/>
 
-                    <Cronograma dias={json.dias} SetSalaLlegada={SetSalaLlegada}/>
+                    <Cronograma dias={json.dias} SetSalas={SetSalas}  Salas={Salas}/>
 
                     <SectionMapas salas={Salas}/>
 

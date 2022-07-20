@@ -152,42 +152,42 @@
                 {
                     "titulo": "kk #1 Domingo",
                     "horario": "08:00 - 09:00",
-                    "lugar": "Aula magna",
+                    "lugar": "Hall_Planta_Baja",
                     "presente": true
                 },
                 {
                     "titulo": "kk #2 Domingo",
                     "horario": "09:00 - 10:00",
-                    "lugar": "uspallata",
+                    "lugar": "Auditorio_Principal",
                     "presente": true
                 },
                 {
                     "titulo": "kk #3",
-                    "horario": "10:00 - 11:00",
-                    "lugar": "nihuil",
+                    "horario": "01:00 - 18:00",
+                    "lugar": "Sala_Nihuil",
                     "presente": true
                 },
                 {
                     "titulo": "kk #4",
-                    "horario": "11:00 - 12:00",
-                    "lugar": "hall primer piso",
+                    "horario": "19:00 - 20:00",
+                    "lugar": "Sala_Cacheuta",
                     "presente": false
                 },
                 {
                     "titulo": "ALMUERZO",
-                    "horario": "12:00 - 14:00",
-                    "lugar": "Aula magna",
+                    "horario": "19:00 - 20:00",
+                    "lugar": "Sala_Uspallata",
                     "presente": false
                 },
                 {
                     "titulo": "kk #6",
-                    "horario": "15:00 - 16:00",
-                    "lugar": "Aula magna",
+                    "horario": "19:00 - 20:00",
+                    "lugar": "Auditorio_Principal",
                     "presente": false
                 },
                 {
                     "titulo": "TIEMPO LIBRE",
-                    "horario": "16:00 - 17:00",
+                    "horario": "19:00 - 20:00",
                     "lugar": "",
                     "presente": false
                 }
