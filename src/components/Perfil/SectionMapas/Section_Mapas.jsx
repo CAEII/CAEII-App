@@ -1,26 +1,42 @@
 // react
-import { useState } from "react"
+import { useEffect, useState } from "react"
 // components
 import PrimerPiso from "./Mapas/Primer_piso"
 import PlantaBaja from "./Mapas/Planta_baja"
 import AuditorioPrincipal from "./Mapas/AuditorioPrincipal"
-// styles
+// functions
+import {en_que_mapa} from "../Suport_functions"
+// json
+import json_lista_de_salas from "./Lista_de_salas.json"
 
-export default function Section_Mapas({mapas}) {
+export default function Section_Mapas({salas}) {
 
-    const valores_default =                     // dejo los valores por defecto de salida y llegada, expresados como un objeto (estos valores deberían venir de otro lado)
-    {
-        Sala_de_salida: "Hall_Planta_Baja",
-        Sala_de_llegada: "Asensor_Planta_Baja"
-    };
+    const [valores_default, Setvalores_default] = useState(
+        {
+            Sala_de_salida: salas.salida,
+            Sala_de_llegada: salas.llegada
+        }
+    );    
 
-    // posibles nombres de mapas "PlantaBaja","AuditorioPrincipal", "PimerPiso"
-    const [Mapa, SetMapa] = useState(["PimerPiso"]);         // lista con los mapas nesesarios, esto depende del cronograma
+    const [Mapa, SetMapa] = useState(en_que_mapa(valores_default.Sala_de_salida,valores_default.Sala_de_llegada,json_lista_de_salas));                 // lista con los mapas nesesarios, esta variable se genera mediante las salas de llegada y salida en la funcion "en_que_mapa"
 
     const [Sala_salida, Set_Sala_salida] = useState(valores_default.Sala_de_salida);       // Sala de salida o "estoy aqui", el valor por defecto depende del cronograma
     const [Sala_llegada, Set_Sala_llegada] = useState(valores_default.Sala_de_llegada);    // Sala de llegada o "voy a", el valor por defecto depende del cronograma   
 
     const [DentroAuditorio, SetDentroAuditorio] = useState(true);         // estado de los botones "dentro / fuera" del auditorio
+
+    useEffect(() => {
+        Setvalores_default({
+            Sala_de_salida: salas.salida,
+            Sala_de_llegada: salas.llegada
+        })
+        SetMapa(en_que_mapa(valores_default.Sala_de_salida,valores_default.Sala_de_llegada,json_lista_de_salas))
+        Set_Sala_salida(valores_default.Sala_de_salida)
+        Set_Sala_llegada(valores_default.Sala_de_llegada)
+
+    }, [salas, valores_default.Sala_de_salida, valores_default.Sala_de_llegada])
+
+    // console.log(Sala_salida + ' ' + Sala_llegada)
 
     return (
         <section id="mapas">
@@ -40,12 +56,6 @@ export default function Section_Mapas({mapas}) {
 }
 
 function Selects({Mapas,_useStates,valores_default}) {
-    const listas_de_salas = {           // esto deveria venir de otro lado, un json a parte quizas           
-        PlantaBaja: ["Hall_Planta_Baja", "Sanitario_Planta_baja", "Restaurante", "Asensor_Planta_Baja"],
-        AuditorioPrincipal: ["Auditorio_Principal", "Explanada"],
-        PimerPiso: ["Hall_Pimer_Piso", "Sanitario_Primer_Piso", "Sala_Cacheuta", "Sala_Uspallata", "Sala_Nihuil", "Sala_Magna_Central"]
-    }
-
     return (
         <div className="section_of_sections">
             <label htmlFor="salida" class="title_text">Estoy aquí: </label>
@@ -53,7 +63,7 @@ function Selects({Mapas,_useStates,valores_default}) {
                     <select onChange={(value) => _useStates.salida(value.target.value)} defaultValue={valores_default.Sala_de_salida}>
                         {
                             Mapas.map((mapa, mapindex) => {                                                                             // Recorro el array de mapas y por cada mapa:
-                                return listas_de_salas[mapa].map((sala, salaIndex) => {                                                 // Recorro el array de salas y devuelvo un "<option>" con el valor de la sala
+                                return json_lista_de_salas[mapa].map((sala, salaIndex) => {                                                 // Recorro el array de salas y devuelvo un "<option>" con el valor de la sala
                                    return <option key={mapindex+"_"+salaIndex} value={sala}> {sala.replace(/_/g, " ")} </option>
                                 })
                             })
@@ -65,7 +75,7 @@ function Selects({Mapas,_useStates,valores_default}) {
                     <select onChange={(value) => _useStates.llegada(value.target.value)} defaultValue={valores_default.Sala_de_llegada}>
                         {
                             Mapas.map((mapa, mapindex) => {
-                                return listas_de_salas[mapa].map((sala, salaIndex) => {
+                                return json_lista_de_salas[mapa].map((sala, salaIndex) => {
                                    return <option key={mapindex+"_"+salaIndex} value={sala}> {sala.replace(/_/g, " ")} </option>
                                 })
                             })
@@ -104,6 +114,7 @@ function Mapas({Mapas, sala_resaltada}) {
                     )
                 }
 
+                console.error("Mapa no encontrado")
                 return null
             })}
         </div>

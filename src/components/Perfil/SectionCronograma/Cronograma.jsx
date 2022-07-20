@@ -3,7 +3,7 @@ import { useState } from "react"
 import {Que_dia_es_hoy} from "../Suport_functions"
 
 
-export default function Cronograma({dias}) {
+export default function Cronograma({dias, SetSalaLlegada, SetSalas}) {
     const [Dia, SetDia] = useState(Que_dia_es_hoy())
 
     let today_activities
@@ -41,8 +41,7 @@ export default function Cronograma({dias}) {
                         <th>LUGAR</th>
                     </tr>
 
-                    <Lineas today_activities={today_activities}/>
-
+                    <Lineas today_activities={today_activities} SetSalaLlegada={SetSalaLlegada}/>
                     
                 </tbody>
             </table>
@@ -51,7 +50,7 @@ export default function Cronograma({dias}) {
 }
 
 
-function Lineas({today_activities}){
+function Lineas({today_activities,SetSalaLlegada}){
     var className
     return today_activities.map((actividad, index) => {
         if (actividad.titulo === "ALMUERZO" || actividad.titulo === "TIEMPO LIBRE") {
@@ -64,17 +63,18 @@ function Lineas({today_activities}){
                 <td className="hora"> {actividad.horario} </td>
                 <td className="actividad"> {actividad.titulo} </td>
 
-                { actividad.lugar ? <Donde actividad={actividad}/> : null}
+                { actividad.lugar ? <Donde actividad={actividad} SetSalaLlegada={SetSalaLlegada}/> : null}
             </tr>
         )
     })
 }
 
-function Donde({actividad}){
+function Donde({actividad,SetSalaLlegada}){
     return(
         <td className="lugar linea">
-            <a href=""> {actividad.lugar} </a>
-            <div className="line_container" /><div className="line"></div>
+            {/* <a href=""> {actividad.lugar} </a> */}
+            <button onClick={() => {SetSalaLlegada(actividad.lugar)}}> {actividad.lugar} </button>
+            {/* <div className="line_container" /><div className="line"></div> */}
         </td>
     )
 }

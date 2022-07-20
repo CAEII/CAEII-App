@@ -43,6 +43,7 @@ function Asistencia(dias){
     return asistencia
 }
 
+
 // funcion para convertir el valor del getDay() en un string
 function Que_dia_es_hoy(){
     const date = new Date()
@@ -70,8 +71,29 @@ function Que_dia_es_hoy(){
         return "Domingo"
     };
 
-    console.error("Este dia no esta contemplado")
+    // console.error("Este dia no esta contemplado")
     return "Domingo"
+}
+
+// funcion para averiguar en que mapa estan las salas relevantes
+function en_que_mapa(sala_salida, sala_llegada, listas_de_salas){
+    let mapas = [];
+
+    for (const mapa in listas_de_salas) {
+
+        for (let i = 0; i < listas_de_salas[mapa].length; i++) {
+
+            if (listas_de_salas[mapa][i] === sala_salida) {
+                mapas.push(mapa)
+            };
+            if (listas_de_salas[mapa][i] === sala_llegada) {
+                mapas.push(mapa)
+            };
+        };
+    };
+
+    // console.log(mapas)
+    return mapas
 }
 
 
@@ -79,3 +101,4 @@ function Que_dia_es_hoy(){
 exports.status_color_flag = status_color_flag;
 exports.Que_dia_es_hoy = Que_dia_es_hoy;
 exports.Asistencia = Asistencia;
+exports.en_que_mapa = en_que_mapa;

@@ -447,6 +447,12 @@ iframe{
     left: 0vw;
 }
 
+#perfil .lugar button{
+    height: 30px;
+    width: 60px;
+    font-size: 1rem;
+} 
+
 @media (min-width: 1024px){
     #credencial {
         grid-column: 1/3;

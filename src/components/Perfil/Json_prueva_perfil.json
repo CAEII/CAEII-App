@@ -158,19 +158,19 @@
                 {
                     "titulo": "kk #2 Domingo",
                     "horario": "09:00 - 10:00",
-                    "lugar": "Aula magna",
+                    "lugar": "uspallata",
                     "presente": true
                 },
                 {
                     "titulo": "kk #3",
                     "horario": "10:00 - 11:00",
-                    "lugar": "Aula magna",
+                    "lugar": "nihuil",
                     "presente": true
                 },
                 {
                     "titulo": "kk #4",
                     "horario": "11:00 - 12:00",
-                    "lugar": "Aula magna",
+                    "lugar": "hall primer piso",
                     "presente": false
                 },
                 {

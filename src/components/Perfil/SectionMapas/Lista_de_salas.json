@@ -1,0 +1,20 @@
+{
+    "PlantaBaja": [
+        "Hall_Planta_Baja",
+        "Sanitario_Planta_baja",
+        "Restaurante",
+        "Asensor_Planta_Baja"
+    ],
+    "AuditorioPrincipal": [
+        "Auditorio_Principal",
+        "Explanada"
+    ],
+    "PimerPiso": [
+        "Hall_Pimer_Piso",
+        "Sanitario_Primer_Piso",
+        "Sala_Cacheuta",
+        "Sala_Uspallata",
+        "Sala_Nihuil",
+        "Sala_Magna_Central"
+    ]
+}

@@ -21,6 +21,10 @@ import json from "./Json_prueva_perfil.json"
 
 export default function Perfil() {
     const [Coute, SetCuote] = useState("Bienvenido, ¿listo para el despegue?");
+    const [SalaLlegada, SetSalaLlegada] = useState("Explanada");
+    const [SalaSalida, SetSalaSalida] = useState("Sala_Cacheuta");
+
+    const [Salas, SetSalas] = useState({salida: "Explanada", llegada:"Sala_Cacheuta"});
   
 
     return (
@@ -58,9 +62,9 @@ export default function Perfil() {
 
                     <Credencial nombre={json.nombre} asistencia={Asistencia(json.dias)}/>
 
-                    <Cronograma dias={json.dias}/>
+                    <Cronograma dias={json.dias} SetSalaLlegada={SetSalaLlegada}/>
 
-                    <SectionMapas mapas={["algo", "otro algo", "otro otro algo"]} />
+                    <SectionMapas salas={Salas}/>
 
                     <section id="logo">
                         <img src={CaeiiLogo} alt="logo CAEII" />
