@@ -1,7 +1,7 @@
 // react
 import { useEffect, useState } from "react"
 // functions
-import status from "../Function_decidir_color"
+import {status_color_flag} from "../../Suport_functions"
 // imgs
 import escalera from "./escalera.png"
 
@@ -13,10 +13,10 @@ export default function PlantaBaja({ sala_resaltada, colores }) {
   const [Asensor, SetAsensor] = useState({ color: colores.color_sala_desactivada, display: "none" })
 
   useEffect(() => {
-    SetHall(status("Hall_Planta_Baja", sala_resaltada, colores));
-    SetSanitario(status("Sanitario_Planta_baja", sala_resaltada, colores));
-    SetRestaurante(status("Restaurante", sala_resaltada, colores));
-    SetAsensor(status("Asensor_Planta_Baja", sala_resaltada, colores));
+    SetHall(status_color_flag("Hall_Planta_Baja", sala_resaltada, colores));
+    SetSanitario(status_color_flag("Sanitario_Planta_baja", sala_resaltada, colores));
+    SetRestaurante(status_color_flag("Restaurante", sala_resaltada, colores));
+    SetAsensor(status_color_flag("Asensor_Planta_Baja", sala_resaltada, colores));
   }, [sala_resaltada, colores]);
 
 

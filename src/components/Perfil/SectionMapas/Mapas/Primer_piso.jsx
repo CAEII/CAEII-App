@@ -1,7 +1,7 @@
 // react
 import { useEffect, useState } from "react"
 // functions
-import status from "../Function_decidir_color"
+import {status_color_flag} from "../../Suport_functions"
 // imgs
 import escalera from "./escalera.png"
 
@@ -15,12 +15,12 @@ export default function PrimerPiso({ sala_resaltada, colores }) {
     const [Sala_Magna_Central, Set_Sala_Magna_Central] = useState({ color: colores.color_sala_desactivada, display: "none" })
 
     useEffect(() => {
-        Set_Hall_Pimer_Piso(status("Hall_Pimer_Piso", sala_resaltada, colores));
-        Set_Sanitario_Primer_Piso(status("Sanitario_Primer_Piso", sala_resaltada, colores));
-        Set_Sala_Cacheuta(status("Sala_Cacheuta", sala_resaltada, colores));
-        Set_Sala_Uspallata(status("Sala_Uspallata", sala_resaltada, colores));
-        Set_Sala_Nihuil(status("Sala_Nihuil", sala_resaltada, colores));
-        Set_Sala_Magna_Central(status("Sala_Magna_Central", sala_resaltada, colores));
+        Set_Hall_Pimer_Piso(status_color_flag("Hall_Pimer_Piso", sala_resaltada, colores));
+        Set_Sanitario_Primer_Piso(status_color_flag("Sanitario_Primer_Piso", sala_resaltada, colores));
+        Set_Sala_Cacheuta(status_color_flag("Sala_Cacheuta", sala_resaltada, colores));
+        Set_Sala_Uspallata(status_color_flag("Sala_Uspallata", sala_resaltada, colores));
+        Set_Sala_Nihuil(status_color_flag("Sala_Nihuil", sala_resaltada, colores));
+        Set_Sala_Magna_Central(status_color_flag("Sala_Magna_Central", sala_resaltada, colores));
     }, [sala_resaltada, colores]);
 
     return (

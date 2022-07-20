@@ -1,7 +1,7 @@
 // react
 import { useEffect, useState } from "react"
 // functions
-import status from "../Function_decidir_color"
+import {status_color_flag} from "../../Suport_functions"
 // imgs
 import escalera from "./escalera.png"
 
@@ -10,8 +10,8 @@ export default function PlantaBaja({ sala_resaltada, colores }) {
     const [Explanada, SetExplanada] = useState({ color: colores.color_sala_desactivada, display: "none" })
 
     useEffect(() => {
-        SetAuditorioBustelo(status("Auditorio_Principal", sala_resaltada, colores));
-        SetExplanada(status("Explanada", sala_resaltada, colores));
+        SetAuditorioBustelo(status_color_flag("Auditorio_Principal", sala_resaltada, colores));
+        SetExplanada(status_color_flag("Explanada", sala_resaltada, colores));
     }, [sala_resaltada, colores]);
 
     return (
