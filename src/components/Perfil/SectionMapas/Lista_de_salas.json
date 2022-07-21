@@ -16,5 +16,13 @@
         "Sala_Uspallata",
         "Sala_Nihuil",
         "Sala_Magna_Central"
+    ],
+    "SegundoPiso": [
+        "Hall_Segundo_Piso",
+        "Sanitario_Segundo_Piso",
+        "Sala_Vendimia",
+        "Sala_Puente_Del_Inca",
+        "Sala_Horcones",
+        "Sala_Plumerillo"
     ]
 }

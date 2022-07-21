@@ -1,9 +1,10 @@
 // react
 import { useEffect, useState } from "react"
 // components
-import PrimerPiso from "./Mapas/Primer_piso"
-import PlantaBaja from "./Mapas/Planta_baja"
 import AuditorioPrincipal from "./Mapas/AuditorioPrincipal"
+import PlantaBaja from "./Mapas/Planta_baja"
+import PrimerPiso from "./Mapas/Primer_piso"
+import SegundoPiso from "./Mapas/Segundo_piso"
 // functions
 import {en_que_mapa} from "../Suport_functions"
 // json
@@ -111,6 +112,11 @@ function Mapas({Mapas, sala_resaltada}) {
                 if (mapa === 'PimerPiso') {
                     return(
                         <PrimerPiso key={index} sala_resaltada={{salida:sala_resaltada.salida, llegada:sala_resaltada.llegada}} colores={colores}/>
+                    )
+                }
+                if (mapa === 'SegundoPiso') {
+                    return(
+                        <SegundoPiso key={index} sala_resaltada={{salida:sala_resaltada.salida, llegada:sala_resaltada.llegada}} colores={colores}/>
                     )
                 }
 
