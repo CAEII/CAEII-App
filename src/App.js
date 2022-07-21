@@ -13,7 +13,7 @@ import InfoPrueba from './components/informacionGeneral_prueba';
 function App() {
   return (
     <div className="App">
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <BrowserRouter /* basename={process.env.PUBLIC_URL} */> {/* Descomentar para pruebas en github pages */}
         <Routes>
           <Route path="/" element={<Home/>} />
           <Route path="/home" element={<Home/>} />     
