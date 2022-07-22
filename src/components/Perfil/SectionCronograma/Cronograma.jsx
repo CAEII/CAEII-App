@@ -1,6 +1,7 @@
+// react
 import { useEffect } from "react"
 import { useState } from "react"
-
+// fucntions
 import {Que_dia_es_hoy, comparo_con_la_hora_actual} from "../Suport_functions"
 
 
@@ -52,32 +53,42 @@ export default function Cronograma({dias, SetSalas, Salas}) {
 
 
 function Lineas({today_activities,SetSalas,Salas}){
-    var className
     return today_activities.map((actividad, index) => {
-        if (actividad.titulo === "ALMUERZO" || actividad.titulo === "TIEMPO LIBRE") {
-            className = "conLinea resaltado"
-        } else {
-            className = ""
-        };
-    
-        className = className + " " + comparo_con_la_hora_actual(actividad.horario)
-    
-        return (
-            <tr id="L2" className={className} key={index}>
-                <td className="hora"> {actividad.horario} </td>
-                <td className="actividad"> {actividad.titulo} </td>
-    
-                {actividad.lugar ? <Donde actividad={actividad} SetSalas={SetSalas} Salas={Salas}/> : null}
-            </tr>
-        )
+        return <Lineas2 actividad={actividad} index={index} SetSalas={SetSalas} Salas={Salas}/>
     })
-}
+};
 
-function Donde({actividad,SetSalas,Salas}){
+function Lineas2({actividad,index,SetSalas,Salas}) {
+    var className
+    if (actividad.titulo === "ALMUERZO" || actividad.titulo === "TIEMPO LIBRE") {
+        className = "conLinea resaltado"
+    } else {
+        className = ""
+    };
+
+    className = className + " " + comparo_con_la_hora_actual(actividad.horario)
+
+    useEffect(() => {
+        if (comparo_con_la_hora_actual(actividad.horario) === "En_progreso") {
+            SetSalas({ salida: Salas.salida, llegada: actividad.lugar})
+        }
+    }, [Salas.salida,SetSalas,actividad.lugar,actividad.horario])
+
+    return (
+        <tr id="L2" className={className} key={index}>
+            <td className="hora"> {actividad.horario} </td>
+            <td className="actividad"> {actividad.titulo} </td>
+
+            { actividad.lugar ? <Donde boton_id={index} actividad={actividad} SetSalas={SetSalas} Salas={Salas}/> : null }
+        </tr>
+    )
+};
+
+function Donde({actividad,SetSalas,Salas,boton_id}){
     return(
         <td className="lugar linea">
             {/* <a href=""> {actividad.lugar} </a> */}
-            <button onClick={() => {SetSalas({ salida: Salas.salida, llegada:actividad.lugar})}}> {actividad.lugar.replace(/_/g, " ")} </button>
+            <button id={boton_id} onClick={() => {SetSalas({ salida: Salas.salida, llegada:actividad.lugar})}}> {actividad.lugar.replace(/_/g, " ")} </button>
             {/* <div className="line_container" /><div className="line"></div> */}
         </td>
     )

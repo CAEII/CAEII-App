@@ -1,13 +1,16 @@
 // react
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
+import { useParams } from 'react-router-dom';
+// axios
+import axios from 'axios';
 // components
 import BaseLayout from "../layout"
 import Credencial from "./SectionCredencial/Credencial";
 import Cronograma from "./SectionCronograma/Cronograma";
 import SectionMapas from "./SectionMapas/Section_Mapas";
 // functions
-import {Asistencia} from "./Suport_functions"
+import {Asistencia, get_user_data} from "./Suport_functions"
 //styles
 import "../../styles/perfil/css/Perfil.css";
 // imgs
@@ -18,12 +21,14 @@ import json from "./Json_prueva_perfil.json"
 
 
 
-
 export default function Perfil() {
     const [Coute, SetCuote] = useState("Bienvenido, ¿listo para el despegue?");
 
     const [Salas, SetSalas] = useState({salida: "Explanada", llegada:"Explanada"});
-  
+
+    // useEffect(() => {
+    //     axios.get("http://192.168.1.40:8888/").then((Response) => {console.log(Response)})
+    // })
 
     return (
         <div className="App" id="perfil">

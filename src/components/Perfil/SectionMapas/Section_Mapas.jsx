@@ -37,7 +37,6 @@ export default function Section_Mapas({salas}) {
 
     }, [salas, valores_default.Sala_de_salida, valores_default.Sala_de_llegada])
 
-    // console.log(Sala_salida + ' ' + Sala_llegada)
 
     return (
         <section id="mapas">
@@ -61,7 +60,7 @@ function Selects({Mapas,_useStates,valores_default}) {
         <div className="section_of_sections">
             <label htmlFor="salida" class="title_text">Estoy aquí: </label>
                 <div class="select" id="salida">
-                    <select onChange={(value) => _useStates.salida(value.target.value)} defaultValue={valores_default.Sala_de_salida}>
+                    <select onChange={(value) => _useStates.salida(value.target.value)} value={valores_default.Sala_de_salida}>
                         {
                             Mapas.map((mapa, mapindex) => {                                                                             // Recorro el array de mapas y por cada mapa:
                                 return json_lista_de_salas[mapa].map((sala, salaIndex) => {                                                 // Recorro el array de salas y devuelvo un "<option>" con el valor de la sala
@@ -73,7 +72,7 @@ function Selects({Mapas,_useStates,valores_default}) {
                 </div>
                 <label htmlFor="llegada" class="title_text">Voy a: </label>
                 <div class="select" id="llegada">
-                    <select onChange={(value) => _useStates.llegada(value.target.value)} defaultValue={valores_default.Sala_de_llegada}>
+                    <select onChange={(value) => _useStates.llegada(value.target.value)} value={valores_default.Sala_de_llegada}>
                         {
                             Mapas.map((mapa, mapindex) => {
                                 return json_lista_de_salas[mapa].map((sala, salaIndex) => {
@@ -103,22 +102,22 @@ function Mapas({Mapas, sala_resaltada}) {
                     return(
                         <PlantaBaja key={index} sala_resaltada={{salida:sala_resaltada.salida, llegada:sala_resaltada.llegada}} colores={colores}/>
                     )
-                }
+                };
                 if (mapa === 'AuditorioPrincipal') {
                     return(
                         <AuditorioPrincipal key={index} sala_resaltada={{salida:sala_resaltada.salida, llegada:sala_resaltada.llegada}} colores={colores}/>
                     )
-                }
+                };
                 if (mapa === 'PimerPiso') {
                     return(
                         <PrimerPiso key={index} sala_resaltada={{salida:sala_resaltada.salida, llegada:sala_resaltada.llegada}} colores={colores}/>
                     )
-                }
+                };
                 if (mapa === 'SegundoPiso') {
                     return(
                         <SegundoPiso key={index} sala_resaltada={{salida:sala_resaltada.salida, llegada:sala_resaltada.llegada}} colores={colores}/>
                     )
-                }
+                };
 
                 console.error("Mapa no encontrado")
                 return null

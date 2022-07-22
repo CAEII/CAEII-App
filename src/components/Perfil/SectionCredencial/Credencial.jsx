@@ -1,4 +1,5 @@
 // React
+import { useEffect } from 'react';
 import {QRCodeSVG} from 'qrcode.react';
 // imgs
 // import QR from "../../styles/perfil/img/perfil/qrs/qr.png";
@@ -11,7 +12,6 @@ import Astronauta from "../../../styles/perfil/img/astronauta.png";
 export default function Credencial({nombre, asistencia}) {
     let info_qr = nombre    // info para codificar en el qr en caso de usar scaners 
     // let info_qr = "https://www.caeii.com.ar/user/" + json[0].nombre   // info para codificar en el qr en caso de no usar scaners 
-
     
     return(
         <section id="credencial">

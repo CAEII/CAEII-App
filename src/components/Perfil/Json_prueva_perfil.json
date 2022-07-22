@@ -9,7 +9,7 @@
                     "titulo": "kk #1 Jueves",
                     "horario": "08:00 - 09:00",
                     "lugar": "Aula magna",
-                    "presente": true
+                    "presente": false
                 },
                 {
                     "titulo": "kk #2 Jueves",
@@ -175,7 +175,7 @@
                 },
                 {
                     "titulo": "ALMUERZO",
-                    "horario": "19:00 - 20:00",
+                    "horario": "20:00 - 20:30",
                     "lugar": "Sala_Uspallata",
                     "presente": false
                 },
