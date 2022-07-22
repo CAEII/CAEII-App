@@ -19,11 +19,16 @@
     text-transform: uppercase;
     font-style: italic;
 }
-#credencial{
+
+
+/* #credencial{
     background-color: var(--fondoTituloTargeta);
 }
 #credencial h2{
     background-color: rgba(97, 94, 159, 1);
+
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
 }
 .top_asistencia{
     display: grid;
@@ -50,44 +55,44 @@ progress::-webkit-progress-value {
     background-color: #9400d4;
     border-radius: 50px;
 }
-.comidas{
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-.comidas img{
-    height: 40px;
-    width: auto;
-}
-.comidas .icono, .comidas .icono_disabled{
+.lottie_container{
     background-color: transparent;
-    height: fit-content;
-    width: fit-content;
-    margin-right: 20px;
+    position: absolute;
+    height: 60vh;
+    width: 100vw;
 }
-.comidas .icono_disabled{
-    cursor: default;
+.lottie_container div{
+    width: 100% !important;
+    height: 100% !important;
+    pointer-events: none;
 }
-.comidas .icono:hover, .comidas .onload_shake{
-    cursor: pointer;
-    animation: shake 0.3s;
-    animation-iteration-count: 1;
+.lottie_container div svg{
+    margin: 0 !important;
 }
 
-@keyframes shake {
-    0% { transform: translate(0, 0) rotate(0deg); }
-    25% { transform: translate(5px, 5px) rotate(5deg); }
-    50% { transform: translate(0, 0) rotate(0eg); }
-    75% { transform: translate(-5px, 5px) rotate(-5deg); }
-    100% { transform: translate(0, 0) rotate(0deg); }
+.asistente_certificado{
+    color: #9400d4;
+    font-size: 1.9rem;
 }
-.comidas h3{
-    text-align: left;
-    font-size: 1.5rem;
+.congratulations_smg_container{
+    background-color: white;
+    border-color: #9400d4;
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 50px;
+    margin: 5%;
+    margin-bottom: 20px;
+
+    padding: 5%;
+
+    text-align: center;
 }
-.almuerzos .iconos, .coffees .iconos{
-    margin-left: 40px;
-    margin-top: 10px;
+
+.congratulations_smg_container span{
+    color: #9400d4 ;
+    font-family: 'Montserrat-Black', sans-serif;
 }
+
 .top_asistencia .astronauta_de_caeii{
     grid-column: 1/2;
     width: 55vw;
@@ -118,8 +123,7 @@ progress::-webkit-progress-value {
     height: 75%;
     width: 75%;
 }
-.top_asistencia h3{
-    display: flex;
+.top_asistencia h3, .top_asistencia b{
     justify-content: space-evenly;
     font-family: 'Montserrat-Black', sans-serif;
 }
@@ -128,11 +132,12 @@ progress::-webkit-progress-value {
     align-items: flex-start;
     flex-direction: column;
 }
+
+
 .modal-content img{
     width: 100%;
     height: auto;
 }
-
 .modal {
     display: none;
     position: fixed;
@@ -177,7 +182,7 @@ progress::-webkit-progress-value {
         opacity: 1
     }
 }
-/* The Close Button */
+
 .close {
     color: black;
     float: right;
@@ -197,7 +202,10 @@ progress::-webkit-progress-value {
 }
 .modal-body {
     padding: 2px 16px;
-}
+} */
+
+
+
 
 
 #cronograma{
@@ -463,44 +471,9 @@ iframe{
 } 
 
 @media (min-width: 1024px){
-    #credencial {
-        grid-column: 1/3;
-    }
     /* PERFIL */
     .perfil header{
         height: 100vh;
-    }
-    .perfil .sistema_solar {
-        top: -370px;
-    }
-    .perfil .sol {
-        background: var(--sol_planetas);
-        border-radius: 100%;
-        width: 450px;
-        height: 450px;
-        z-index: -5;
-    }
-    .perfil .orbit_1 {
-        width: 680px;
-        height: 680px;
-        margin: -110px auto;
-    }
-    .perfil .orbit_2 {
-        width: 880px;
-        height: 880px;
-        margin: -210px auto;
-    }
-    .perfil .orbit_3 {
-        width: 1080px;
-        height: 1080px;
-        margin: -310px auto;
-    }
-    .perfil .planet {
-        width: 75px;
-        height: 75px;
-    }
-    .perfil .orbit_1 .planet {
-        margin: 8%;
     }
     .cuote {
         grid-row: 4;
@@ -508,10 +481,7 @@ iframe{
     }
     .coheteconteiner{
         display: none;
-    }
-    .top_asistencia .astronauta_de_caeii {
-        width: auto;
-    }
+    } 
     /* #mapas, #cronograma{
         height: 145vh;
         margin: 0;
