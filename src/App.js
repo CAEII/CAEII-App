@@ -6,7 +6,8 @@ import Login from './components/login';
 import Nosotros from './components/nosotros';
 import Info from './components/Informacion_general/informacionGeneral';
 import Perfil  from './components/Perfil/perfil'
-// import PerfilQrsPRUEBA  from './components/perfil_qrs_PRUEBA' // componente de prueba para los qrs
+import Asistencia  from './components/asistencia'
+
 // Styles
 // import './App.css';
 
@@ -17,7 +18,7 @@ function App() {
           <Route path="/" element={<Home/>} />
           <Route path="/home" element={<Home/>} />     
           <Route path="/perfil/:user" element={<Perfil/>} />     
-          {/*<Route path="/user/:id" element={<Asistencia/>}/>   url para marcar asistencia */}
+          <Route path="/user/:user" element={<Asistencia/>}/>
           {/* <Route path="/login" element={<Login/>}/> */}
           <Route path="/nosotros" element={<Nosotros/>}/>
           <Route path="/info/:category" element={<Info/>}/>

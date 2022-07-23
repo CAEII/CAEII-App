@@ -12,13 +12,13 @@ import "../../../styles/perfil/css/credencial.css"
 import Astronauta from "../../../styles/perfil/img/astronauta.png";
 
 
-export default function Credencial({ nombre, kkasistencia }) {
-    const info_qr = "https://www.caeii.com.ar/user/" + nombre                   // info para codificar en el qr en caso de no usar scaners 
+export default function Credencial({ nombre, asistencia }) {
+    const info_qr = "https://www.caeii.com.ar/CAEII-App/user/" + nombre                   // info para codificar en el qr en caso de no usar scaners 
 
     const [QR_modal_IsOpen, Set_QR_modal_IsOpen] = useState(false)              // estado del modal que contiene el qr
     const [info_modal_IsOpen, Set_info_modal_IsOpen] = useState(false)          // estado del modal que tiene info sobre el certificado
 
-    const asistencia = 80           // variable de desarrollo                       CAMBIAR ANTES DEL DEPLOY
+    // const asistencia = 80           // variable de desarrollo                       CAMBIAR ANTES DEL DEPLOY
 
     let asistente_certificado
     if (asistencia >= 80) {
@@ -84,7 +84,7 @@ function QR({info_qr}) {
             size={200}
             bgColor={"#ffffff"}
             fgColor={"#9400d4"}
-            level={"L"}
+            level={"M"}
             includeMargin={false}
             imageSettings={{
                 src: 'https://www.caeii.com.ar/favicon.ico?',

@@ -1,0 +1,17 @@
+.App#asistencia{
+    background-image:  url(../perfil/img/fondoPerfil.jpg);
+    overflow: hidden;
+}
+
+#asistencia .activiti_button{
+    margin-bottom: 30px;
+}
+.actividades {
+    margin-top: 10px;
+}
+.activiti_button.echa_true{
+    background-color: rgb(66, 66, 66);
+}
+.activiti_button.echa_false#_2{
+    background-color: yellowgreen;
+}

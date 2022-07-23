@@ -1,6 +1,5 @@
 // react
-import React, { useEffect } from "react";
-import { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from 'react-router-dom';
 // axios
 import axios from 'axios';
@@ -10,7 +9,7 @@ import Credencial from "./SectionCredencial/Credencial";
 import Cronograma from "./SectionCronograma/Cronograma";
 import SectionMapas from "./SectionMapas/Section_Mapas";
 // functions
-import {Asistencia, get_user_data} from "./Suport_functions"
+import {Asistencia} from "./Suport_functions"
 //styles
 import "../../styles/perfil/css/Perfil.css";
 // imgs
@@ -23,8 +22,16 @@ import json from "./Json_prueva_perfil.json"
 
 export default function Perfil() {
     const [Coute, SetCuote] = useState("Bienvenido, ¿listo para el despegue?");
-
     const [Salas, SetSalas] = useState({salida: "Explanada", llegada:"Explanada"});
+
+    const { user } = useParams();
+
+    var asistencia
+    if (user === "Augusto Antonelli") {
+        asistencia = 80
+    } else {
+        asistencia = 50
+    }
 
     // useEffect(() => {
     //     axios.get("http://192.168.1.40:8888/").then((Response) => {console.log(Response)})
@@ -63,7 +70,9 @@ export default function Perfil() {
                         <h1> {Coute} </h1>
                     </div>
 
-                    <Credencial nombre={json.nombre} asistencia={Asistencia(json.dias)}/>
+                    {/* <Credencial nombre={json.nombre} asistencia={Asistencia(json.dias)}/> */}
+
+                    <Credencial nombre={user} asistencia={asistencia}/>
 
                     <Cronograma dias={json.dias} SetSalas={SetSalas}  Salas={Salas}/>
 
