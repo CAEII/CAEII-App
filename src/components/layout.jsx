@@ -1,4 +1,6 @@
+// React
 import React from "react";
+// Components
 import FooterContent from "./footer";
 import HeaderBar from "./header";
 

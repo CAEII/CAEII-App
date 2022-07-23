@@ -1,0 +1,177 @@
+@media (min-width: 1024px) {
+    /*Descomentar para que ocupe toda la pantalla*/
+    /* #visitas {
+        grid-column: 1/3;
+    } */
+    #visitas>article>.movile {
+        display: none;
+    }
+    header{
+        height: 150px !important;
+    }
+    .movile_navbar{
+        display: none;
+    }
+    .desktop_navbar{
+        display: block;
+        position: fixed;
+        height: 110px;
+        width: 100vw;
+        z-index: 50;
+    }
+    main {
+        padding-top: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 100px
+    }
+
+    /* nosotros */
+    .nosotros{
+        row-gap: 50px;
+    }
+    .nosotros .title{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .nosotros .h1_title_mobile{
+        display: none;
+    }
+    .nosotros .h1_title_desktop{
+        display: block !important;
+        margin: 0;
+    }
+    .nosotros .nosotros_section{
+        grid-column: 1/3;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .nosotros .reverse {
+        flex-direction: row-reverse;
+    }
+    .nosotros .nosotros_img_conteiner{
+        overflow: hidden;
+    }
+    .nosotros .nosotros_section .nosotros_img_conteiner{
+        margin-top: 0px;
+        margin-bottom: 0px;
+        width: 40%;
+        max-height: 350px;
+        margin-left: 80px;
+        margin-right: 0px;
+    }
+    .nosotros .reverse .nosotros_img_conteiner{
+        margin-left: 0px;
+        margin-right: 80px;
+    }
+    /* .nosotros .nosotros_section .img_representativa{
+        margin-top: 0px;
+        margin-bottom: 0px;
+        width: 40%;
+        max-height: 350px;
+        margin-left: 80px;
+        margin-right: 0px;
+    } */
+    /* .nosotros .reverse .img_representativa {
+        margin-left: 0px;
+        margin-right: 80px;
+    } */
+
+    .nosotros section .img_representativa {
+        max-width: 650px;
+        max-height: 350px;
+        /* height: 350px; */
+        width: auto !important;
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+    }
+    .nosotros .info {
+        width: 40%;
+        height: 350px;
+    }
+    .nosotros .button .circle2 {
+        top: 30% !important;
+    }
+    .nosotros .rocket_container {
+        top: 40% !important;
+    }
+    .nosotros .rocket_container img {
+        height: 10px !important;
+    }
+    /* PERFIL
+    .perfil header{
+        height: 100vh;
+    }
+    .perfil .sistema_solar {
+        top: -370px;
+    }
+    .perfil .sol {
+        background: var(--sol_planetas);
+        border-radius: 100%;
+        width: 450px;
+        height: 450px;
+        z-index: -5;
+    }
+    .perfil .orbit_1 {
+        width: 680px;
+        height: 680px;
+        margin: -110px auto;
+    }
+    .perfil .orbit_2 {
+        width: 880px;
+        height: 880px;
+        margin: -210px auto;
+    }
+    .perfil .orbit_3 {
+        width: 1080px;
+        height: 1080px;
+        margin: -310px auto;
+    }
+    .perfil .planet {
+        width: 75px;
+        height: 75px;
+    }
+    .perfil .orbit_1 .planet {
+        margin: 8%;
+    }
+    .cuote {
+        grid-row: 4;
+        padding-top: 15%;
+    }
+    .coheteconteiner{
+        display: none;
+    }
+    #mapas, #cronograma{
+        height: 145vh;
+        margin: 0;
+    }
+    .actividad, th {
+        font-size: 1.7rem;
+        padding: 30px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    iframe{
+        width: 40vw;
+        height: 50vh;
+        margin-top: 40px;
+    }
+    #logo{
+        grid-column: 1/3;
+    }
+    #logo img {
+        height: 150px;
+    } */
+}
+
+@media only screen and (max-width: 1260px){
+    #visitas>article>.desktop {
+        display: none;
+    }
+    #cinco .line_container {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}
