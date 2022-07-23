@@ -83,6 +83,19 @@ svg{
     margin-top: 4%;
     margin-left: 4%;
 }
+
+/* Botón del último div que dice "próximamente" */
+.despegue{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 4%;
+}
+.despegue .circle{
+    margin: 0;
+}
+/* Botón del último div que dice "próximamente" */
+
 .nosotros .button .circle2 {
     height: 55px;
     width: 55px;
