@@ -12,7 +12,8 @@ import Perfil  from './components/Perfil/perfil'
 
 function App() {
   return (
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <div className="App">
+      <BrowserRouter /* basename={process.env.PUBLIC_URL} */> {/* Descomentar para pruebas en github pages */}
         <Routes>
           <Route path="/" element={<Home/>} />
           <Route path="/home" element={<Home/>} />     
