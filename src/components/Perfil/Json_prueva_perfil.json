@@ -1,0 +1,197 @@
+{
+    "nombre": "Augusto Antonelli",
+    "dias": [
+        {
+            "dia": "Jueves",
+            "pilar": "Odisea Estelar",
+            "actividades": [
+                {
+                    "titulo": "kk #1 Jueves",
+                    "horario": "08:00 - 09:00",
+                    "lugar": "Aula magna",
+                    "presente": false
+                },
+                {
+                    "titulo": "kk #2 Jueves",
+                    "horario": "09:00 - 10:00",
+                    "lugar": "Aula magna",
+                    "presente": true
+                },
+                {
+                    "titulo": "kk #3",
+                    "horario": "10:00 - 11:00",
+                    "lugar": "Aula magna",
+                    "presente": true
+                },
+                {
+                    "titulo": "kk #4",
+                    "horario": "11:00 - 12:00",
+                    "lugar": "Aula magna",
+                    "presente": false
+                },
+                {
+                    "titulo": "ALMUERZO",
+                    "horario": "12:00 - 14:00",
+                    "lugar": "Aula magna",
+                    "presente": false
+                },
+                {
+                    "titulo": "kk #6",
+                    "horario": "15:00 - 16:00",
+                    "lugar": "Aula magna",
+                    "presente": false
+                },
+                {
+                    "titulo": "TIEMPO LIBRE",
+                    "horario": "16:00 - 17:00",
+                    "lugar": "",
+                    "presente": false
+                }
+            ]
+        },
+        {
+            "dia": "Viernes",
+            "pilar": "Logistica 4.0",
+            "actividades": [
+                {
+                    "titulo": "kk #1 Viernes",
+                    "horario": "08:00 - 09:00",
+                    "lugar": "Aula magna",
+                    "presente": true
+                },
+                {
+                    "titulo": "kk #2 Viernes",
+                    "horario": "09:00 - 10:00",
+                    "lugar": "Aula magna",
+                    "presente": true
+                },
+                {
+                    "titulo": "kk #3 Viernes",
+                    "horario": "10:00 - 11:00",
+                    "lugar": "Aula magna",
+                    "presente": true
+                },
+                {
+                    "titulo": "kk #4",
+                    "horario": "11:00 - 12:00",
+                    "lugar": "Aula magna",
+                    "presente": false
+                },
+                {
+                    "titulo": "ALMUERZO",
+                    "horario": "12:00 - 14:00",
+                    "lugar": "Aula magna",
+                    "presente": false
+                },
+                {
+                    "titulo": "kk #6",
+                    "horario": "15:00 - 16:00",
+                    "lugar": "Aula magna",
+                    "presente": false
+                },
+                {
+                    "titulo": "TIEMPO LIBRE",
+                    "horario": "16:00 - 17:00",
+                    "lugar": "",
+                    "presente": false
+                }
+            ]
+        },
+        {
+            "dia": "Sabado",
+            "pilar": "Ingenieria del mañana",
+            "actividades": [
+                {
+                    "titulo": "kk #1 Sabado",
+                    "horario": "08:00 - 09:00",
+                    "lugar": "Aula magna",
+                    "presente": true
+                },
+                {
+                    "titulo": "kk #2 Sabado",
+                    "horario": "09:00 - 10:00",
+                    "lugar": "Aula magna",
+                    "presente": true
+                },
+                {
+                    "titulo": "kk #3",
+                    "horario": "10:00 - 11:00",
+                    "lugar": "Aula magna",
+                    "presente": true
+                },
+                {
+                    "titulo": "kk #4",
+                    "horario": "11:00 - 12:00",
+                    "lugar": "Aula magna",
+                    "presente": false
+                },
+                {
+                    "titulo": "ALMUERZO",
+                    "horario": "12:00 - 14:00",
+                    "lugar": "Aula magna",
+                    "presente": false
+                },
+                {
+                    "titulo": "kk #6",
+                    "horario": "15:00 - 16:00",
+                    "lugar": "Aula magna",
+                    "presente": false
+                },
+                {
+                    "titulo": "TIEMPO LIBRE",
+                    "horario": "16:00 - 17:00",
+                    "lugar": "",
+                    "presente": false
+                }
+            ]
+        },
+        {
+            "dia": "Domingo",
+            "pilar": "Desarrollo Sostenible: Smart City",
+            "actividades": [
+                {
+                    "titulo": "kk #1 Domingo",
+                    "horario": "08:00 - 09:00",
+                    "lugar": "Hall_Planta_Baja",
+                    "presente": true
+                },
+                {
+                    "titulo": "kk #2 Domingo",
+                    "horario": "09:00 - 10:00",
+                    "lugar": "Auditorio_Principal",
+                    "presente": true
+                },
+                {
+                    "titulo": "kk #3",
+                    "horario": "01:00 - 18:00",
+                    "lugar": "Sala_Nihuil",
+                    "presente": true
+                },
+                {
+                    "titulo": "kk #4",
+                    "horario": "19:00 - 20:00",
+                    "lugar": "Sala_Vendimia",
+                    "presente": false
+                },
+                {
+                    "titulo": "ALMUERZO",
+                    "horario": "20:00 - 20:30",
+                    "lugar": "Sala_Uspallata",
+                    "presente": false
+                },
+                {
+                    "titulo": "kk #6",
+                    "horario": "19:00 - 20:00",
+                    "lugar": "Auditorio_Principal",
+                    "presente": false
+                },
+                {
+                    "titulo": "TIEMPO LIBRE",
+                    "horario": "19:00 - 20:00",
+                    "lugar": "",
+                    "presente": false
+                }
+            ]
+        }
+    ]
+}

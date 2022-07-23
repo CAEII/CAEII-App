@@ -2,21 +2,9 @@
 import BaseLayout from "./layout"
 import LeerMas from "./leerMas"
 // styles
-import "../styles/home/css/fuentes.css"
-import "../styles/home/css/generales/variables.css"
-import "../styles/home/css/generales/generales.css"
 import "../styles/home/css/home.css"
-import "../styles/home/css/generales/pantallasChicas.css"
-import "../styles/home/css/generales/desktop.css"
 // IMGS
-import estacion1 from "../styles/home/img/estaciones/odiseaEstelar.png"
-import estacion2 from "../styles/home/img/estaciones/Logística 4.0.png"
-import estacion3 from "../styles/home/img/estaciones/Próximo destino.png"
-import estacion4 from "../styles/home/img/estaciones/Desarrollo urbano.png"
-import hackaton from "../styles/home/img/hackaton.jpg"
 import feria from "../styles/home/img/feria.jpeg"
-// import placeholder from "../styles/home/img/PLACE HOLDER.png"
-// import placeholder2 from "../styles/home/img/PLACE HOLDER cuadrado.png"
 import cohete from "../styles/home/img/cohete-botones.svg"
 import title from "../styles/home/img/caeii-title.png"
 // json
@@ -24,10 +12,9 @@ import json from "../informacion.json"
 
 function Home() {
   return (
-
-    <body id="home" className="home">
+    <div className="App" id="home">
       <BaseLayout>
-        <main>
+        <main >
           <div class="title">
             <img src={title} alt="Logo caeii"></img>
           </div>
@@ -239,21 +226,25 @@ function Home() {
           <section id="conferencias_2">
             <h2> Conferencias profesionales </h2>
             <article id="1">
-              <h3> {json[3].data[0].info[0].title} </h3>
-              <p> {json[3].data[0].info[0].disertante} </p>
+              <div className="conferencias_2_text">
+                <h3> {json[3].data[1].info[0].title} </h3>
+                <p> {json[3].data[1].info[0].disertante} </p>
+              </div>
               <div class="img">
                 <div class="imgOrbit">
-                    <img src={json[3].data[0].info[0].img} alt="Conferencia 1" />
+                    <img src={json[3].data[1].info[0].img} alt="Conferencia 1" />
                   <div class="planet"></div>
                 </div>
               </div>
             </article>
-            <article id="2">
-              <h3> {json[3].data[0].info[1].title} </h3>
-              <p> {json[3].data[0].info[1].disertante} </p>
+            <article id="2" className="flex_derecha">
+              <div className="conferencias_2_text">
+                <h3> {json[3].data[3].info[0].title} </h3>
+                <p> {json[3].data[3].info[0].disertante} </p>
+              </div>
               <div class="img">
                 <div class="imgOrbit">
-                    <img src={json[3].data[0].info[1].img} alt="Conferencia 1" />
+                    <img src={json[3].data[3].info[0].img} alt="Conferencia 1" />
                   <div class="planet"></div>
                 </div>
               </div>
@@ -317,7 +308,8 @@ function Home() {
               <p> {json[5].data[0].info[0].short} </p>
               <div class="img">
                 <div class="imgOrbit">
-                  <img src={hackaton} alt="Hackaton 1" />
+                  {/* <img src={hackaton} alt="Hackaton 1" /> */}
+                  <img src="/CAEII-App/imgs/hackaton.png" alt="Hackaton 1" />
                   <div class="planet"></div>
                 </div>
               </div>
@@ -341,7 +333,7 @@ function Home() {
           </section>
         </main>
       </BaseLayout>
-    </body>
+    </div>
   )
 }
 
