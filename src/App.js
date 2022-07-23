@@ -24,6 +24,7 @@ function App() {
           <Route path="/info/:category" element={<Info/>}/>
         </Routes>
       </BrowserRouter> 
+    </div>
   );
 }
 
