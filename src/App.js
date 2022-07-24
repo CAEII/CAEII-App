@@ -2,11 +2,11 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 // Components
 import Home from './components/home';
-import Login from './components/login';
+// import Login from './components/login';
 import Nosotros from './components/nosotros';
 import Info from './components/Informacion_general/informacionGeneral';
 import Perfil  from './components/Perfil/perfil'
-import Asistencia  from './components/asistencia'
+// import Asistencia  from './components/asistencia'
 
 // Styles
 // import './App.css';
@@ -18,7 +18,7 @@ function App() {
           <Route path="/" element={<Home/>} />
           <Route path="/home" element={<Home/>} />     
           <Route path="/perfil/:user" element={<Perfil/>} />     
-          <Route path="/user/:user" element={<Asistencia/>}/>
+          {/* <Route path="/user/:user" element={<Asistencia/>}/> */}
           {/* <Route path="/login" element={<Login/>}/> */}
           <Route path="/nosotros" element={<Nosotros/>}/>
           <Route path="/info/:category" element={<Info/>}/>

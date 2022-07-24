@@ -366,17 +366,37 @@
                 "title": "Ingenieria del mañana",
                 "info": [
                     {
-                        "title": "",
-                        "img": "",
-                        "disertante": "",
+                        "title": "La ingeniería del futuro",
+                        "img": "/CAEII-App/imgs/profesionales/Alexander Ditzend.jpg",
+                        "disertante": "Alexander Ditzend | Desarrollador de productos basados en IA",
                         "short": "",
-                        "desciption": "",
+                        "desciption": "Alexander nos llevará de viaje por los nuevos desarrollos tecnológicos que están revolucionando la forma de generar productos y servicios con una eficiencia como nunca antes en la historia de la humanidad. Te invitamos a recorrer las nuevas habilidades que debe tener un ingeniero en un entorno que cambia a velocidades vertiginosas.",
                         "items":[],
                         "links": [
                             {
-                                "type": "",
-                                "link": "",
-                                "icono": ""
+                                "type": "Youtube",
+                                "link": "https://www.youtube.com/channel/UCLKavo2tgUhxBb6zUODr_Vw/featured",
+                                "icono": "/CAEII-App/imgs/iconos/Youtube.png"
+                            },
+                            {
+                                "type": "Instagram",
+                                "link": "https://www.instagram.com/alexander_ditzend/",
+                                "icono": "/CAEII-App/imgs/iconos/instagram.png"
+                            },
+                            {
+                                "type": "twitter",
+                                "link": "https://twitter.com/aditzend",
+                                "icono": "/CAEII-App/imgs/iconos/twitter.png"
+                            },
+                            {
+                                "type": "GitHub",
+                                "link": "https://github.com/aditzend?tab=repositories",
+                                "icono": "/CAEII-App/imgs/iconos/github.png"
+                            }, 
+                            {
+                                "type": "Linkedin",
+                                "link": "https://www.linkedin.com/in/alexanderditzend/?originalSubdomain=ar",
+                                "icono": "/CAEII-App/imgs/iconos/linkedin.png"
                             }
                         ]
                     }
@@ -399,6 +419,11 @@
                                 "icono": "/CAEII-App/imgs/iconos/instagram.png"
                             }, 
                             {
+                                "type": "twitter",
+                                "link": "https://twitter.com/AndreaNallim",
+                                "icono": "/CAEII-App/imgs/iconos/twitter.png"
+                            },
+                            {
                                 "type": "Linkedin",
                                 "link": "https://www.linkedin.com/in/mariana-andrea-nallim-ponte/",
                                 "icono": "/CAEII-App/imgs/iconos/linkedin.png"
@@ -406,16 +431,21 @@
                         ]
                     },
                     {
-                        "title": "",
-                        "img": "/CAEII-App/imgs/profesionales/rafael.jpg",
+                        "title": "Ciudades Inteligentes:  Interoperabilidad para el control del alumbrado público",
+                        "img": "/CAEII-App/imgs/profesionales/Hernan Fagnili.jpg",
                         "short": "",
-                        "disertante": "Rafael Kemelmajer | Licenciado en Economía",
-                        "desciption": "Licenciado en Economía, Master en Digital Business Management. Profesor en innovacion y triple impacto en Universidad Nacional de Cuyo. Cofundador y director de Quinto Impacto (Empresa B Certificada) Consultor internacional en innovación de triple impacto). Cofundador de Epiliquid (empresa dedicada a la investigación para la detección temprana de cáncer), Presidente de Nuestra Mendoza (Organización de la sociedad civil que trabaja por ciudades más justas, democráticas, Sostenibles y transparentes), Miembro Polo TIC Mendoza",
+                        "disertante": "Hernan Fagnili | Licenciado en Sistemas",
+                        "desciption": "Desde la óptica de las TICs,  una ciudad inteligente es una red de datos distribuida por el ejido municipal, y en la cual conviven una red primaria o backbone implementado sobre el sistema de alumbrado público municipal- y un conjunto de subredes o redes secundarias, tantas como servicios municipales se decida telegestionar. A diferencia de la red de alumbrado, primera en ser implementada para la gestión inteligente, las redes secundarias utilizan como medio de comunicaciones cualquiera de los disponibles en mercado o combinación de ellos, sobresaliendo la radio frecuencia como medio más común. Para garantizarnos la operación y la sustentabilidad de un sistema de esas características, debemos asegurarnos el uso de componentes interoperables entre las redes secundarias y el backbone del sistema.",
                         "items":[],
-                        "links": [ 
+                        "links": [                    
+                            {
+                                "type": "twitter",
+                                "link": "https://twitter.com/fagnilli",
+                                "icono": "/CAEII-App/imgs/iconos/twitter.png"
+                            },
                             {
                                 "type": "Linkedin",
-                                "link": "https://www.linkedin.com/in/rafakemelmajer/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=ar",
+                                "link": "https://www.linkedin.com/in/hernan-fagnilli-622b184/?originalSubdomain=ar",
                                 "icono": "/CAEII-App/imgs/iconos/linkedin.png"
                             }
                         ]
