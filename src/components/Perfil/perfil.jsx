@@ -5,15 +5,15 @@ import { useParams } from 'react-router-dom';
 import axios from 'axios';
 // components
 import BaseLayout from "../layout"
-import Credencial from "./SectionCredencial/Credencial";
+// import Credencial from "./SectionCredencial/Credencial";
 import Cronograma from "./SectionCronograma/Cronograma";
 import SectionMapas from "./SectionMapas/Section_Mapas";
 // functions
-import {Asistencia} from "./Suport_functions"
+// import {Asistencia} from "./Suport_functions"
 //styles
 import "../../styles/perfil/css/Perfil.css";
 // imgs
-import title from "../../styles/home/img/caeii-title.png"
+// import title from "../../styles/home/img/caeii-title.png"
 import CaeiiLogo from "../../styles/perfil/img/CAEII LOGO 1.png";
 // json
 import json from "./Json_prueva_perfil.json"
@@ -26,12 +26,12 @@ export default function Perfil() {
 
     const { user } = useParams();
 
-    var asistencia
-    if (user === "Augusto Antonelli") {
-        asistencia = 80
-    } else {
-        asistencia = 50
-    }
+    // var asistencia
+    // if (user === "Augusto Antonelli") {
+    //     asistencia = 80
+    // } else {
+    //     asistencia = 50
+    // }
 
     // useEffect(() => {
     //     axios.get("http://192.168.1.40:8888/").then((Response) => {console.log(Response)})
@@ -66,13 +66,14 @@ export default function Perfil() {
                         <img src={title} alt="Logo caeii"></img>
                     </div> */}
 
-                    <div class="cuote">
-                        <h1> {Coute} </h1>
-                    </div>
+                    <section id="bienvenida">
+                        <div class="cuote">
+                            <h1> {Coute} </h1>
+                        </div>
+                    </section>
 
-                    {/* <Credencial nombre={json.nombre} asistencia={Asistencia(json.dias)}/> */}
-
-                    <Credencial nombre={user} asistencia={asistencia}/>
+                    
+                    {/* <Credencial nombre={user} asistencia={asistencia}/> */}
 
                     <Cronograma dias={json.dias} SetSalas={SetSalas}  Salas={Salas}/>
 
