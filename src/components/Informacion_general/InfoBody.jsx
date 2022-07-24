@@ -32,15 +32,15 @@ export default function InfoBody({rubro, jsonData}) {
     }
 
     return cards.map(card => {         // recorro la info del json y por cada item en la lista devuelvo un div class="info_card"
+        let id = card.disertante.split("|")
         return (
             // <div class="info_card"  data-aos="zoom-in-up">
-            <div class="info_card">
-                <div class="info_card_text">
-                    
+            <div class="info_card" id={id[0]}>
+                <div class="info_card_text">    
                     <h3> {card.title} </h3>
-                   {card.img !== "" ? <Imgs src={card.img}/> : null}        {/*  si la src de la imagen no esta vacia muestro la imagen     */}
+                    {card.img !== "" ? <Imgs src={card.img}/> : null}        {/*  si la src de la imagen no esta vacia muestro la imagen     */}
                     <p> 
-                        {card.disertante !== "" ? card.disertante : ""}
+                        {card.disertante !== "" ? card.disertante : null}
                         <br/>
                         <br/>
                         {card.desciption} 

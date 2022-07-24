@@ -146,7 +146,9 @@ article .img{
 #registrarse img {
     height: 17px;
 }
-
+#estaciones {
+    margin-top: 200px;
+}
 #estaciones .imgOrbit{
     border-style: hidden;
 }
