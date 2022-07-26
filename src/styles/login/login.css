@@ -98,11 +98,12 @@ form a{
 .logo{
     background-color: var(--fondoLogo);
     width: 75px;
-    height: 100px;
+    height: 80px;
 
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
 }
 .logo img{
     width: 40px;    

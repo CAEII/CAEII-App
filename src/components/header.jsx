@@ -28,6 +28,9 @@ export default function HeaderBar() {
   return (
     <header>
       <nav>
+      <div className="logo">
+        <img src="/CAEII-App/imgs/aareii logo chico.png" alt="" />
+      </div>
         <div class="movile_navbar">
           <div class="nav-container">
             <input class="checkbox" type="checkbox" name="" id="" />
@@ -38,6 +41,11 @@ export default function HeaderBar() {
             </div>
             <div class="menu-items">
               <ul>
+                <li className="logo_aareii_nav_movile_li">
+                  <a href="https://bit.ly/3OsUra5">
+                    <img src={logoAareii} alt="logo AArEII" className="logo_aareii_nav_movile" />
+                  </a>
+                </li>
                 <li>
                   <div class="linea">
                     <a href="/">INICIO</a>

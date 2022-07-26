@@ -2,7 +2,7 @@
     background-image:  url(../img/fondoPerfil.jpg);
     overflow: hidden;
 }
-.nav-container .hamburger-lines .line {
+.App#perfil .nav-container .hamburger-lines .line {
     background: var(--hamburger_scrolHandle_Mapas_Perfil);
 }
 .cuote{
