@@ -20,7 +20,7 @@ export default function Cronograma({IsLoged, dias, SetSalas, Salas}) {
 
     return (
         <section id="cronograma">
-            {IsLoged === false ? <div className="IsNotLogedMsg"><h1> por favor inicia secion para poder usar el cronograma </h1><a href="/kk"> LogIn </a></div> : null}
+            {IsLoged === false ? <div className="IsNotLogedMsg"><h1> por favor inicia secion para poder usar el cronograma </h1><a href="/login"> LogIn </a></div> : null}
             <div className="title_card_perfil title_cronograma">
                 <h2> cronograma </h2>
 

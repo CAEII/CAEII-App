@@ -30,17 +30,11 @@ export default function Perfil() {
 
     const [IsLoged, SetIsLoged] = useState(false);
 
-    const { user } = useParams();
-
     useEffect(() => {
-        if (cookies.get('session') === "isLoged") {
-            console.log("si cookie")
+        if (cookies.get('session') !== undefined) {
             SetIsLoged(true)
-        }
-        if (cookies.get('session') !== "isLoged") {
-            console.log("no cookie")
+        } else {
             SetIsLoged(false)
-            // cookies.set('session', 'isLoged', { path: '/perfil' });
         }
     }, [])
 

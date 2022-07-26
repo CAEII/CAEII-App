@@ -2,7 +2,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 // Components
 import Home from './components/home';
-// import Login from './components/login';
+import Login from './components/Login/login';
 import Nosotros from './components/nosotros';
 import Info from './components/Informacion_general/informacionGeneral';
 import Perfil  from './components/Perfil/perfil'
@@ -17,11 +17,13 @@ function App() {
         <Routes>
           <Route path="/" element={<Home/>} />
           <Route path="/home" element={<Home/>} />     
-          <Route path="/perfil/:user" element={<Perfil/>} />     
-          {/* <Route path="/user/:user" element={<Asistencia/>}/> */}
-          {/* <Route path="/login" element={<Login/>}/> */}
           <Route path="/nosotros" element={<Nosotros/>}/>
           <Route path="/info/:category" element={<Info/>}/>
+
+          {/* <Route path="/perfil" element={<Perfil/>} />     
+          <Route path="/login" element={<Login/>}/> */}
+
+          {/* <Route path="/user/:user" element={<Asistencia/>}/> */}
         </Routes>
       </BrowserRouter> 
   );
