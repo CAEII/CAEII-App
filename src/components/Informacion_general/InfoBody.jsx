@@ -31,12 +31,11 @@ export default function InfoBody({rubro, jsonData}) {
         }  
     }
 
-    return cards.map(card => {         // recorro la info del json y por cada item en la lista devuelvo un div class="info_card"
-        let id = card.disertante.split("|")
+    return cards.map((card, cardIndex) => {         // recorro la info del json y por cada item en la lista devuelvo un div class="info_card"
         return (
             // <div class="info_card"  data-aos="zoom-in-up">
-            <div class="info_card" id={id[0]}>
-                <div class="info_card_text">    
+            <div className="info_card" key={cardIndex}>
+                <div className="info_card_text">    
                     <h3> {card.title} </h3>
                     {card.img !== "" ? <Imgs src={card.img}/> : null}        {/*  si la src de la imagen no esta vacia muestro la imagen     */}
                     <p> 
@@ -56,7 +55,7 @@ export default function InfoBody({rubro, jsonData}) {
 
 function Imgs({src}) {
     return (
-        <div class="info_card_circle">
+        <div className="info_card_circle">
             <img src={src} alt="" />
         </div>
     )  
@@ -64,18 +63,18 @@ function Imgs({src}) {
 function Links({links}) {
     if (links[0].type !== '') {         // reviso si "params.links" existe
         return(
-            <ul class="info_links">
-                {links.map(link => <li> <a href={link.link} target="_blank" rel="noreferrer"> <img src={link.icono} alt={link.type} /> </a> </li>)}
+            <ul className="info_links">
+                {links.map((link, linkIndex) => <li key={linkIndex}> <a href={link.link} target="_blank" rel="noreferrer"> <img src={link.icono} alt={link.type} /> </a> </li>)}
             </ul>
         )
     } 
 }
 function Items({items}){
     return(
-        <div class="info_items">
+        <div className="info_items">
             {/* <ul class="izquierda"> */}
             <ul>
-                {items.map(item => <li> {item} </li>)}
+                {items.map((item, itemIndex) => <li key={itemIndex}> {item} </li>)}
             </ul>
         </div>
     )

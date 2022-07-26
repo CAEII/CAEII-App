@@ -3,9 +3,9 @@ export default function Navbar({info, setRubro}) {
         return(
             <div className="sections_navbar">             
                 {
-                    info.map((rubro) => {                      // recorros los rubros de la categoria (si los hay) y creo un boton por cada uno
+                    info.map((rubro, rubroIndex) => {                      // recorros los rubros de la categoria (si los hay) y creo un boton por cada uno
                         return (
-                            <NavButton title={rubro.title} setRubro={setRubro}/>
+                            <NavButton key={rubroIndex} title={rubro.title} setRubro={setRubro}/>
                         ) 
                     })
                 }
@@ -23,7 +23,7 @@ function NavButton({title,setRubro}){
         <div className={className}> 
             <p className="nav_buttons_title"> {title.replace("/", " ")} </p> 
             <input type="radio" name="kk" className="navbar_radio" id={title} onClick={() => {setRubro(title)}}/> 
-            <span class="checkmark"></span>          
+            <span className="checkmark"></span>          
         </div>
     ) 
 }
