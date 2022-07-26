@@ -10,6 +10,7 @@ html, body {
     min-width: 260px;
 }
 .App{
+    background-image:  url(/public/imgs/FondoMovile.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
