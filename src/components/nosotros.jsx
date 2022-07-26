@@ -90,6 +90,7 @@ export default function Nosotros() {
             </div>
           
           </section>
+
           <section id="que_es_aareii" class="nosotros_section">
             <div class="info" data-aos="fade-up">
               <h2> ¿Qué es AArEII? </h2>
@@ -106,10 +107,10 @@ export default function Nosotros() {
             <div className="nosotros_img_conteiner"  data-aos="fade-up">
               <img src={que_es_aareii} className="img_representativa que_es_aareii" alt="imagen representativa"/>
             </div>
-          
           </section>
+
           <section id="que_son_los_pilares" class="nosotros_section reverse">
-            <div class="info"  data-aos="fade-up">
+            <div class="info" data-aos="fade-up">
               <h2> ¿Qué son los pilares? </h2>
               <p>
                 Son los ejes temáticos que se abordarán en el evento. Todos los CAEII se centran en 4 pilares diferentes a través de charlas, talleres y conferencias, entre otros. Los pilares de este año son:
@@ -141,11 +142,11 @@ export default function Nosotros() {
                 </div>
               </div>
             </div>
-          </div>
-          <div className="nosotros_img_conteiner"  data-aos="fade-up">
-            <img src={que_son_los_pilares} className="img_representativa" alt="imagen representativa"/>
-          </div>
           
+          <div className="nosotros_img_conteiner" data-aos="fade-up">
+            <img src={que_son_los_pilares} className="img_representativa" alt="imagen representativa" />
+          </div>
+
         </section>
         <section id="cuando_donde" class="nosotros_section">
           <div class="info"  data-aos="fade-up">

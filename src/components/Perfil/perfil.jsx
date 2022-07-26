@@ -3,11 +3,14 @@ import React, { useEffect, useState } from "react";
 import { useParams } from 'react-router-dom';
 // axios
 import axios from 'axios';
+// cookies
+import Cookies from 'universal-cookie';
 // components
 import BaseLayout from "../layout"
 // import Credencial from "./SectionCredencial/Credencial";
 import Cronograma from "./SectionCronograma/Cronograma";
 import SectionMapas from "./SectionMapas/Section_Mapas";
+import SectionMapasNotLoged from "./SectionMapas/SectionMapasNotLoged";
 // functions
 // import {Asistencia} from "./Suport_functions"
 //styles
@@ -18,13 +21,28 @@ import CaeiiLogo from "../../styles/perfil/img/CAEII LOGO 1.png";
 // json
 import json from "./Json_prueva_perfil.json"
 
+const cookies = new Cookies();
 
 
 export default function Perfil() {
     const [Coute, SetCuote] = useState("Bienvenido, ¿listo para el despegue?");
     const [Salas, SetSalas] = useState({salida: "Explanada", llegada:"Explanada"});
 
+    const [IsLoged, SetIsLoged] = useState(false);
+
     const { user } = useParams();
+
+    useEffect(() => {
+        if (cookies.get('session') === "isLoged") {
+            console.log("si cookie")
+            SetIsLoged(true)
+        }
+        if (cookies.get('session') !== "isLoged") {
+            console.log("no cookie")
+            SetIsLoged(false)
+            // cookies.set('session', 'isLoged', { path: '/perfil' });
+        }
+    }, [])
 
     // var asistencia
     // if (user === "Augusto Antonelli") {
@@ -61,23 +79,13 @@ export default function Perfil() {
             </div>
             <BaseLayout>
                 <main>
-
-                    {/* <div class="title">
-                        <img src={title} alt="Logo caeii"></img>
-                    </div> */}
-
-                    <section id="bienvenida">
-                        <div class="cuote">
-                            <h1> {Coute} </h1>
-                        </div>
-                    </section>
-
+                    {IsLoged === false ? <div class="cuote"><h1> {Coute} </h1></div> : null}
                     
                     {/* <Credencial nombre={user} asistencia={asistencia}/> */}
 
-                    <Cronograma dias={json.dias} SetSalas={SetSalas}  Salas={Salas}/>
+                    <Cronograma IsLoged={IsLoged} dias={json.dias} SetSalas={SetSalas}  Salas={Salas}/>
 
-                    <SectionMapas salas={Salas}/>
+                    {IsLoged === true ? <SectionMapas salas={Salas}/> : <SectionMapasNotLoged salas={Salas}/>}
 
                     <section id="logo">
                         <img src={CaeiiLogo} alt="logo CAEII" />

@@ -5,7 +5,7 @@ import { useState } from "react"
 import {Que_dia_es_hoy, comparo_con_la_hora_actual} from "../Suport_functions"
 
 
-export default function Cronograma({dias, SetSalas, Salas}) {
+export default function Cronograma({IsLoged, dias, SetSalas, Salas}) {
     const [Dia, SetDia] = useState(Que_dia_es_hoy())
 
     let today_activities
@@ -20,6 +20,7 @@ export default function Cronograma({dias, SetSalas, Salas}) {
 
     return (
         <section id="cronograma">
+            {IsLoged === false ? <div className="IsNotLogedMsg"><h1> por favor inicia secion para poder usar el cronograma </h1><a href="/kk"> LogIn </a></div> : null}
             <div className="title_card_perfil title_cronograma">
                 <h2> cronograma </h2>
 
