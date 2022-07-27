@@ -4,8 +4,8 @@ import { QRCodeSVG } from 'qrcode.react';
 // components
 import Modal from "./Modals";
 // lottie (animacion)
-import Lottie from 'react-lottie';
-import animationData from './7893-confetti-cannons.json';
+// import Lottie from 'react-lottie';
+// import animationData from './7893-confetti-cannons.json';
 // css
 import "../../../styles/perfil/css/credencial.css"
 // imgs
@@ -28,20 +28,20 @@ export default function Credencial({ nombre, asistencia }) {
     }
 
     // opciones de la animacion de confeti (lottie)
-    const defaultOptions = {
-        loop: true,
-        autoplay: true,
-        animationData: animationData,
-        rendererSettings: {
-            preserveAspectRatio: "xMidYMid slice"
-        }
-    };
+    // const defaultOptions = {
+    //     loop: true,
+    //     autoplay: true,
+    //     animationData: animationData,
+    //     rendererSettings: {
+    //         preserveAspectRatio: "xMidYMid slice"
+    //     }
+    // };
 
     return (
         <section id="credencial" className={asistente_certificado}>
 
             {/* si la asistencia es igual o mayor a 80 muestro la animacion, si no lo es, no mustro nada */}
-            {asistencia >= 80 ? <div className="lottie_container"><Lottie options={defaultOptions} height={400} width={400} /></div> : null}
+            {/* {asistencia >= 80 ? <div className="lottie_container"><Lottie options={defaultOptions} height={400} width={400} /></div> : null} */}
 
             <Modal id="QR_modal" IsOpen={QR_modal_IsOpen} SetIsOpen={Set_QR_modal_IsOpen}>
                <QR info_qr={info_qr}/>
