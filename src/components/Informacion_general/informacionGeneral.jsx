@@ -33,7 +33,7 @@ export default function Info_general() {
             <div className="App" id="InfoGeneral">
                 <BaseLayout>
                     <main className="info_pag" id="home">
-                        <div class="title">
+                        <div className="title">
                             <img src={title} alt="Logo caeii"></img>
                         </div>
                         <section className="section_info_general">

@@ -7,7 +7,7 @@
 }
 
 .sections_navbar{
-    height: 17vh;
+    height: 20vh;
     background-color: var(--fondoTituloTargeta);
     display: flex;
     justify-content: space-evenly;

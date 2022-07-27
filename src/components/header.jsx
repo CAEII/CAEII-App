@@ -1,5 +1,8 @@
+// React
+import { useState, useEffect } from 'react';
+// cookies
+import Cookies from 'universal-cookie';
 // styles generales (se aplican a todos los componentes)
-
 import "../styles/fuentes.css"
 import "../styles/variables.css"
 import "../styles/generales.css"
@@ -8,12 +11,26 @@ import "../styles/desktop.css"
 // imgs
 import logoAareii from "../styles/home/img/logo-aareii-desktop.png"
 
-
+const cookies = new Cookies();
 
 export default function HeaderBar() {
+  const [UserLoged, SetUserLoged] = useState(false)
+  
+
+  useEffect(() => {
+    if (cookies.get('session') !== undefined) {
+      SetUserLoged(true)
+    } else {
+      SetUserLoged(false)
+    }
+}, [])
+
   return (
     <header>
       <nav>
+      <div className="logo">
+        <img src="/CAEII-App/imgs/aareii logo chico.png" alt="" />
+      </div>
         <div class="movile_navbar">
           <div class="nav-container">
             <input class="checkbox" type="checkbox" name="" id="" />
@@ -24,24 +41,26 @@ export default function HeaderBar() {
             </div>
             <div class="menu-items">
               <ul>
+                <li className="logo_aareii_nav_movile_li">
+                  <a href="https://bit.ly/3OsUra5">
+                    <img src={logoAareii} alt="logo AArEII" className="logo_aareii_nav_movile" />
+                  </a>
+                </li>
                 <li>
                   <div class="linea">
                     <a href="/">INICIO</a>
                     <div class="line_container"><div class="line" /></div>
                   </div>
-                </li>{/*
-                <li>
-                  <div class="linea">
-                     <Link to="/login"> *INGRESAR </Link> 
-                    <div class="line_container"><div class="line" /></div>
-                  </div>
-                </li>*/}
-                <li>
+                </li>
+
+                {/* { UserLoged === true ? <Perfil/> : <Login/> } */}
+
+                {/* <li>
                   <div class="linea">
                     <a href="https://bit.ly/3MXGBeJ">REGISTRARSE</a>
                     <div class="line_container"><div class="line" /></div>
                   </div>
-                </li>
+                </li> */}
                 <li>
                   <div class="linea">
                     <a href="/nosotros">NOSOTROS</a>
@@ -71,19 +90,16 @@ export default function HeaderBar() {
                 <a href="/">INICIO</a>
                 <div class="line_container"><div class="line" /></div>
               </div>
-            </li>{/*
-            <li>
-              <div class="linea">
-                 <Link to="/login"> INGRESAR </Link> 
-                <div class="line_container"><div class="line" /></div>
-              </div>
-            </li>*/}
-            <li>
+            </li>
+
+            {/* { UserLoged === true ? <Perfil/> : <Login/> } */}
+
+            {/* <li>
               <div class="linea">
                 <a href="https://bit.ly/3MXGBeJ">REGISTRARSE</a>
                 <div class="line_container"><div class="line" /></div>
               </div>
-            </li>
+            </li> */}
             <li>
               <div class="linea">
                 <a href="/nosotros">NOSOTROS</a>
@@ -105,5 +121,28 @@ export default function HeaderBar() {
         </div>
       </nav>
     </header>
+  )
+}
+
+
+function Login(){
+  return(
+    <li>
+      <div class="linea">
+        <a href="/login"> INGRESAR </a>
+        <div class="line_container"><div class="line" /></div>
+      </div>
+    </li>
+  )
+}
+
+function Perfil(){
+  return(
+    <li>
+      <div class="linea">
+        <a href="/perfil"> PERFIL </a>
+        <div class="line_container"><div class="line" /></div>
+      </div>
+    </li>
   )
 }

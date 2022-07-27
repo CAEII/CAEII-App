@@ -10,6 +10,7 @@ html, body {
     min-width: 260px;
 }
 .App{
+    background-image:  url(/public/imgs/FondoMovile.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -58,10 +59,17 @@ footer{
     bottom: 0;
     width: 100%;
     height: 90px;
-    /* z-index: -1; */
+
+    pointer-events: none;
 
     display: flex;
-    justify-content: center;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+footer a{
+    z-index: 555;
+    pointer-events: all;
 }
 
 h1{
@@ -97,7 +105,7 @@ nav{
 .desktop_navbar ul{
     padding-top: 20px;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
 
     font-size: 1.3rem;
 }
@@ -117,7 +125,13 @@ li {
 
     overflow: hidden;
 }
-
+.logo_aareii_nav_movile{
+    height: 100px;
+    z-index: 5555;
+}
+.logo_aareii_nav_movile_li{
+    overflow: visible;
+}
 /* BOTON */
 .hyperspan {
     position: absolute;

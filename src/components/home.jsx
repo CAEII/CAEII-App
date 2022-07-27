@@ -9,8 +9,25 @@ import cohete from "../styles/home/img/cohete-botones.svg"
 import title from "../styles/home/img/caeii-title.png"
 // json
 import json from "../informacion.json"
+// Sweet Alert
+import Swal from 'sweetalert2'; 
 
 function Home() {
+
+  const handleClickRegister = () => {
+    Swal.fire({
+      icon: 'warning',
+      toast: true,
+      position: 'center',
+      timer: 1500,
+      timerProgressBar: true,
+      showConfirmButton: false,
+      title: `<h3 style='color:#FFFFFF; font-weight: lighter'>Qué mal... Las inscripciones ya cerraron.</h3>`,
+      background: 'rgb(70, 64, 153)', 
+      iconColor: '#FFFFFF'
+  })
+  }
+
   return (
     <div className="App" id="home">
       <BaseLayout>
@@ -80,10 +97,10 @@ function Home() {
 
 
 
-          <section id="registrarse">
+          <section id="registrarse" onClick={handleClickRegister}>
             <h1>¿Estás preparado para el despegue?</h1>
             <div class="button">
-              <a href="https://inscripciones.aareii.org.ar/index.php/register" class="hyperspan">
+              <a /* href="https://inscripciones.aareii.org.ar/index.php/register" */ class="hyperspan">
                 <div class="circle">
                   <div class="rocket_container">
                     <img src={cohete} alt="cohete caeii"></img>
@@ -309,7 +326,7 @@ function Home() {
               <div class="img">
                 <div class="imgOrbit">
                   {/* <img src={hackaton} alt="Hackaton 1" /> */}
-                  <img src="/CAEII-App/imgs/hackaton.png" alt="Hackaton 1" />
+                  <img src="/imgs/hackaton.png" alt="Hackaton 1" />
                   <div class="planet"></div>
                 </div>
               </div>

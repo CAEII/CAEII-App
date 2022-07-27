@@ -3,6 +3,9 @@
     /* #visitas {
         grid-column: 1/3;
     } */
+    .App{
+        background-image:  url(/public/imgs/FondoDesktop.jpg);
+    }
     #visitas>article>.movile {
         display: none;
     }

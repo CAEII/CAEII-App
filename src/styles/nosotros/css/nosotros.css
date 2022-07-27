@@ -1,6 +1,3 @@
-.App#nosotros{
-    background-image:  url(/public/imgs/FondoMovile.jpg);
-}
 .title{
     grid-column: 1/3;
     grid-row: 1;
@@ -132,12 +129,4 @@ svg{
     max-height: 30vh;
     width: auto;
     margin-bottom: 5%;
-}
-
-
-
-@media (min-width: 1024px) {
-    .App#nosotros{
-        background-image:  url(/public/imgs/FondoDesktop.jpg);
-    }
 }

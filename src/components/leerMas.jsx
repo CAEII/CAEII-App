@@ -7,7 +7,7 @@ import cohete from "../styles/home/img/cohete-botones.svg"
 export default function LeerMas(params) {
     var link;           // declaro la varialbe link
     if (params.type === 'interno') {            // si el tipo de link es "interno" le doy el valor "/info/(nombre de la categoria)"
-        link = "/CAEII-App/info/" + params.link
+        link = "/info/" + params.link
     } else if (params.type === 'externo') {     // si el tipo de link es "externo" le doy el valor del link ingresado como parametro
         link = params.link
     } else {            // si no hay parametro type muestro un error
