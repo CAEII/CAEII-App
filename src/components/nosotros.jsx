@@ -145,10 +145,6 @@ export default function Nosotros() {
           <div className="nosotros_img_conteiner"  data-aos="fade-up">
             <img src={que_son_los_pilares} className="img_representativa" alt="imagen representativa"/>
           </div>
-          
-          <div className="nosotros_img_conteiner" data-aos="fade-up">
-            <img src={que_son_los_pilares} className="img_representativa" alt="imagen representativa" />
-          </div>
 
         </section>
         <section id="cuando_donde" class="nosotros_section">
