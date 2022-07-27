@@ -155,6 +155,44 @@
                                 "icono": "/imgs/iconos/instagram.png"
                             }
                         ]
+                    },
+                    {
+                        "title": "Electromecánica Sasso",
+                        "img": "/imgs/Visitas Técnicas/Electromecánica SASSO.png",
+                        "short": "",
+                        "desciption": "Ofrece soluciones de mantenimiento, reparación y ensayos especiales a máquinas eléctricas rotativas. Proveemos materiales eléctricos para la industria manteniendo un completo inventario y stock.",
+                        "items":[],
+                        "links": [
+                            {
+                                "type": "Sitio web",
+                                "link": "https://www.elesasso.com/",
+                                "icono": "/imgs/iconos/web.png"
+                            },  
+                            {
+                                "type": "Linkedin",
+                                "link": "https://ar.linkedin.com/company/sassoelectromecanica",
+                                "icono": "/imgs/iconos/linkedin.png"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Frenos oeste",
+                        "img": "/imgs/Visitas Técnicas/frenos.jpg",
+                        "short": "",
+                        "desciption": "Empresa con más de 50 años de trayectoria en el rubro de los frenos, ubicados en el Acceso Sur de Carrodilla, en Luján de Cuyo. Se caracteriza por la calidad, transparencia, profesionalismo y compromiso al momento de encarar un proyecto con sus clientes. Cuenta con la mayor tecnología para reparar un semi-remolque o tractor en el día; saliendo de sus instalaciones con los trabajos totalmente garantizados, ya que usan repuestos originales y procedimientos internos que aseguran el trabajo realizado.",
+                        "items":[],
+                        "links": [
+                            {
+                                "type": "Sitio web",
+                                "link": "http://frenosoeste.com.ar/",
+                                "icono": "/imgs/iconos/web.png"
+                            },  
+                            {
+                                "type": "Instagram",
+                                "link": "https://www.instagram.com/frenosoeste/?hl=es",
+                                "icono": "/imgs/iconos/instagram.png"
+                            }
+                        ]
                     }
                 ]
             },
@@ -227,6 +265,62 @@
                                 "icono": "/imgs/iconos/instagram.png"
                             }
                         ]
+                    },
+                    {
+                        "title": "Cattorini Hnos",
+                        "img": "/imgs/Visitas Técnicas/Cattorini.png",
+                        "short": "",
+                        "desciption": "Lider del Mercado Argentino de envases de Vidrio. Tiene 4 fabricas en distintos puntos del Pais y posee aproximadamente el 60 % del Mercado. Se destaca por ofrecer una amplia gama de envases para el mercado alimenticio y de bebidas. Los envases son diseñados acorde a las necesidades que el cliente demanda.",
+                        "items":[],
+                        "links": [
+                            {
+                                "type": "Sitio web",
+                                "link": "https://ar.linkedin.com/company/cattorini-hnos.-saicf",
+                                "icono": "/imgs/iconos/web.png"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "La Fuente muebles",
+                        "img": "/imgs/Visitas Técnicas/la_fuente.png",
+                        "short": "",
+                        "desciption": "Empresa dedicada al diseño, fabricación y venta de muebles para su hogar y oficina. Ee caracterizan por trabajar siempre en pos del cliente, desarrollando productos según sus necesidades, ideas y proyectos. Atención profesional y personalizada, tecnología de última generación y calidad comprobada, son los pilares de esta empresa.",
+                        "items":[],
+                        "links": [
+                            {
+                                "type": "Sitio web",
+                                "link": "https://lafuentemuebles.com.ar/",
+                                "icono": "/imgs/iconos/web.png"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Friolatina",
+                        "img": "/imgs/Visitas Técnicas/friolatina.jpg",
+                        "short": "",
+                        "desciption": "Empresa especializada en la fabricación de equipos, cámaras y paneles para el aislamiento y control de temperatura en el comercio y la industria,alcanzó una nueva meta de certificación corporativa que la distingue entre las empresas regionales. Recientemente, y junto a la incorporación de maquinaria de última generación en sus fábricas, la empresa logró certificar normas IRAM, con lo cual da un paso más en la mejora continua, brindando un sistema que asegura la calidad y seguridad de sus productos.",
+                        "items":[],
+                        "links": [
+                            {
+                                "type": "Sitio web",
+                                "link": "https://grupoltn.com/friolatina/",
+                                "icono": "/imgs/iconos/web.png"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Central Puerto",
+                        "img": "/imgs/Visitas Técnicas/central_puerto.png",
+                        "short": "",
+                        "desciption": "Compañía constituida con el objeto de desarrollar inversiones orientadas al mercado energético nacional e internacional. Cuenta con una potencia actual de 4.689 MW, más proyectos de expansión por 204 MW. En los doce meses finalizado el 30 de septiembre de 2020 generaron 14.6 TWh, representando el 17% de la generación de las compañías privadas, siendo uno de los principales grupos privados de generación eléctrica en Argentina. Desde 2018, realiza la puesta en marcha de los parques eólicos La Castellana I, Achiras I, La Genoveva I, La Castellana II y La Genoveva II, Manque y Los Olivos sumando una potencia de 374 MW. Central Puerto es el mayor accionista privado de las sociedades Central Vuelta de Obligado S.A., Termoeléctrica José de San Martín S.A. y Termoeléctrica Manuel Belgrano S.A., los que operan una potencia total de 2.554 MW.",
+                        "items":[],
+                        "links": [
+                            {
+                                "type": "Sitio web",
+                                "link": "https://www.centralpuerto.com/es/",
+                                "icono": "/imgs/iconos/web.png"
+                            }
+                        ]
                     }
                 ]
             },
@@ -243,6 +337,20 @@
                             {
                                 "type": "Sitio web",
                                 "link": "https://www.guaymallen.gob.ar/dependencias-2/centro-verde/",
+                                "icono": "/imgs/iconos/web.png"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "INTI",
+                        "img": "/imgs/Visitas Técnicas/inti.gif",
+                        "short": "Planta de tratamiento de residuos secos separados en origen, que se constituye a la vez como un espacio educativo...",
+                        "desciption": "Empresa que fomenta y asiste al desarrollo industrial y tecnológico regional con criterios de sustentabilidad ambiental, principalmente en los sectores de la industria conservera, los deshidratados y desecados de frutas y hortalizas, la industria vitivinícola, vinos y mostos, las olivícolas y aceiteras, los frigoríficos, la metalmecánica agroindustrial, los mercados de concentración de frutas y hortalizas en fresco, y las empresas y organizaciones prestadoras de servicios privados y estatales.",
+                        "items":[],
+                        "links": [
+                            {
+                                "type": "Sitio web",
+                                "link": "https://www.argentina.gob.ar/inti",
                                 "icono": "/imgs/iconos/web.png"
                             }
                         ]
