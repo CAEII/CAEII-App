@@ -40,9 +40,7 @@ svg{
 .info{
     background-color: var(--boton_input);
     border-radius: 100px;
-    padding: 30px;
-    padding-top: 0;
-
+    padding: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -74,8 +72,9 @@ svg{
 }
 .nosotros .button{
     background-color: var(--fondoTituloTargeta);
-    width: 220px;
+    width: fit-content;
     height: 75px;
+    padding: 4%;
 }
 .nosotros .circle{
     height: 55px;
@@ -96,6 +95,16 @@ svg{
 }
 /* Botón del último div que dice "próximamente" */
 
+.register_us {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 4%;
+    width: fit-content;
+}
+.register_us .circle{
+    margin: 0;
+}
 .nosotros .button .circle2 {
     height: 55px;
     width: 55px;
