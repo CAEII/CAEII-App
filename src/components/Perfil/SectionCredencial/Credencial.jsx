@@ -4,21 +4,22 @@ import { QRCodeSVG } from 'qrcode.react';
 // components
 import Modal from "./Modals";
 // lottie (animacion)
-// import Lottie from 'react-lottie';
-// import animationData from './7893-confetti-cannons.json';
+import Lottie from 'react-lottie';
+import animationData from './7893-confetti-cannons.json';
 // css
 import "../../../styles/perfil/css/credencial.css"
 // imgs
 import Astronauta from "../../../styles/perfil/img/astronauta.png";
 
+const ipv4 = "192.168.1.40"            // string de la direccion ipv4. ejemplo: 192.168.1.40
+
 
 export default function Credencial({ nombre, asistencia }) {
-    const info_qr = "https://www.caeii.com.ar/CAEII-App/user/" + nombre                   // info para codificar en el qr en caso de no usar scaners 
+    // const info_qr = "https://www.caeii.com.ar/user/" + nombre                                  // info para codificar en el qr en caso de no usar scaners 
+    const info_qr = `http://${ipv4}:3000/user/` + nombre.replace(" ", "_");                  // info para codificar en el qr en caso de no usar scaners de desarroyo
 
     const [QR_modal_IsOpen, Set_QR_modal_IsOpen] = useState(false)              // estado del modal que contiene el qr
     const [info_modal_IsOpen, Set_info_modal_IsOpen] = useState(false)          // estado del modal que tiene info sobre el certificado
-
-    // const asistencia = 80           // variable de desarrollo                       CAMBIAR ANTES DEL DEPLOY
 
     let asistente_certificado
     if (asistencia >= 80) {
@@ -28,20 +29,20 @@ export default function Credencial({ nombre, asistencia }) {
     }
 
     // opciones de la animacion de confeti (lottie)
-    // const defaultOptions = {
-    //     loop: true,
-    //     autoplay: true,
-    //     animationData: animationData,
-    //     rendererSettings: {
-    //         preserveAspectRatio: "xMidYMid slice"
-    //     }
-    // };
+    const defaultOptions = {
+        loop: true,
+        autoplay: true,
+        animationData: animationData,
+        rendererSettings: {
+            preserveAspectRatio: "xMidYMid slice"
+        }
+    };
 
     return (
         <section id="credencial" className={asistente_certificado}>
 
             {/* si la asistencia es igual o mayor a 80 muestro la animacion, si no lo es, no mustro nada */}
-            {/* {asistencia >= 80 ? <div className="lottie_container"><Lottie options={defaultOptions} height={400} width={400} /></div> : null} */}
+            {asistencia >= 80 ? <div className="lottie_container"><Lottie options={defaultOptions} height={400} width={400} /></div> : null}
 
             <Modal id="QR_modal" IsOpen={QR_modal_IsOpen} SetIsOpen={Set_QR_modal_IsOpen}>
                <QR info_qr={info_qr}/>
@@ -84,7 +85,7 @@ function QR({info_qr}) {
             size={200}
             bgColor={"#ffffff"}
             fgColor={"#9400d4"}
-            level={"M"}
+            level={"H"}
             includeMargin={false}
             imageSettings={{
                 src: 'https://www.caeii.com.ar/favicon.ico?',
