@@ -2,7 +2,7 @@
 import Cookies from 'universal-cookie';
 const cookies = new Cookies();
 // constantes
-const info_password = "kk"
+const info_password = "usuario"
 const info_user = "kk"
 const info_user_status = "admin"
 

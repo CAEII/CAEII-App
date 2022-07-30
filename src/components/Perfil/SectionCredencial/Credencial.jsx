@@ -14,12 +14,17 @@ import Astronauta from "../../../styles/perfil/img/astronauta.png";
 const ipv4 = "192.168.1.40"            // string de la direccion ipv4. ejemplo: 192.168.1.40
 
 
-export default function Credencial({ nombre, asistencia }) {
-    // const info_qr = "https://www.caeii.com.ar/user/" + nombre                                  // info para codificar en el qr en caso de no usar scaners 
-    const info_qr = `http://${ipv4}:3000/user/` + nombre.replace(" ", "_");                  // info para codificar en el qr en caso de no usar scaners de desarroyo
+export default function Credencial({ nombre, asistencia, Actividad }) {
+    // const info_qr = "https://www.caeii.com.ar/user/" + nombre                                  // info para codificar en el qr en caso de no usar scaners   
+    
+    const ac = Actividad ? Actividad.replace(/ /g, "_") : null
+    const pres = asistencia > 70 ? true : false
+    
+    const info_qr = `http://${ipv4}:3000/user/${nombre.replace(/ /g, "_")}/${ac}/${pres}` ;                  // info para codificar en el qr en caso de no usar scaners de desarroyo
 
     const [QR_modal_IsOpen, Set_QR_modal_IsOpen] = useState(false)              // estado del modal que contiene el qr
     const [info_modal_IsOpen, Set_info_modal_IsOpen] = useState(false)          // estado del modal que tiene info sobre el certificado
+
 
     let asistente_certificado
     if (asistencia >= 80) {

@@ -31,6 +31,8 @@ export default function Perfil() {
     const [User, SetUser] = useState("don nadie");
     const [Asistencia, SetAsistencia] = useState(0);
 
+    const [Actividad, SetActividad] = useState();
+
     const [IsLoged, SetIsLoged] = useState(false);
 
     // const asistencia = 80
@@ -47,14 +49,29 @@ export default function Perfil() {
    
     const url = "http://192.168.1.40:11000/get_info/" + User
 
-
     useEffect(() => {
         axios.get(url).then((Response) => {
             console.log(Response.data)
             SetUser(Response.data.user)
             SetAsistencia(Response.data.asistencia)
-        })
+        })  
     })
+
+    // useEffect(() => {
+
+    //     setInterval(() => {
+
+    //         axios.get(url).then((Response) => {
+    //             console.log(Response.data)
+    //             SetUser(Response.data.user)
+    //             SetAsistencia(Response.data.asistencia)
+    //         })
+
+    //     }, 2000);
+        
+    // })
+
+    
 
     return (
         <div className="App" id="perfil">
@@ -82,9 +99,9 @@ export default function Perfil() {
                 <main>
                     {IsLoged === false ? <div class="cuote"><h1> {Coute} </h1></div> : null}
                     
-                    <Credencial nombre={User} asistencia={Asistencia}/>
+                    <Credencial nombre={User} asistencia={Asistencia} Actividad={Actividad}/>
 
-                    <Cronograma IsLoged={IsLoged} dias={json.dias} SetSalas={SetSalas}  Salas={Salas}/>
+                    <Cronograma IsLoged={IsLoged} dias={json.dias} SetSalas={SetSalas}  Salas={Salas} SetActividad={SetActividad}/>
 
                     {IsLoged === true ? <SectionMapas salas={Salas}/> : <SectionMapasNotLoged salas={Salas}/>}
 

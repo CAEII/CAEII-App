@@ -1,4 +1,5 @@
 // React
+import userEvent from "@testing-library/user-event";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useParams } from 'react-router-dom';
@@ -52,11 +53,9 @@ export default function Asistencia(){
 
     const [User, SetUser] = useState("don nadie");
     const [Asistencia, SetAsistencia] = useState(0);
-
+    const [Presente, SetPresente] = useState(false);
 
     const url = `http://${ipv4}:11000/get_info/` + user.replace("_", " ")
-
-    console.log(url)
 
     useEffect(() => {
         axios.get(url).then((Response) => {
@@ -68,12 +67,29 @@ export default function Asistencia(){
 
     return (
         <div className="App" id="asistencia">
-            <section className=" actividades ">
+            {/* <section className=" actividades ">
                 <h2> {user} </h2>
                 {kk.map((actividad, index) => <ActivitiButton text={actividad.actividad} porp_ButtonState={actividad.button_state} index={index} User={User} Asistencia={Asistencia}/>)}
-            </section>
+            </section> */}
+
+            <span className="asistencia_tag nombre_del_asistente" > {User} </span>
+            <span className="asistencia_tag nombre_de_la_actividad" > kk </span>
+
+            <button id="buton" className={`asistencia_tag button_asistencia presente_${Presente}`} onClick={() => {SetPresente(!Presente); handle_asistencia()}}> AUSENTE </button>
         </div>
     )
+}
+
+function handle_asistencia() {
+    axios.get('/')
+        .then(function (response) {
+            // handle success
+            console.log(response);
+        })
+        .catch(function (error) {
+            // handle error
+            console.log(error);
+        })
 }
 
 

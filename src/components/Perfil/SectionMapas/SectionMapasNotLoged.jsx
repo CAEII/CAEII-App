@@ -31,22 +31,22 @@ function Mapas({Mapas, sala_resaltada}) {
             {Mapas.map((mapa, index) => {   // Recorro la lista de mapas y cargo el componente correspondiente
                 if (mapa === 'PlantaBaja') {
                     return(
-                        <img src={PlantaBaja} alt="" />
+                        <img key={index} src={PlantaBaja} alt="" />
                     )
                 };
                 if (mapa === 'AuditorioPrincipal') {
                     return(
-                        <img src={AuditorioPrincipal} alt="" />
+                        <img key={index} src={AuditorioPrincipal} alt="" />
                     )
                 };
                 if (mapa === 'PimerPiso') {
                     return(
-                        <img src={PimerPiso} alt="" />
+                        <img key={index} src={PimerPiso} alt="" />
                     )
                 };
                 if (mapa === 'SegundoPiso') {
                     return(
-                        <img src={SegundoPiso} alt="" />
+                        <img key={index} src={SegundoPiso} alt="" />
                     )
                 };
 

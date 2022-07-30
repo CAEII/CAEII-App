@@ -6,7 +6,8 @@ import Login from './components/Login/login';
 import Nosotros from './components/nosotros';
 import Info from './components/Informacion_general/informacionGeneral';
 import Perfil  from './components/Perfil/perfil'
-import Asistencia  from './components/asistencia'
+// import Asistencia  from './components/asistencia'
+import Asistencia  from './components/new_asistencia'
 
 // Styles
 // import './App.css';
@@ -23,7 +24,7 @@ function App() {
           <Route path="/perfil" element={<Perfil/>} />     
           <Route path="/login" element={<Login/>}/>
 
-          <Route path="/user/:user" element={<Asistencia/>}/>
+          <Route path="/user/:user/:activiti/:asistencia" element={<Asistencia/>}/>
         </Routes>
       </BrowserRouter> 
   );
