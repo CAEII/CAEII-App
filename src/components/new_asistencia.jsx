@@ -6,7 +6,8 @@ import { useParams } from 'react-router-dom';
 import "../styles/asistencia/asistencia.css";
 
 
-const ipv4 = "192.168.1.40"            // string de la direccion ipv4. ejemplo: 192.168.1.40
+// const ipv4 = "192.168.1.40"            // string de la direccion ipv4. ejemplo: 192.168.1.40
+const ipv4 = process.env.REACT_APP_ipV4        // string de la direccion ipv4. ejemplo: 192.168.1.40
 
 
 export default function Asistencia(){

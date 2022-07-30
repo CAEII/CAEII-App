@@ -104,37 +104,37 @@
                 {
                     "titulo": "kk N1 Sabado",
                     "horario": "00:00 - 02:00",
-                    "lugar": "Aula magna",
+                    "lugar": "Sala_Uspallata",
                     "presente": true
                 },
                 {
                     "titulo": "kk N2 Sabado",
                     "horario": "09:00 - 10:00",
-                    "lugar": "Aula magna",
+                    "lugar": "Auditorio_Principal",
                     "presente": true
                 },
                 {
                     "titulo": "kk N3",
                     "horario": "10:00 - 11:00",
-                    "lugar": "Aula magna",
+                    "lugar": "Sala_Puente_Del_Inca",
                     "presente": true
                 },
                 {
                     "titulo": "kk N4",
                     "horario": "11:00 - 12:00",
-                    "lugar": "Aula magna",
+                    "lugar": "Sala_Vendimia",
                     "presente": false
                 },
                 {
                     "titulo": "ALMUERZO",
                     "horario": "12:00 - 14:00",
-                    "lugar": "Aula magna",
+                    "lugar": "Sala_Nihuil",
                     "presente": false
                 },
                 {
                     "titulo": "kk N6",
                     "horario": "17:00 - 18:00",
-                    "lugar": "Aula magna",
+                    "lugar": "Hall_Planta_Baja",
                     "presente": false
                 },
                 {

@@ -47,7 +47,8 @@ export default function Perfil() {
     }, [])
 
    
-    const url = "http://192.168.1.40:11000/get_info/" + User
+    // const url = "http://192.168.1.40:11000/get_info/" + User
+    const url = `http://${process.env.REACT_APP_ipV4}:11000/get_info/${User}`
 
     useEffect(() => {
         axios.get(url).then((Response) => {
