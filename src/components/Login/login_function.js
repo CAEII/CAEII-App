@@ -15,7 +15,7 @@ export default function login (user, password){
             status: info_user_status
         }
 
-        cookies.set('session', user, { path: '/' });
+        cookies.set('session', user, { path: '/' , maxAge: 5184000});
 
         console.log("usuario logueado con exito")
 

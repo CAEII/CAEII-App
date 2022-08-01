@@ -32,7 +32,7 @@ export default function Admins() {
 function SalasBustelo() {
     return (
         <div class="select">
-            <select  onChange={(value) =>  cookies.set('admin', value.target.value, { path: '/' })} value="ingresa una sala">
+            <select  onChange={(value) =>  {cookies.set('admin', value.target.value, { path: '/', maxAge: 5184000 })}}>
                 {
                     lista_de_actividades.map((actividad, actividadindex) => {                                                                             // Recorro el array de salas
                         return <option key={actividadindex} value={actividad}> {actividad.replace(/_/g, " ")} </option>
