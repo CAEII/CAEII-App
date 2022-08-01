@@ -11,6 +11,7 @@ import Credencial from "./SectionCredencial/Credencial";
 import Cronograma from "./SectionCronograma/Cronograma";
 import SectionMapas from "./SectionMapas/Section_Mapas";
 import SectionMapasNotLoged from "./SectionMapas/SectionMapasNotLoged";
+import Admins from "./SectionAdmins/admins";
 // functions
 // import {Asistencia} from "./Suport_functions"
 //styles
@@ -35,8 +36,6 @@ export default function Perfil() {
 
     const [IsLoged, SetIsLoged] = useState(false);
 
-    // const asistencia = 80
-
     useEffect(() => {
         if (cookies.get('session') !== undefined) {
             SetIsLoged(true)
@@ -46,32 +45,14 @@ export default function Perfil() {
         }
     }, [])
 
-   
-    // const url = "http://192.168.1.40:11000/get_info/" + User
     const url = `http://${process.env.REACT_APP_ipV4}:11000/get_info/${User}`
 
     useEffect(() => {
         axios.get(url).then((Response) => {
-            console.log(Response.data)
+            // console.log(Response.data)
             SetAsistencia(Response.data.asistencia)
         })  
     })
-
-    // useEffect(() => {
-
-    //     setInterval(() => {
-
-    //         axios.get(url).then((Response) => {
-    //             console.log(Response.data)
-    //             SetUser(Response.data.user)
-    //             SetAsistencia(Response.data.asistencia)
-    //         })
-
-    //     }, 2000);
-        
-    // })
-
-    
 
     return (
         <div className="App" id="perfil">
@@ -98,6 +79,11 @@ export default function Perfil() {
             <BaseLayout>
                 <main>
                     {IsLoged === false ? <div class="cuote"><h1> {Coute} </h1></div> : null}
+
+
+                    {IsLoged === true && process.env.REACT_APP_admis.split("|").indexOf(User) > -1 ? <Admins/> : null}
+
+
                     
                     <Credencial nombre={User} asistencia={Asistencia} Actividad={Actividad}/>
 

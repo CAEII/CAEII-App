@@ -6,7 +6,7 @@ import Login from './components/Login/login';
 import Nosotros from './components/nosotros';
 import Info from './components/Informacion_general/informacionGeneral';
 import Perfil  from './components/Perfil/perfil'
-import Asistencia  from './components/asistencia'
+import Asistencia  from './components/asistencia/asistencia'
 
 // Styles
 // import './App.css';

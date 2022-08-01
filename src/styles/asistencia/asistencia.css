@@ -49,7 +49,7 @@
     display: flex;
     justify-content: flex-start !important;
     margin-left: 8vw;
-    color: rgb(164, 163, 185);
+    color: rgb(255 255 255 / 67%);
 }
 .nombre_de_la_actividad .activit_name{
     /* font-size: 3rem; */
@@ -65,10 +65,10 @@
 }
 
 
-.button_asistencia.presente_true{
+.button_asistencia.presente_true, .is_here_true{
    background-color: #119626;
 }
-.button_asistencia.presente_false{
+.button_asistencia.presente_false, .is_here_false{
     background-color: #961111;
 }
 
