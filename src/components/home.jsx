@@ -25,7 +25,7 @@ function Home() {
       title: `<h3 style='color:#FFFFFF; font-weight: lighter'>Qué mal... Las inscripciones ya cerraron.</h3>`,
       background: 'rgb(70, 64, 153)', 
       iconColor: '#FFFFFF'
-  })
+    })
   }
 
   return (

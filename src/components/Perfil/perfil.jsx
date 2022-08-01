@@ -53,7 +53,6 @@ export default function Perfil() {
     useEffect(() => {
         axios.get(url).then((Response) => {
             console.log(Response.data)
-            SetUser(Response.data.user)
             SetAsistencia(Response.data.asistencia)
         })  
     })

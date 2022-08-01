@@ -1,111 +1,86 @@
 // React
-import userEvent from "@testing-library/user-event";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useParams } from 'react-router-dom';
+// Sweet Alert
+import Swal from 'sweetalert2'; 
 // stiles
 import "../styles/asistencia/asistencia.css";
-// cosas de json
-import json_de_prueba_login from "./Login/Json_de_log_in.json"
 
 
-
-// export default function Asistencia(){
-//     const { user } = useParams()
-//     const kk = [true, true, false, false, false]
-
-//     return(
-//         <div className="App" id="asistencia">
-//             <section className=" actividades ">
-//                 <h2> {user} </h2>
-//                 {kk.map((kk, index) => <ActivitiButton porp_ButtonState={kk} index={index}/>)}
-//             </section>
-//         </div>
-//     )
-// }
-
-
-
-const ipv4 = "192.168.1.40"            // string de la direccion ipv4. ejemplo: 192.168.1.40
-
+// const ipv4 = "192.168.1.40"            // string de la direccion ipv4. ejemplo: 192.168.1.40
+const ipv4 = process.env.REACT_APP_ipV4        // string de la direccion ipv4. ejemplo: 192.168.1.40
 
 
 export default function Asistencia(){
-    const { user } = useParams()
-    const kk = [
-        {
-            actividad: "visita tecnica",
-            button_state: true
-        },
-        {
-            actividad: "charla maguistral",
-            button_state: true
-        },
-        {
-            actividad: "charla profecional",
-            button_state: false
-        },
-        {
-            actividad: "after caei",
-            button_state: false
-        },
-    ]
+    const { user, activiti, asistencia } = useParams()
+    const [Presente, SetPresente] = useState(asistencia === 'true');
 
-    const [User, SetUser] = useState("don nadie");
     const [Asistencia, SetAsistencia] = useState(0);
-    const [Presente, SetPresente] = useState(false);
 
     const url = `http://${ipv4}:11000/get_info/` + user.replace("_", " ")
 
     useEffect(() => {
         axios.get(url).then((Response) => {
-            console.log(Response.data)
-            SetUser(Response.data.user)
             SetAsistencia(Response.data.asistencia)
         })
-    })
+    }, [])
 
     return (
         <div className="App" id="asistencia">
-            {/* <section className=" actividades ">
-                <h2> {user} </h2>
-                {kk.map((actividad, index) => <ActivitiButton text={actividad.actividad} porp_ButtonState={actividad.button_state} index={index} User={User} Asistencia={Asistencia}/>)}
-            </section> */}
 
-            <span className="asistencia_tag nombre_del_asistente" > {User} </span>
-            <span className="asistencia_tag nombre_de_la_actividad" > kk </span>
+            <div className="asistencia_info">
+                <span className="asistencia_tag nombre_del_asistente" > {user.replace(/_/g, " ")} </span>
+                <div className="asistencia_tag nombre_de_la_actividad">
+                    <span className="activit_name_lavel"> Actividad: </span>
+                    <span className="activit_name"> {activiti.replace(/_/g, " ")} </span>
+                </div>
+                
+            </div>
 
-            <button id="buton" className={`asistencia_tag button_asistencia presente_${Presente}`} onClick={() => {SetPresente(!Presente); handle_asistencia()}}> AUSENTE </button>
+            <button id="buton" className={`asistencia_tag button_asistencia presente_${Presente}`} onClick={() => {SetPresente(!Presente); handle_asistencia(user, !Presente, Asistencia)}}>
+                { Presente == true ? "PRESENTE" : "AUSENTE"} 
+            </button>
         </div>
     )
 }
 
-function handle_asistencia() {
-    axios.get('/')
+function handle_asistencia(user, Presente, asistencia) {
+    let new_asistencia
+
+    if (Presente === true) {
+        new_asistencia = parseInt(asistencia) + 10
+    } else{
+   
+        new_asistencia = parseInt(asistencia)
+    }
+
+    console.log(`asistencia: ${asistencia}, nueva asistencia: ${new_asistencia}`)
+
+    const url = `http://${ipv4}:11000/rite_info/${user}/${new_asistencia}` 
+
+    Swal.fire({
+        title: "<strong>Guardando . . . </strong>",
+        icon: 'warning'
+    })
+
+    axios.get(url)
         .then(function (response) {
             // handle success
-            console.log(response);
+            console.log(response.data);
+
+            Swal.fire({
+                title: "<strong>Asistencia confirmada</strong>",
+                icon: 'success'
+            })
         })
         .catch(function (error) {
             // handle error
             console.log(error);
+
+            Swal.fire({
+                title: "<strong>hubo algun error</strong>",
+                icon: 'error'
+            })
         })
-}
-
-
-function ActivitiButton({text, porp_ButtonState, index, User, Asistencia}){
-    const [ButtonState, SetButtonState] = useState(porp_ButtonState)
-    return(
-        <button id={"_"+index} className={`activiti_button echa_${ButtonState}`} onClick={() => {SetButtonState(!ButtonState); write_the_json(User,Asistencia)}}> {text}  </button>
-    )
-}
-
-
-function write_the_json(user,asistencia){
-
-    let new_asistencia = parseInt(asistencia) + 10
-
-    const url = `http://${ipv4}:11000/rite_info/${user}/${new_asistencia}` 
-
-    axios.get(url)
 }

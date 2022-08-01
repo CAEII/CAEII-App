@@ -146,6 +146,7 @@ th,td{
 } */
 tr.Terminada{
     background-color: rgba(39, 39, 39, 0.5);
+    text-decoration:line-through
 }
 /* tr.Por_iniciar{
     background-color: rgba(172, 255, 47, 0.5);
