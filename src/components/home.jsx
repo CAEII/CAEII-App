@@ -97,10 +97,10 @@ function Home() {
 
 
 
-          <section id="registrarse" onClick={handleClickRegister}>
+          <section id="registrarse" /* onClick={handleClickRegister} */>
             <h1>¿Estás preparado para el despegue?</h1>
             <div class="button">
-              <a /* href="https://inscripciones.aareii.org.ar/index.php/register" */ class="hyperspan">
+              <a href="https://inscripciones.aareii.org.ar/index.php/register" class="hyperspan">
                 <div class="circle">
                   <div class="rocket_container">
                     <img src={cohete} alt="cohete caeii"></img>

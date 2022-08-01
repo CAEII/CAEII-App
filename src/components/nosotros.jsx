@@ -50,8 +50,8 @@ export default function Nosotros() {
                 aproximadamente.
               </p>
             </div>
-            <div className="nosotros_img_conteiner"  data-aos="fade-up">
-              <img src={que_es_caeii} className="img_representativa" alt="imagen representativa"/> 
+            <div className="nosotros_img_conteiner" data-aos="fade-up">
+              <img src={que_es_caeii} className="img_representativa" alt="imagen representativa" />
             </div>
           </section>
           <section id="Que_incluye" class="nosotros_section">
@@ -60,14 +60,14 @@ export default function Nosotros() {
               <p>
                 El evento incluye no solo talleres, visita técnica, charlas, seguro y coffee, sino también cocktail de bienvenida,
                 merchandising, cena de gala, sorteos, noches de boliche y mucho más.
-                <br/><br/>
+                <br /><br />
                 <b>*No incluye gastos no especificados en la imagen.</b>
               </p>
             </div>
             <div className="nosotros_img_conteiner" data-aos="fade-up">
-              <img src={Que_incluye} className="img_representativa" alt="imagen representativa"/>
+              <img src={Que_incluye} className="img_representativa" alt="imagen representativa" />
             </div>
-            
+
           </section>
           <section id="cual_es_su_objetivo" class="nosotros_section reverse">
             <div class="info" data-aos="fade-up">
@@ -86,9 +86,9 @@ export default function Nosotros() {
               </p>
             </div>
             <div className="nosotros_img_conteiner" data-aos="fade-up">
-              <img src={cual_es_su_objetivo} className="img_representativa" alt="imagen representativa"/>
+              <img src={cual_es_su_objetivo} className="img_representativa" alt="imagen representativa" />
             </div>
-          
+
           </section>
 
           <section id="que_es_aareii" class="nosotros_section">
@@ -104,8 +104,8 @@ export default function Nosotros() {
                 <div class="line_container"><div class="line"></div></div>
               </div>
             </div>
-            <div className="nosotros_img_conteiner"  data-aos="fade-up">
-              <img src={que_es_aareii} className="img_representativa que_es_aareii" alt="imagen representativa"/>
+            <div className="nosotros_img_conteiner" data-aos="fade-up">
+              <img src={que_es_aareii} className="img_representativa que_es_aareii" alt="imagen representativa" />
             </div>
           </section>
 
@@ -134,51 +134,52 @@ export default function Nosotros() {
                     <div class="line_container"><div class="line"></div></div>
                   </div>
                 </div>
-              </div>
-              <div class="link">
-                <div class="linea">
-                  <Link to="/info/Estaciones">{" Desarrollo sostenible: Smart City >"}</Link>
-                  <div class="line_container"><div class="line"></div></div>
+
+                <div class="link">
+                  <div class="linea">
+                    <Link to="/info/Estaciones">{" Desarrollo sostenible: Smart City >"}</Link>
+                    <div class="line_container"><div class="line"></div></div>
+                  </div>
                 </div>
               </div>
             </div>
-          <div className="nosotros_img_conteiner"  data-aos="fade-up">
-            <img src={que_son_los_pilares} className="img_representativa" alt="imagen representativa"/>
-          </div>
-          
-          <div className="nosotros_img_conteiner" data-aos="fade-up">
-            <img src={que_son_los_pilares} className="img_representativa" alt="imagen representativa" />
-          </div>
+            <div className="nosotros_img_conteiner" data-aos="fade-up">
+              <img src={que_son_los_pilares} className="img_representativa" alt="imagen representativa" />
+            </div>
 
-        </section>
-        <section id="cuando_donde" class="nosotros_section">
-          <div class="info"  data-aos="fade-up">
-            <h2> ¿Cuándo y dónde? </h2>
-            <p>
-              En la ciudad de Mendoza, desde el 25 hasta el 28 de agosto. Se desarrollarán varias actividades en diferentes lugares de la ciudad.
-            </p>
-            {/* <h2> ¿Precio? </h2>
-            <p>
-              El precio para la segundo fecha de inscripción es de $10.990. El segundo periodo de inscripción será del 11 julio a las 8:00 hs al 18 julio a las 20:00 hs
-              <br/> <strong> solo hay 500 cupos disponibles </strong>.
-            </p> */}
-          </div>
-          <div className="nosotros_img_conteiner"   data-aos="fade-up">
-            <img src={cuando_donde} className="img_representativa" alt="imagen representativa"/>
-          </div>
-          
-        </section>
-        <section id="como_participar" class="nosotros_section reverse">
-          <div class="info"  data-aos="fade-up">
-            <h2> ¿Cómo participar? </h2>
-            <p>
+          </section>
+          <section id="cuando_donde" class="nosotros_section">
+            <div class="info" data-aos="fade-up">
+              <h2> ¿Cuándo y dónde? </h2>
+              <p>
+                En la ciudad de Mendoza, desde el 25 hasta el 28 de agosto. Se desarrollarán varias actividades en diferentes lugares de la ciudad.
+              </p>
+              <h2> ¿Precio? </h2>
+              <p>
+                El precio para la tercer fecha de inscripción es de $12.990. El segundo periodo de inscripción será del 29 julio a las 17:00 hs al 03 agosto a las 20:00 hs.
+                <br /> <strong> ¡Últimos cupos disponibles! </strong>
+              </p>
+            </div>
+            <div className="nosotros_img_conteiner" data-aos="fade-up">
+              <img src={cuando_donde} className="img_representativa" alt="imagen representativa" />
+            </div>
+
+          </section>
+          <section id="como_participar" class="nosotros_section reverse">
+            <div class="info" data-aos="fade-up">
+              <h2> ¿Cómo participar? </h2>
+              {/* <p>
               <strong>Las inscripciones ya cerraron.</strong>
             </p>
-            <br/>
-            <p>
-              Si tenés tu entrada, pronto podrás acceder a tu perfil y encontrar toda la información que necesitarás para vivir al máximo el congreso más grande del año.
-            </p>
-            
+            <br/> */}
+              <p>
+                Si tenés tu entrada, pronto podrás acceder a tu perfil y encontrar toda la información que necesitarás para vivir al máximo el congreso más grande del año.
+              </p>
+              <br />
+              <p>
+                <strong>Si aún no tenés tu entrada, ¿qué estás esperando?</strong>
+              </p>
+              {/*
             <div className="button despegue">
               <p>
                 <i>Próximamente</i>
@@ -190,25 +191,27 @@ export default function Nosotros() {
                 <div class="circle2"></div>
               </div>
             </div>
-            
-            {/* <div class="button">
-              <a href="https://inscripciones.aareii.org.ar/index.php/register" class="hyperspan">  
-                <div class="circle">        
-                  <div class="rocket_container">
-                    <img src={cohete} alt="cohete"></img>
+            */}
+              <div class="button">
+                <a href="https://inscripciones.aareii.org.ar/index.php/register" class="register_us">
+                  <p>
+                    Registrate
+                  </p>
+                  <div class="circle">
+                    <div class="rocket_container">
+                      <img src={cohete} alt="cohete"></img>
+                    </div>
+                    <div class="circle2"></div>
                   </div>
-                  <div class="circle2"></div>
-                </div>
-                <div class="texto"> REGISTRARSE </div>
-              </a>
-            </div> */}
-          </div>
-          <div className="nosotros_img_conteiner"  data-aos="fade-up">
-            <img src={como_participar} className="img_representativa" alt="imagen representativa"/>
-          </div>
-         
-        </section>
-        {/* 
+                </a>
+              </div>
+            </div>
+            <div className="nosotros_img_conteiner" data-aos="fade-up">
+              <img src={como_participar} className="img_representativa" alt="imagen representativa" />
+            </div>
+
+          </section>
+          {/* 
         <section id="saber_mas" class="nosotros_section">
           <div class="info"  data-aos="fade-up">
             <h2> ¿Querés saber más del evento? </h2>
