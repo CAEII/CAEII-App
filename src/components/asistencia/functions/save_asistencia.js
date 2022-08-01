@@ -5,9 +5,9 @@ import Swal from 'sweetalert2';
 
 const ipv4 = process.env.REACT_APP_ipV4        // string de la direccion ipv4. ejemplo: 192.168.1.40
 
+// esta funcion hace una peticion al server para guardar la asistencia y muestra un mensaje de exito o error
 export default function save_asistencia(user, Presente, asistencia) {
     let new_asistencia
-
     if (Presente === true) {
         new_asistencia = parseInt(asistencia) + 10
     } else{
@@ -17,20 +17,20 @@ export default function save_asistencia(user, Presente, asistencia) {
 
     console.log(`asistencia: ${asistencia}, nueva asistencia: ${new_asistencia}`)
 
-    const url = `http://${ipv4}:11000/rite_info/${user}/${new_asistencia}` 
+    const url = `http://${ipv4}:11000/rite_info/${user}/${new_asistencia}`          // url para hacer la request con axios
 
-    Swal.fire({
+    Swal.fire({         // mensaje de espera
         title: "<strong>Guardando . . . </strong>",
         icon: 'warning'
     })
 
-    axios.get(url)
+    axios.get(url)      // request de axios
         .then(function (response) {
             // handle success
             console.log(response.data);
 
-            Swal.fire({
-                title: "<strong>Asistencia confirmada</strong>",
+            Swal.fire({     // si todo sale bien muestro este mensaje
+                title: "<strong>Asistencia confirmada</strong>",    
                 icon: 'success'
             })
         })
@@ -38,7 +38,7 @@ export default function save_asistencia(user, Presente, asistencia) {
             // handle error
             console.log(error);
 
-            Swal.fire({
+            Swal.fire({         // si ocurrio algun error muestro este mensaje
                 title: "<strong>hubo algun error</strong>",
                 icon: 'error'
             })
