@@ -464,15 +464,17 @@ footer{
 }
 
 /* SCROLLBAR */
-::-webkit-scrollbar {
+::-webkit-scrollbar:vertical {
     width: 10px;
 }
-::-webkit-scrollbar-track {
+::-webkit-scrollbar-track:vertical {
     background: var(--sol_planetas); 
 }
-::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb:vertical {
     background: var(--hamburger_scrolHandle_home);
 }
 ::-webkit-scrollbar-thumb:hover {
     background: var(--boton_input);
 }
+
+

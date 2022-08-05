@@ -3,9 +3,12 @@ import { useEffect } from "react"
 import { useState } from "react"
 // fucntions
 import {Que_dia_es_hoy, comparo_con_la_hora_actual} from "../Suport_functions"
+// cookies
+import Cookies from 'universal-cookie';
+const cookies = new Cookies();
 
 
-export default function Cronograma({IsLoged, dias, SetSalas, Salas}) {
+export default function Cronograma({IsLoged, dias, SetSalas, Salas, SetActividad}) {
     const [Dia, SetDia] = useState(Que_dia_es_hoy())
 
     let today_activities
@@ -44,7 +47,7 @@ export default function Cronograma({IsLoged, dias, SetSalas, Salas}) {
                         <th>LUGAR</th>
                     </tr>
 
-                    <Lineas today_activities={today_activities} SetSalas={SetSalas}  Salas={Salas}/>
+                    <Lineas today_activities={today_activities} SetSalas={SetSalas}  Salas={Salas} SetActividad={SetActividad}/>
                     
                 </tbody>
             </table>
@@ -53,13 +56,13 @@ export default function Cronograma({IsLoged, dias, SetSalas, Salas}) {
 }
 
 
-function Lineas({today_activities,SetSalas,Salas}){
+function Lineas({today_activities,SetSalas,Salas, SetActividad}){
     return today_activities.map((actividad, index) => {
-        return <Lineas2 actividad={actividad} index={index} SetSalas={SetSalas} Salas={Salas}/>
+        return <Lineas2 key={index} actividad={actividad} index={index} SetSalas={SetSalas} Salas={Salas} SetActividad={SetActividad}/>
     })
 };
 
-function Lineas2({actividad,index,SetSalas,Salas}) {
+function Lineas2({actividad,index,SetSalas,Salas, SetActividad}) {
     var className
     if (actividad.titulo === "ALMUERZO" || actividad.titulo === "TIEMPO LIBRE") {
         className = "conLinea resaltado"
@@ -72,6 +75,7 @@ function Lineas2({actividad,index,SetSalas,Salas}) {
     useEffect(() => {
         if (comparo_con_la_hora_actual(actividad.horario) === "En_progreso") {
             SetSalas({ salida: Salas.salida, llegada: actividad.lugar})
+            SetActividad(actividad.titulo)
         }
     }, [Salas.salida,SetSalas,actividad.lugar,actividad.horario])
 

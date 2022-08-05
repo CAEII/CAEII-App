@@ -146,6 +146,7 @@ th,td{
 } */
 tr.Terminada{
     background-color: rgba(39, 39, 39, 0.5);
+    text-decoration:line-through
 }
 /* tr.Por_iniciar{
     background-color: rgba(172, 255, 47, 0.5);
@@ -322,6 +323,26 @@ iframe{
     width: 60px;
     font-size: 1rem;
 } 
+
+#admin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#admin .select{
+    width: 60vw;
+}
+#admin h2, #admin .maps_button_container{
+    width: 100%;
+}
+#admin h3{
+    font-size: 1.5rem;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+
 
 @media (min-width: 1024px){
     /* PERFIL */
