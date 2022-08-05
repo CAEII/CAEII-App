@@ -161,7 +161,7 @@ function Home() {
 
 
 
-          {/*<section id="conferencias_1">
+          <section id="conferencias_1">
             <h2> {json[2].category} </h2>
             <article id="1">
               <h3> {json[2].data[0].info[0].title} </h3>
@@ -178,7 +178,7 @@ function Home() {
               <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo dapibus purus.  </p>
               <div class="img">
                 <div class="imgOrbit">
-                  <img src={placeholder2} alt="Conferencia 2" />
+                  <img src="" alt="Conferencia 2" />
                   <div class="planet"></div>
                 </div>
               </div>
@@ -188,7 +188,7 @@ function Home() {
               <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo dapibus purus.  </p>
               <div class="img">
                 <div class="imgOrbit">
-                  <img src={placeholder} alt="Conferencia 3" />
+                  <img src="" alt="Conferencia 3" />
                   <div class="planet"></div>
                 </div>
               </div>
@@ -196,7 +196,7 @@ function Home() {
             <LeerMas type="interno" link="Conferencias magistrales" />
           </section> 
 
-*/}
+
 
           
 
