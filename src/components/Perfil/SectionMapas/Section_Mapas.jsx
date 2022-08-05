@@ -40,7 +40,7 @@ export default function Section_Mapas({salas}) {
 
     return (
         <section id="mapas">
-            <div class="title_card_perfil title_mapas">
+            <div className="title_card_perfil title_mapas">
                 <h2>¿A dónde voy?</h2>
                 <div className="maps_button_container">
                     <button className={`maps_button_container_${DentroAuditorio}`} disabled={DentroAuditorio} onClick={() => {SetDentroAuditorio(!DentroAuditorio)}}> Dentro del auditorio </button>
@@ -58,8 +58,8 @@ export default function Section_Mapas({salas}) {
 function Selects({Mapas,_useStates,valores_default}) {
     return (
         <div className="section_of_sections">
-            <label htmlFor="salida" class="title_text">Estoy aquí: </label>
-                <div class="select" id="salida">
+            <label htmlFor="salida" className="title_text">Estoy aquí: </label>
+                <div className="select" id="salida">
                     <select onChange={(value) => _useStates.salida(value.target.value)} value={valores_default.Sala_de_salida}>
                         {
                             Mapas.map((mapa, mapindex) => {                                                                             // Recorro el array de mapas y por cada mapa:
@@ -70,8 +70,8 @@ function Selects({Mapas,_useStates,valores_default}) {
                         }
                     </select>
                 </div>
-                <label htmlFor="llegada" class="title_text">Voy a: </label>
-                <div class="select" id="llegada">
+                <label htmlFor="llegada" className="title_text">Voy a: </label>
+                <div className="select" id="llegada">
                     <select onChange={(value) => _useStates.llegada(value.target.value)} value={valores_default.Sala_de_llegada}>
                         {
                             Mapas.map((mapa, mapindex) => {

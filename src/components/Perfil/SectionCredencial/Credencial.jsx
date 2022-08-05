@@ -60,11 +60,11 @@ export default function Credencial({ nombre, asistencia, id }) {
                 <h2> {nombre}  </h2>
             </div>
 
-            <div class="top_asistencia">
-                <img src={Astronauta} alt="astronauta de caeii" class="astronauta_de_caeii" />
-                <div class="asistencia">
+            <div className="top_asistencia">
+                <img src={Astronauta} alt="astronauta de caeii" className="astronauta_de_caeii" />
+                <div className="asistencia">
 
-                    <button class="circulo_qr" onClick={() => {Set_QR_modal_IsOpen(!QR_modal_IsOpen)}}>
+                    <button className="circulo_qr" onClick={() => {Set_QR_modal_IsOpen(!QR_modal_IsOpen)}}>
                         <QR info_qr={info_qr}/>
                     </button>
 

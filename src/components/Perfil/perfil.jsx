@@ -1,6 +1,5 @@
 // react
 import React, { useEffect, useState } from "react";
-import { useParams } from 'react-router-dom';
 // axios
 import axios from 'axios';
 // cookies
@@ -57,28 +56,28 @@ export default function Perfil() {
     return (
         <div className="App" id="perfil">
             <div className="sistema_solar_container">
-                <div class="sistema_solar">
-                    <div class="sol"></div>
-                    <div class="orbits orbit_1">
-                        <div class="planet_container">
-                            <div class="planet"></div>
+                <div className="sistema_solar">
+                    <div className="sol"></div>
+                    <div className="orbits orbit_1">
+                        <div className="planet_container">
+                            <div className="planet"></div>
                         </div>
                     </div>
-                    <div class="orbits orbit_2">
-                        <div class="planet_container">
-                            <div class="planet"></div>
+                    <div className="orbits orbit_2">
+                        <div className="planet_container">
+                            <div className="planet"></div>
                         </div>
                     </div>
-                    <div class="orbits orbit_3">
-                        <div class="planet_container">
-                            <div class="planet"></div>
+                    <div className="orbits orbit_3">
+                        <div className="planet_container">
+                            <div className="planet"></div>
                         </div>
                     </div>
                 </div>
             </div>
             <BaseLayout>
                 <main>
-                    {IsLoged === false ? <div class="cuote"><h1> {Coute} </h1></div> : null}
+                    {IsLoged === false ? <div className="cuote"><h1> {Coute} </h1></div> : null}
 
 
                     {IsLoged === true && process.env.REACT_APP_admis.split("|").indexOf(User) > -1 ? <Admins/> : null}
