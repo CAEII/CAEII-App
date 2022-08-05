@@ -14,12 +14,10 @@ import Astronauta from "../../../styles/perfil/img/astronauta.png";
 const ipv4 = process.env.REACT_APP_ipV4           // string de la direccion ipv4. ejemplo: 192.168.1.40
 
 
-export default function Credencial({ nombre, asistencia, Actividad }) {
-    const ac = Actividad ? Actividad.replace(/ /g, "_") : null
+export default function Credencial({ nombre, asistencia, id }) {
     
-    const pres = asistencia > 70 ? true : false
-    
-    const info_qr = `http://${ipv4}:3000/user/${nombre.replace(/ /g, "_")}/${ac}/${pres}/true` ;                  // info para codificar en el qr en caso de no usar scaners de desarroyo
+    const info_qr = `http://${ipv4}:3000/user/${id})}` ;                  // info para codificar en el qr (url de la pag + user/:id, el id es dinamico)
+
 
     const [QR_modal_IsOpen, Set_QR_modal_IsOpen] = useState(false)              // estado del modal que contiene el qr
     const [info_modal_IsOpen, Set_info_modal_IsOpen] = useState(false)          // estado del modal que tiene info sobre el certificado

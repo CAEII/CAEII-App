@@ -23,7 +23,9 @@ function App() {
           <Route path="/perfil" element={<Perfil/>} />     
           <Route path="/login" element={<Login/>}/>
 
-          <Route path="/user/:user/:activiti/:asistencia" element={<Asistencia/>}/>
+          {/* <Route path="/user/:user/:activiti/:asistencia" element={<Asistencia/>}/> */}
+
+          <Route path="/user/:id" element={<Asistencia/>}/>
         </Routes>
       </BrowserRouter> 
   );
