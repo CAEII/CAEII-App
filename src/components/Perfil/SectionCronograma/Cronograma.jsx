@@ -8,7 +8,7 @@ import Cookies from 'universal-cookie';
 const cookies = new Cookies();
 
 
-export default function Cronograma({IsLoged, dias, SetSalas, Salas, SetActividad}) {
+export default function Cronograma({dias, SetSalas, Salas, SetActividad}) {
     const [Dia, SetDia] = useState(Que_dia_es_hoy())
 
     let today_activities
@@ -23,7 +23,6 @@ export default function Cronograma({IsLoged, dias, SetSalas, Salas, SetActividad
 
     return (
         <section id="cronograma">
-            {IsLoged === false ? <div className="IsNotLogedMsg"><h1> por favor inicia secion para poder usar el cronograma </h1><a href="/login"> LogIn </a></div> : null}
             <div className="title_card_perfil title_cronograma">
                 <h2> cronograma </h2>
 

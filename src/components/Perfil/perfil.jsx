@@ -10,7 +10,6 @@ import BaseLayout from "../layout"
 import Credencial from "./SectionCredencial/Credencial";
 import Cronograma from "./SectionCronograma/Cronograma";
 import SectionMapas from "./SectionMapas/Section_Mapas";
-import SectionMapasNotLoged from "./SectionMapas/SectionMapasNotLoged";
 import Admins from "./SectionAdmins/admins";
 // functions
 // import {Asistencia} from "./Suport_functions"
@@ -87,9 +86,9 @@ export default function Perfil() {
                     
                     <Credencial nombre={User} asistencia={Asistencia} Actividad={Actividad}/>
 
-                    <Cronograma IsLoged={IsLoged} dias={json.dias} SetSalas={SetSalas}  Salas={Salas} SetActividad={SetActividad}/>
+                    <Cronograma dias={json.dias} SetSalas={SetSalas}  Salas={Salas} SetActividad={SetActividad}/>
 
-                    {IsLoged === true ? <SectionMapas salas={Salas}/> : <SectionMapasNotLoged salas={Salas}/>}
+                    <SectionMapas salas={Salas}/>
 
                     <section id="logo">
                         <img src={CaeiiLogo} alt="logo CAEII" />
