@@ -164,8 +164,8 @@ function Home() {
           <section id="conferencias_1">
             <h2> {json[2].category} </h2>
             <article id="1">
-              <h3> {json[2].data[0].info[0].title} </h3>
-              <p> {json[2].data[0].info[0].disertante} </p>
+              <h3> {json[2].data[0].info[0].title + " " + json[2].data[0].info[0].disertante} </h3>
+              <p> {json[2].data[0].info[1].title} </p>
               <div class="img">
                 <div class="imgOrbit">
                   <img src={json[2].data[0].info[0].img} alt="Conferencia 1" />
@@ -174,21 +174,21 @@ function Home() {
               </div>
             </article>
              <article id="2" class="derecha">
-              <h3> #conferencias_1 #2 </h3>
-              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo dapibus purus.  </p>
+              <h3> {json[2].data[1].info[0].title} </h3>
+              <p> {json[2].data[1].info[1].title}  </p>
               <div class="img">
                 <div class="imgOrbit">
-                  <img src="" alt="Conferencia 2" />
+                  <img src={json[2].data[1].info[0].img} alt="Conferencia 2" />
                   <div class="planet"></div>
                 </div>
               </div>
             </article>
             <article id="3">
-              <h3> #conferencias_1 #3 </h3>
-              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo dapibus purus.  </p>
+              <h3> {json[2].data[2].info[0].title} </h3>
+              <p> {json[2].data[2].info[1].title}  </p>
               <div class="img">
                 <div class="imgOrbit">
-                  <img src="" alt="Conferencia 3" />
+                  <img src={json[2].data[2].info[0].img} alt="Conferencia 3" />
                   <div class="planet"></div>
                 </div>
               </div>

@@ -560,7 +560,7 @@
                 "info": [
                     {
                         "title": "¿Cómo entrenar a tu robot RPA?",
-                        "img": "/imgs/magistrales/belen.jpg",
+                        "img": "/imgs/profesionales/belen.jpg",
                         "disertante": "Belén Rodríguez | RPA Project Leader",
                         "short": "",
                         "desciption": "RPA, “Robotic Process Automation” es la automatización de los procesos de negocio que replica las acciones de un ser humano interactuando con sistemas informáticos con interfaz de usuario. Vamos a desmitificar que “Entrenar” a tu robot RPA sea algo complejo y que sólo programadores pueden realizar. RPA está al alcance de todos y todo pueden ser parte.",
@@ -633,7 +633,7 @@
                         "img": "/imgs/profesionales/Hernan Fagnili.jpg",
                         "short": "",
                         "disertante": "Hernán Fagnilli | Licenciado en Sistemas",
-                        "desciption": "Desde la óptica de las TICs,  una ciudad inteligente es una red de datos distribuida por el tejido municipal, y en la cual conviven una red primaria o backbone implementado sobre el sistema de alumbrado público municipal- y un conjunto de subredes o redes secundarias, tantas como servicios municipales se decida telegestionar. A diferencia de la red de alumbrado, primera en ser implementada para la gestión inteligente, las redes secundarias utilizan como medio de comunicaciones cualquiera de los disponibles en mercado o combinación de ellos, sobresaliendo la radio frecuencia como medio más común. Para garantizarnos la operación y la sustentabilidad de un sistema de esas características, debemos asegurarnos el uso de componentes interoperables entre las redes secundarias y el backbone del sistema.",
+                        "desciption": "Desde la óptica de las TICs,  una ciudad inteligente es una red de datos distribuida por el ejido municipal, y en la cual conviven una red primaria o backbone implementado sobre el sistema de alumbrado público municipal, y un conjunto de subredes o redes secundarias, tantas como servicios municipales se decida telegestionar. A diferencia de la red de alumbrado, primera en ser implementada para la gestión inteligente, las redes secundarias utilizan como medio de comunicaciones cualquiera de los disponibles en mercado o combinación de ellos, sobresaliendo la radio frecuencia como medio más común. Para garantizarnos la operación y la sustentabilidad de un sistema de esas características, debemos asegurarnos el uso de componentes interoperables entre las redes secundarias y el backbone del sistema.",
                         "items":[],
                         "links": [                    
                             {
