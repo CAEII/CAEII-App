@@ -1,6 +1,8 @@
 // react
 import React, { useEffect, useState } from "react";
+import { useRef } from "react";
 import { useParams } from 'react-router-dom';
+import {useNavigate} from 'react-router-dom';
 // axios
 import axios from 'axios';
 // cookies
@@ -35,11 +37,14 @@ export default function Perfil() {
 
     const [IsLoged, SetIsLoged] = useState(false);
 
+    const navigate = useNavigate();
+
     useEffect(() => {
         if (cookies.get('session') !== undefined) {
             SetIsLoged(true)
             SetUser(cookies.get('session'))
         } else {
+            navigate("/")
             SetIsLoged(false)
         }
     }, [])
@@ -52,6 +57,9 @@ export default function Perfil() {
             SetAsistencia(Response.data.asistencia)
         })  
     })
+
+    const myRef = useRef(null)
+    const executeScroll = () => myRef.current.scrollIntoView({ behavior: 'smooth'})
 
     return (
         <div className="App" id="perfil">
@@ -86,9 +94,9 @@ export default function Perfil() {
                     
                     <Credencial nombre={User} asistencia={Asistencia} Actividad={Actividad}/>
 
-                    <Cronograma dias={json.dias} SetSalas={SetSalas}  Salas={Salas} SetActividad={SetActividad}/>
+                    <Cronograma dias={json.dias} SetSalas={SetSalas}  Salas={Salas} SetActividad={SetActividad} executeScroll={executeScroll}/>
 
-                    <SectionMapas salas={Salas}/>
+                    <SectionMapas salas={Salas} referencia={myRef}/>
 
                     <section id="logo">
                         <img src={CaeiiLogo} alt="logo CAEII" />

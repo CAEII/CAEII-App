@@ -6,6 +6,7 @@ import Cookies from 'universal-cookie';
 import lista_de_actividades from "../../asistencia/lista_de_actividades.json"
 
 
+
 // const lista_de_salas = json.PlantaBaja.concat(json.AuditorioPrincipal, json.PimerPiso, json.SegundoPiso)
 const cookies = new Cookies();
 
@@ -22,7 +23,7 @@ export default function Admins() {
 
             <h3> ESTOY EN: </h3>
 
-            {DentroAuditorio === true ? <SalasBustelo /> : null}
+            {DentroAuditorio === true ? <SalasBustelo/> : <VisitasTecnicas/>}
 
         </section>
     )
@@ -30,9 +31,29 @@ export default function Admins() {
 
 
 function SalasBustelo() {
+    const handleAddrTypeChange = (value) => cookies.set('admin', value.target.value, { path: '/', maxAge: 5184000 })
     return (
         <div class="select">
-            <select  onChange={(value) =>  {cookies.set('admin', value.target.value, { path: '/', maxAge: 5184000 })}}>
+            <select  onChange={(value) =>  handleAddrTypeChange(value)}>
+                <option value={null}> seleciona una actividad: </option>
+                {
+                    lista_de_actividades.map((actividad, actividadindex) => {                                                                             // Recorro el array de salas
+                        return <option key={actividadindex} value={actividad}> {actividad.replace(/_/g, " ")} </option>
+                    })
+                }
+            </select>
+        </div>
+    )
+}
+
+
+
+function VisitasTecnicas() {
+    const handleAddrTypeChange = (value) => cookies.set('admin', value.target.value, { path: '/', maxAge: 5184000 })
+    return (
+        <div class="select">
+            <select  onChange={(value) =>  handleAddrTypeChange(value)}>
+                <option value={null}> seleciona una visita: </option>
                 {
                     lista_de_actividades.map((actividad, actividadindex) => {                                                                             // Recorro el array de salas
                         return <option key={actividadindex} value={actividad}> {actividad.replace(/_/g, " ")} </option>
