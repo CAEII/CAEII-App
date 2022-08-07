@@ -194,51 +194,7 @@ function Home() {
               </div>
             </article> 
             <LeerMas type="interno" link="Conferencias magistrales" />
-          </section> 
-
-
-
-          
-
-
- {/*
-          <section id="talleres">
-            <h2> Talleres </h2>
-            <article id="1">
-              <h3> #talleres #1 </h3>
-              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo dapibus purus.  </p>
-              <div class="img">
-                <div class="imgOrbit">
-                  <img src={placeholder} alt="talleres 1" />
-                  <div class="planet"></div>
-                </div>
-              </div>
-            </article>
-            <article id="2" class="derecha">
-              <h3> #talleres #2 </h3>
-              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo dapibus purus.  </p>
-              <div class="img">
-                <div class="imgOrbit">
-                  <img src={placeholder2} alt="talleres 2" />
-                  <div class="planet"></div>
-                </div>
-              </div>
-            </article>
-            <article id="3">
-              <h3> #talleres #3 </h3>
-              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo dapibus purus.  </p>
-              <div class="img">
-                <div class="imgOrbit">
-                  <img src={placeholder} alt="talleres 3" />
-                  <div class="planet"></div>
-                </div>
-              </div>
-            </article>
-            <LeerMas type="interno" link="" />
-          </section> 
-
-
-*/}          
+          </section>       
            
           <section id="conferencias_2">
             <h2> Conferencias profesionales </h2>
