@@ -139,3 +139,11 @@ svg{
     width: auto;
     margin-bottom: 5%;
 }
+
+
+@media only screen and (max-width: 460px){
+    .line_container.Ingeniería_del_mañana {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}

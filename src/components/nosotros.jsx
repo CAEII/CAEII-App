@@ -131,7 +131,7 @@ export default function Nosotros() {
                 <div class="link">
                   <div class="linea">
                     <Link to="/info/Estaciones">{" Ingeniería del mañana >"}</Link>
-                    <div class="line_container"><div class="line"></div></div>
+                    <div class="line_container Ingeniería_del_mañana"><div class="line"></div></div>
                   </div>
                 </div>
 
