@@ -193,6 +193,16 @@ function Home() {
                 </div>
               </div>
             </article> 
+            <article id="4" class="derecha">
+              <h3> {json[2].data[3].info[0].title} </h3>
+              <p> {json[2].data[3].info[1].title}  </p>
+              <div class="img">
+                <div class="imgOrbit">
+                  <img src={json[2].data[3].info[0].img} alt="Conferencia 3" />
+                  <div class="planet"></div>
+                </div>
+              </div>
+            </article> 
             <LeerMas type="interno" link="Conferencias magistrales" />
           </section>       
            
