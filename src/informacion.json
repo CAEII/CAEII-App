@@ -174,25 +174,6 @@
                                 "icono": "/imgs/iconos/linkedin.png"
                             }
                         ]
-                    },
-                    {
-                        "title": "Frenos oeste",
-                        "img": "/imgs/Visitas Técnicas/frenos.jpg",
-                        "short": "",
-                        "desciption": "Empresa con más de 50 años de trayectoria en el rubro de los frenos, ubicados en el Acceso Sur de Carrodilla, en Luján de Cuyo. Se caracteriza por la calidad, transparencia, profesionalismo y compromiso al momento de encarar un proyecto con sus clientes. Cuenta con la mayor tecnología para reparar un semi-remolque o tractor en el día; saliendo de sus instalaciones con los trabajos totalmente garantizados, ya que usan repuestos originales y procedimientos internos que aseguran el trabajo realizado.",
-                        "items":[],
-                        "links": [
-                            {
-                                "type": "Sitio web",
-                                "link": "http://frenosoeste.com.ar/",
-                                "icono": "/imgs/iconos/web.png"
-                            },  
-                            {
-                                "type": "Instagram",
-                                "link": "https://www.instagram.com/frenosoeste/?hl=es",
-                                "icono": "/imgs/iconos/instagram.png"
-                            }
-                        ]
                     }
                 ]
             },
@@ -276,20 +257,6 @@
                             {
                                 "type": "Sitio web",
                                 "link": "https://ar.linkedin.com/company/cattorini-hnos.-saicf",
-                                "icono": "/imgs/iconos/web.png"
-                            }
-                        ]
-                    },
-                    {
-                        "title": "La Fuente muebles",
-                        "img": "/imgs/Visitas Técnicas/la_fuente.png",
-                        "short": "",
-                        "desciption": "Empresa dedicada al diseño, fabricación y venta de muebles para su hogar y oficina. Ee caracterizan por trabajar siempre en pos del cliente, desarrollando productos según sus necesidades, ideas y proyectos. Atención profesional y personalizada, tecnología de última generación y calidad comprobada, son los pilares de esta empresa.",
-                        "items":[],
-                        "links": [
-                            {
-                                "type": "Sitio web",
-                                "link": "https://lafuentemuebles.com.ar/",
                                 "icono": "/imgs/iconos/web.png"
                             }
                         ]
@@ -406,6 +373,76 @@
         "category": "Conferencias magistrales",
         "data": [
             {
+                "title": "Odisea Estelar.",
+                "info": [
+                    {
+                        "title": "Dr Chris Meniw",
+                        "img": "/imgs/magistrales/Chris Meniw.jpg",
+                        "disertante": "",
+                        "short": "",
+                        "desciption": "Abogado especializado en Industria 4.0, profesor de Postgrado en Universidades como la UPB, UCES entre otras, Embajador por la Paz en Naciones Unidas, Presidente de Space Kids Foundation, Director de Twenty2 group Dubai, Rep en America Latina de Meshbox ( Singapur) Director de Voice Humans area Metaverse Business School ( España) .Advisor de Tlon Space. Conferencista Internacional con más de 120 conferencias en Asia, Dubai, América Latina. Parlamentario Mundial de la Educación.",
+                        "items":[],
+                        "links": [
+                            {
+                                "type": "Youtube",
+                                "link": "https://www.youtube.com/channel/UCQSvRZO3-zJnQiWbOaAuBUA",
+                                "icono": "/imgs/iconos/youtube.png"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Bienvenidos a la Era Sintética y la Economía Espacial 2.0",
+                        "img": "",
+                        "disertante": "",
+                        "short": "",
+                        "desciption": "Se abordara los desafíos de la Economía ya no física o digital sino Sintética, el nuevo orden mundial, donde la globalización de la inteligencia será mas importante que la globalizados de los mercados, la nueva geografia es la conectografía, como el Metaverso y el Espacio nos cambiara la percepción no solo de la economía sino del Ser humano y como prepararse para la mayor transformación de la Humanidad.",
+                        "items":[],
+                        "links": [
+                            {
+                                "type": "",
+                                "link": "",
+                                "icono": ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "Logistica 4.0",
+                "info": [
+                    {
+                        "title": "Tomas Karagozian",
+                        "img": "/imgs/magistrales/Tomas Karagozian.jpg",
+                        "disertante": "Damián Pedraza",
+                        "short": "",
+                        "desciption": "Fundador de Mundo Descuento, comunidad de ofertas y descuentos. Organizador de “Jornadas de Justicia Laboral por el Desarrollo Industrial”. Con el objetivo de tratar el Impacto de la Litigiosidad Laboral en el Desarrollo Industrial, desde la perspectiva de funcionarios políticos, empresarios, sindicalistas y jueces. Primer Jornada realizada en La Rioja en el año 2016 Segunda Jornada realizada en Hotel Palace Alvear de Buenos Aires en el año 2017.",
+                        "items":[],
+                        "links": [
+                            {
+                                "type": "Linkedin",
+                                "link": "https://www.linkedin.com/in/tomas-karagozian-b8b12895/?originalSubdomain=ar",
+                                "icono": "/imgs/iconos/linkedin.png"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "??",
+                        "img": "",
+                        "disertante": "",
+                        "short": "",
+                        "desciption": "??",
+                        "items":[],
+                        "links": [
+                            {
+                                "type": "",
+                                "link": "",
+                                "icono": ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
                 "title": "Ingeniería del Mañana",
                 "info": [
                     {
@@ -494,42 +531,8 @@
                         ]
                     }
                 ]
-            },
-            {
-                "title": "Odisea Estelar.",
-                "info": [
-                    {
-                        "title": "Dr Chris Meniw",
-                        "img": "/imgs/magistrales/Chris Meniw.jpg",
-                        "disertante": "",
-                        "short": "",
-                        "desciption": "Abogado especializado en Industria 4.0, profesor de Postgrado en Universidades como la UPB, UCES entre otras, Embajador por la Paz en Naciones Unidas, Presidente de Space Kids Foundation, Director de Twenty2 group Dubai, Rep en America Latina de Meshbox ( Singapur) Director de Voice Humans area Metaverse Business School ( España) .Advisor de Tlon Space. Conferencista Internacional con más de 120 conferencias en Asia, Dubai, América Latina. Parlamentario Mundial de la Educación.",
-                        "items":[],
-                        "links": [
-                            {
-                                "type": "Youtube",
-                                "link": "https://www.youtube.com/channel/UCQSvRZO3-zJnQiWbOaAuBUA",
-                                "icono": "/imgs/iconos/youtube.png"
-                            }
-                        ]
-                    },
-                    {
-                        "title": "Bienvenidos a la Era Sintética y la Economía Espacial 2.0",
-                        "img": "",
-                        "disertante": "",
-                        "short": "",
-                        "desciption": "Se abordara los desafíos de la Economía ya no física o digital sino Sintética, el nuevo orden mundial, donde la globalización de la inteligencia será mas importante que la globalizados de los mercados, la nueva geografia es la conectografía, como el Metaverso y el Espacio nos cambiara la percepción no solo de la economía sino del Ser humano y como prepararse para la mayor transformación de la Humanidad.",
-                        "items":[],
-                        "links": [
-                            {
-                                "type": "",
-                                "link": "",
-                                "icono": ""
-                            }
-                        ]
-                    }
-                ]
             }
+            
         ]
     },
     {
@@ -539,17 +542,27 @@
                 "title": "Odisea Estelar",
                 "info": [
                     {
-                        "title": "",
-                        "img": "",
-                        "disertante": "",
+                        "title": "De Mendoza a Marte",
+                        "img": "/imgs/profesionales/Marcos Bruno.jpg",
+                        "disertante": "Marcos Bruno | Co-fundador de Merovingian Data",
                         "short": "",
-                        "desciption": "",
+                        "desciption": "En su charla, Marcos describe como fueron sus pasos en esta industria fascinante, comenzando desde que era un niño que soñaba con ser astronauta, hasta el día de hoy donde ya cuenta con la experiencia de haber formado parte de tripulaciones en ambientes análogos de Marte y la Luna, en centros de The Mars Society y financiados por NASA. Hoy forma parte de un equipo que enviará un experimento al espacio con el apoyo de la compañía Satellogic antes de que finalice el año. Han sido logros que pudo conseguir a partir de mucho esfuerzo y perseverancia, habilidades de las que esta convencido que todos los jóvenes tienen y pueden desarrollar. Busca que el público salga distintos de su charla, que salga entendiendo que, si un joven de Mendoza, Argentina, que por años abandono sus sueños de generar un impacto en el espacio, pudo lograrlo a partir de creer en él y trabajar incansablemente por estos objetivos, todos pueden animarse a soñar con cosas, literalmente, fuera de este planeta y convertir estos sueños en realidad.",
                         "items":[],
                         "links": [
                             {
-                                "type": "",
-                                "link": "",
-                                "icono": ""
+                                "type": "Instagram",
+                                "link": "https://www.instagram.com/marcosb249/",
+                                "icono": "/imgs/iconos/instagram.png"
+                            },
+                            {
+                                "type": "Sitio web",
+                                "link": "https://www.marcosbruno.net/",
+                                "icono": "/imgs/iconos/web.png"
+                            },
+                            {
+                                "type": "Linkedin",
+                                "link": "https://www.linkedin.com/in/marcos-bruno/",
+                                "icono": "/imgs/iconos/linkedin.png"
                             }
                         ]
                     }
@@ -560,7 +573,7 @@
                 "info": [
                     {
                         "title": "¿Cómo entrenar a tu robot RPA?",
-                        "img": "/imgs/magistrales/belen.jpg",
+                        "img": "/imgs/profesionales/belen.jpg",
                         "disertante": "Belén Rodríguez | RPA Project Leader",
                         "short": "",
                         "desciption": "RPA, “Robotic Process Automation” es la automatización de los procesos de negocio que replica las acciones de un ser humano interactuando con sistemas informáticos con interfaz de usuario. Vamos a desmitificar que “Entrenar” a tu robot RPA sea algo complejo y que sólo programadores pueden realizar. RPA está al alcance de todos y todo pueden ser parte.",
@@ -570,6 +583,31 @@
                                 "type": "Linkedin",
                                 "link": "https://www.linkedin.com/in/belrodriguez/",
                                 "icono": "/imgs/iconos/linkedin.png"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Robótica e Inteligencia Artificial en Argentina. ¿Aca no se puede, o si?",
+                        "img": "/imgs/profesionales/LUCAS JAGODNIK.jpg",
+                        "disertante": "Lucas Jagodnik | CEO y Co-Founder Apelie Robotics",
+                        "short": "",
+                        "desciption": "El Arquitecto Lucas Jagodnik y el Ingeniero Industrial Facundo Garzon nos contaran la aventura que fue crear Apelie Robotics, una empresa en Cordoba, Argentina, que se dedica al diseño, prototipado y producción de robots colaborativos para industrias. Un camino donde se cruzan entusiasmo, frustración, valentía y desconcierto y que puede convertirse en un puntapié en la región para una disciplina que transita su etapa temprana en el mundo. Un poderoso mensaje para quienes quieren ser protagonistas de las tendencias tecnológicas mundiales.",
+                        "items":[],
+                        "links": [
+                            {
+                                "type": "Linkedin",
+                                "link": "https://www.linkedin.com/in/lucas-jagodnik-ab13b2186/",
+                                "icono": "/imgs/iconos/linkedin.png"
+                            },
+                            {
+                                "type": "Sitio web",
+                                "link": "http://appelie.com/",
+                                "icono": "/imgs/iconos/web.png"
+                            },
+                            {
+                                "type": "Instagram",
+                                "link": "https://www.instagram.com/luc.jagodnik/?hl=es",
+                                "icono": "/imgs/iconos/instagram.png"
                             }
                         ]
                     }
@@ -599,6 +637,26 @@
                             {
                                 "type": "Linkedin",
                                 "link": "https://www.linkedin.com/in/alexanderditzend/?originalSubdomain=ar",
+                                "icono": "/imgs/iconos/linkedin.png"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "El movimiento Maker y la importancia de aprender de forma autodidacta",
+                        "img": "/imgs/profesionales/Franco Mazzocca.jpg",
+                        "disertante": "Franco Mazzocca | Dueño y gerente: 3DMazz",
+                        "short": "",
+                        "desciption": "En nuestra actualidad la tecnología avanza a una velocidad sin precedentes. Las habilidades y los conocimientos que necesitamos para mantenernos relevantes en este nuevo mundo cambian todo el tiempo. Por suerte, los medios que tenemos a disposición para lograrlo también han evolucionado. En este sentido, el movimiento ''Maker'' se presenta como un gran aliado para aquellas personas que necesitan aprender haciendo. Contamos con tecnologías, como la impresión 3D, plataformas para desarrollo de software y electrónica de código libre, que nos permiten aplicar inmediatamente la teoría adquirida a proyectos funcionales.Gracias a esto, estamos viviendo en la era perfecta para aprender a crear tecnología de manera autodidacta. Hoy quiero contarles mi experiencia en este mundo, y las lecciones que me habría encantado aprender antes para sacar el máximo provecho al emocionante tiempo que estamos viviendo.",
+                        "items":[],
+                        "links": [
+                            {
+                                "type": "Instagram",
+                                "link": "https://www.instagram.com/ralphreferences/?hl=es",
+                                "icono": "/imgs/iconos/instagram.png"
+                            },
+                            {
+                                "type": "Linkedin",
+                                "link": "https://www.linkedin.com/in/franco-mazzocca-17772b167/?originalSubdomain=ar",
                                 "icono": "/imgs/iconos/linkedin.png"
                             }
                         ]
@@ -633,7 +691,7 @@
                         "img": "/imgs/profesionales/Hernan Fagnili.jpg",
                         "short": "",
                         "disertante": "Hernán Fagnilli | Licenciado en Sistemas",
-                        "desciption": "Desde la óptica de las TICs,  una ciudad inteligente es una red de datos distribuida por el tejido municipal, y en la cual conviven una red primaria o backbone implementado sobre el sistema de alumbrado público municipal- y un conjunto de subredes o redes secundarias, tantas como servicios municipales se decida telegestionar. A diferencia de la red de alumbrado, primera en ser implementada para la gestión inteligente, las redes secundarias utilizan como medio de comunicaciones cualquiera de los disponibles en mercado o combinación de ellos, sobresaliendo la radio frecuencia como medio más común. Para garantizarnos la operación y la sustentabilidad de un sistema de esas características, debemos asegurarnos el uso de componentes interoperables entre las redes secundarias y el backbone del sistema.",
+                        "desciption": "Desde la óptica de las TICs,  una ciudad inteligente es una red de datos distribuida por el ejido municipal, y en la cual conviven una red primaria o backbone implementado sobre el sistema de alumbrado público municipal, y un conjunto de subredes o redes secundarias, tantas como servicios municipales se decida telegestionar. A diferencia de la red de alumbrado, primera en ser implementada para la gestión inteligente, las redes secundarias utilizan como medio de comunicaciones cualquiera de los disponibles en mercado o combinación de ellos, sobresaliendo la radio frecuencia como medio más común. Para garantizarnos la operación y la sustentabilidad de un sistema de esas características, debemos asegurarnos el uso de componentes interoperables entre las redes secundarias y el backbone del sistema.",
                         "items":[],
                         "links": [                    
                             {
@@ -692,7 +750,7 @@
                         ]
                     },
                     {
-                        "title": "¿cuando se hara?",
+                        "title": "¿Cuándo se hará?",
                         "img": "",
                         "short": "",
                         "desciption": "Este sub evento se desarrollará desde las 9:00hs del día Sábado 27/8 a las 14:00 hs del día domingo 28/8.        Durante el día sábado, se hará un acto de apertura, se expondrán las temáticas y se brindarán 4 talleres en simultaneo, Luego de eso se les brindará un almuerzo  y tendrán hasta las 20:00 hs para poder desarrollar la idea, teniendo uncoffe entre medio. Ese día tendrán hasta las 21:30 hs para poder enviar el trabajo y que sea evaluado por los jueces. El día Domingo de mañana se citará solamente a los grupos semifinalistas (5) y tendrán 3 minutos por grupo para poder defender su idea; a las 14:00 hs se entregarán los premios",
@@ -725,13 +783,17 @@
                         ]
                     },
                     {
-                        "title": "Jueses",
+                        "title": "Jueces",
                         "img": "",
                         "short": "",
                         "desciption": "Al final del dia sabado tendran hasta las 21:00 para enviar el trabajo y que sea evaluado por los jueces:",
                         "items":[
-                            "Julieta Porta",
-                            "Gabriel Caballero"
+                            "Delegación Caeii (1 persona)",
+                            "Pedro/Majo JCI",
+                            "Majo Rubio",
+                            "Gonza Innocenti",
+                            "Nico Allube",
+                            "Julian Bensadon"
                         ],
                         "links": [
                             {

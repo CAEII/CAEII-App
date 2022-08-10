@@ -83,8 +83,11 @@ article .img{
     grid-column: 1/2;
     grid-row: 1/3;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
+}
+#estaciones article .img{
+    justify-content: center;
 }
 
 
@@ -188,6 +191,7 @@ article h3{
 .derecha .img{
     grid-column: 3/4;
     grid-row: 1/3;;
+    justify-content: flex-end;
 }
 
 #registrarse{
