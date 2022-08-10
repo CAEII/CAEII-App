@@ -249,9 +249,10 @@ function Home() {
           <section id="visitas">
             <h2> {json[1].category} </h2>
             <article id="1">
-              <h3> {json[1].data[0].info[0].title} </h3>
-              <p class="movile"> {json[1].data[0].info[0].short} </p>
-              <p class="desktop"> {json[1].data[0].info[0].short} </p> {/* Si ocupa toda la pantalla debe ir la descripción entera */}
+              <h3>  Tecnología </h3>
+              <p class="movile"> En la actualidad, hay muchos ingenieros industriales que trabajan en la parte de gestión de proyectos por eso nos gustaría enseñarte las herramientas y posibilidades que hay en este rubro... </p>
+              <p class="desktop"> En la actualidad, hay muchos ingenieros industriales que trabajan en la parte de gestión de proyectos, metodologías ágiles, análisis de datos, entre otras cosas. Y nos gustaría poder enseñarte todas las herramientas y posibilidades que hay en este rubro.
+A través de dinámicas con clientes reales de las empresas, podrás descubrir un nuevo enfoque en tu carrera profesional </p> {/* Si ocupa toda la pantalla debe ir la descripción entera */}
               <div class="img">
                 <div class="imgOrbit">
                   <img src={json[1].data[0].info[0].img} alt="visitas 1" />
@@ -259,6 +260,19 @@ function Home() {
                 </div>
               </div>
             </article>
+
+            {/* <article id="1">
+              <h3> {json[1].data[0].info[0].title} </h3>
+              <p class="movile"> {json[1].data[0].info[0].short} </p>
+              <p class="desktop"> {json[1].data[0].info[0].short} </p> 
+              <div class="img">
+                <div class="imgOrbit">
+                  <img src={json[1].data[0].info[0].img} alt="visitas 1" />
+                  <div class="planet"></div>
+                </div>
+              </div>
+            </article> */}
+
             <article id="2" class="derecha">
               <h3> {json[1].data[1].info[1].title} </h3>
               <p class="movile"> {json[1].data[1].info[1].short} </p>
