@@ -38,7 +38,7 @@ function Asistencia(dias){
     })
 
     asistencia = (asistencia * 100) / cantida_de_actividades            // saco el porcentaje de la asistencia
-    asistencia = asistencia.toFixed(2);                                 // limito el numero de deciamles a dos
+    asistencia = asistencia.toFixed(0);                                 // limito el numero de deciamles a dos
     
     return asistencia
 }
@@ -120,6 +120,8 @@ function en_que_mapa(sala_salida, sala_llegada, listas_de_salas){
     // console.log(mapas)
     return mapas
 }
+
+
 
 
 

@@ -7,7 +7,7 @@ import cohete from "../styles/home/img/cohete-botones.svg"
 export default function LeerMas(params) {
     var link;           // declaro la varialbe link
     if (params.type === 'interno') {            // si el tipo de link es "interno" le doy el valor "/info/(nombre de la categoria)"
-        link = "/CAEII-App/info/" + params.link
+        link = "/info/" + params.link
     } else if (params.type === 'externo') {     // si el tipo de link es "externo" le doy el valor del link ingresado como parametro
         link = params.link
     } else {            // si no hay parametro type muestro un error
@@ -15,15 +15,15 @@ export default function LeerMas(params) {
     }
     
     return (
-        <div class="button leermas">
-            <a href={link} class="hyperspan">
-                <div class="circle">
-                    <div class="rocket_container">
-                      <img src={cohete} alt="cohete caeii" class="cohete_leer_mas"></img>
+        <div className="button leermas">
+            <a href={link} className="hyperspan">
+                <div className="circle">
+                    <div className="rocket_container">
+                      <img src={cohete} alt="cohete caeii" className="cohete_leer_mas"></img>
                     </div>
-                    <div class="circle2"></div>
+                    <div className="circle2"></div>
                 </div>
-                <div class="texto"> Leer mas </div>
+                <div className="texto"> Leer mas </div>
             </a>
         </div>
   )

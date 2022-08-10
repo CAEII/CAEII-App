@@ -1,9 +1,10 @@
 // react
 import { useEffect, useState } from "react"
 // components
-import PrimerPiso from "./Mapas/Primer_piso"
-import PlantaBaja from "./Mapas/Planta_baja"
 import AuditorioPrincipal from "./Mapas/AuditorioPrincipal"
+import PlantaBaja from "./Mapas/Planta_baja"
+import PrimerPiso from "./Mapas/Primer_piso"
+import SegundoPiso from "./Mapas/Segundo_piso"
 // functions
 import {en_que_mapa} from "../Suport_functions"
 // json
@@ -36,11 +37,10 @@ export default function Section_Mapas({salas}) {
 
     }, [salas, valores_default.Sala_de_salida, valores_default.Sala_de_llegada])
 
-    // console.log(Sala_salida + ' ' + Sala_llegada)
 
     return (
         <section id="mapas">
-            <div class="title_card_perfil title_mapas">
+            <div className="title_card_perfil title_mapas">
                 <h2>¿A dónde voy?</h2>
                 <div className="maps_button_container">
                     <button className={`maps_button_container_${DentroAuditorio}`} disabled={DentroAuditorio} onClick={() => {SetDentroAuditorio(!DentroAuditorio)}}> Dentro del auditorio </button>
@@ -58,9 +58,9 @@ export default function Section_Mapas({salas}) {
 function Selects({Mapas,_useStates,valores_default}) {
     return (
         <div className="section_of_sections">
-            <label htmlFor="salida" class="title_text">Estoy aquí: </label>
-                <div class="select" id="salida">
-                    <select onChange={(value) => _useStates.salida(value.target.value)} defaultValue={valores_default.Sala_de_salida}>
+            <label htmlFor="salida" className="title_text">Estoy aquí: </label>
+                <div className="select" id="salida">
+                    <select onChange={(value) => _useStates.salida(value.target.value)} value={valores_default.Sala_de_salida}>
                         {
                             Mapas.map((mapa, mapindex) => {                                                                             // Recorro el array de mapas y por cada mapa:
                                 return json_lista_de_salas[mapa].map((sala, salaIndex) => {                                                 // Recorro el array de salas y devuelvo un "<option>" con el valor de la sala
@@ -70,9 +70,9 @@ function Selects({Mapas,_useStates,valores_default}) {
                         }
                     </select>
                 </div>
-                <label htmlFor="llegada" class="title_text">Voy a: </label>
-                <div class="select" id="llegada">
-                    <select onChange={(value) => _useStates.llegada(value.target.value)} defaultValue={valores_default.Sala_de_llegada}>
+                <label htmlFor="llegada" className="title_text">Voy a: </label>
+                <div className="select" id="llegada">
+                    <select onChange={(value) => _useStates.llegada(value.target.value)} value={valores_default.Sala_de_llegada}>
                         {
                             Mapas.map((mapa, mapindex) => {
                                 return json_lista_de_salas[mapa].map((sala, salaIndex) => {
@@ -102,17 +102,22 @@ function Mapas({Mapas, sala_resaltada}) {
                     return(
                         <PlantaBaja key={index} sala_resaltada={{salida:sala_resaltada.salida, llegada:sala_resaltada.llegada}} colores={colores}/>
                     )
-                }
+                };
                 if (mapa === 'AuditorioPrincipal') {
                     return(
                         <AuditorioPrincipal key={index} sala_resaltada={{salida:sala_resaltada.salida, llegada:sala_resaltada.llegada}} colores={colores}/>
                     )
-                }
+                };
                 if (mapa === 'PimerPiso') {
                     return(
                         <PrimerPiso key={index} sala_resaltada={{salida:sala_resaltada.salida, llegada:sala_resaltada.llegada}} colores={colores}/>
                     )
-                }
+                };
+                if (mapa === 'SegundoPiso') {
+                    return(
+                        <SegundoPiso key={index} sala_resaltada={{salida:sala_resaltada.salida, llegada:sala_resaltada.llegada}} colores={colores}/>
+                    )
+                };
 
                 console.error("Mapa no encontrado")
                 return null
