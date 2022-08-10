@@ -150,20 +150,20 @@ export default function Nosotros() {
             <div class="info"  data-aos="fade-up">
               <h2> ¿Cuándo y dónde? </h2>
               <p>
-                En la ciudad de Mendoza, desde el 25 hasta el 28 de agosto. Se desarrollarán varias actividades en diferentes lugares de la ciudad.
+                En la ciudad de Mendoza, desde el 25 hasta el 28 de agosto. Todas las charlas y talleres se desarrollarán en el Centro de congresos y exposiciones Emilio Civit, pero también habrá varias actividades en diferentes lugares de la capital.
               </p>
-              <h2> ¿Precio? </h2>
+              {/* <h2> ¿Precio? </h2>
               <p>
                 El precio para la segundo fecha de inscripción es de $10.990. El segundo periodo de inscripción será del 11 julio a las 8:00 hs al 18 julio a las 20:00 hs
                 <br/> <strong> solo hay 500 cupos disponibles </strong>.
-              </p>
+              </p> */}
             </div>
             <div className="nosotros_img_conteiner"   data-aos="fade-up">
               <img src={cuando_donde} className="img_representativa" alt="imagen representativa"/>
             </div>
             
           </section>
-          <section id="como_participar" class="nosotros_section reverse">
+         {/* <section id="como_participar" class="nosotros_section reverse">
             <div class="info"  data-aos="fade-up">
               <h2> ¿Cómo participar? </h2>
               <p>
@@ -186,7 +186,7 @@ export default function Nosotros() {
             </div>
           
           </section>
-          {/* 
+           
           <section id="saber_mas" class="nosotros_section">
             <div class="info"  data-aos="fade-up">
               <h2> ¿Querés saber más del evento? </h2>
