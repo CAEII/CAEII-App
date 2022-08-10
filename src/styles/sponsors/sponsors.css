@@ -15,11 +15,12 @@ body{
 .Sponsors_card_body {
     margin: 0;
     display: grid;
-    grid-template-rows: 500px 100px;
-    grid-template-columns: 1fr 30px 30px 30px 30px 30px 1fr;
+    grid-template-rows: 375px 100px;
+    grid-template-columns: 1fr 40px 40px 40px 40px 40px 1fr;
     align-items: center;
     justify-items: center;
     justify-content: center;
+    padding-bottom: 0%;
 }
 #carousel {
     grid-row: 1 / 2;
@@ -37,12 +38,14 @@ body{
     --position: 3;
     pointer-events: none;
 }
-.checkmark {
+.Sponsors_card_body .checkmark {
     height: 20px;
     width: 20px;
     background-color: #A198DF;
     border-radius: 50%;
     pointer-events: none;
+    margin-top: 0;
+    position: relative;
 }
 div.item {
     position: absolute;

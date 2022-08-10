@@ -1,6 +1,8 @@
 // components
 import BaseLayout from "./layout"
 import LeerMas from "./leerMas"
+import Sponsors from "./sponsors"
+import Sponsors2 from "./sponsors2"
 // styles
 import "../styles/home/css/home.css"
 // IMGS
@@ -198,9 +200,7 @@ function Home() {
 
 */}
 
-          
-
-
+          <Sponsors type="exclusive"/>
  {/*
           <section id="talleres">
             <h2> Talleres </h2>
@@ -318,6 +318,8 @@ function Home() {
             <LeerMas type="interno" link="Visitas técnicas" />
           </section>
 
+          <Sponsors type="premium"/>
+
           <section id="hackaton">
             <h2> Hackaton </h2>
             <article id="1">
@@ -348,6 +350,9 @@ function Home() {
             </article>
             <LeerMas type="interno" link="Feria de empleo" />
           </section>
+
+          <Sponsors type="gold"/>
+
         </main>
       </BaseLayout>
     </div>
