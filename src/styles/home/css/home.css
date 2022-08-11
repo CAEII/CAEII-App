@@ -110,10 +110,14 @@ article .img{
     
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 1fr);
     position: absolute;
-}
 
+    /* margin-top: 30px; */
+}
+#menu li{
+    height: 97px;
+}
 
 #uno, #seis{
     grid-column: 5/13;
@@ -220,7 +224,7 @@ article h3{
     }
     li{
         margin-top: 0;
-        height: 75px;
+        height: 97px;
     }
     #menu{
         grid-column: 1/2;
@@ -311,6 +315,14 @@ article h3{
     }
     #estaciones .derecha *{
         text-align: left;
+    }
+
+    #hackaton, #feria{
+        grid-row: 6;
+    }
+
+    #visitas{
+        grid-column: 1/3;
     }
 }
 

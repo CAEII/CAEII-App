@@ -7,7 +7,6 @@
 }
 
 .sections_navbar{
-    height: 20vh;
     background-color: var(--fondoTituloTargeta);
     display: flex;
     justify-content: space-evenly;
@@ -20,15 +19,15 @@
     height: 0px;
 }
 .navbar_radio{
-    height: 140px;
-    width: 70px;
+    height: 60px;
+    width: 60px;
     position: absolute;
     pointer-events: all;
     z-index: 1;
 }
 .sections_navbar .navbutton{
-    height: 80px;
-    width: 70px;
+    height: 70px;
+    width: 50px;
     display: flex;
     align-items: center;
     /* justify-content: center; */
@@ -43,9 +42,8 @@
     z-index: 3;
 }
 .checkmark {
-    height: 73px;
-    width: 73px;
-    margin-top: 33px;
+    height: 60px;
+    width: 60px;
     position: absolute;
     background-color: #A198DF;
     border-radius: 50%;
@@ -56,13 +54,35 @@
     background-color: #464099;
 }
 
+.info_card_title{
+    background-color: var(--fondoTituloTargeta);
+    height: 90px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.info_card_text{
+    padding: 40px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.info_card#info_card_n0 p {
+    text-align: center;
+    margin-top: 5%;
+}
+.info_card#info_card_n0{
+    min-height: auto;
+}
 .info_card{
     min-height: 300px;
     border-radius: 50px;
     background-color: var(--boton_input);
-    padding: 40px;
+    padding-bottom: 40px;
     margin: 5px;
     margin-bottom: 100px;
+    overflow: hidden;
 }
 .info_card_circle {
     width: 40vw;
@@ -86,7 +106,7 @@
 }
 
 .info_card h3{
-    font-size: 1.4rem;
+    font-size: 1.3rem;
 }
 
 .info_card p{
@@ -120,6 +140,14 @@
     height: 40px;
     width: 40px;
 }
+
+.cards_container#Visitas_técnicas p{
+   margin: 0;
+}
+.cards_container#Visitas_técnicas .info_card_title{
+  height: 60px;
+}
+
 
 
 @media (min-width: 1024px) {

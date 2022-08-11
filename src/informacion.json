@@ -76,6 +76,20 @@
                 "title": "Metalmecánica",
                 "info": [
                     {
+                        "title": "Metalmecánica",
+                        "img": "",
+                        "short": "Es el sector que comprende las maquinarias industriales y las herramientas proveedoras a las demás industrias metálicas.",
+                        "desciption": "Es el sector que comprende las maquinarias industriales y las herramientas proveedoras a las demás industrias metálicas. Se relaciona estrechamente con la industria automotriz, mecánica, de equipos industriales y eléctrica. Ideal para vivir una experiencia a gran nivel industrial",
+                        "items":[],
+                        "links": [
+                            {
+                                "type": "",
+                                "link": "",
+                                "icono": ""
+                            }
+                        ]
+                    },
+                    {
                         "title": "IMPSA",
                         "img": "/imgs/Visitas Técnicas/IMPSA.jpg",
                         "short": "Empresa que ofrece soluciones integrales para la generación de energía a partir de recursos renovables...",
@@ -95,25 +109,6 @@
                             {
                                 "type": "Instagram",
                                 "link": "https://www.instagram.com/impsaoficial/",
-                                "icono": "/imgs/iconos/instagram.png"
-                            }
-                        ]
-                    },
-                    {
-                        "title": "Log Metal",
-                        "img": "/imgs/Visitas Técnicas/Log Metal.png",
-                        "short": "",
-                        "desciption": "LOGMETAL SRL es una empresa líder en la construcción industrial, nace en el año 2005 como fabricante de estructuras metálicas. Los servicios que ofrece actualmente abarcan desde el diseño y la ingeniería hasta la fabricación, montaje y ejecución integral de los proyectos con obras a lo largo y ancho de toda la Argentina.",
-                        "items":[],
-                        "links": [
-                            {
-                                "type": "Sitio web",
-                                "link": "https://logmetal.com.ar/",
-                                "icono": "/imgs/iconos/web.png"
-                            },
-                            {
-                                "type": "Instagram",
-                                "link": "https://www.instagram.com/logmetalsrl/",
                                 "icono": "/imgs/iconos/instagram.png"
                             }
                         ]
@@ -181,6 +176,20 @@
                 "title": "Alimenticia",
                 "info": [
                     {
+                        "title": "Alimenticia",
+                        "img": "",
+                        "short": "Se verán todos los procesos de fabricación del producto desde su inicio hasta la finalización de este.",
+                        "desciption": "Se verán todos los procesos de fabricación del producto desde su inicio hasta la finalización de este. Si definitivamente te sentís identificado con este sector, debes elegirlo para tu visita técnica",
+                        "items":[],
+                        "links": [
+                            {
+                                "type": "",
+                                "link": "",
+                                "icono": ""
+                            }
+                        ]
+                    },
+                    {
                         "title": "Chocolezza",
                         "img": "/imgs/Visitas Técnicas/Chocolezza.jpg",
                         "short": "Empresa familiar que produce alfajores y chocolates artesanales que en la actualidad produce más de 40 variedades de productos.",
@@ -223,6 +232,20 @@
             {
                 "title": "Servicios",
                 "info": [
+                    {
+                        "title": "Servicios",
+                        "img": "",
+                        "short": "En este sector tenés la posibilidad de experimentar y conocer diferentes empresas de distintos servicios de la provincia.",
+                        "desciption": "En este sector tenés la posibilidad de experimentar y conocer diferentes empresas de distintos servicios de la provincia, con gran trayectoria que nos van a brindar nuevos conocimientos y nos enseñarán sus diferentes oficios dependiendo de la especialidad de cada una de ellas.",
+                        "items":[],
+                        "links": [
+                            {
+                                "type": "",
+                                "link": "",
+                                "icono": ""
+                            }
+                        ]
+                    },
                     {
                         "title": "Andesmar Cargas",
                         "img": "/imgs/Visitas Técnicas/Andesmar Cargas.png",
@@ -295,6 +318,20 @@
                 "title": "Mediombiental",
                 "info": [
                     {
+                        "title": "Medioambiente",
+                        "img": "",
+                        "short": "Contribuyen al desarrollo sostenible del sector agropecuario, agroalimentario y agroindustrial con criterios de sustentabilidad ambiental.",
+                        "desciption": "Contribuyen al desarrollo sostenible del sector agropecuario, agroalimentario y agroindustrial con criterios de sustentabilidad ambiental. Si te interesa todo lo relacionado al medioambiente, acá tenes tu lugar!",
+                        "items":[],
+                        "links": [
+                            {
+                                "type": "",
+                                "link": "",
+                                "icono": ""
+                            }
+                        ]
+                    },
+                    {
                         "title": "Centro de Reciclaje de Guaymallen",
                         "img": "/imgs/Visitas Técnicas/Centro de Reciclaje de Guaymallen.png",
                         "short": "Planta de tratamiento de residuos secos separados en origen, que se constituye a la vez como un espacio educativo...",
@@ -327,6 +364,20 @@
             {
                 "title": "Vitivinícola/cervecera",
                 "info": [
+                    {
+                        "title": "Vitivinícola-cervecera",
+                        "img": "",
+                        "short": "Comprende la elaboración del vino y la cerveza.",
+                        "desciption": "Comprende la elaboración del vino y la cerveza. Si venís a Mendoza no podes perderte la posibilidad de visitar empresas tan características como las de este sector.",
+                        "items":[],
+                        "links": [
+                            {
+                                "type": "",
+                                "link": "",
+                                "icono": ""
+                            }
+                        ]
+                    },
                     {
                         "title": "FeCoViTa",
                         "img": "/imgs/Visitas Técnicas/FeCoViTa.jpg",
@@ -362,6 +413,25 @@
                                 "type": "Linkedin",
                                 "link": "https://www.linkedin.com/company/r%C3%B8dder-brewing-company/about/",
                                 "icono": "/imgs/iconos/linkedin.png"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "Tecnología",
+                "info": [
+                    {
+                        "title": "Tecnología",
+                        "img": "",
+                        "short": "En la actualidad, hay muchos ingenieros industriales que trabajan en la gestión de proyectos por eso nos gustaría enseñarte este rubro.",
+                        "desciption": "En la actualidad, hay muchos ingenieros industriales que trabajan en la parte de gestión de proyectos, metodologías ágiles, análisis de datos, entre otras cosas. Y nos gustaría poder enseñarte todas las herramientas y posibilidades que hay en este rubro. A través de dinámicas con clientes reales de las empresas, podrás descubrir un nuevo enfoque en tu carrera profesional.",
+                        "items":[],
+                        "links": [
+                            {
+                                "type": "",
+                                "link": "",
+                                "icono": ""
                             }
                         ]
                     }
@@ -413,7 +483,7 @@
                     {
                         "title": "Tomas Karagozian",
                         "img": "/imgs/magistrales/Tomas Karagozian.jpg",
-                        "disertante": "Damián Pedraza",
+                        "disertante": "",
                         "short": "",
                         "desciption": "Fundador de Mundo Descuento, comunidad de ofertas y descuentos. Organizador de “Jornadas de Justicia Laboral por el Desarrollo Industrial”. Con el objetivo de tratar el Impacto de la Litigiosidad Laboral en el Desarrollo Industrial, desde la perspectiva de funcionarios políticos, empresarios, sindicalistas y jueces. Primer Jornada realizada en La Rioja en el año 2016 Segunda Jornada realizada en Hotel Palace Alvear de Buenos Aires en el año 2017.",
                         "items":[],
@@ -446,9 +516,9 @@
                 "title": "Ingeniería del Mañana",
                 "info": [
                     {
-                        "title": "El Traductor de Ingeniería",
+                        "title": "Damián Pedraza",
                         "img": "/imgs/magistrales/El traductor de ingenieria.jpg",
-                        "disertante": "Damián Pedraza",
+                        "disertante": "",
                         "short": "",
                         "desciption": "Es un creador de contenido educativo, diseñador audiovisual entusiasta, docente e ingeniero electrónico graduado de la Universidad Nacional de La Plata, Argentina. Actualmente se dedica a tiempo completo a la creación de videos en YouTube. Su canal, ''El Traductor de Ingeniería'', ya cuenta con más de 1 millón de suscriptores y más de 50 millones de visualizaciones y está posicionado como uno de los canales educativos más grandes de Argentina. En sus videos enseña conceptos de ciencias exactas, como matemática y física. Aborda las temáticas de manera provocativa, promoviendo el cuestionamiento de los métodos y estrategias de enseñanza y aprendizaje actuales. Todo su trabajo está posado sobre la idea del desarrollo intelectual del estudiante, más que el sólo aprendizaje de contenidos o la mera aprobación de exámenes. Sostiene que ''más importante que aprobar es aprender; pero aún más importante que aprender, es pensar''.",
                         "items":[],
@@ -471,7 +541,7 @@
                         ]
                     },
                     {
-                        "title": "Reflexión sobre las prácticas docentes en redes",
+                        "title": "''El Traductor de Ingeniería'' reflexiona sobre las prácticas docentes en redes",
                         "img": "",
                         "disertante": "",
                         "short": "",
