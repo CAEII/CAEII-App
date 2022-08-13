@@ -164,7 +164,8 @@ function Home() {
 
           <section id="conferencias_1">
             <h2> {json[2].category} </h2>
-            <article id="1">
+            <article id="1"  className="derecha">
+               {/* este no tiene que ser un className "derecaha" */}
               <h3> {json[2].data[0].info[0].title} </h3>
               <p> {json[2].data[0].info[1].title} </p>
               <div class="img">
@@ -174,7 +175,7 @@ function Home() {
                 </div>
               </div>
             </article>
-            <article id="2" className="derecha">
+            {/* <article id="2" className="derecha">
               <h3> {json[2].data[1].info[0].title} </h3>
               <p> {json[2].data[1].info[1].title}  </p>
               <div className="img">
@@ -183,7 +184,7 @@ function Home() {
                   <div className="planet"></div>
                 </div>
               </div>
-            </article>
+            </article> */}
             <article id="3">
               <h3> {json[2].data[2].info[0].title} </h3>
               <p> {json[2].data[2].info[1].title} </p>
@@ -306,8 +307,7 @@ function Home() {
               <p className="desktop"> {json[1].data[5].info[0].desciption} </p> {/* Si ocupa toda la pantalla debe ir la descripción entera */}
               <div className="img">
                 <div className="imgOrbit">
-                {/* {json[1].data[4].info[1].img} */}
-                  <img src="" alt="visitas 2" />
+                  <img src={json[1].data[5].info[1].img} alt="visitas 2" />
                   <div className="planet"></div>
                 </div>
               </div>

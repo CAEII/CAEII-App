@@ -434,6 +434,30 @@
                                 "icono": ""
                             }
                         ]
+                    },
+                    {
+                        "title": "Globant",
+                        "img": "/imgs/Visitas Técnicas/globant.jpg",
+                        "short": "",
+                        "desciption": "Cuatro amigos reunidos en un bar. Así comenzó nuestra historia en 2003. Ellos compartían un sueño común que seguimos desarrollando: convertirnos en la mejor compañía que ofrece transformaciones profundas para las organizaciones, al tiempo que genera oportunidades globales de carrera para los profesionales de TI en todo el mundo.",
+                        "items":[],
+                        "links": [
+                            {
+                                "type": "Instagram",
+                                "link": "https://www.instagram.com/globant/",
+                                "icono": "/imgs/iconos/instagram.png"
+                            }, 
+                            {
+                                "type": "Sitio web",
+                                "link": "https://www.globant.com/es",
+                                "icono": "/imgs/iconos/web.png"
+                            },  
+                            {
+                                "type": "Linkedin",
+                                "link": "https://www.linkedin.com/company/globant/?originalSubdomain=es",
+                                "icono": "/imgs/iconos/linkedin.png"
+                            }
+                        ]
                     }
                 ]
             }
