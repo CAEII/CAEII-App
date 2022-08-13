@@ -55,12 +55,12 @@ export default function HeaderBar() {
 
                 {/* { UserLoged === true ? <Perfil/> : <Login/> } */}
 
-                <li>
+                {/* <li>
                   <div className="linea">
                     <a href="https://bit.ly/3MXGBeJ">REGISTRARSE</a>
                     <div className="line_container"><div className="line" /></div>
                   </div>
-                </li>
+                </li> */}
                 <li>
                   <div className="linea">
                     <a href="/nosotros">NOSOTROS</a>
@@ -94,12 +94,12 @@ export default function HeaderBar() {
 
             {/* { UserLoged === true ? <Perfil/> : <Login/> } */}
 
-            <li>
+           {/*  <li>
               <div className="linea">
                 <a href="https://bit.ly/3MXGBeJ">REGISTRARSE</a>
                 <div className="line_container"><div className="line" /></div>
               </div>
-            </li>
+            </li> */}
             <li>
               <div className="linea">
                 <a href="/nosotros">NOSOTROS</a>

@@ -131,7 +131,7 @@ export default function Nosotros() {
                 <div className="link">
                   <div className="linea">
                     <Link to="/info/Estaciones">{" Ingeniería del mañana >"}</Link>
-                    <div className="line_container"><div className="line"></div></div>
+                    <div class="line_container Ingeniería_del_mañana"><div class="line"></div></div>
                   </div>
                 </div>
 
@@ -152,9 +152,13 @@ export default function Nosotros() {
             <div className="info" data-aos="fade-up">
               <h2> ¿Cuándo y dónde? </h2>
               <p>
-                En la ciudad de Mendoza, desde el 25 hasta el 28 de agosto. Se desarrollarán varias actividades en diferentes lugares de la ciudad.
+                En la ciudad de Mendoza, desde el 25 hasta el 28 de agosto. Todas las charlas y talleres se desarrollarán en el Centro de congresos y exposiciones Emilio Civit, pero también habrá varias actividades en diferentes lugares de la capital.
               </p>
-              <h2> ¿Precio? </h2>
+              <br/> 
+              <p>
+                <strong>¡Ingresá a tu perfil y revisá el mapa!</strong>
+              </p>
+              {/* <h2> ¿Precio? </h2>
               <p>
                 El precio para la tercer fecha de inscripción es de $12.990. El segundo periodo de inscripción será del 29 julio a las 17:00 hs al 03 agosto a las 20:00 hs.
                 <br /> <strong> ¡Últimos cupos disponibles! </strong>
@@ -171,28 +175,25 @@ export default function Nosotros() {
               {/* <p>
               <strong>Las inscripciones ya cerraron.</strong>
             </p>
-            <br/> */}
-              <p>
-                Si tenés tu entrada, pronto podrás acceder a tu perfil y encontrar toda la información que necesitarás para vivir al máximo el congreso más grande del año.
-              </p>
+            
               <br />
               <p>
                 <strong>Si aún no tenés tu entrada, ¿qué estás esperando?</strong>
               </p>
-              {/*
-            <div className="button despegue">
-              <p>
-                <i>Próximamente</i>
-              </p>
-              <div className="circle">        
-                <div class="rocket_container">
-                  <img src={cohete} alt="cohete"></img>
+*/}
+              <div className="button despegue">
+                <p>
+                  <i>Próximamente</i>
+                </p>
+                <div className="circle">
+                  <div class="rocket_container">
+                    <img src={cohete} alt="cohete"></img>
+                  </div>
+                  <div className="circle2"></div>
                 </div>
-                <div className="circle2"></div>
               </div>
-            </div>
-            */}
-              <div className="button">
+
+              {/* <div className="button">
                 <a href="https://inscripciones.aareii.org.ar/index.php/register" className="register_us">
                   <p>
                     Registrate
@@ -204,7 +205,7 @@ export default function Nosotros() {
                     <div className="circle2"></div>
                   </div>
                 </a>
-              </div>
+              </div> */}
             </div>
             <div className="nosotros_img_conteiner" data-aos="fade-up">
               <img src={como_participar} className="img_representativa" alt="imagen representativa" />
