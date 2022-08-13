@@ -25,73 +25,74 @@ function Home() {
       title: `<h3 style='color:#FFFFFF; font-weight: lighter'>Qué mal... Las inscripciones ya cerraron.</h3>`,
       background: 'rgb(70, 64, 153)', 
       iconColor: '#FFFFFF'
-  })
+    })
   }
 
   return (
     <div className="App" id="home">
       <BaseLayout>
         <main >
-          <div class="title">
+          <div className="title">
             <img src={title} alt="Logo caeii"></img>
           </div>
           <section id="menu">
-            <div class="sistema_solar">
-              <div class="sol"></div>
-              <div class="fondo"></div>
-              <div class="orbits orbit_1">
-                <div class="planet_container">
-                  <div class="planet"></div>
+            <div className="sistema_solar">
+              <div className="sol"></div>
+              <div className="fondo"></div>
+              <div className="orbits orbit_1">
+                <div className="planet_container">
+                  <div className="planet"></div>
                 </div>
               </div>
-              <div class="orbits orbit_2">
-                <div class="planet_container">
-                  <div class="planet"></div>
+              <div className="orbits orbit_2">
+                <div className="planet_container">
+                  <div className="planet"></div>
                 </div>
               </div>
-              <div class="orbits orbit_3">
-                <div class="planet_container">
-                  <div class="planet"></div>
+              <div className="orbits orbit_3">
+                <div className="planet_container">
+                  <div className="planet"></div>
                 </div>
               </div>
             </div>
             <ul>
               <li id="uno">
-                <div class="linea">
+                <div className="linea">
                   <a href="#conferencias_1">Conferencias Magistrales</a>
-                  <div class="line_container"><div class="line" /></div>
+                  <div className="line_container"><div className="line" /></div>
                 </div>
               </li>
               <li id="dos">
-                <div class="linea">
+                <div className="linea">
                   <a href="#visitas">Visitas técnicas</a>
-                  <div class="line_container"><div class="line" /></div>
+                  <div className="line_container"><div className="line" /></div>
                 </div>
               </li>
-              <li id="tres">
-                <div class="linea">
+              {/* <li id="tres">
+                <div className="linea">
                   <a href="#talleres">Talleres</a>
-                  <div class="line_container"><div class="line" /></div>
+                  <div className="line_container"><div className="line" /></div>
+                </div>
+              </li> */}
+              <li id="tres">
+                <div className="linea">
+                  <a href="#hackaton">Hackaton</a>
+                  <div className="line_container"><div className="line" /></div>
                 </div>
               </li>
               <li id="cuatro">
-                <div class="linea">
-                  <a href="#hackaton">Hackaton</a>
-                  <div class="line_container"><div class="line" /></div>
+                <div className="linea">
+                  <a href="#feria">Feria de empleo</a>
+                  <div className="line_container"><div className="line" /></div>
                 </div>
               </li>
               <li id="cinco">
-                <div class="linea">
+                <div className="linea">
                   <a href="#conferencias_2">Conferencias profesionales</a>
-                  <div class="line_container"><div class="line" /></div>
+                  <div className="line_container"><div className="line" /></div>
                 </div>
               </li>
-              <li id="seis">
-                <div class="linea">
-                  <a href="#feria">Feria de empleo</a>
-                  <div class="line_container"><div class="line" /></div>
-                </div>
-              </li>
+              
             </ul>
           </section>
 
@@ -99,15 +100,15 @@ function Home() {
 
           <section id="registrarse" /* onClick={handleClickRegister} */>
             <h1>¿Estás preparado para el despegue?</h1>
-            <div class="button">
+            <div className="button">
               <a href="https://inscripciones.aareii.org.ar/index.php/register" class="hyperspan">
-                <div class="circle">
-                  <div class="rocket_container">
+                <div className="circle">
+                  <div className="rocket_container">
                     <img src={cohete} alt="cohete caeii"></img>
                   </div>
-                  <div class="circle2"></div>
+                  <div className="circle2"></div>
                 </div>
-                <div class="texto"> REGISTRARSE </div>
+                <div className="texto"> REGISTRARSE </div>
               </a>
             </div>
           </section>
@@ -117,41 +118,41 @@ function Home() {
           <section id="estaciones">
             <h2> Estaciones </h2>
             <article id="1">
-              <h3 class="movile"> {json[0].data[0].info[0].mobile} </h3>
-              <h3 class="desktop"> {json[0].data[0].info[0].title} </h3>
+              <h3 className="movile"> {json[0].data[0].info[0].mobile} </h3>
+              <h3 className="desktop"> {json[0].data[0].info[0].title} </h3>
               <p> {json[0].data[0].info[0].short} </p>
-              <div class="img">
-                <div class="imgOrbit">
+              <div className="img">
+                <div className="imgOrbit">
                   <img src={json[0].data[0].info[0].img} alt="Odisea estelar" />
                 </div>
               </div>
             </article>
-            <article id="2" class="derecha">
-              <h3 class="movile"> {json[0].data[0].info[1].mobile} </h3>
-              <h3 class="desktop"> {json[0].data[0].info[1].title} </h3>
+            <article id="2" className="derecha">
+              <h3 className="movile"> {json[0].data[0].info[1].mobile} </h3>
+              <h3 className="desktop"> {json[0].data[0].info[1].title} </h3>
               <p> {json[0].data[0].info[1].short} </p>
-              <div class="img">
-                <div class="imgOrbit">
+              <div className="img">
+                <div className="imgOrbit">
                   <img src={json[0].data[0].info[1].img} alt="Logística 4.0" />
                 </div>
               </div>
             </article>
             <article id="3">
-              <h3 class="movile"> {json[0].data[0].info[2].mobile} </h3>
-              <h3 class="desktop"> {json[0].data[0].info[2].title} </h3>
+              <h3 className="movile"> {json[0].data[0].info[2].mobile} </h3>
+              <h3 className="desktop"> {json[0].data[0].info[2].title} </h3>
               <p> {json[0].data[0].info[2].short} </p>
-              <div class="img">
-                <div class="imgOrbit">
+              <div className="img">
+                <div className="imgOrbit">
                   <img src={json[0].data[0].info[2].img} alt="Ingeniería del mañana" />
                 </div>
               </div>
             </article>
-            <article id="4" class="derecha">
-              <h3 class="movile"> {json[0].data[0].info[3].mobile} </h3>
-              <h3 class="desktop"> {json[0].data[0].info[3].title} </h3>
+            <article id="4" className="derecha">
+              <h3 className="movile"> {json[0].data[0].info[3].mobile} </h3>
+              <h3 className="desktop"> {json[0].data[0].info[3].title} </h3>
               <p> {json[0].data[0].info[3].short} </p>
-              <div class="img">
-                <div class="imgOrbit">
+              <div className="img">
+                <div className="imgOrbit">
                   <img src={json[0].data[0].info[3].img} alt="Desarrollo urbano sustentable" />
                 </div>
               </div>
@@ -161,84 +162,52 @@ function Home() {
 
 
 
-          {/*<section id="conferencias_1">
+          <section id="conferencias_1">
             <h2> {json[2].category} </h2>
-            <article id="1">
+            <article id="1"  className="derecha">
+               {/* este no tiene que ser un className "derecaha" */}
               <h3> {json[2].data[0].info[0].title} </h3>
-              <p> {json[2].data[0].info[0].disertante} </p>
+              <p> {json[2].data[0].info[1].title} </p>
               <div class="img">
                 <div class="imgOrbit">
                   <img src={json[2].data[0].info[0].img} alt="Conferencia 1" />
-                  <div class="planet"></div>
+                  <div className="planet"></div>
                 </div>
               </div>
             </article>
-             <article id="2" class="derecha">
-              <h3> #conferencias_1 #2 </h3>
-              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo dapibus purus.  </p>
-              <div class="img">
-                <div class="imgOrbit">
-                  <img src={placeholder2} alt="Conferencia 2" />
-                  <div class="planet"></div>
+            {/* <article id="2" className="derecha">
+              <h3> {json[2].data[1].info[0].title} </h3>
+              <p> {json[2].data[1].info[1].title}  </p>
+              <div className="img">
+                <div className="imgOrbit">
+                  <img src={json[2].data[1].info[0].img} alt="Conferencia 2" />
+                  <div className="planet"></div>
                 </div>
               </div>
-            </article>
+            </article> */}
             <article id="3">
-              <h3> #conferencias_1 #3 </h3>
-              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo dapibus purus.  </p>
-              <div class="img">
-                <div class="imgOrbit">
-                  <img src={placeholder} alt="Conferencia 3" />
-                  <div class="planet"></div>
+              <h3> {json[2].data[2].info[0].title} </h3>
+              <p> {json[2].data[2].info[1].title} </p>
+              <div className="img">
+                <div className="imgOrbit">
+                  <img src={json[2].data[2].info[0].img} alt="Conferencia 3" />
+                  <div className="planet"></div>
                 </div>
               </div>
             </article> 
+            <article id="4" className="derecha">
+              <h3> {json[2].data[3].info[0].title} </h3>
+              <p> {json[2].data[3].info[1].title}  </p>
+              <div className="img">
+                <div className="imgOrbit">
+                  <img src={json[2].data[3].info[0].img} alt="Conferencia 2" />
+                  <div className="planet"></div>
+                </div>
+              </div>
+            </article>
             <LeerMas type="interno" link="Conferencias magistrales" />
           </section> 
 
-*/}
-
-          
-
-
- {/*
-          <section id="talleres">
-            <h2> Talleres </h2>
-            <article id="1">
-              <h3> #talleres #1 </h3>
-              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo dapibus purus.  </p>
-              <div class="img">
-                <div class="imgOrbit">
-                  <img src={placeholder} alt="talleres 1" />
-                  <div class="planet"></div>
-                </div>
-              </div>
-            </article>
-            <article id="2" class="derecha">
-              <h3> #talleres #2 </h3>
-              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo dapibus purus.  </p>
-              <div class="img">
-                <div class="imgOrbit">
-                  <img src={placeholder2} alt="talleres 2" />
-                  <div class="planet"></div>
-                </div>
-              </div>
-            </article>
-            <article id="3">
-              <h3> #talleres #3 </h3>
-              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo dapibus purus.  </p>
-              <div class="img">
-                <div class="imgOrbit">
-                  <img src={placeholder} alt="talleres 3" />
-                  <div class="planet"></div>
-                </div>
-              </div>
-            </article>
-            <LeerMas type="interno" link="" />
-          </section> 
-
-
-*/}          
            
           <section id="conferencias_2">
             <h2> Conferencias profesionales </h2>
@@ -247,10 +216,10 @@ function Home() {
                 <h3> {json[3].data[1].info[0].title} </h3>
                 <p> {json[3].data[1].info[0].disertante} </p>
               </div>
-              <div class="img">
-                <div class="imgOrbit">
+              <div className="img">
+                <div className="imgOrbit">
                     <img src={json[3].data[1].info[0].img} alt="Conferencia 1" />
-                  <div class="planet"></div>
+                  <div className="planet"></div>
                 </div>
               </div>
             </article>
@@ -259,62 +228,91 @@ function Home() {
                 <h3> {json[3].data[3].info[0].title} </h3>
                 <p> {json[3].data[3].info[0].disertante} </p>
               </div>
-              <div class="img">
-                <div class="imgOrbit">
+              <div className="img">
+                <div className="imgOrbit">
                     <img src={json[3].data[3].info[0].img} alt="Conferencia 1" />
-                  <div class="planet"></div>
+                  <div className="planet"></div>
                 </div>
               </div>
             </article>
-            {/* 
-            <article id="3">
-              <h3> #conferencias_2 #3 </h3>
-              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo dapibus purus.  </p>
-              <div class="img">
-                <div class="imgOrbit">
-                  <img src={placeholder} alt="Conferencia 3" />
-                  <div class="planet"></div>
-                </div>
-              </div>
-            </article> */}
             <LeerMas type="interno" link="Conferencias profesionales" />
           </section>
 
           <section id="visitas">
             <h2> {json[1].category} </h2>
+
             <article id="1">
               <h3> {json[1].data[0].info[0].title} </h3>
               <p class="movile"> {json[1].data[0].info[0].short} </p>
-              <p class="desktop"> {json[1].data[0].info[0].short} </p> {/* Si ocupa toda la pantalla debe ir la descripción entera */}
+              <p class="desktop"> {json[1].data[0].info[0].desciption} </p> 
               <div class="img">
                 <div class="imgOrbit">
-                  <img src={json[1].data[0].info[0].img} alt="visitas 1" />
-                  <div class="planet"></div>
+                  <img src={json[1].data[0].info[1].img} alt="visitas 1" />
+                  <div className="planet"></div>
                 </div>
               </div>
             </article>
+
             <article id="2" class="derecha">
-              <h3> {json[1].data[1].info[1].title} </h3>
-              <p class="movile"> {json[1].data[1].info[1].short} </p>
-              <p class="desktop"> {json[1].data[1].info[1].short} </p> {/* Si ocupa toda la pantalla debe ir la descripción entera */}
-              <div class="img">
-                <div class="imgOrbit">
+              <h3> {json[1].data[1].info[0].title} </h3>
+              <p className="movile"> {json[1].data[1].info[0].short} </p>
+              <p className="desktop"> {json[1].data[1].info[0].desciption} </p> {/* Si ocupa toda la pantalla debe ir la descripción entera */}
+              <div className="img">
+                <div className="imgOrbit">
                   <img src={json[1].data[1].info[1].img} alt="visitas 2" />
-                  <div class="planet"></div>
+                  <div className="planet"></div>
                 </div>
               </div>
             </article>
-            {/* <article id="3">
-              <h3> {json[1].data[3].info[0].title} </h3>
-              <p class="movile"> {json[1].data[3].info[0].short} </p>
-              <p class="desktop"> {json[1].data[3].info[0].desciption} </p>
-              <div class="img">
-                <div class="imgOrbit">
-                  <img src={json[1].data[3].info[0].img} alt="visitas 3" />
-                  <div class="planet"></div>
+
+            <article id="3">
+              <h3> {json[1].data[2].info[0].title} </h3>
+              <p className="movile"> {json[1].data[2].info[0].short} </p>
+              <p className="desktop"> {json[1].data[2].info[0].desciption} </p>
+              <div className="img">
+                <div className="imgOrbit">
+                  <img src={json[1].data[2].info[1].img} alt="visitas 3" />
+                  <div className="planet"></div>
                 </div>
               </div>
-            </article> */}
+            </article>
+
+            <article id="4" class="derecha">
+              <h3> {json[1].data[3].info[0].title} </h3>
+              <p className="movile"> {json[1].data[3].info[0].short} </p>
+              <p className="desktop"> {json[1].data[3].info[0].desciption} </p> {/* Si ocupa toda la pantalla debe ir la descripción entera */}
+              <div className="img">
+                <div className="imgOrbit">
+                  <img src={json[1].data[3].info[1].img} alt="visitas 2" />
+                  <div className="planet"></div>
+                </div>
+              </div>
+            </article>
+
+            <article id="5">
+              <h3> {json[1].data[4].info[0].title} </h3>
+              <p className="movile"> {json[1].data[4].info[0].short} </p>
+              <p className="desktop"> {json[1].data[4].info[0].desciption} </p>
+              <div className="img">
+                <div className="imgOrbit">
+                  <img src={json[1].data[4].info[1].img} alt="visitas 3" />
+                  <div className="planet"></div>
+                </div>
+              </div>
+            </article>
+
+            <article id="6" class="derecha">
+              <h3> {json[1].data[5].info[0].title} </h3>
+              <p className="movile"> {json[1].data[5].info[0].short} </p>
+              <p className="desktop"> {json[1].data[5].info[0].desciption} </p> {/* Si ocupa toda la pantalla debe ir la descripción entera */}
+              <div className="img">
+                <div className="imgOrbit">
+                  <img src={json[1].data[5].info[1].img} alt="visitas 2" />
+                  <div className="planet"></div>
+                </div>
+              </div>
+            </article>
+
             <LeerMas type="interno" link="Visitas técnicas" />
           </section>
 
@@ -323,11 +321,11 @@ function Home() {
             <article id="1">
             <h3> {json[5].data[0].info[0].title} </h3>
               <p> {json[5].data[0].info[0].short} </p>
-              <div class="img">
-                <div class="imgOrbit">
+              <div className="img">
+                <div className="imgOrbit">
                   {/* <img src={hackaton} alt="Hackaton 1" /> */}
                   <img src="/imgs/hackaton.png" alt="Hackaton 1" />
-                  <div class="planet"></div>
+                  <div className="planet"></div>
                 </div>
               </div>
             </article>
@@ -339,10 +337,10 @@ function Home() {
             <article id="1">
               <h3> {json[6].data[0].info[0].title} </h3>
               <p> {json[6].data[0].info[0].short} </p>
-              <div class="img">
-                <div class="imgOrbit">
+              <div className="img">
+                <div className="imgOrbit">
                   <img src={feria} alt="feria 1" />
-                  <div class="planet"></div>
+                  <div className="planet"></div>
                 </div>
               </div>
             </article>

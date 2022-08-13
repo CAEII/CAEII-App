@@ -105,7 +105,7 @@ nav{
 .desktop_navbar ul{
     padding-top: 20px;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
 
     font-size: 1.3rem;
 }
@@ -464,15 +464,17 @@ footer{
 }
 
 /* SCROLLBAR */
-::-webkit-scrollbar {
+::-webkit-scrollbar:vertical {
     width: 10px;
 }
-::-webkit-scrollbar-track {
+::-webkit-scrollbar-track:vertical {
     background: var(--sol_planetas); 
 }
-::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb:vertical {
     background: var(--hamburger_scrolHandle_home);
 }
 ::-webkit-scrollbar-thumb:hover {
     background: var(--boton_input);
 }
+
+

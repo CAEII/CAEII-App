@@ -2,20 +2,20 @@
 import Cookies from 'universal-cookie';
 const cookies = new Cookies();
 // constantes
-const info_password = "kk"
+const info_password = "usuario"
 const info_user = "kk"
 const info_user_status = "admin"
 
 
 export default function login (user, password){
-    if (user === info_user && password === info_password) {
+    if (password === info_password) {
 
         const info_cookie = {
             user: user,
             status: info_user_status
         }
 
-        cookies.set('session', info_cookie, { path: '/' });
+        cookies.set('session', user, { path: '/' , maxAge: 5184000});
 
         console.log("usuario logueado con exito")
 

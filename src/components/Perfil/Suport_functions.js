@@ -1,5 +1,3 @@
-const axios = require('axios');
-
 // funcion para cambiar el color de una sala y activar el marcador de ser nesesario
 function status_color_flag(sala, sala_resaltada, colores) {
     if (sala_resaltada.salida === sala) {
@@ -125,12 +123,6 @@ function en_que_mapa(sala_salida, sala_llegada, listas_de_salas){
 
 
 
-function get_user_data(user) {
-    const url = "www.kk.com/" + user
-
-    return axios.get("https://dummy.restapiexample.com/api/v1/employees")
-}
-
 
 
 exports.status_color_flag = status_color_flag;
@@ -138,4 +130,3 @@ exports.Que_dia_es_hoy = Que_dia_es_hoy;
 exports.Asistencia = Asistencia;
 exports.en_que_mapa = en_que_mapa;
 exports.comparo_con_la_hora_actual = comparo_con_la_hora_actual;
-exports.get_user_data = get_user_data;

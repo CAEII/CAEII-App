@@ -10,12 +10,12 @@ export default function Modal({ children, IsOpen, SetIsOpen }) {
     }, [IsOpen])
 
     return(
-        <div id="myModal" class="modal" style={{display: Display}}>
-            <div class="modal-content">
-                <div class="modal-header">
-                    <span class="close" onClick={() => SetIsOpen(!IsOpen)}>&times;</span>
+        <div id="myModal" className="modal" style={{display: Display}}>
+            <div className="modal-content">
+                <div className="modal-header">
+                    <span className="close" onClick={() => SetIsOpen(!IsOpen)}>&times;</span>
                 </div>
-                <div class="modal-body">
+                <div className="modal-body">
                     {children}
                 </div>
             </div>

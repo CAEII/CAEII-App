@@ -21,7 +21,7 @@ function NavButton({title,setRubro}){
     const className = "navbutton " + title
     return (
         <div className={className}> 
-            <p className="nav_buttons_title"> {title.replace("/", " ")} </p> 
+            {/* <p className="nav_buttons_title"> {title.replace("/", " ")} </p>  */}
             <input type="radio" name="kk" className="navbar_radio" id={title} onClick={() => {setRubro(title)}}/> 
             <span className="checkmark"></span>          
         </div>

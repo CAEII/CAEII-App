@@ -10,7 +10,7 @@ export default function FooterContent() {
 
   const footer = (<footer>
       <Link to="/">
-        <div class="homecircle">
+        <div className="homecircle">
           <img src={homeIcon} alt="link al inicio" />
         </div>
       </Link>

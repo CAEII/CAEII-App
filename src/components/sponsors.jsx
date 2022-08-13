@@ -77,7 +77,7 @@ function SponsorsBody(props) {
     if (props.type === "gold"){
         // si el Props.type es igual a "gold" no paso ningun carrusel si no el img_container
         return (
-            <div class="img_container">
+            <div className="img_container">
                 <img src={PanAmerican} alt="Pan American Energy"></img>
                 <img src={UNCUYO} alt="universidad nacional de cuyo"></img>
                 <img src={UM} alt="Universidad de Mendoza"></img>
@@ -95,7 +95,7 @@ function SponsorsBody(props) {
         // si el Props.type es igual a "premium" o "exclusive" regreso el sponsors_card_body correspondiente
         return(
             <form action="">
-            <div class="Sponsors_card_body">
+            <div className="Sponsors_card_body">
                 <input type="radio" name="position" id="exclusive_1" checked={radio1} onClick={()=>{    // al hacer click en un radio button:
                     setcuentaStop(true);       // detengo el contador
                     setradio1(true);           // seteo el radio buton 1 en true    (checked=true en el html)
@@ -105,15 +105,15 @@ function SponsorsBody(props) {
                     setradio5(false);          // seteo el radio buton 5 en false   (checked=false en el html)
                     }}
                 />
-                <span class="checkmark"></span>
+                <span className="checkmark"></span>
                 <input type="radio" name="position" id="exclusive_2" checked={radio2} onClick={()=>{setcuentaStop(true);setradio1(false);setradio2(true);setradio3(false);setradio4(false);setradio5(false)}}/>
-                <span class="checkmark"></span>
+                <span className="checkmark"></span>
                 <input type="radio" name="position" id="exclusive_3" checked={radio3} onClick={()=>{setcuentaStop(true);setradio1(false);setradio2(false);setradio3(true);setradio4(false);setradio5(false)}}/>
-                <span class="checkmark"></span>
+                <span className="checkmark"></span>
                 <input type="radio" name="position" id="exclusive_4" checked={radio4} onClick={()=>{setcuentaStop(true);setradio1(false);setradio2(false);setradio3(false);setradio4(true);setradio5(false)}}/>
-                <span class="checkmark"></span>
+                <span className="checkmark"></span>
                 <input type="radio" name="position" id="exclusive_5" checked={radio5} onClick={()=>{setcuentaStop(true);setradio1(false);setradio2(false);setradio3(false);setradio4(false);setradio5(true)}}/>
-                <span class="checkmark"></span>
+                <span className="checkmark"></span>
 
                 <Carrucel type={props.type} />
             </div>
@@ -130,23 +130,23 @@ function Carrucel(props) {
         // si el type es premium envio dos imagesnes por item
         return (
             <div id="carousel">
-                <div class="item" >
+                <div className="item" >
                     <img src={PanAmerican} alt="Pan American Energy"></img>
                     <img src={UNCUYO} alt="universidad nacional de cuyo"></img>
                 </div>
-                <div class="item" >
+                <div className="item" >
                     <img src={PanAmerican} alt="Pan American Energy"></img>
                     <img src={UNCUYO} alt="universidad nacional de cuyo"></img>
                 </div>
-                <div class="item">
+                <div className="item">
                     <img src={PanAmerican} alt="Pan American Energy"></img>
                     <img src={UNCUYO} alt="universidad nacional de cuyo"></img>
                 </div>
-                <div class="item">
+                <div className="item">
                     <img src={PanAmerican} alt="Pan American Energy"></img>
                     <img src={UNCUYO} alt="universidad nacional de cuyo"></img>
                 </div>
-                <div class="item">
+                <div className="item">
                     <img src={PanAmerican} alt="Pan American Energy"></img>
                     <img src={UNCUYO} alt="universidad nacional de cuyo"></img>
                 </div>
@@ -157,19 +157,19 @@ function Carrucel(props) {
         // si el type es premium envio una imagesnes por item
         return(
             <div id="carousel">
-                <div class="item" id="item_1">
+                <div className="item" id="item_1">
                     <img src={PanAmerican} alt="Pan American Energy"></img>
                 </div>
-                <div class="item" id="item_2">
+                <div className="item" id="item_2">
                     <img src={UNCUYO} alt="universidad nacional de cuyo"></img>
                 </div>
-                <div class="item" id="item_3">
+                <div className="item" id="item_3">
                     <img src={UM} alt="Universidad de Mendoza"></img>
                 </div>
-                <div class="item" id="item_4">
+                <div className="item" id="item_4">
                     <img src={PanAmerican} alt="Pan American Energy"></img>
                 </div>
-                <div class="item" id="item_5">
+                <div className="item" id="item_5">
                     <img src={UNCUYO} alt="universidad nacional de cuyo"></img>
                 </div>
             </div>

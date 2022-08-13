@@ -31,15 +31,15 @@ export default function HeaderBar() {
       <div className="logo">
         <img src="/CAEII-App/imgs/aareii logo chico.png" alt="" />
       </div>
-        <div class="movile_navbar">
-          <div class="nav-container">
-            <input class="checkbox" type="checkbox" name="" id="" />
-            <div class="hamburger-lines">
-              <span class="line line1"></span>
-              <span class="line line2"></span>
-              <span class="line line3"></span>
+        <div className="movile_navbar">
+          <div className="nav-container">
+            <input className="checkbox" type="checkbox" name="" id="" />
+            <div className="hamburger-lines">
+              <span className="line line1"></span>
+              <span className="line line2"></span>
+              <span className="line line3"></span>
             </div>
-            <div class="menu-items">
+            <div className="menu-items">
               <ul>
                 <li className="logo_aareii_nav_movile_li">
                   <a href="https://bit.ly/3OsUra5">
@@ -47,69 +47,69 @@ export default function HeaderBar() {
                   </a>
                 </li>
                 <li>
-                  <div class="linea">
+                  <div className="linea">
                     <a href="/">INICIO</a>
-                    <div class="line_container"><div class="line" /></div>
+                    <div className="line_container"><div className="line" /></div>
                   </div>
                 </li>
 
                 {/* { UserLoged === true ? <Perfil/> : <Login/> } */}
 
-                <li>
-                  <div class="linea">
+                {/* <li>
+                  <div className="linea">
                     <a href="https://bit.ly/3MXGBeJ">REGISTRARSE</a>
-                    <div class="line_container"><div class="line" /></div>
+                    <div className="line_container"><div className="line" /></div>
                   </div>
-                </li>
+                </li> */}
                 <li>
-                  <div class="linea">
+                  <div className="linea">
                     <a href="/nosotros">NOSOTROS</a>
-                    <div class="line_container"><div class="line" /></div>
+                    <div className="line_container"><div className="line" /></div>
                   </div>
                 </li>
                 <li>
-                  <div class="linea">
+                  <div className="linea">
                     <a href="https://bit.ly/3OsUra5">AAREII</a>
-                    <div class="line_container"><div class="line" /></div>
+                    <div className="line_container"><div className="line" /></div>
                   </div>
                 </li>
                 <li>
-                  <div class="linea">
+                  <div className="linea">
                     <a href="https://bit.ly/3QuVI27">CONTACTO</a>
-                    <div class="line_container"><div class="line" /></div>
+                    <div className="line_container"><div className="line" /></div>
                   </div>
                 </li>
               </ul>
             </div>
           </div>
         </div>
-        <div class="desktop_navbar">
+        <div className="desktop_navbar">
           <ul>
             <li>
-              <div class="linea">
+              <div className="linea">
                 <a href="/">INICIO</a>
-                <div class="line_container"><div class="line" /></div>
+                <div className="line_container"><div className="line" /></div>
               </div>
             </li>
 
             {/* { UserLoged === true ? <Perfil/> : <Login/> } */}
 
-            <li>
-              <div class="linea">
+           {/*  <li>
+              <div className="linea">
                 <a href="https://bit.ly/3MXGBeJ">REGISTRARSE</a>
-                <div class="line_container"><div class="line" /></div>
+                <div className="line_container"><div className="line" /></div>
               </div>
-            </li>
+            </li> */}
             <li>
-              <div class="linea">
+              <div className="linea">
                 <a href="/nosotros">NOSOTROS</a>
-                <div class="line_container"><div class="line" /></div>
+                <div className="line_container"><div className="line" /></div>
               </div>
             </li>
             <li>
-              <div class="linea">
+              <div className="linea">
                 <a href="https://bit.ly/3QuVI27">CONTACTO</a>
-                <div class="line_container"><div class="line" /></div>
+                <div className="line_container"><div className="line" /></div>
               </div>
             </li>
             <li>
@@ -128,9 +128,9 @@ export default function HeaderBar() {
 function Login(){
   return(
     <li>
-      <div class="linea">
+      <div className="linea">
         <a href="/login"> INGRESAR </a>
-        <div class="line_container"><div class="line" /></div>
+        <div className="line_container"><div className="line" /></div>
       </div>
     </li>
   )
@@ -139,9 +139,9 @@ function Login(){
 function Perfil(){
   return(
     <li>
-      <div class="linea">
+      <div className="linea">
         <a href="/perfil"> PERFIL </a>
-        <div class="line_container"><div class="line" /></div>
+        <div className="line_container"><div className="line" /></div>
       </div>
     </li>
   )

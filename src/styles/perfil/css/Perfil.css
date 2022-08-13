@@ -75,7 +75,11 @@
 }
 .title_text{
     font-size: 1.5rem;
-
+    display: flex;
+    align-items: center;
+}
+.small_title_text{
+    font-size: 1.1rem;
     display: flex;
     align-items: center;
 }
@@ -145,7 +149,8 @@ th,td{
     background-color: rgba(196, 196, 1, 0.5);
 } */
 tr.Terminada{
-    background-color: rgba(39, 39, 39, 0.5);
+    /* background-color: rgba(39, 39, 39, 0.5); */
+    text-decoration:line-through
 }
 /* tr.Por_iniciar{
     background-color: rgba(172, 255, 47, 0.5);
@@ -155,6 +160,7 @@ tr.Terminada{
     padding: 15px;
     padding-left: 0;
     padding-right: 0;
+    max-width: 100px;
 }
 .textoLargo{
     font-size: 1rem;
@@ -318,10 +324,32 @@ iframe{
 }
 
 #perfil .lugar button{
-    height: 30px;
-    width: 60px;
-    font-size: 1rem;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    height: 50px;
+    width: 80px;
+    font-size: 0.8rem;
 } 
+
+#admin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#admin .select{
+    width: 70vw;
+}
+#admin h2, #admin .maps_button_container{
+    width: 100%;
+}
+#admin h3{
+    font-size: 1.5rem;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+
 
 @media (min-width: 1024px){
     /* PERFIL */
