@@ -6,6 +6,7 @@ import {useNavigate} from 'react-router-dom';
 import Cookies from 'universal-cookie';
 // functions
 import login from "./login_function"
+import kk from "./prueba_axios"
 // styles
 import "../../styles/login/login.css"
 import logoCaeiiDesktop from "../../styles/login/img/logo-caeii-desktop.svg"
@@ -44,10 +45,8 @@ export default function Login() {
     };
 
     useEffect(() => {
-        if (cookies.get('session')) {
-            navigate("/")
-        }
-    })
+        kk();
+    }, [])
 
     return (
         // <BaseLayout>
