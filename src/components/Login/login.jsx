@@ -4,6 +4,8 @@ import { useEffect } from 'react';
 import {useNavigate} from 'react-router-dom';
 // cookies
 import Cookies from 'universal-cookie';
+// axios
+import axios from "axios";
 // functions
 import login from "./login_function"
 import kk from "./prueba_axios"
@@ -20,9 +22,19 @@ export default function Login() {
     const [User, setUser] = useState('');
     const [password, setpassword] = useState('');
     const [autentification, setautentification] = useState(null);
-    const cookies = new Cookies();
+    const [Token, setToken] = useState(null)
 
+    const cookies = new Cookies();
     const navigate = useNavigate();
+
+    // get the token
+    useEffect(() => {
+        axios.get("https://inscripciones.aareii.org.ar/api/v1/csrf-cookie").then((Response) => {                                             // hago el get al endpoint
+            //cookies.set("token",Response.data.token)
+            console.log(Response) 
+            console.log(cookies.getAll())
+        })
+    }, [])
 
 
     const handleSubmit = event => {
