@@ -1,3 +1,5 @@
+// axios
+import axios from "axios"
 // cookies
 import Cookies from 'universal-cookie';
 const cookies = new Cookies();
@@ -8,6 +10,7 @@ const info_user_status = "admin"
 
 
 export default function login (user, password){
+  
     if (password === info_password) {
 
         const info_cookie = {
