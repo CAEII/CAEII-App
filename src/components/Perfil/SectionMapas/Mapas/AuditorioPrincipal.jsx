@@ -184,7 +184,7 @@ export default function PlantaBaja({ sala_resaltada, colores }) {
                     {"AUDITORIO "}
                 </text>
                 <text transform="translate(869.96 1258.34)" className="st7PlantaBaja st14">
-                    {"BUSTELO "}
+                    {"accenture "}
                 </text>
                 <text transform="translate(1709.435 1146.725)" className="st7PlantaBaja st15">
                     {"ACCESO"}

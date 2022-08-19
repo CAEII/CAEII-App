@@ -296,8 +296,8 @@ export default function Segundo_piso({ sala_resaltada, colores }) {
                 <text transform="translate(1232.984 393.238)" className="st2 st3 st21">
                     {"SALA"}
                 </text>
-                <text transform="translate(1135.184 450.448)" className="st2 st3 st21">
-                    {"PLUMERILLO"}
+                <text transform="translate(1220 450.448)" className="st2 st3 st21">
+                    {"Raizen"}
                 </text>
                 <g id="bandera_plumerillo" display={Sala_Plumerillo.display}>
                     <path

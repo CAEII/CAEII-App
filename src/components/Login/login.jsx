@@ -8,7 +8,7 @@ import Cookies from 'universal-cookie';
 import axios from "axios";
 // functions
 import login from "./login_function"
-import kk from "./prueba_axios"
+import Kk from "./prueba_axios"
 // styles
 import "../../styles/login/login.css"
 import logoCaeiiDesktop from "../../styles/login/img/logo-caeii-desktop.svg"
@@ -30,21 +30,24 @@ export default function Login() {
     const handleSubmit = event => {
         event.preventDefault(); // 👈️ prevent page refresh
 
-        // const isautentificated = login(User, password)
-
-        // setautentification(isautentificated)      // reviso si los valores ingresados son correctos
-        
-
-        // if (isautentificated === true) {                // si los valores osn correctos redirecciono al home
-        //     navigate("/perfil")
-        // }
-    
-        kk(User, password);
+        Kk(User, password)
 
         // 👇️ clear all input values in the form
         setUser('');
         setpassword('');
+
+        setTimeout(() => {
+            if (cookies.get('session') !== undefined) {
+                navigate("/perfil")
+            }
+        }, 1000);
     };
+
+    useEffect(() => {
+        if (cookies.get('session') !== undefined) {
+            navigate("/")
+        }
+    })
 
 
     return (
