@@ -1,6 +1,7 @@
 // components
 import BaseLayout from "./layout"
 import LeerMas from "./leerMas"
+import Sponsors from "./sponsors"
 // styles
 import "../styles/home/css/home.css"
 // IMGS
@@ -160,7 +161,7 @@ function Home() {
             <LeerMas type="interno" link="Estaciones" className="estaciones_leermas"/>
           </section>
 
-
+          <Sponsors type="exclusive"/>
 
           <section id="conferencias_1">
             <h2> {json[2].category} </h2>
@@ -184,7 +185,7 @@ function Home() {
                   <div className="planet"></div>
                 </div>
               </div>
-            </article> */}
+            </article>  */}
             <article id="3">
               <h3> {json[2].data[2].info[0].title} </h3>
               <p> {json[2].data[2].info[1].title} </p>
@@ -195,6 +196,19 @@ function Home() {
                 </div>
               </div>
             </article> 
+            <LeerMas type="interno" link="Conferencias magistrales" />
+          </section> 
+
+ {/*
+          <section id="talleres">
+            <h2> Talleres </h2>
+            <article id="1">
+              <h3> #talleres #1 </h3>
+              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque commodo dapibus purus.  </p>
+              <div class="img">
+                <div class="imgOrbit">
+                  <img src={placeholder} alt="talleres 1" />
+                  <div class="planet"></div>
             <article id="4" className="derecha">
               <h3> {json[2].data[3].info[0].title} </h3>
               <p> {json[2].data[3].info[1].title}  </p>
@@ -207,7 +221,7 @@ function Home() {
             </article>
             <LeerMas type="interno" link="Conferencias magistrales" />
           </section> 
-
+*/}
            
           <section id="conferencias_2">
             <h2> Conferencias profesionales </h2>
@@ -237,6 +251,8 @@ function Home() {
             </article>
             <LeerMas type="interno" link="Conferencias profesionales" />
           </section>
+
+          <Sponsors type="premium"/>
 
           <section id="visitas">
             <h2> {json[1].category} </h2>
@@ -346,6 +362,9 @@ function Home() {
             </article>
             <LeerMas type="interno" link="Feria de empleo" />
           </section>
+
+          {/* <Sponsors type="gold"/> */}
+
         </main>
       </BaseLayout>
     </div>

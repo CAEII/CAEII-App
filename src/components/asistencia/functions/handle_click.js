@@ -11,7 +11,6 @@ export default function handle_click(is_here, SetPresente, Presente, user, asist
             icon: 'error'
         })
     } else {        // si el asistente esta en la actividad correcta o la actividad es igual para todos los asistentes
-        save_asistencia(user, Presente, asistencia);        // guardo la asistencia
-        SetPresente(Presente);                              // cambio el estado del boton
+        save_asistencia(user, Presente, asistencia, SetPresente);        // guardo la asistencia
     }
 }

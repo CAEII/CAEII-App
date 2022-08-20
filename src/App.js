@@ -26,6 +26,7 @@ function App() {
           {/* <Route path="/user/:user/:activiti/:asistencia" element={<Asistencia/>}/> */}
 
           <Route path="/user/:id" element={<Asistencia/>}/>
+          <Route path="/user/:id/:nombre" element={<Asistencia/>}/>
         </Routes>
       </BrowserRouter> 
   );

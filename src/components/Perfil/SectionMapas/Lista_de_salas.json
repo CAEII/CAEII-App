@@ -2,27 +2,21 @@
     "PlantaBaja": [
         "Hall_Planta_Baja",
         "Sanitario_Planta_baja",
-        "Restaurante",
         "Asensor_Planta_Baja"
     ],
     "AuditorioPrincipal": [
-        "Auditorio_Principal",
+        "Auditorio_Accenture",
         "Explanada"
     ],
     "PimerPiso": [
         "Hall_Pimer_Piso",
         "Sanitario_Primer_Piso",
-        "Sala_Cacheuta",
-        "Sala_Uspallata",
-        "Sala_Nihuil",
-        "Sala_Magna_Central"
+        "Sala_LTN",
+        "Sala_PAE"
     ],
     "SegundoPiso": [
         "Hall_Segundo_Piso",
         "Sanitario_Segundo_Piso",
-        "Sala_Vendimia",
-        "Sala_Puente_Del_Inca",
-        "Sala_Horcones",
-        "Sala_Plumerillo"
+        "Sala_Raizen"
     ]
 }

@@ -21,42 +21,54 @@ import "../../styles/perfil/css/Perfil.css";
 // import title from "../../styles/home/img/caeii-title.png"
 import CaeiiLogo from "../../styles/perfil/img/CAEII LOGO 1.png";
 // json
-import json from "./Json_prueva_perfil.json"
+// import json from "./Json_prueva_perfil.json"
+// import json_actividades from "./functions/lista_actividades.json"
 
 const cookies = new Cookies();
 
 
 export default function Perfil() {
-    const [Coute, SetCuote] = useState("Bienvenido, ¿listo para el despegue?");
+    // const [Coute, SetCuote] = useState("Bienvenido, ¿listo para el despegue?");
     const [Salas, SetSalas] = useState({salida: "Explanada", llegada:"Explanada"});
 
-    const [User, SetUser] = useState("don nadie");
+    const [User, SetUser] = useState({
+        user_id: "0000",
+        name: '',
+        admin: false
+    });
+    // const [actividades_segun_user, Set_actividades_segun_user] = useState([]);
+
+    // var actividades_segun_user = []
+
     const [Asistencia, SetAsistencia] = useState(0);
-
     const [Actividad, SetActividad] = useState();
-
-    const [IsLoged, SetIsLoged] = useState(false);
 
     const navigate = useNavigate();
 
+
     useEffect(() => {
         if (cookies.get('session') !== undefined) {
-            SetIsLoged(true)
-            SetUser(cookies.get('session'))
+            console.log(cookies.get('session').token.substring(cookies.get('session').token.indexOf("|") + 1));
+            SetUser(cookies.get('session').user)
         } else {
             navigate("/")
-            SetIsLoged(false)
         }
+    
+        // axios({
+        //     method: 'get',
+        //     url: 'https://inscripciones.aareii.org.ar/api/v1/user',
+        //     headers: {
+        //         "Accept": "application/json",
+        //          Authorization: `Bearer ${cookies.get('session').token.substring(3, cookies.get('session').token.length)}`
+        //     }
+        // }) 
+        // .then( Response => {
+        //     console.log(Response)
+    
+        // }) 
+
+        
     }, [])
-
-    const url = `http://${process.env.REACT_APP_ipV4}:11000/get_info/${User}`
-
-    useEffect(() => {
-        axios.get(url).then((Response) => {
-            // console.log(Response.data)
-            SetAsistencia(Response.data.asistencia)
-        })  
-    })
 
     const myRef = useRef(null)
     const executeScroll = () => myRef.current.scrollIntoView({ behavior: 'smooth'})
@@ -85,16 +97,13 @@ export default function Perfil() {
             </div>
             <BaseLayout>
                 <main>
-                    {IsLoged === false ? <div className="cuote"><h1> {Coute} </h1></div> : null}
 
-
-                    {IsLoged === true && process.env.REACT_APP_admis.split("|").indexOf(User) > -1 ? <Admins/> : null}
-
-
+                    {User.admin === true ? <Admins/> : null}
                     
-                    <Credencial nombre={User} asistencia={Asistencia} Actividad={Actividad}/>
+                    <Credencial nombre={User.name} asistencia={Asistencia} Actividad={Actividad} id={User.user_id}/>
 
-                    <Cronograma dias={json.dias} SetSalas={SetSalas}  Salas={Salas} SetActividad={SetActividad} executeScroll={executeScroll}/>
+
+                    <Cronograma SetSalas={SetSalas}  Salas={Salas} SetActividad={SetActividad} executeScroll={executeScroll}/>
 
                     <SectionMapas salas={Salas} referencia={myRef}/>
 

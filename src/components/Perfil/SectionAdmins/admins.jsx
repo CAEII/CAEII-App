@@ -1,9 +1,12 @@
 //react
 import React, {useState } from "react";
+// functions
+import { Que_dia_es_hoy } from "../Suport_functions";
 // cookies
 import Cookies from 'universal-cookie';
 // json
-import lista_de_actividades from "../../asistencia/lista_de_actividades.json"
+// import lista_de_actividades from "../../asistencia/lista_de_actividades.json"
+import Json_lista_de_actividades from "../functions/lista_actividades.json"
 
 
 
@@ -12,6 +15,9 @@ const cookies = new Cookies();
 
 export default function Admins() {
     const [DentroAuditorio, SetDentroAuditorio] = useState(true);         // estado de los botones "dentro / fuera" del auditorio
+    // var lista_de_actividades = []
+
+    
 
     return (
         <section id="admin">
@@ -37,9 +43,18 @@ function SalasBustelo() {
             <select  onChange={(value) =>  handleAddrTypeChange(value)}>
                 <option value={null}> seleciona una actividad: </option>
                 {
-                    lista_de_actividades.map((actividad, actividadindex) => {                                                                             // Recorro el array de salas
-                        return <option key={actividadindex} value={actividad}> {actividad.replace(/_/g, " ")} </option>
+                    Json_lista_de_actividades.map((dia, diaIndex ) => {
+                        if (Que_dia_es_hoy() === dia.dia) {
+                            return dia.actividades.map((actividad, actividadIndex) => {
+                                if (actividad.id !== null) {
+                                    return <option key={`${diaIndex}-${actividadIndex}`} value={actividad.id}> {actividad.titulo} </option>
+                                }
+                            })
+                        }
                     })
+                    // lista_de_actividades.map((actividad, actividadindex) => {                                                                             // Recorro el array de salas
+                    //     return <option key={actividadindex} value={actividad}> {actividad.replace(/_/g, " ")} </option>
+                    // })
                 }
             </select>
         </div>
@@ -54,11 +69,11 @@ function VisitasTecnicas() {
         <div class="select">
             <select  onChange={(value) =>  handleAddrTypeChange(value)}>
                 <option value={null}> seleciona una visita: </option>
-                {
+                {/* {
                     lista_de_actividades.map((actividad, actividadindex) => {                                                                             // Recorro el array de salas
                         return <option key={actividadindex} value={actividad}> {actividad.replace(/_/g, " ")} </option>
                     })
-                }
+                } */}
             </select>
         </div>
     )
