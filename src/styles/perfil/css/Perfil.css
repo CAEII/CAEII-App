@@ -421,6 +421,10 @@ iframe{
         width: 50px;
         height: 50px;
     }
+    #admin {
+        width: 100vw;
+        margin-left: 90px;
+    }
 }
 
 @media (min-width: 1245px){
