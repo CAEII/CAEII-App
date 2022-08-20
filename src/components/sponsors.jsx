@@ -34,7 +34,7 @@ export default function Sponsors(props) {
 
 // cuerpo de sponsors, si es gold muestra las imagenes si es de otro tipo muestra la seccion de los radio buttons del carrucel
 function SponsorsBody(props) {
-    const [cuenta, setcuenta] = useState(0)                 // defino "cuenta" como use state para contar de 0 a 4
+    const [cuenta, setcuenta] = useState(0)                 // defino "cuenta" como use state para contar de 0 a 6
     const [cuentaStop, setcuentaStop] = useState(false)     // defino "cuentaStop" para guardar una variable que indique si ejecuta el loop de la cuenta
 
     const [radio1, setradio1] = useState(false)     // estado de radio button 1
@@ -44,15 +44,23 @@ function SponsorsBody(props) {
     const [radio5, setradio5] = useState(false)     // estado de radio button 5
     const [radio6, setradio6] = useState(false)     // estado de radio button 6
 
-    useEffect(() => {   
-        if (cuentaStop === false) {     // si el contador no esta parado, ejecuto lo siguiente:
-            setTimeout(() => {          // pongo un timeout de 5 segundos
-                setcuenta(cuenta + 1)   // aumente la cuenta en 1
-                if (cuenta === 5) {     // reviso si la cuenta a alcanzado el valor 4
-                    setcuenta(0)        // regreso la cuenta a 0
-                }
-            }, 5000);
+    useEffect(() => {
 
+        if (cuentaStop === false) {     // si el contador no esta parado, ejecuto lo siguiente:
+            setTimeout(() => {
+                          // pongo un timeout de 5 segundos
+                setcuenta(cuenta + 1)   // aumente la cuenta en 1
+                if (props.type === "premium") {
+                    if (cuenta === 1) {     // reviso si la cuenta a alcanzado el valor 6
+                        setcuenta(0)        // regreso la cuenta a 0
+                    }
+                } else {
+                    if (cuenta === 5) {     // reviso si la cuenta a alcanzado el valor 6
+                        setcuenta(0)        // regreso la cuenta a 0
+                    }
+                }
+                
+            }, 5000);
             if (cuenta === 0) {     // si la cuenta esta en 0:
                 setradio1(true)     // pongo el estado del radio button 1 en true (esto seria igual a checked=true en el html)
             } else {
@@ -79,10 +87,10 @@ function SponsorsBody(props) {
                 setradio5(false)
             } 
             if (cuenta === 5) {
-                setradio5(true)
+                setradio6(true)
             } else {
-                setradio5(false)
-            }   
+                setradio6(false)
+            }  
         } else {                        // si la cuenta esta detenida (cuentaStop === true)
             setTimeout(() => {          // pongo un timeout de 10 segundos
                 setcuentaStop(false)    // cambio el estado de "cuentaStop" a false para re iniciar el contador
@@ -142,7 +150,7 @@ function SponsorsBody(props) {
         // si el Props.type es igual a "premium" o "exclusive" regreso el sponsors_card_body correspondiente
         return(
             <form action="">
-            <div class="Sponsors_card_body">
+            <div class="Sponsors_card_body dots">
                 <input type="radio" name="position" id="exclusive_1" checked={radio1} onClick={()=>{    // al hacer click en un radio button:
                     setcuentaStop(true);       // detengo el contador
                     setradio1(true);           // seteo el radio buton 1 en true    (checked=true en el html)
@@ -179,11 +187,11 @@ function Carrucel(props) {
             <div id="carousel">
                 <div class="item" >
                     <img src={Techint} alt="Techint"></img>
-                    <img src={Coope} alt="Coope"></img>
+                    <img src={GrupoPeñaflor} alt="GrupoPeñaflor"></img>
                 </div>
                 <div class="item" >
                     <img src={Invap} alt="Invap"></img>
-                    <img src={GrupoPeñaflor} alt="GrupoPeñaflor"></img>
+                    <img src={Coope} alt="Coope"></img>
                 </div>
             </div>
         )
