@@ -16,7 +16,7 @@ export default function Segundo_piso({ sala_resaltada, colores }) {
         Set_Sala_Vendimia(status_color_flag("Sala_Vendimia", sala_resaltada, colores));
         Set_Sala_Puente_Del_Inca(status_color_flag("Sala_Puente_Del_Inca", sala_resaltada, colores));
         Set_Sala_Horcones(status_color_flag("Sala_Horcones", sala_resaltada, colores));
-        Set_Sala_Plumerillo(status_color_flag("Sala_Plumerillo", sala_resaltada, colores));
+        Set_Sala_Plumerillo(status_color_flag("Sala_Raizen", sala_resaltada, colores));
     }, [sala_resaltada, colores]);
     return (
         <svg
@@ -296,8 +296,8 @@ export default function Segundo_piso({ sala_resaltada, colores }) {
                 <text transform="translate(1232.984 393.238)" className="st2 st3 st21">
                     {"SALA"}
                 </text>
-                <text transform="translate(1135.184 450.448)" className="st2 st3 st21">
-                    {"PLUMERILLO"}
+                <text transform="translate(1220 450.448)" className="st2 st3 st21">
+                    {"Raizen"}
                 </text>
                 <g id="bandera_plumerillo" display={Sala_Plumerillo.display}>
                     <path

@@ -3,19 +3,21 @@ import { useEffect } from "react"
 import { useState } from "react"
 // fucntions
 import {Que_dia_es_hoy, comparo_con_la_hora_actual} from "../Suport_functions"
+// json
+import json_actividades from "../functions/lista_actividades.json"
 // cookies
 import Cookies from 'universal-cookie';
 const cookies = new Cookies();
 
 
-export default function Cronograma({dias, SetSalas, Salas, SetActividad, executeScroll}) {
+export default function Cronograma({SetSalas, Salas, SetActividad, executeScroll}) {
     const [Dia, SetDia] = useState(Que_dia_es_hoy())
 
     let today_activities
     let today_pilar
     let claasname_title_text = "title_text"
 
-    dias.map((dia) => {
+    json_actividades.map((dia) => {
         if ( dia.dia === Dia) {
             today_activities = dia.actividades;
             today_pilar = dia.pilar
@@ -61,14 +63,24 @@ export default function Cronograma({dias, SetSalas, Salas, SetActividad, execute
 
 
 function Lineas({today_activities,SetSalas,Salas, SetActividad, executeScroll}){
+
+    const activities = cookies.get("activities")
     return today_activities.map((actividad, index) => {
-        return <Lineas2 key={index} actividad={actividad} index={index} SetSalas={SetSalas} Salas={Salas} SetActividad={SetActividad} executeScroll={executeScroll}/>
+        // console.log(actividad.id)
+        if (actividad.id === null) {
+            return <Lineas2 key={index} actividad={actividad} index={index} SetSalas={SetSalas} Salas={Salas} SetActividad={SetActividad} executeScroll={executeScroll}/>
+        }
+        return actividad.id.map(id => {
+            if (activities.indexOf(id) !== -1) {
+                return <Lineas2 key={index} actividad={actividad} index={index} SetSalas={SetSalas} Salas={Salas} SetActividad={SetActividad} executeScroll={executeScroll}/>
+            }
+        })
     })
 };
 
 function Lineas2({actividad,index,SetSalas,Salas, SetActividad, executeScroll}) {
     var className
-    if (actividad.titulo === "ALMUERZO" || actividad.titulo === "TIEMPO LIBRE") {
+    if (actividad.titulo === "ALMUERZO" || actividad.titulo === "TIEMPO LIBRE" || actividad.titulo === "COFFEE") {
         className = "conLinea resaltado"
     } else {
         className = ""
@@ -95,7 +107,7 @@ function Lineas2({actividad,index,SetSalas,Salas, SetActividad, executeScroll}) 
 
 function Donde({actividad,SetSalas,Salas,boton_id,executeScroll}){
     const handleClick = () => {
-        SetSalas({ salida: Salas.salida, llegada:actividad.lugar})
+        SetSalas({ salida: Salas.salida, llegada:actividad.lugar.replace(" ", "_")})
     }
     
     return(

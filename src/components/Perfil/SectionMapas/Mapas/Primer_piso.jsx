@@ -18,9 +18,9 @@ export default function PrimerPiso({ sala_resaltada, colores }) {
         Set_Hall_Pimer_Piso(status_color_flag("Hall_Pimer_Piso", sala_resaltada, colores));
         Set_Sanitario_Primer_Piso(status_color_flag("Sanitario_Primer_Piso", sala_resaltada, colores));
         Set_Sala_Cacheuta(status_color_flag("Sala_Cacheuta", sala_resaltada, colores));
-        Set_Sala_Uspallata(status_color_flag("Sala_Uspallata", sala_resaltada, colores));
+        Set_Sala_Uspallata(status_color_flag("Sala_LTN", sala_resaltada, colores));
         Set_Sala_Nihuil(status_color_flag("Sala_Nihuil", sala_resaltada, colores));
-        Set_Sala_Magna_Central(status_color_flag("Sala_Magna_Central", sala_resaltada, colores));
+        Set_Sala_Magna_Central(status_color_flag("Sala_PAE", sala_resaltada, colores));
     }, [sala_resaltada, colores]);
 
     return (
@@ -119,13 +119,13 @@ export default function PrimerPiso({ sala_resaltada, colores }) {
                     d="M332.7 552.6h406.2v-230H332.7z"
                 />
                 <text
-                    transform="translate(377.114 428.768)"
+                    transform="translate(450.114 428.768)"
                     className="st1 st2"
                     style={{
                         fontSize: "34.2716px",
                     }}
                 >
-                    {"SALA USPALLATA"}
+                    {"SALA LTN"}
                 </text>
                 <g id="bandera_sala_uspallata" display={Sala_Uspallata.display}>
                     <path
@@ -339,8 +339,8 @@ export default function PrimerPiso({ sala_resaltada, colores }) {
                 <text transform="translate(1237.024 661.065)" className="st1 st2 st23">
                     {"SALA "}
                 </text>
-                <text transform="translate(1109.684 710.385)" className="st1 st2 st23">
-                    {"MAGNA CENTRAL"}
+                <text transform="translate(1180.684 710.385)" className="st1 st2 st23">
+                    {"SALA PAE"}
                 </text>
                 <path
                     id="entrada_magna_central-hall"
