@@ -1,16 +1,18 @@
 // react
 import React, { useEffect, useState } from "react";
+import { useRef } from "react";
 import { useParams } from 'react-router-dom';
+import {useNavigate} from 'react-router-dom';
 // axios
 import axios from 'axios';
 // cookies
 import Cookies from 'universal-cookie';
 // components
 import BaseLayout from "../layout"
-// import Credencial from "./SectionCredencial/Credencial";
+import Credencial from "./SectionCredencial/Credencial";
 import Cronograma from "./SectionCronograma/Cronograma";
 import SectionMapas from "./SectionMapas/Section_Mapas";
-import SectionMapasNotLoged from "./SectionMapas/SectionMapasNotLoged";
+import Admins from "./SectionAdmins/admins";
 // functions
 // import {Asistencia} from "./Suport_functions"
 //styles
@@ -28,58 +30,73 @@ export default function Perfil() {
     const [Coute, SetCuote] = useState("Bienvenido, ¿listo para el despegue?");
     const [Salas, SetSalas] = useState({salida: "Explanada", llegada:"Explanada"});
 
+    const [User, SetUser] = useState("don nadie");
+    const [Asistencia, SetAsistencia] = useState(0);
+
+    const [Actividad, SetActividad] = useState();
+
     const [IsLoged, SetIsLoged] = useState(false);
+
+    const navigate = useNavigate();
 
     useEffect(() => {
         if (cookies.get('session') !== undefined) {
             SetIsLoged(true)
+            SetUser(cookies.get('session'))
         } else {
+            navigate("/")
             SetIsLoged(false)
         }
     }, [])
 
-    // var asistencia
-    // if (user === "Augusto Antonelli") {
-    //     asistencia = 80
-    // } else {
-    //     asistencia = 50
-    // }
+    const url = `http://${process.env.REACT_APP_ipV4}:11000/get_info/${User}`
 
-    // useEffect(() => {
-    //     axios.get("http://192.168.1.40:8888/").then((Response) => {console.log(Response)})
-    // })
+    useEffect(() => {
+        axios.get(url).then((Response) => {
+            // console.log(Response.data)
+            SetAsistencia(Response.data.asistencia)
+        })  
+    })
+
+    const myRef = useRef(null)
+    const executeScroll = () => myRef.current.scrollIntoView({ behavior: 'smooth'})
 
     return (
         <div className="App" id="perfil">
             <div className="sistema_solar_container">
-                <div class="sistema_solar">
-                    <div class="sol"></div>
-                    <div class="orbits orbit_1">
-                        <div class="planet_container">
-                            <div class="planet"></div>
+                <div className="sistema_solar">
+                    <div className="sol"></div>
+                    <div className="orbits orbit_1">
+                        <div className="planet_container">
+                            <div className="planet"></div>
                         </div>
                     </div>
-                    <div class="orbits orbit_2">
-                        <div class="planet_container">
-                            <div class="planet"></div>
+                    <div className="orbits orbit_2">
+                        <div className="planet_container">
+                            <div className="planet"></div>
                         </div>
                     </div>
-                    <div class="orbits orbit_3">
-                        <div class="planet_container">
-                            <div class="planet"></div>
+                    <div className="orbits orbit_3">
+                        <div className="planet_container">
+                            <div className="planet"></div>
                         </div>
                     </div>
                 </div>
             </div>
             <BaseLayout>
                 <main>
-                    {IsLoged === false ? <div class="cuote"><h1> {Coute} </h1></div> : null}
+                    {IsLoged === false ? <div className="cuote"><h1> {Coute} </h1></div> : null}
+
+
+                    {IsLoged === true && process.env.REACT_APP_admis.split("|").indexOf(User) > -1 ? <Admins/> : null}
+
+
                     
-                    {/* <Credencial nombre={user} asistencia={asistencia}/> */}
+                    <Credencial nombre={User} asistencia={Asistencia} Actividad={Actividad}/>
 
-                    <Cronograma IsLoged={IsLoged} dias={json.dias} SetSalas={SetSalas}  Salas={Salas}/>
+                    <Cronograma dias={json.dias} SetSalas={SetSalas}  Salas={Salas} SetActividad={SetActividad} executeScroll={executeScroll}/>
 
-                    {IsLoged === true ? <SectionMapas salas={Salas}/> : <SectionMapasNotLoged salas={Salas}/>}
+                    <SectionMapas salas={Salas} referencia={myRef}/>
 
                     <section id="logo">
                         <img src={CaeiiLogo} alt="logo CAEII" />

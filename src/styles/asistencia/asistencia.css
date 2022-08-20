@@ -1,9 +1,79 @@
 .App#asistencia{
-    background-image:  url(../perfil/img/fondoPerfil.jpg);
+    /* background-image:  url(../perfil/img/fondoPerfil.jpg); */
+    background-image:  none;
     overflow: hidden;
+
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
 }
 
-#asistencia .activiti_button{
+.asistencia_tag{
+    height: 10vh;
+    min-height: 60px;
+    width: 90vw;
+    background-color: var(--fondoTituloTargeta);
+    border-radius: 50px;
+
+    /* font-size: 2rem; */
+
+    font-size: 8vw;
+}
+
+
+/* body {
+    height: auto;
+} */
+.App#asistencia span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nombre_del_asistente{
+    margin-bottom: 60px;
+}
+
+.nombre_de_la_actividad{
+    height: 20vh;
+    /* font-size: 10vw;
+    font-weight: bolder; */
+}
+.activit_name_lavel{
+    font-size: 5vw;
+    height: 30%;
+    display: flex;
+    justify-content: flex-start !important;
+    margin-left: 8vw;
+    color: rgb(255 255 255 / 67%);
+}
+.nombre_de_la_actividad .activit_name{
+    /* font-size: 3rem; */
+    font-size: 10vw;
+    font-weight: bolder;
+    height: 50%;
+    text-align: center;
+}
+
+.button_asistencia{
+    /* font-size: 3rem; */
+    font-size: 12vw;
+    font-weight: bold;
+}
+
+
+.button_asistencia.presente_true, .is_here_true{
+   background-color: #119626;
+}
+.button_asistencia.presente_false, .is_here_false{
+    background-color: #961111;
+}
+
+/* #asistencia .activiti_button{
     margin-bottom: 30px;
 }
 .actividades {
@@ -14,4 +84,26 @@
 }
 .activiti_button.echa_false#_2{
     background-color: yellowgreen;
+} */
+
+
+
+
+
+@media (prefers-color-scheme: light) {
+    .App#asistencia, .swal2-popup { 
+       background-color: rgb(220, 218, 255);
+   }
+   .swal2-title, .swal2-popup strong {
+        color: rgb(23, 22, 41);
+   }
+}
+
+@media (prefers-color-scheme: dark) {
+    .App#asistencia, .swal2-popup {
+        background-color: rgb(23, 22, 41);
+    }
+    .swal2-title{
+        color: rgb(220, 218, 255);
+   }
 }

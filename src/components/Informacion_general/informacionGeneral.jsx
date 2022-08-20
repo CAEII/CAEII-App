@@ -40,7 +40,7 @@ export default function Info_general() {
                             
                             <Navbar info={jsonDataCategory} setRubro={setRubro}/>
 
-                            <div className="cards_container">
+                            <div className="cards_container" id={category.replace(" ", "_")}>
                                 <InfoBody rubro={Rubro} jsonData={jsonDataCategory}/>
                             </div>
                         </section>

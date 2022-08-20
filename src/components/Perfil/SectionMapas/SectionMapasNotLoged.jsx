@@ -1,5 +1,5 @@
 // react
-import { useEffect, useState } from "react"
+import { useState } from "react"
 // imgs
 import PlantaBaja from "./Mapas simples/PlantaBaja.png"
 import AuditorioPrincipal from "./Mapas simples/AuditorioPrincipal.png"
@@ -12,7 +12,7 @@ export default function Section_Mapas({salas}) {
 
     return (
         <section id="mapas">
-            <div class="title_card_perfil title_mapas">
+            <div className="title_card_perfil title_mapas">
                 <h2>¿A dónde voy?</h2>
                 <div className="maps_button_container">
                     <button className={`maps_button_container_${DentroAuditorio}`} disabled={DentroAuditorio} onClick={() => {SetDentroAuditorio(!DentroAuditorio)}}> Dentro del auditorio </button>
@@ -31,22 +31,22 @@ function Mapas({Mapas, sala_resaltada}) {
             {Mapas.map((mapa, index) => {   // Recorro la lista de mapas y cargo el componente correspondiente
                 if (mapa === 'PlantaBaja') {
                     return(
-                        <img src={PlantaBaja} alt="" />
+                        <img key={index} src={PlantaBaja} alt="" />
                     )
                 };
                 if (mapa === 'AuditorioPrincipal') {
                     return(
-                        <img src={AuditorioPrincipal} alt="" />
+                        <img key={index} src={AuditorioPrincipal} alt="" />
                     )
                 };
                 if (mapa === 'PimerPiso') {
                     return(
-                        <img src={PimerPiso} alt="" />
+                        <img key={index} src={PimerPiso} alt="" />
                     )
                 };
                 if (mapa === 'SegundoPiso') {
                     return(
-                        <img src={SegundoPiso} alt="" />
+                        <img key={index} src={SegundoPiso} alt="" />
                     )
                 };
 

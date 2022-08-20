@@ -15,15 +15,15 @@ export default function LeerMas(params) {
     }
     
     return (
-        <div class="button leermas">
-            <a href={link} class="hyperspan">
-                <div class="circle">
-                    <div class="rocket_container">
-                      <img src={cohete} alt="cohete caeii" class="cohete_leer_mas"></img>
+        <div className="button leermas">
+            <a href={link} className="hyperspan">
+                <div className="circle">
+                    <div className="rocket_container">
+                      <img src={cohete} alt="cohete caeii" className="cohete_leer_mas"></img>
                     </div>
-                    <div class="circle2"></div>
+                    <div className="circle2"></div>
                 </div>
-                <div class="texto"> Leer mas </div>
+                <div className="texto"> Leer mas </div>
             </a>
         </div>
   )
