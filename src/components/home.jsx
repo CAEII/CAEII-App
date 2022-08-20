@@ -351,7 +351,7 @@ function Home() {
             <LeerMas type="interno" link="Feria de empleo" />
           </section>
 
-          <Sponsors type="gold"/>
+          {/* <Sponsors type="gold"/> */}
 
         </main>
       </BaseLayout>
