@@ -10,12 +10,15 @@ import Cookies from 'universal-cookie';
 export default function Kk (Email, Password){
 
     const cookies = new Cookies();
-    var actividades_segun_user = []
+    var actividades_segun_user = [{selection_value:'' ,selection_id: ''}]
 
     axios({
         method: 'post',
         url: 'https://inscripciones.aareii.org.ar/api/v1/login',
-        
+        // data: {
+        //     email:'noelia.nmcleod@gmail.com',
+        //     password:'developers'
+        // },
         data: {
                 email: Email,
                 password: Password
@@ -25,7 +28,7 @@ export default function Kk (Email, Password){
         }
     }) 
     .then( Response => {
-        // console.log(Response.data)
+        console.log(Response.data)
         const session_cookie_info = {user: {user_id:Response.data.user.id, name: Response.data.user.full_name, admin: true}, token: Response.data.token}
 
         Response.data.user.enrollments.map( enrllment => {
