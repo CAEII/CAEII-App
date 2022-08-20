@@ -19,7 +19,7 @@ const info_del_back = ['146', '151', '156', '158', '162', '169', '172']
 const cookies = new Cookies();
 
 export default function Asistencia(){
-    const { id } = useParams()                                  // id del participante, es obtenida por parametros del url
+    const { id, nombre } = useParams()                                  // id del participante, es obtenida por parametros del url
     // las siguientes variables se optienen del enpoint:
     const [Presente, SetPresente] = useState(false);            // Info sobre la presensia del asistente (true= ya estuvo en la actividad, false= no ha estado en la actividad)
     const [Name, SetName] = useState(false);                    // Nombre del asistente
@@ -91,7 +91,7 @@ export default function Asistencia(){
 
             <div className="asistencia_info">
                 {/* <span className="asistencia_tag nombre_del_asistente" > {user.replace(/_/g, " ")} </span> */}
-                <span className="asistencia_tag nombre_del_asistente" > {Name} </span>
+                <span className="asistencia_tag nombre_del_asistente" > {nombre} </span>
                 <div className={is_here_class}>
                     <span className="activit_name_lavel"> Actividad: </span>
                     <span className="activit_name"> {Activiti.title} </span>
