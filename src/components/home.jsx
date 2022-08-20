@@ -2,7 +2,6 @@
 import BaseLayout from "./layout"
 import LeerMas from "./leerMas"
 import Sponsors from "./sponsors"
-import Sponsors2 from "./sponsors2"
 // styles
 import "../styles/home/css/home.css"
 // IMGS
