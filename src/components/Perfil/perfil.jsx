@@ -48,6 +48,7 @@ export default function Perfil() {
 
     useEffect(() => {
         if (cookies.get('session') !== undefined) {
+            console.log(cookies.get('session').token.substring(cookies.get('session').token.indexOf("|") + 1));
             SetUser(cookies.get('session').user)
         } else {
             navigate("/")
@@ -99,7 +100,7 @@ export default function Perfil() {
 
                     {User.admin === true ? <Admins/> : null}
                     
-                    <Credencial nombre={User.name} asistencia={Asistencia} Actividad={Actividad}/>
+                    <Credencial nombre={User.name} asistencia={Asistencia} Actividad={Actividad} id={User.user_id}/>
 
 
                     <Cronograma SetSalas={SetSalas}  Salas={Salas} SetActividad={SetActividad} executeScroll={executeScroll}/>

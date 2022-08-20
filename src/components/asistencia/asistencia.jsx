@@ -8,12 +8,15 @@ import axios from "axios";
 import check_admin from "./functions/check_admin";
 import handle_click from "./functions/handle_click";
 import {comparo_con_la_hora_actual, Que_dia_es_hoy} from "../Perfil/Suport_functions"
+// cookies
+import Cookies from 'universal-cookie';
 // stiles
 import "../../styles/asistencia/asistencia.css";
 // json
 import Json_lista_de_actividades from "../Perfil/functions/lista_actividades.json"
 
 const info_del_back = ['146', '151', '156', '158', '162', '169', '172']
+const cookies = new Cookies();
 
 export default function Asistencia(){
     const { id } = useParams()                                  // id del participante, es obtenida por parametros del url
@@ -51,6 +54,27 @@ export default function Asistencia(){
                 })
             }
         })
+
+
+        const token = cookies.get('session').token.substring(cookies.get('session').token.indexOf("|") + 1)
+
+        axios({
+            method: 'get',
+            url: `https://inscripciones.aareii.org.ar/api/v1/user/${id}`,
+            headers: {
+                "Accept": "application/json",
+                Authorization: `Bearer ${token}`
+            }
+        })
+        .then(function (response) {
+            console.log(response)
+        })
+        .catch(function (error) {
+            console.log(error);
+        })
+
+
+
     }, [])
 
 

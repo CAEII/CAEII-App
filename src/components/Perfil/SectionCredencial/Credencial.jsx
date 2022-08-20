@@ -11,13 +11,11 @@ import "../../../styles/perfil/css/credencial.css"
 // imgs
 import Astronauta from "../../../styles/perfil/img/astronauta.png";
 
-const ipv4 = process.env.REACT_APP_ipV4           // string de la direccion ipv4. ejemplo: 192.168.1.40
-
-
 export default function Credencial({ nombre, asistencia, id }) {
     
-    const info_qr = `http://${ipv4}:3000/user/${id})}` ;                  // info para codificar en el qr (url de la pag + user/:id, el id es dinamico)
+    const info_qr = `https://caeii.com.ar/user/${id}` ;                  // info para codificar en el qr (url de la pag + user/:id, el id es dinamico)
 
+    console.log(info_qr)
 
     const [QR_modal_IsOpen, Set_QR_modal_IsOpen] = useState(false)              // estado del modal que contiene el qr
     const [info_modal_IsOpen, Set_info_modal_IsOpen] = useState(false)          // estado del modal que tiene info sobre el certificado
