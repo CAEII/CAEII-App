@@ -1,8 +1,7 @@
 #credencial{
     background-color: var(--fondoTituloTargeta);
     min-height: 400px;
-    height: 60vh;
-    max-height: 480px;
+    height: fit-content;
 
     /* transition: max-height 1s; */
 }
@@ -220,8 +219,7 @@ b.asistente_certificado{
     #credencial{
         background-color: var(--fondoTituloTargeta);
         min-height: 400px;
-        height: 60vh;
-        max-height: 480px;
+        height: fit-content;
     }
     #credencial.asistente_certificado{
         max-height: 500px;
@@ -243,7 +241,7 @@ b.asistente_certificado{
 @media (min-width: 1024px){
     #credencial, .lottie_container {
         grid-column: 1/3;
-        height: 90vh;
+        height: fit-content;
         max-height: 1000px !important;
     }
     .top_asistencia .circulo_qr{
