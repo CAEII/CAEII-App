@@ -2,25 +2,21 @@
     "PlantaBaja": [
         "Hall_Planta_Baja",
         "Sanitario_Planta_baja",
-
         "Asensor_Planta_Baja"
     ],
     "AuditorioPrincipal": [
-        "Auditorio_accenture",
+        "Auditorio_Accenture",
         "Explanada"
     ],
     "PimerPiso": [
         "Hall_Pimer_Piso",
         "Sanitario_Primer_Piso",
-
         "Sala_LTN",
-
         "Sala_PAE"
     ],
     "SegundoPiso": [
         "Hall_Segundo_Piso",
         "Sanitario_Segundo_Piso",
-
         "Sala_Raizen"
     ]
 }

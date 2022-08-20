@@ -18,9 +18,9 @@ export default function PrimerPiso({ sala_resaltada, colores }) {
         Set_Hall_Pimer_Piso(status_color_flag("Hall_Pimer_Piso", sala_resaltada, colores));
         Set_Sanitario_Primer_Piso(status_color_flag("Sanitario_Primer_Piso", sala_resaltada, colores));
         Set_Sala_Cacheuta(status_color_flag("Sala_Cacheuta", sala_resaltada, colores));
-        Set_Sala_Uspallata(status_color_flag("Sala_Uspallata", sala_resaltada, colores));
+        Set_Sala_Uspallata(status_color_flag("Sala_LTN", sala_resaltada, colores));
         Set_Sala_Nihuil(status_color_flag("Sala_Nihuil", sala_resaltada, colores));
-        Set_Sala_Magna_Central(status_color_flag("Sala_Magna_Central", sala_resaltada, colores));
+        Set_Sala_Magna_Central(status_color_flag("Sala_PAE", sala_resaltada, colores));
     }, [sala_resaltada, colores]);
 
     return (

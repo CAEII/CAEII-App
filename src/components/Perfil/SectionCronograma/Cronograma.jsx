@@ -107,7 +107,7 @@ function Lineas2({actividad,index,SetSalas,Salas, SetActividad, executeScroll}) 
 
 function Donde({actividad,SetSalas,Salas,boton_id,executeScroll}){
     const handleClick = () => {
-        SetSalas({ salida: Salas.salida, llegada:actividad.lugar})
+        SetSalas({ salida: Salas.salida, llegada:actividad.lugar.replace(" ", "_")})
     }
     
     return(

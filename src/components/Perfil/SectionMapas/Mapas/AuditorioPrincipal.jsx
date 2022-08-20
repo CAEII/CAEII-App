@@ -10,7 +10,7 @@ export default function PlantaBaja({ sala_resaltada, colores }) {
     const [Explanada, SetExplanada] = useState({ color: colores.color_sala_desactivada, display: "none" })
 
     useEffect(() => {
-        SetAuditorioBustelo(status_color_flag("Auditorio_Principal", sala_resaltada, colores));
+        SetAuditorioBustelo(status_color_flag("Auditorio_Accenture", sala_resaltada, colores));
         SetExplanada(status_color_flag("Explanada", sala_resaltada, colores));
     }, [sala_resaltada, colores]);
 

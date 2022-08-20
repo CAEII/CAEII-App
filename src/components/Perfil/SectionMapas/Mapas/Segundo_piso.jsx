@@ -16,7 +16,7 @@ export default function Segundo_piso({ sala_resaltada, colores }) {
         Set_Sala_Vendimia(status_color_flag("Sala_Vendimia", sala_resaltada, colores));
         Set_Sala_Puente_Del_Inca(status_color_flag("Sala_Puente_Del_Inca", sala_resaltada, colores));
         Set_Sala_Horcones(status_color_flag("Sala_Horcones", sala_resaltada, colores));
-        Set_Sala_Plumerillo(status_color_flag("Sala_Plumerillo", sala_resaltada, colores));
+        Set_Sala_Plumerillo(status_color_flag("Sala_Raizen", sala_resaltada, colores));
     }, [sala_resaltada, colores]);
     return (
         <svg
