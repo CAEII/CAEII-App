@@ -13,7 +13,7 @@ import NeuralSoft from "../styles/sponsors/img/neuralsoft.png"
 import Raizen from "../styles/sponsors/img/raizen.png"
 import Guaymallen from "../styles/sponsors/img/guaymallen.png"
 import Techint from "../styles/sponsors/img/techint.png"
-import Coope from "../styles/sponsors/img/coope.jpg"
+import Coope from "../styles/sponsors/img/coope.png"
 import Invap from "../styles/sponsors/img/invap.png"
 import GrupoPeñaflor from "../styles/sponsors/img/Grupo-Peñaflor.png"
 

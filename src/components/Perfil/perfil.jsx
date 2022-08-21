@@ -1,7 +1,6 @@
 // react
 import React, { useEffect, useState } from "react";
 import { useRef } from "react";
-import { useParams } from 'react-router-dom';
 import {useNavigate} from 'react-router-dom';
 // axios
 import axios from 'axios';
@@ -15,6 +14,7 @@ import SectionMapas from "./SectionMapas/Section_Mapas";
 import Admins from "./SectionAdmins/admins";
 // functions
 // import {Asistencia} from "./Suport_functions"
+import PorcentajeAsistencia from "./functions/Porcentaje_asistencia";
 //styles
 import "../../styles/perfil/css/Perfil.css";
 // imgs
@@ -48,20 +48,10 @@ export default function Perfil() {
         } else {
             navigate("/")
         }
-    
-        // axios({
-        //     method: 'get',
-        //     url: 'https://inscripciones.aareii.org.ar/api/v1/user',
-        //     headers: {
-        //         "Accept": "application/json",
-        //          Authorization: `Bearer ${cookies.get('session').token.substring(3, cookies.get('session').token.length)}`
-        //     }
-        // }) 
-        // .then( Response => {
-        //     console.log(Response)
-    
-        // }) 
 
+        SetAsistencia(cookies.get('asistencia'))
+
+        //PorcentajeAsistencia()
         
     }, [])
 

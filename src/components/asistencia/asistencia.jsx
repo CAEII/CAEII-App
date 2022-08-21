@@ -22,7 +22,7 @@ export default function Asistencia(){
     const { id } = useParams()                                          // id del participante, es obtenida por parametros del url
     // las siguientes variables se optienen del enpoint:
     const [Presente, SetPresente] = useState(false);                    // Info sobre la presensia del asistente (true= ya estuvo en la actividad, false= no ha estado en la actividad)
-    const [Name, SetName] = useState(false);                            // Nombre del asistente
+    const [Name, SetName] = useState('');                               // Nombre del asistente
     const [Asistencia, SetAsistencia] = useState(0);                    // numero del porcentaje de asistencia
     const [Activiti, SetActiviti] = useState({title: '', id:''});       // nombre de la actividad actual
 
@@ -86,8 +86,7 @@ export default function Asistencia(){
         <div className="App" id="asistencia">
 
             <div className="asistencia_info">
-                {/* <span className="asistencia_tag nombre_del_asistente" > {user.replace(/_/g, " ")} </span> */}
-                <span className="asistencia_tag nombre_del_asistente" > {nombre} </span>
+                <span className="asistencia_tag nombre_del_asistente" > {Name} </span>
                 <div className={is_here_class}>
                     <span className="activit_name_lavel"> Actividad: </span>
                     <span className="activit_name"> {Activiti.title} </span>
