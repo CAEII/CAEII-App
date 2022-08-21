@@ -55,6 +55,7 @@ export default function HeaderBar() {
 
                 {/* { UserLoged === true ? <Perfil/> : <Login/> } */}
 
+
                 {/* <li>
                   <div className="linea">
                     <a href="https://bit.ly/3MXGBeJ">REGISTRARSE</a>
@@ -79,6 +80,9 @@ export default function HeaderBar() {
                     <div className="line_container"><div className="line" /></div>
                   </div>
                 </li>
+
+                { UserLoged === true ? <Logout/> : null }
+
               </ul>
             </div>
           </div>
@@ -141,6 +145,17 @@ function Perfil(){
     <li>
       <div className="linea">
         <a href="/perfil"> PERFIL </a>
+        <div className="line_container"><div className="line" /></div>
+      </div>
+    </li>
+  )
+}
+
+function Logout() {
+  return(
+    <li>
+      <div className="linea">
+        <a href="" onClick={() => cookies.remove('session')}> LOG OUT </a>
         <div className="line_container"><div className="line" /></div>
       </div>
     </li>
