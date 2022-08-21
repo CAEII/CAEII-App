@@ -19,13 +19,11 @@ function App() {
           <Route path="/home" element={<Home/>} />     
           <Route path="/nosotros" element={<Nosotros/>}/>
           <Route path="/info/:category" element={<Info/>}/>
-
           <Route path="/perfil" element={<Perfil/>} />     
           <Route path="/login" element={<Login/>}/>
-
-          {/* <Route path="/user/:user/:activiti/:asistencia" element={<Asistencia/>}/> */}
-
           <Route path="/user/:id" element={<Asistencia/>}/>
+
+          <Route path="/feria/:category" element={<Info/>}/>
         </Routes>
       </BrowserRouter> 
   );

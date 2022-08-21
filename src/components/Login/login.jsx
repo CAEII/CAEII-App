@@ -4,11 +4,8 @@ import { useEffect } from 'react';
 import {useNavigate} from 'react-router-dom';
 // cookies
 import Cookies from 'universal-cookie';
-// axios
-import axios from "axios";
 // functions
 import login from "./login_function"
-import Kk from "./prueba_axios"
 // styles
 import "../../styles/login/login.css"
 import logoCaeiiDesktop from "../../styles/login/img/logo-caeii-desktop.svg"
@@ -16,12 +13,9 @@ import logoAareiiDesktop from "../../styles/login/img/logo-aareii-desktop.svg"
 import logoAareii from "../../styles/login/img/aareii.png"
 import logoCaeii from "../../styles/login/img/caeii.svg"
 
-// import BaseLayout from "../layout"
-
 export default function Login() {
     const [User, setUser] = useState('');
     const [password, setpassword] = useState('');
-    const [autentification, setautentification] = useState(null);
 
     const cookies = new Cookies();
     const navigate = useNavigate();
@@ -30,7 +24,7 @@ export default function Login() {
     const handleSubmit = event => {
         event.preventDefault(); // 👈️ prevent page refresh
 
-        Kk(User, password)
+        login(User, password)
 
         // 👇️ clear all input values in the form
         setUser('');
@@ -60,8 +54,6 @@ export default function Login() {
                     <img id="logo_caeii_desktop" src={logoCaeiiDesktop} alt="Logo de CAEII XX" />
                 </header>
                 <main id="main_login">
-{/* 
-                    {autentification === false ? <div className="error_msg"><b> usuraio o contraseña incorrectos </b></div> : null} */}
                     
                     <div className="login-card">
                         <form action="" method="post" onSubmit={handleSubmit}>
