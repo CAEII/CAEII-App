@@ -27,7 +27,7 @@ export default function login (Email, Password){
 
         console.log(Response.data)
         // declaro una constatnte con la info que me interesa guardar en la cookie de session
-        const session_cookie_info = {user: {user_id:Response.data.user.id, name: Response.data.user.full_name, admin: true}, token: Response.data.token}
+        const session_cookie_info = {user: {user_id:Response.data.user.id, name: Response.data.user.full_name, admin:  Response.data.user.admin}, token: Response.data.token}
 
         Response.data.user.enrollments.map( enrllment => {                  // Recorro los enrollments del usuario    
             if (enrllment.event.name.includes("CAEII XX")) {                // Reviso si el nombre del evento inclulle el string "CAEII XX"

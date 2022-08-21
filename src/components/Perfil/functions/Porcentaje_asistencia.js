@@ -19,17 +19,17 @@ export default function PorcentajeAsistencia() {
     })
         .then(Response => {
 
-            console.log(Response.data)
+            // console.log(Response)
 
             let suma_asistencia = 0
 
-            // Response.data.user.enrollments.map( enrllment => {                      // Recorro los enrollments del usuario    
-            //     if (enrllment.event.name.includes("CAEII XX")) {                    // Reviso si el nombre del evento inclulle el string "CAEII XX"
-            //         enrllment.selections.map( section => {                          // Recorro las selecciones del usuario
-            //             suma_asistencia = suma_asistencia + section.pivot.attended  // sumo todos los valores de "attended" en el evento, como minimo
-            //         })
-            //     } 
-            // })
+            Response.data.user.enrollments.map( enrllment => {                      // Recorro los enrollments del usuario    
+                if (enrllment.event.name.includes("CAEII XX")) {                    // Reviso si el nombre del evento inclulle el string "CAEII XX"
+                    enrllment.selections.map( section => {                          // Recorro las selecciones del usuario
+                        suma_asistencia = suma_asistencia + section.pivot.attended  // sumo todos los valores de "attended" en el evento, como minimo
+                    })
+                } 
+            })
 
             const porcentaje_asistencia = (suma_asistencia / 5) * 100
 
