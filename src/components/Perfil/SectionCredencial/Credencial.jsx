@@ -11,7 +11,7 @@ import "../../../styles/perfil/css/credencial.css"
 // imgs
 import Astronauta from "../../../styles/perfil/img/astronauta.png";
 
-export default function Credencial({ nombre, asistencia, id }) {
+export default function Credencial({ nombre, asistencia, id}) {
     
     const info_qr = `https://caeii.com.ar/user/${id}` ;                         // info para codificar en el qr (url de la pag + user/:id, el id es dinamico)
 

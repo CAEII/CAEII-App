@@ -87,7 +87,7 @@ export default function Asistencia(){
 
             <div className="asistencia_info">
                 {/* <span className="asistencia_tag nombre_del_asistente" > {user.replace(/_/g, " ")} </span> */}
-                <span className="asistencia_tag nombre_del_asistente" > {Name} </span>
+                <span className="asistencia_tag nombre_del_asistente" > {nombre} </span>
                 <div className={is_here_class}>
                     <span className="activit_name_lavel"> Actividad: </span>
                     <span className="activit_name"> {Activiti.title} </span>
