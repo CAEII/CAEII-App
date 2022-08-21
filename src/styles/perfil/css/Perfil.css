@@ -422,8 +422,7 @@ iframe{
         height: 50px;
     }
     #admin {
-        width: 100vw;
-        margin-left: 90px;
+        grid-column: 1 / 3;
     }
 }
 
