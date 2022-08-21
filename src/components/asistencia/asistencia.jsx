@@ -8,24 +8,26 @@ import axios from "axios";
 import check_admin from "./functions/check_admin";
 import handle_click from "./functions/handle_click";
 import {comparo_con_la_hora_actual, Que_dia_es_hoy} from "../Perfil/Suport_functions"
+// cookies
+import Cookies from 'universal-cookie';
 // stiles
 import "../../styles/asistencia/asistencia.css";
 // json
 import Json_lista_de_actividades from "../Perfil/functions/lista_actividades.json"
 
 const info_del_back = ['146', '151', '156', '158', '162', '169', '172']
+const cookies = new Cookies();
 
 export default function Asistencia(){
-    const { id } = useParams()                                  // id del participante, es obtenida por parametros del url
+    const { id } = useParams()                                          // id del participante, es obtenida por parametros del url
     // las siguientes variables se optienen del enpoint:
-    const [Presente, SetPresente] = useState(false);            // Info sobre la presensia del asistente (true= ya estuvo en la actividad, false= no ha estado en la actividad)
-    const [Name, SetName] = useState(false);                    // Nombre del asistente
-    const [Asistencia, SetAsistencia] = useState(0);            // numero del porcentaje de asistencia
-    const [Activiti, SetActiviti] = useState({title: '', id:''});           // nombre de la actividad actual
+    const [Presente, SetPresente] = useState(false);                    // Info sobre la presensia del asistente (true= ya estuvo en la actividad, false= no ha estado en la actividad)
+    const [Name, SetName] = useState('');                               // Nombre del asistente
+    const [Asistencia, SetAsistencia] = useState(0);                    // numero del porcentaje de asistencia
+    const [Activiti, SetActiviti] = useState({title: '', id:''});       // nombre de la actividad actual
 
-    // esta es la url del endpoint (el id es variable)
-    // const url = `http://${ipv4}:11000/get_info/` + id   
-
+    // en la constante Token guardo el Token de la cookie session
+    const token = cookies.get('session').token.substring(cookies.get('session').token.indexOf("|") + 1)
 
     useEffect(() => {
         Json_lista_de_actividades.map((dia, diaIndex ) => {
@@ -51,6 +53,24 @@ export default function Asistencia(){
                 })
             }
         })
+
+        axios({
+            method: 'get',
+            url: `https://inscripciones.aareii.org.ar/api/v1/users/${id}`,
+            headers: {
+                "Accept": "application/json",
+                Authorization: `Bearer ${token}`
+            }
+        })
+        .then(function (response) {
+            console.log(response)
+        })
+        .catch(function (error) {
+            console.log(error);
+        })
+
+
+
     }, [])
 
 
@@ -66,7 +86,6 @@ export default function Asistencia(){
         <div className="App" id="asistencia">
 
             <div className="asistencia_info">
-                {/* <span className="asistencia_tag nombre_del_asistente" > {user.replace(/_/g, " ")} </span> */}
                 <span className="asistencia_tag nombre_del_asistente" > {Name} </span>
                 <div className={is_here_class}>
                     <span className="activit_name_lavel"> Actividad: </span>

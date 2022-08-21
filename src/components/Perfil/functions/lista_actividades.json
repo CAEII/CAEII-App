@@ -64,7 +64,7 @@
                 "lugar": "Auditorio Accenture"
             },
             {
-                "id": [],
+                "id": null,
                 "titulo": "Conf. Chris Meniw ",
                 "horario": "18:30 - 19:30",
                 "lugar": "Auditorio Accenture"
@@ -118,7 +118,7 @@
                 "lugar": null
             },
             {
-                "id": [],
+                "id": null,
                 "titulo": "Conf. Tomas Karagozian",
                 "horario": "14:30 - 15:30",
                 "lugar": "Auditorio Accenture"
@@ -220,7 +220,7 @@
                 "lugar": "Auditorio Accenture"
             },
             {
-                "id": [],
+                "id": null,
                 "titulo": "Conf. Nicolás Fernandez",
                 "horario": "18:00 - 19:15",
                 "lugar": "Auditorio Accenture"
@@ -280,7 +280,7 @@
                 "lugar": "Auditorio Accenture"
             },
             {
-                "id": [],
+                "id": null,
                 "titulo": "Conf. Damian Pedraza",
                 "horario": "16:45 - 17:45",
                 "lugar": "Auditorio Accenture"

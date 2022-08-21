@@ -64,29 +64,39 @@ export default function Cronograma({SetSalas, Salas, SetActividad, executeScroll
 
 function Lineas({today_activities,SetSalas,Salas, SetActividad, executeScroll}){
 
-    const activities = cookies.get("activities")
-    return today_activities.map((actividad, index) => {
-        // console.log(actividad.id)
+    const activities = cookies.get("activities")    // guardo el contenido de la cookie "activities" en la constante activities
+ 
+    // recorro las actividades de hoy
+    return today_activities.map((actividad, index) => { 
+        // si el id de la actividad es igual "null", significa que esa actividad es comun para todos los asistentes por lo tanto la muestro
         if (actividad.id === null) {
             return <Lineas2 key={index} actividad={actividad} index={index} SetSalas={SetSalas} Salas={Salas} SetActividad={SetActividad} executeScroll={executeScroll}/>
         }
-        return actividad.id.map(id => {
-            if (activities.indexOf(id) !== -1) {
-                return <Lineas2 key={index} actividad={actividad} index={index} SetSalas={SetSalas} Salas={Salas} SetActividad={SetActividad} executeScroll={executeScroll}/>
-            }
+        // si el id de la actividad no es igual "null", significa que esa actividad corresponde solo a algunos de los participantes por lo tanto comparo la lista de ids de la actividad con los ids de actividades del usuario
+        return actividad.id.map( id => {
+            return activities.map( activiti => {
+                if (activiti.selection_value.indexOf(id) !== -1) {
+                    return <Lineas2 key={index} actividad={actividad} index={index} SetSalas={SetSalas} Salas={Salas} SetActividad={SetActividad} executeScroll={executeScroll}/>
+                }
+            })
         })
     })
 };
 
 function Lineas2({actividad,index,SetSalas,Salas, SetActividad, executeScroll}) {
-    var className
+    var className       // en esta variable almaceno todas las clases del <tr> 
+    // Reviso si el titulo de la actividad es "ALMUERZO", "TIEMPO LIBRE", "COFFEE" y si lo es resalto la linea
     if (actividad.titulo === "ALMUERZO" || actividad.titulo === "TIEMPO LIBRE" || actividad.titulo === "COFFEE") {
         className = "conLinea resaltado"
     } else {
         className = ""
     };
 
-    className = className + " " + comparo_con_la_hora_actual(actividad.horario)
+    // comparo la hora de la actividad con la hora actual para saver si ya termino o todavia no empieza
+    let second_class = comparo_con_la_hora_actual(actividad.horario)
+
+    // agrego "second_class" a la variable "className"
+    className = className + " " + second_class
 
     useEffect(() => {
         if (comparo_con_la_hora_actual(actividad.horario) === "En_progreso") {
@@ -112,9 +122,7 @@ function Donde({actividad,SetSalas,Salas,boton_id,executeScroll}){
     
     return(
         <td className="lugar linea">
-            {/* <a href=""> {actividad.lugar} </a> */}
             <button id={boton_id} onClick={() => {handleClick(); executeScroll()}}> {actividad.lugar.replace(/_/g, " ")} </button>
-            {/* <div className="line_container" /><div className="line"></div> */}
         </td>
     )
 }

@@ -1,7 +1,6 @@
 // react
 import React, { useEffect, useState } from "react";
 import { useRef } from "react";
-import { useParams } from 'react-router-dom';
 import {useNavigate} from 'react-router-dom';
 // axios
 import axios from 'axios';
@@ -15,22 +14,18 @@ import SectionMapas from "./SectionMapas/Section_Mapas";
 import Admins from "./SectionAdmins/admins";
 // functions
 // import {Asistencia} from "./Suport_functions"
+import PorcentajeAsistencia from "./functions/Porcentaje_asistencia";
 //styles
 import "../../styles/perfil/css/Perfil.css";
 // imgs
-// import title from "../../styles/home/img/caeii-title.png"
 import CaeiiLogo from "../../styles/perfil/img/CAEII LOGO 1.png";
 // json
-// import json from "./Json_prueva_perfil.json"
-// import json_actividades from "./functions/lista_actividades.json"
 
 const cookies = new Cookies();
 
 
 export default function Perfil() {
-    // const [Coute, SetCuote] = useState("Bienvenido, ¿listo para el despegue?");
     const [Salas, SetSalas] = useState({salida: "Explanada", llegada:"Explanada"});
-
     const [User, SetUser] = useState({
         user_id: "0000",
         name: '',
@@ -48,24 +43,15 @@ export default function Perfil() {
 
     useEffect(() => {
         if (cookies.get('session') !== undefined) {
+            // console.log(cookies.get('session').token.substring(cookies.get('session').token.indexOf("|") + 1));
             SetUser(cookies.get('session').user)
         } else {
             navigate("/")
         }
-    
-        // axios({
-        //     method: 'get',
-        //     url: 'https://inscripciones.aareii.org.ar/api/v1/user',
-        //     headers: {
-        //         "Accept": "application/json",
-        //          Authorization: `Bearer ${cookies.get('session').token.substring(3, cookies.get('session').token.length)}`
-        //     }
-        // }) 
-        // .then( Response => {
-        //     console.log(Response)
-    
-        // }) 
 
+        SetAsistencia(cookies.get('asistencia'))
+
+        PorcentajeAsistencia()
         
     }, [])
 
@@ -99,8 +85,7 @@ export default function Perfil() {
 
                     {User.admin === true ? <Admins/> : null}
                     
-                    <Credencial nombre={User.name} asistencia={Asistencia} Actividad={Actividad}/>
-
+                    <Credencial nombre={User.name} asistencia={Asistencia} id={User.user_id}/>
 
                     <Cronograma SetSalas={SetSalas}  Salas={Salas} SetActividad={SetActividad} executeScroll={executeScroll}/>
 
