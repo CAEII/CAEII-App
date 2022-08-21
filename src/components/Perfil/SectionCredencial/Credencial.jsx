@@ -13,9 +13,7 @@ import Astronauta from "../../../styles/perfil/img/astronauta.png";
 
 export default function Credencial({ nombre, asistencia, id }) {
     
-    const info_qr = `https://caeii.com.ar/user/${id}` ;                  // info para codificar en el qr (url de la pag + user/:id, el id es dinamico)
-
-    console.log(info_qr)
+    const info_qr = `https://caeii.com.ar/user/${id}` ;                         // info para codificar en el qr (url de la pag + user/:id, el id es dinamico)
 
     const [QR_modal_IsOpen, Set_QR_modal_IsOpen] = useState(false)              // estado del modal que contiene el qr
     const [info_modal_IsOpen, Set_info_modal_IsOpen] = useState(false)          // estado del modal que tiene info sobre el certificado

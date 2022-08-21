@@ -18,19 +18,14 @@ import Admins from "./SectionAdmins/admins";
 //styles
 import "../../styles/perfil/css/Perfil.css";
 // imgs
-// import title from "../../styles/home/img/caeii-title.png"
 import CaeiiLogo from "../../styles/perfil/img/CAEII LOGO 1.png";
 // json
-// import json from "./Json_prueva_perfil.json"
-// import json_actividades from "./functions/lista_actividades.json"
 
 const cookies = new Cookies();
 
 
 export default function Perfil() {
-    // const [Coute, SetCuote] = useState("Bienvenido, ¿listo para el despegue?");
     const [Salas, SetSalas] = useState({salida: "Explanada", llegada:"Explanada"});
-
     const [User, SetUser] = useState({
         user_id: "0000",
         name: '',
@@ -48,7 +43,7 @@ export default function Perfil() {
 
     useEffect(() => {
         if (cookies.get('session') !== undefined) {
-            console.log(cookies.get('session').token.substring(cookies.get('session').token.indexOf("|") + 1));
+            // console.log(cookies.get('session').token.substring(cookies.get('session').token.indexOf("|") + 1));
             SetUser(cookies.get('session').user)
         } else {
             navigate("/")
@@ -100,8 +95,7 @@ export default function Perfil() {
 
                     {User.admin === true ? <Admins/> : null}
                     
-                    <Credencial nombre={User.name} asistencia={Asistencia} Actividad={Actividad} id={User.user_id}/>
-
+                    <Credencial nombre={User.name} asistencia={Asistencia} id={User.user_id}/>
 
                     <Cronograma SetSalas={SetSalas}  Salas={Salas} SetActividad={SetActividad} executeScroll={executeScroll}/>
 
