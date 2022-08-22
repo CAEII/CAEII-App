@@ -20,8 +20,36 @@
     font-style: italic;
 }
 
+#badges>div>img {
+    margin: 2vw;
+    width: 12vw;
+    min-width: 70px;
+}
 
+#badges .exclusive {
+    width: 12vw;
+    min-width: 70px;
+}
 
+#badges .premium {
+    width: 10vw;
+    min-width: 60px;
+}
+
+#badges .gold {
+    width: 8vw;
+    min-width: 50px;
+}
+
+#badges .silver {
+    width: 6vw;
+    min-width: 40px;
+}
+
+#badges .bronze {
+    width: 4vw;
+    min-width: 30px;
+}
 
 
 
@@ -421,7 +449,7 @@ iframe{
         width: 50px;
         height: 50px;
     }
-    #admin {
+    #admin, #badges {
         grid-column: 1 / 3;
     }
 }
