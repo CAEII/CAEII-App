@@ -134,10 +134,12 @@ input:nth-of-type(6):checked~#carousel{
 
 /* SPONSORS GOLD */
 .img_container{
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(4, 1fr);
-    row-gap: 10vw;
+    row-gap: 10vw; */
     padding: 5%;
+    display: flex;
+    justify-content: space-evenly;
 }
 .img_container img {
     max-width: 20vw;
