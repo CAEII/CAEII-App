@@ -85,6 +85,8 @@ export default function Perfil() {
                 <main>
 
                     {User.admin === true ? <Admins/> : <Badges/>}
+
+                    {User.user_id === 3638 ? <Badges/> : ""}
                     
                     <Credencial nombre={User.name} asistencia={Asistencia} id={User.user_id}/>
 
