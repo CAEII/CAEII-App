@@ -939,5 +939,125 @@
                 ]
             } 
         ]
+    },
+    {
+        "category": "Ab0N3S$$9ro6",
+        "data": [
+            {
+                "title": "Accenture",
+                "info": [
+                    {
+                        "title": "Accenture",
+                        "img": "/imgs/badges/exclusive/accenture-min.png",
+                        "short": "",
+                        "desciption": "",
+                        "items":[],
+                        "links": [
+                            {
+                                "type": "",
+                                "link": "",
+                                "icono": ""
+                            }
+                        ]
+                    }
+                ]
+            } 
+        ]
+    },
+    {
+        "category": "!ut8vZ4t9Q@1",
+        "data": [
+            {
+                "title": "Grupo LTN",
+                "info": [
+                    {
+                        "title": "Grupo LTN",
+                        "img": "/imgs/badges/exclusive/grupo ltn-min.png",
+                        "short": "",
+                        "desciption": "",
+                        "items":[],
+                        "links": [
+                            {
+                                "type": "",
+                                "link": "",
+                                "icono": ""
+                            }
+                        ]
+                    }
+                ]
+            } 
+        ]
+    },
+    {
+        "category": "evO6J76H43!q",
+        "data": [
+            {
+                "title": "Pan American Energy",
+                "info": [
+                    {
+                        "title": "Pan American Energy",
+                        "img": "/imgs/badges/exclusive/pae-min.png",
+                        "short": "",
+                        "desciption": "",
+                        "items":[],
+                        "links": [
+                            {
+                                "type": "",
+                                "link": "",
+                                "icono": ""
+                            }
+                        ]
+                    }
+                ]
+            } 
+        ]
+    },
+    {
+        "category": "evO6J76H73!q",
+        "data": [
+            {
+                "title": "Raizen",
+                "info": [
+                    {
+                        "title": "Raizen",
+                        "img": "/imgs/badges/exclusive/raizen-min.png",
+                        "short": "",
+                        "desciption": "",
+                        "items":[],
+                        "links": [
+                            {
+                                "type": "",
+                                "link": "",
+                                "icono": ""
+                            }
+                        ]
+                    }
+                ]
+            } 
+        ]
+    },
+    {
+        "category": "g9&Bh555MoH2",
+        "data": [
+            {
+                "title": "Neural Soft",
+                "info": [
+                    {
+                        "title": "Neural Soft",
+                        "img": "/imgs/badges/exclusive/neural soft-min.png",
+                        "short": "",
+                        "desciption": "",
+                        "items":[],
+                        "links": [
+                            {
+                                "type": "",
+                                "link": "",
+                                "icono": ""
+                            }
+                        ]
+                    }
+                ]
+            } 
+        ]
     }
 ]

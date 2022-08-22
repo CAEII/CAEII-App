@@ -15,7 +15,37 @@ import "../../styles/asistencia/asistencia.css";
 // json
 import Json_lista_de_actividades from "../Perfil/functions/lista_actividades.json"
 
-const info_del_back = ['146', '151', '156', '158', '162', '169', '172']
+// const info_del_back = ['146', '151', '156', '158', '162', '169', '172']
+const info_del_back = [
+    {
+        "selection_value": "146",
+        "selection_id": 1779
+    },
+    {
+        "selection_value": "151",
+        "selection_id": 1780
+    },
+    {
+        "selection_value": "156",
+        "selection_id": 1781
+    },
+    {
+        "selection_value": "158",
+        "selection_id": 1782
+    },
+    {
+        "selection_value": "162",
+        "selection_id": 1783
+    },
+    {
+        "selection_value": "169",
+        "selection_id": 1784
+    },
+    {
+        "selection_value": "172",
+        "selection_id": 1785
+    }
+]
 const cookies = new Cookies();
 
 export default function Asistencia(){
@@ -30,10 +60,43 @@ export default function Asistencia(){
     const token = cookies.get('session').token.substring(cookies.get('session').token.indexOf("|") + 1)
 
     useEffect(() => {
-        Json_lista_de_actividades.map((dia, diaIndex ) => {
-            if (Que_dia_es_hoy() === dia.dia) {
-                return dia.actividades.map((actividad, actividadIndex) => {
-                    if (actividad.id !== null) {
+
+        axios({
+            method: 'get',
+            url: `https://inscripciones.aareii.org.ar/api/v1/users/${id}`,
+            headers: {
+                "Accept": "application/json",
+                Authorization: `Bearer ${token}`
+            }
+        })
+        .then(function (response) {
+            // console.log(response.data.user.first_name)
+            SetName(response.data.user.first_name)
+        })
+        .catch(function (error) {
+            console.log(error);
+        })
+
+
+        Json_lista_de_actividades.map((dia, diaIndex ) => {                                 // recorro la lista de actividades
+            // if (Que_dia_es_hoy() === dia.dia) {                                             // si el dia de hoy coniside con el dia del json:
+            if ("viernes" === dia.dia) {                                             // si el dia de hoy coniside con el dia del json:
+                return dia.actividades.map((actividad, actividadIndex) => {                 // recorro la lista de actividades de hoy
+                    if (actividad.id !== null) {                                            // si el id es distinto de "null":
+                        // reviso si la actividad esta en progreso
+                        if (comparo_con_la_hora_actual(actividad.horario) === "En_progreso") {
+                            // recorro la lista de actividades del usuario
+                            info_del_back.map( actividad => {
+                                console.log(actividad)
+                            })
+    
+                            // SetActiviti({title: actividad.titulo, id:activiti_id})
+                        }
+
+
+
+
+
                         actividad.id.map( activiti_id => {
                             if (info_del_back.indexOf(activiti_id) !== -1) {
                                 // SetActiviti({title: actividad.titulo, id:id})
@@ -53,23 +116,6 @@ export default function Asistencia(){
                 })
             }
         })
-
-        axios({
-            method: 'get',
-            url: `https://inscripciones.aareii.org.ar/api/v1/users/${id}`,
-            headers: {
-                "Accept": "application/json",
-                Authorization: `Bearer ${token}`
-            }
-        })
-        .then(function (response) {
-            console.log(response)
-        })
-        .catch(function (error) {
-            console.log(error);
-        })
-
-
 
     }, [])
 
