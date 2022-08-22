@@ -800,16 +800,16 @@
         ]
     },
     {
-        "category": "Talleres",
+        "category": "Noches CAEII",
         "data": [
             {
-                "title": "esto podria ser el pilar",
+                "title": "Cóctel de Bienvenida",
                 "info": [
                     {
-                        "title": "",
-                        "img": "",
-                        "short": "",
-                        "desciption": "",
+                        "title": "Cóctel de Bienvenida",
+                        "img": "/imgs/noches/club.webp",
+                        "short": "¡Les damos la bienvenida! El congreso arranca con un cóctel de bienvenida que no te podés perder. La noche del jueves, ¡nos vamos al Club Hípico!",
+                        "desciption": "¡Les damos la bienvenida! El congreso arranca el jueves con un cóctel de bienvenida a la noche que no te podés perder. La noche del jueves, ¡nos vamos al Club Hípico! (el ingreso viene incluido con la entrada al congreso). Inicia a las 22hs, e incluye una consumición y una ración de comida por persona.",
                         "items":[],
                         "links": [
                             {
@@ -820,7 +820,102 @@
                         ]
                     }
                 ]
-            } 
+            },
+            {
+                "title": "Noche en Bustelo",
+                "info": [
+                    {
+                        "title": "Noche en Bustelo",
+                        "img": "/imgs/noches/bustelo.webp",
+                        "short": "Tal vez lo vayas a ver muchas veces de día durante las actividades del congreso, pero la noche de viernes preparate para bailar y divertirte en el Auditori Bustelo.",
+                        "desciption": "Tal vez lo vayas a ver muchas veces de día durante las actividades del congreso, pero la noche de viernes preparate para bailar y divertirte en el Auditori Bustelo. ¡Arrancamos a la medianoche! Podés ingresar si adquiriste el pack noche o si compraste la entrada del día con un valor de $2000 (incluye una cerveza de consumición).",
+                        "items":[],
+                        "links": [
+                            {
+                                "type": "",
+                                "link": "",
+                                "icono": ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "Fiesta en Runner",
+                "info": [
+                    {
+                        "title": "Fiesta en Runner",
+                        "img": "/imgs/noches/runner.jfif",
+                        "short": "¿Qué hiciste el sábado? ¿Fuiste al Hackatón o a las charlas? Eso no importa. ¡Salgamos todos a Runner! El sábado a la noche nos volvemos a juntar todos. ",
+                        "desciption": "¿Qué hiciste el sábado? ¿Fuiste al Hackatón o a las charlas? Eso no importa. ¡Salgamos todos a Runner! El sábado a la noche nos volvemos a juntar todos. Esta noche empieza puntual a las 23:30 hs. Si querés participar deberás abonar el pack noche o la entrada para esta noche a $2000.",
+                        "items":[],
+                        "links": [
+                            {
+                                "type": "",
+                                "link": "",
+                                "icono": ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "Cena de gala",
+                "info": [
+                    {
+                        "title": "Cena de gala",
+                        "img": "/imgs/noches/bodega.jpg",
+                        "short": "El domingo es el último día de congreso... Así que para cerrar este increíble evento tenemos la cena de gala. Ahora sí, nos vestimos elegantes y nos preparamos para decirle adiós a Mendoza.",
+                        "desciption": "El domingo es el último día de congreso... Así que para cerrar este increíble evento tenemos la cena de gala. Ahora sí, nos vestimos elegantes y nos preparamos para decirle adiós a Mendoza. Para cerrar con broche de oro, nos vamos a la Bodega El Marqués de Montecristo. La cita es a las 22hs e inclye comida estilo lunch con gaseosas y vino libre durante la cena, y dos consumiciones.",
+                        "items":[],
+                        "links": [
+                            {
+                                "type": "",
+                                "link": "",
+                                "icono": ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "Pack noche",
+                "info": [
+                    {
+                        "title": "Pack Noche",
+                        "img": "/imgs/noches/pack.jfif",
+                        "short": "¿Querés ir a las dos noches (viernes y sábado)? ¡El pack noche es para vos! Te ofrecemos una promoción para que puedas ir a ambas noches.",
+                        "desciption": "¿Querés ir a las dos noches (viernes y sábado)? ¡El pack noche es para vos! Te ofrecemos una promoción para que puedas ir a ambas noches. Por $3000 tenés la entrada a ambas noches y una consumición para cada día. El pack noche o la venta individual es hasta el viernes 26 12 hs sin excepciones. Se puede comprar en el Auditorio Angel Bustelo. Al inicio del evento se informará el lugar exacto. Las entradas solo las podrán adquirir las personas que están inscriptas al congreso.",
+                        "items":[],
+                        "links": [
+                            {
+                                "type": "",
+                                "link": "",
+                                "icono": ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "Transporte",
+                "info": [
+                    {
+                        "title": "Transporte",
+                        "img": "/imgs/noches/transporte.jfif",
+                        "short": "¿Y cómo llego? Muy fácil en tu perfil tenés toda la información en el mapa, pero si lo que necesitás es transporte... Cuando compres tu entrada, ¡podrás comprar también el traslado!",
+                        "desciption": "¿Y cómo llego? Muy fácil en tu perfil tenés toda la información en el mapa, pero si lo que necesitás es transporte... Cuando compres tu entrada, ¡podrás comprar también el traslado! Se vende en el mismo lugar que el pack noche. Sale $1000 por noche y solo está disponible los días sábado y domingo, es decir, solo va a Runner y a la Bodega El Marqués de Montecristo y sale y vuelve al Bustelo. Se vende hasta el viernes 26 12:00 (se venden juntas la ida y la vuelta).",
+                        "items":[],
+                        "links": [
+                            {
+                                "type": "",
+                                "link": "",
+                                "icono": ""
+                            }
+                        ]
+                    }
+                ]
+            }
         ]
     },
     {
