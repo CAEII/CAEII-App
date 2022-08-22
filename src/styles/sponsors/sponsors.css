@@ -12,6 +12,10 @@ body{
     max-width: 100%;
     max-height: 50%;
 }
+#carousel .item .premiumSize{
+    max-width: 65%;
+    max-height: 40%;
+}
 .Sponsors_card_body {
     margin: 0;
     display: grid;
@@ -142,9 +146,18 @@ input:nth-of-type(6):checked~#carousel{
     justify-content: space-evenly;
 }
 .img_container img {
-    max-width: 20vw;
+    max-width: 15vw;
+    min-width: 50px;
 }
 
 #Sponsors_gold{
     grid-column: 1/3;
+    margin-bottom: 10vh;
+}
+
+
+/* SPONSORS PREMIUM */
+
+.premiumSize {
+    max-width: 10vw;
 }

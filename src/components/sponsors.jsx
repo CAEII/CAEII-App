@@ -183,12 +183,12 @@ function Carrucel(props) {
         return (
             <div id="carousel">
                 <div class="item" >
-                    <img src={Techint} alt="Techint"></img>
-                    <img src={GrupoPeñaflor} alt="GrupoPeñaflor"></img>
+                    <img src={Techint} alt="Techint" className="premiumSize"></img>
+                    <img src={GrupoPeñaflor} alt="GrupoPeñaflor" className="premiumSize"></img>
                 </div>
                 <div class="item" >
-                    <img src={Invap} alt="Invap"></img>
-                    <img src={Coope} alt="Coope"></img>
+                    <img src={Invap} alt="Invap" className="premiumSize"></img>
+                    <img src={Coope} alt="Coope" className="premiumSize"></img>
                 </div>
             </div>
         )
