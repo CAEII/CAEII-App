@@ -12,6 +12,7 @@ import Credencial from "./SectionCredencial/Credencial";
 import Cronograma from "./SectionCronograma/Cronograma";
 import SectionMapas from "./SectionMapas/Section_Mapas";
 import Admins from "./SectionAdmins/admins";
+import Badges from "./SectionBadges/badges"
 // functions
 // import {Asistencia} from "./Suport_functions"
 import PorcentajeAsistencia from "./functions/Porcentaje_asistencia";
@@ -83,7 +84,7 @@ export default function Perfil() {
             <BaseLayout>
                 <main>
 
-                    {User.admin === true ? <Admins/> : null}
+                    {User.admin === true ? <Admins/> : <Badges/>}
                     
                     <Credencial nombre={User.name} asistencia={Asistencia} id={User.user_id}/>
 
