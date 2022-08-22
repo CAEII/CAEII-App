@@ -46,16 +46,19 @@ export default function Section_Mapas({salas,referencia}) {
                     <button className={`maps_button_container_${DentroAuditorio}`} disabled={DentroAuditorio} onClick={() => {SetDentroAuditorio(!DentroAuditorio)}}> Dentro del auditorio </button>
                     <button className={`maps_button_container_${!DentroAuditorio}`} disabled={!DentroAuditorio} onClick={() => {SetDentroAuditorio(!DentroAuditorio)}}> Fuera del auditorio </button>
                 </div>
-                {DentroAuditorio === true ? <Selects Mapas={Mapa} _useStates={{salida:Set_Sala_salida, llegada:Set_Sala_llegada}} valores_default={valores_default}/> : null}
+                {DentroAuditorio === true ? <Selects SetMapa={SetMapa} Mapas={Mapa} _useStates={{salida:Set_Sala_salida, llegada:Set_Sala_llegada}} valores_default={valores_default}/> : null}
             </div> 
             {DentroAuditorio === true ? <Mapas Mapas={Mapa} sala_resaltada={{salida:Sala_salida, llegada:Sala_llegada}}/>: <iframe title="googleMaps" src="https://www.google.com/maps/d/embed?mid=1c0v85K2T6yKGLi1ZnK43yhwhomSS07s&ehbc=2E312F" width="640" height="480"></iframe>}
         </section>
     )
 }
 
-function Selects({Mapas,_useStates,valores_default}) {
+function Selects({SetMapa, Mapas,_useStates,valores_default}) {
     const [SalidaState, SetSalidaState] = useState(valores_default.Sala_de_salida)
     const [LlegadaState, SetLlegadaState] = useState(valores_default.Sala_de_llegada)
+
+    const prueba_mapas = ["SegundoPiso","PimerPiso","AuditorioPrincipal","PlantaBaja"]
+
     useEffect(() => {
         SetSalidaState(valores_default.Sala_de_salida)
         SetLlegadaState(valores_default.Sala_de_llegada)
@@ -64,10 +67,15 @@ function Selects({Mapas,_useStates,valores_default}) {
         <div className="section_of_sections">
             <label htmlFor="salida" class="title_text">Estoy aquí: </label>
                 <div class="select" id="salida">
-                    <select onChange={(value) => {_useStates.salida(value.target.value)}} >
+                    <select onChange={(value) => {
+                        _useStates.salida(value.target.value);
+                        console.log(en_que_mapa(value.target.value,LlegadaState,json_lista_de_salas))
+                        SetMapa(en_que_mapa(value.target.value,valores_default.Sala_de_llegada,json_lista_de_salas))
+                    }} >
                         <option id="default_option_salida" value={SalidaState} selected>  </option>
                         {
-                            Mapas.map((mapa, mapindex) => {                                                                                 // Recorro el array de mapas y por cada mapa:
+                            //Mapas.map((mapa, mapindex) => {                                                                               // Recorro el array de mapas y por cada mapa:
+                            prueba_mapas.map((mapa, mapindex) => {                                                                                 // Recorro el array de mapas y por cada mapa:
                                 return json_lista_de_salas[mapa].map((sala, salaIndex) => {                                                 // Recorro el array de salas y devuelvo un "<option>" con el valor de la sala
                                    return <option key={mapindex+"_"+salaIndex} value={sala}> {sala.replace(/_/g, " ")} </option>
                                 })
