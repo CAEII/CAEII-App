@@ -4,27 +4,27 @@
         "pilar": "Odisea Espacial",
         "actividades": [
             {
-                "id": null,
+                "id": ["100", "151", "179"],
                 "titulo": "Acreditaciones y Feria de Empresas",
-                "horario": "08:00 - 12:00",
+                "horario": "08:00 - 15:00",
                 "lugar": "Nave Cultural"
             },
             {
                 "id": null,
                 "titulo": "ALMUERZO",
-                "horario": "12:00 - 14:00",
+                "horario": "20:00 - 20:00",
                 "lugar": ""
             },
             {
                 "id": null,
                 "titulo": "Apertura",
-                "horario": "14:00 - 14:30",
+                "horario": "20:00 - 20:30",
                 "lugar": "Auditorio Accenture"
             },
             {
                 "id": ["100", "151", "179"],
                 "titulo": "Conf. Hebe Cremades ",
-                "horario": "14:30 - 16:00",
+                "horario": "20:30 - 16:00",
                 "lugar": "Auditorio Accenture"
             },
             {

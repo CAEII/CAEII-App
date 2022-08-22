@@ -92,18 +92,18 @@
 
 @media (prefers-color-scheme: light) {
     .App#asistencia, .swal2-popup { 
-       background-color: rgb(220, 218, 255);
+       background-color: rgb(220, 218, 255) !important;
    }
    .swal2-title, .swal2-popup strong {
-        color: rgb(23, 22, 41);
+        color: rgb(23, 22, 41) !important;
    }
 }
 
 @media (prefers-color-scheme: dark) {
     .App#asistencia, .swal2-popup {
-        background-color: rgb(23, 22, 41);
+        background-color: rgb(23, 22, 41) !important;
     }
     .swal2-title{
-        color: rgb(220, 218, 255);
+        color: rgb(220, 218, 255) !important;
    }
 }

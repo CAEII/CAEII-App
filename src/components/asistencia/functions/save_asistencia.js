@@ -3,21 +3,8 @@ import axios from "axios";
 // Sweet Alert
 import Swal from 'sweetalert2'; 
 
-const ipv4 = process.env.REACT_APP_ipV4        // string de la direccion ipv4. ejemplo: 192.168.1.40
-
 // esta funcion hace una peticion al server para guardar la asistencia y muestra un mensaje de exito o error
-export default function save_asistencia(user, Presente, asistencia, SetPresente) {
-    let new_asistencia
-    if (Presente === true) {
-        new_asistencia = parseInt(asistencia) + 10
-    } else{
-   
-        new_asistencia = parseInt(asistencia)
-    }
-
-    console.log(`asistencia: ${asistencia}, nueva asistencia: ${new_asistencia}`)
-
-    const selection_id = 12
+export default function save_asistencia(Presente, SetPresente, selection_id) {
 
     const url = `https://inscripciones.aareii.org.ar/api/v1/selections/${selection_id}/update`          // url para hacer la request con axios
 
