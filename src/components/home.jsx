@@ -235,8 +235,8 @@ function Home() {
 
             <article id="1">
               <h3> {json[1].data[0].info[0].title} </h3>
-              <p class="movile"> {json[1].data[0].info[0].short} </p>
-              <p class="desktop"> {json[1].data[0].info[0].short} </p> 
+              <p /* class="movile" */> {json[1].data[0].info[0].short} </p>
+              {/* <p class="desktop"> {json[1].data[0].info[0].short} </p>  */}
               <div class="img">
                 <div class="imgOrbit">
                   <img src={json[1].data[0].info[1].img} alt="visitas 1" />
@@ -247,8 +247,8 @@ function Home() {
 
             <article id="2" class="derecha">
               <h3> {json[1].data[1].info[0].title} </h3>
-              <p className="movile"> {json[1].data[1].info[0].short} </p>
-              <p className="desktop"> {json[1].data[1].info[0].short} </p> {/* Si ocupa toda la pantalla debe ir la descripción entera */}
+              <p /* className="movile" */> {json[1].data[1].info[0].short} </p>
+              {/* <p className="desktop"> {json[1].data[1].info[0].short} </p> */} {/* Si ocupa toda la pantalla debe ir la descripción entera */}
               <div className="img">
                 <div className="imgOrbit">
                   <img src={json[1].data[1].info[1].img} alt="visitas 2" />
@@ -259,8 +259,8 @@ function Home() {
 
             <article id="3">
               <h3> {json[1].data[2].info[0].title} </h3>
-              <p className="movile"> {json[1].data[2].info[0].short} </p>
-              <p className="desktop"> {json[1].data[2].info[0].short} </p>
+              <p /* className="movile" */> {json[1].data[2].info[0].short} </p>
+              {/* <p className="desktop"> {json[1].data[2].info[0].short} </p> */}
               <div className="img">
                 <div className="imgOrbit">
                   <img src={json[1].data[2].info[1].img} alt="visitas 3" />
@@ -271,8 +271,8 @@ function Home() {
 
             <article id="4" class="derecha">
               <h3> {json[1].data[3].info[0].title} </h3>
-              <p className="movile"> {json[1].data[3].info[0].short} </p>
-              <p className="desktop"> {json[1].data[3].info[0].short} </p> {/* Si ocupa toda la pantalla debe ir la descripción entera */}
+              <p /* className="movile" */> {json[1].data[3].info[0].short} </p>
+              {/* <p className="desktop"> {json[1].data[3].info[0].short} </p> */} {/* Si ocupa toda la pantalla debe ir la descripción entera */}
               <div className="img">
                 <div className="imgOrbit">
                   <img src={json[1].data[3].info[1].img} alt="visitas 2" />
@@ -283,8 +283,8 @@ function Home() {
 
             <article id="5">
               <h3> {json[1].data[4].info[0].title} </h3>
-              <p className="movile"> {json[1].data[4].info[0].short} </p>
-              <p className="desktop"> {json[1].data[4].info[0].desciption} </p>
+              <p /* className="movile" */> {json[1].data[4].info[0].short} </p>
+              {/* <p className="desktop"> {json[1].data[4].info[0].short} </p> */}
               <div className="img">
                 <div className="imgOrbit">
                   <img src={json[1].data[4].info[1].img} alt="visitas 3" />
@@ -295,8 +295,8 @@ function Home() {
 
             <article id="6" class="derecha">
               <h3> {json[1].data[5].info[0].title} </h3>
-              <p className="movile"> {json[1].data[5].info[0].short} </p>
-              <p className="desktop"> {json[1].data[5].info[0].short} </p> {/* Si ocupa toda la pantalla debe ir la descripción entera */}
+              <p /* className="movile" */> {json[1].data[5].info[0].short} </p>
+              {/* <p className="desktop"> {json[1].data[5].info[0].desciption} </p> */}
               <div className="img">
                 <div className="imgOrbit">
                   <img src={json[1].data[5].info[1].img} alt="visitas 2" />
