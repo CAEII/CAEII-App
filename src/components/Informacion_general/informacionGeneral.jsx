@@ -17,7 +17,10 @@ import title from "../../styles/info/img/caeii-title.png"
 import json from "../../informacion.json"
 
 const cookies = new Cookies();
-const codigos_empresas = ["Ab0N3S$$9ro6","!ut8vZ4t9Q@1","evO6J76H43!q","evO6J76H73!q","g9&Bh555MoH2"]
+const codigos_empresas = [
+    "Ab0N3S$$9ro6","!ut8vZ4t9Q@1","evO6J76H43!q","evO6J76H73!q","g9&Bh555MoH2","jB098mQg2HOp","439hkqZor918","CmMFXw4037Ym","Ee1X20xMi1DA","w0cxMp8cx1Wm",
+    "Yp0a134WS106","LNbPKi9Rh354","DfP3d10ki1qc","a7o45GcX7NWR","rWEI56NM4LOy","Ts8PxwN6o5eB","hTaPY4Jw75zk","z79vESY8bvO4","Te20z453RnIl"
+]
 
 // componente informacion general
 export default function Info_general() {
@@ -43,6 +46,7 @@ export default function Info_general() {
             lista_insignias = cookies.get("insignias")
 
             if (lista_insignias.includes(jsonDataCategory[0].info[0].img)) {
+                console.log(lista_insignias)
                 
                 Swal_title = `oh no, parese que ya tenes esta insignia`
                 Swal_icono = 'error'
@@ -60,41 +64,12 @@ export default function Info_general() {
         } else {
             lista_insignias = [jsonDataCategory[0].info[0].img]
             Swal_title = `Conseguiste tu primer insignia!!`
+            Swal_icono = 'success'
         }
-
-        // if (!cookies.get("insignias")) {
-        //     lista_insignias = [jsonDataCategory[0].info[0].img]
-
-        //     Swal_title = `Conseguiste tu primer insignia!!`
-
-           
-
-        // } else {
-
-        //     lista_insignias = cookies.get("insignias")
-
-        //     if (lista_insignias.includes(jsonDataCategory[0].title)) {
-                
-        //         Swal_title = `oh no, parese que ya tenes esta insignia`
-        //         Swal_icono = 'error'
-
-        //     } else {
-        //         console.log("Genial!, conseguiste la insignia de " + jsonDataCategory[0].title)
-
-        //         console.log(lista_insignias)
-
-        //         lista_insignias.push(jsonDataCategory[0].info[0].img)
-                
-        //         Swal_title = `Genial!, conseguiste la insignia de ${jsonDataCategory[0].title}`
-        //         Swal_icono = 'success'
-        //     }
-        // }
-
-        cookies.set('insignias', lista_insignias, { path: '/', maxAge: 5184000 });
 
         let timerInterval
             Swal.fire({
-                title: Swal_title,
+                title:  Swal_title,
                 icon: Swal_icono,
                 timer: 2000,
                 timerProgressBar: true,
@@ -106,6 +81,10 @@ export default function Info_general() {
                 }
             })
     }
+
+    setTimeout(() => {
+        cookies.set('insignias', lista_insignias, { path: '/', maxAge: 5184000 });
+    }, 100);
 
     if (jsonDataCategory) {         // si exixte la variable "jsonDataCategory" (significa que la categoria de la url existe dentro del json), devuelvo el componente, si no existe devuelvo un error
         return(

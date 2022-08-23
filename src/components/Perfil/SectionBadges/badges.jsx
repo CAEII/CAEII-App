@@ -2,6 +2,8 @@
 import Cookies from 'universal-cookie';
 // react
 import { useState } from "react"
+// components
+import Modal from "../SectionCredencial/Modals";
 
 const cookies = new Cookies();
 
@@ -16,17 +18,24 @@ function Badges() {
     return (
         <section id="badges">
             <h2> Insignias </h2>
-            <div>
-                {cookies.get("insignias") ? insignia_Img (Imgs) : null}
+            <div className="badge_container_container">
+                {
+                    Imgs.map( (Img, img_index) => {
+                        return <Img_modal Img={Img} key={img_index}/>
+                    })
+                }
             </div>
         </section> 
     )
 }
 
-function insignia_Img (Imgs){
-    return Imgs.map( Img => {
-        return <img src={Img}></img>
-    })
+function Img_modal ({Img}){
+    console.log(Img)
+    return (
+        <div className="badge_container">
+            <img src={Img}></img>
+        </div>
+    )
 }
 
 export default Badges;

@@ -1163,7 +1163,7 @@
                 "info": [
                     {
                         "title": "Techint",
-                        "img": "",
+                        "img": "/imgs/badges/premium/techin-min.png",
                         "short": "",
                         "desciption": "Techint es el mayor productor de acero de Argentina y el mayor productor global de tubos sin costura, usados principalmente en la industria petrolera. Es líder en las áreas de petroquímicos, refinería, minería, plantas industriales, plantas de tratamiento de aguas, tuberías, telecomunicaciones, tecnología de información, rutas y autopistas, terminales marinas, puentes, presas y aeropuertos.",
                         "items":[],
@@ -1187,7 +1187,7 @@
                 "info": [
                     {
                         "title": "INVAP",
-                        "img": "",
+                        "img": "/imgs/badges/premium/invap-min.png",
                         "short": "",
                         "desciption": "INVAP S. E. es una empresa argentina de alta tecnología dedicada al diseño, integración, y construcción de plantas, equipamientos y dispositivos en áreas de alta complejidad como energía nuclear, tecnología espacial, tecnología industrial y equipamiento médico y científico.",
                         "items":[],
@@ -1211,7 +1211,7 @@
                 "info": [
                     {
                         "title": "Municipalidad de Guaymallén",
-                        "img": "",
+                        "img": "/imgs/badges/premium/guaymallen-min.png",
                         "short": "",
                         "desciption": "Para hablar de la formación de Guaymallén como departamento, hay que remontarse a 1561, año en el que el capitán español Pedro del Castillo funda la provincia de Mendoza. Para que este hecho fuera posible, del Castillo tuvo que acordar con el cacique huarpe Hernando Goaymaye, dado que los Huarpes eran pobladores de lo que se conoce como Área Fundacional. Por aquel entonces, y en lo que hoy son los distritos de Pedro Molina y San José, se encontraba la mayor población de origen Huarpe de la región. La génesis del departamento como una zona de características agrícolas y productivas encuentra su correlato en el significado de su nombre. Guay-mayén, que en lengua huarpe significa «tierra de ciénagas, vegas o bañados».",
                         "items":[],
@@ -1235,7 +1235,7 @@
                 "info": [
                     {
                         "title": "Grupo Peñaflor",
-                        "img": "",
+                        "img": "/imgs/badges/premium/peñaflor-min.png",
                         "short": "",
                         "desciption": "Grupo Peñaflor es la empresa vitivinícola líder de la Argentina y actualmente se encuentra ubicada dentro de las 10 principales compañías productoras de vino a nivel mundial. Con exportaciones anuales por U$S 200 millones y presencia en más de 95 países, Grupo Peñaflor logró posicionarse como el principal exportador de vino embotellado del país y el productor Nº 1 de Malbec del mundo. Posee más de 3200 hectáreas productivas de viñedos en las principales zonas vitivinícolas de Argentina y emplea a más de 2900 personas.",
                         "items":[],
@@ -1259,7 +1259,7 @@
                 "info": [
                     {
                         "title": "Pizarras Blancas",
-                        "img": "",
+                        "img": "/imgs/badges/gold/pizarras-min.png",
                         "short": "",
                         "desciption": "En Pizarras Blancas, acompañamos tus procesos… Desde esa inquietud, hasta convertir en realidad tus objetivos… Hace años que venimos trabajando en eso y hoy, tenemos un producto para cada necesidad. Cuando nos preguntan ¿Qué somos? Somos tus compañeros, somos Pizarrasblancas.com.ar. Una Librería especializada en pizarras",
                         "items":[],
@@ -1283,7 +1283,7 @@
                 "info": [
                     {
                         "title": "Bottino HNO. S.A.",
-                        "img": "",
+                        "img": "/imgs/badges/gold/bottino.png",
                         "short": "",
                         "desciption": "A lo largo de todos estos años, la firma se impuso desafíos y potenció su gestión empresaria. Desde que Grundfos desembarcó en 1995 en Argentina, Bottino Hnos SA. fue primera en ventas en el país y , desde el 2006, número uno en ventas en Sudamérica. Hoy, además, es la primera empresa en el mundo que, sin pertenecer al grupo, ha comenzado a armar motores para la multinacional. Se trata de un dato relevante, porque nunca esta firma nórdica confió este tipo de trabajo a firmas externas.",
                         "items":[],
@@ -1307,7 +1307,7 @@
                 "info": [
                     {
                         "title": "Polo Tic",
-                        "img": "",
+                        "img": "/imgs/badges/silver/polo tic-min.png",
                         "short": "",
                         "desciption": "Somos una organización mixta, compuesta por el área académica, empresarial y pública vinculada a las Tecnologías de Información y Comunicación que tiene como misión insertar Mendoza en el Nuevo Paradigma de la Revolución Digital. El Mendoza TIC Parque Tecnológico es un modelo único en la República Argentina puesto que alojará, en un mismo espacio físico, al desarrollo productivo, académico e instituciones públicas del sector de Tecnologías de Información y Comunicación.",
                         "items":[],
@@ -1331,7 +1331,7 @@
                 "info": [
                     {
                         "title": "INTI",
-                        "img": "",
+                        "img": "/imgs/badges/silver/inti-min.png",
                         "short": "",
                         "desciption": "El Instituto Nacional de Tecnología Industrial (INTI) es un ente autárquico argentino que funciona bajo la órbita del Ministerio de Desarrollo Productivo, cuya misión es acompañar e impulsar el crecimiento de las pymes argentinas, promoviendo el desarrollo industrial federal mediante la innovación y la transferencia de tecnología.",
                         "items":[],
@@ -1355,7 +1355,7 @@
                 "info": [
                     {
                         "title": "Cameda",
-                        "img": "",
+                        "img": "/imgs/badges/silver/cameda-min.png",
                         "short": "",
                         "desciption": "Somos una asociación civil cuyo capital social son sus adherentes: pacientes, padres, profesionales de la salud, del derecho, de las ciencias. Desde el 2015 que comenzamos a construir un reconocimiento al uso del Cannabis Medicinal y también incidimos en muchas decisiones políticas, como la primera Ley de Cannabis Medicinal en Argentina. LEY N° 27.350. Llevamos realizadas en incidencia pública.",
                         "items":[],
@@ -1379,7 +1379,7 @@
                 "info": [
                     {
                         "title": "Interbrain",
-                        "img": "",
+                        "img": "/imgs/badges/silver/interbrain-min.png",
                         "short": "",
                         "desciption": "InterBrain es una EdTech que acelera los procesos de aprendizaje de organizaciones mediante la metodología “Learning by Doing” o “Aprender Haciendo”. Desarrollamos recursos interactivos, inmersivos e innovadores; potenciados con tecnologías de última generación (como son la Gamificación, Realidad Virtual, Realidad Aumentada e Inteligencia Artificial) que se despliegan en una Plataforma propia de Gestión de Contenidos de Aprendizaje, que permite mejorar los talentos del equipo con el uso de Training Analytics.",
                         "items":[],
@@ -1403,7 +1403,7 @@
                 "info": [
                     {
                         "title": "Universidad Nacional de Cuyo",
-                        "img": "",
+                        "img": "/imgs/badges/bronce/uncuyo-min.png",
                         "short": "",
                         "desciption": "La Universidad Nacional de Cuyo, ubicada en Mendoza, República Argentina tiene formulados sus fines en el Estatuto donde se establece que es esencial el desarrollo y la difusión de la cultura en todas sus formas a través de la enseñanza, la investigación científica, la preparación técnica, la formación profesional y la elevación del nivel ético y estético. Su fundación se concretó el 21 de marzo en el año 1939 a través del decreto Nº 26.971 del Poder Ejecutivo Nacional; en tanto que el 16 de agosto del mismo año se iniciaron oficialmente los cursos con la conferencia inaugural de Ricardo Rojas.",
                         "items":[],
@@ -1427,7 +1427,7 @@
                 "info": [
                     {
                         "title": "Sol Inmobiliaria",
-                        "img": "",
+                        "img": "/imgs/badges/bronce/sol-min.png",
                         "short": "",
                         "desciption": "S.O.L. Inmobiliaria es una empresa de servicios que se dedica al rubro inmobiliario y gestoría del automotor. nuestros tasadores visitan la propiedad con el objeto de hacer una tasación acorde a los valores de mercado. Una vez tasado, se hace la publicidad en medios gráficos, página web y portales inmobiliarios, además de proveer toda la cartelería, se publica en los diarios más prestigiosos.",
                         "items":[],
@@ -1451,7 +1451,7 @@
                 "info": [
                     {
                         "title": "Instituto Tecnológico Nacional",
-                        "img": "",
+                        "img": "/imgs/badges/bronce/itu-min.png",
                         "short": "",
                         "desciption": "La Fundación Instituto Tecnológico Universitario está conformada por el Gobierno de la Provincia de Mendoza, la Universidad Nacional de Cuyo y su Fundación (FUNC), la Unión Comercial e Industrial de Mendoza, la Universidad Tecnológica Nacional y la Federación Económica de Mendoza. La FITU brinda servicios de educación continua, capacitación a personal de empresas, actividades de investigación y desarrollo, diseño de materiales educativos, asesoramiento y servicios a Instituciones públicas y privadas.",
                         "items":[],
@@ -1475,7 +1475,7 @@
                 "info": [
                     {
                         "title": "Cruz Roja",
-                        "img": "",
+                        "img": "/imgs/badges/bronce/cruz roja-min.png",
                         "short": "",
                         "desciption": "Nuestra misión es contribuir a mejorar la vida de las personas, en especial aquellas que se encuentran en situación de vulnerabilidad.",
                         "items":[],
