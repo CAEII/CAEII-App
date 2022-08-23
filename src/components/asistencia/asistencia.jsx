@@ -15,36 +15,6 @@ import "../../styles/asistencia/asistencia.css";
 // json
 import Json_lista_de_actividades from "../Perfil/functions/lista_actividades.json"
 
-const kk_info_del_back = [
-    {
-        "selection_value": "146",
-        "selection_id": 1779
-    },
-    {
-        "selection_value": "151",
-        "selection_id": 1780
-    },
-    {
-        "selection_value": "156",
-        "selection_id": 1781
-    },
-    {
-        "selection_value": "158",
-        "selection_id": 1782
-    },
-    {
-        "selection_value": "162",
-        "selection_id": 1783
-    },
-    {
-        "selection_value": "169",
-        "selection_id": 1784
-    },
-    {
-        "selection_value": "172",
-        "selection_id": 1785
-    }
-]
 const cookies = new Cookies();
 
 export default function Asistencia(){
@@ -53,7 +23,7 @@ export default function Asistencia(){
     const [Presente, SetPresente] = useState(false);                                    // Info sobre la presensia del asistente (true= ya estuvo en la actividad, false= no ha estado en la actividad)
     const [Name, SetName] = useState('');                                               // Nombre del asistente
     const [Asistencia, SetAsistencia] = useState(0);                                    // numero del porcentaje de asistencia
-    const [Activiti, SetActiviti] = useState({title: '', id:'',selection_id:''});       // nombre de la actividad actual
+    const [Activiti, SetActiviti] = useState({title: '', id:'',selection_id:'',atended: false});       // nombre de la actividad actual
 
     // en la constante Token guardo el Token de la cookie session
     const token = cookies.get('session').token.substring(cookies.get('session').token.indexOf("|") + 1)
@@ -71,22 +41,21 @@ export default function Asistencia(){
             }
         })
         .then(function (Response) {
-            // console.log(response.data.user.first_name)
+
             SetName(Response.data.user.first_name)
 
             Response.data.user.enrollments.map( enrllment => {                  // Recorro los enrollments del usuario    
                 if (enrllment.event.name.includes("CAEII XX")) {                // Reviso si el nombre del evento inclulle el string "CAEII XX"
                     enrllment.selections.map( section => {                      // Recorro las selecciones del usuario
                         // Guardo el valor de la seleccion, este es id de la actividad dentro del evento
-                        info_del_back.push({selection_value: section.pivot.value ,selection_id: section.pivot.id})     
+                        info_del_back.push({selection_value: section.value ,selection_id: section.id, atended: section.attended})     
                     })
                 } 
             })
 
 
             Json_lista_de_actividades.map((dia, diaIndex ) => {                                     // recorro la lista de actividades
-                // if (Que_dia_es_hoy() === dia.dia) {                                              // si el dia de hoy coniside con el dia del json:
-                if ("Jueves" === dia.dia) {                                                         // si el dia de hoy coniside con el dia del json:
+                if (Que_dia_es_hoy() === dia.dia) {                                              // si el dia de hoy coniside con el dia del json:                                                     // si el dia de hoy coniside con el dia del json:
                     return dia.actividades.map((actividad, actividadIndex) => {                     // recorro la lista de actividades de hoy
     
                         if (comparo_con_la_hora_actual(actividad.horario) === "En_progreso") {      // reviso que la actividad este en progreso
@@ -99,7 +68,7 @@ export default function Asistencia(){
                                         //console.log(info_del_back)
                                         if (actividad_back.selection_value === activiti_id) {       // si el id de la actividad del back coinside con uno de los ids de la actividad del cronograma:
                                             // guardo en "SetActiviti" el nombre y id de la actividad
-                                            SetActiviti({title: actividad.titulo, id: activiti_id, selection_id: actividad_back.selection_id})        
+                                            SetActiviti({title: actividad.titulo, id: activiti_id, selection_id: actividad_back.selection_id, atended: actividad_back.atended === 0 ? false : true})        
                                         }
                                     })
     
@@ -116,10 +85,6 @@ export default function Asistencia(){
         .catch(function (error) {
             console.log(error);
         })
-
-
-       
-
     }, [])
 
 
@@ -129,7 +94,6 @@ export default function Asistencia(){
     const is_here = check_admin(navigate, Activiti, false);
     // agrego el contenido de "is_here" a la variable "is_here_class"
     const is_here_class = "asistencia_tag nombre_de_la_actividad is_here_" + is_here;
-
 
     return (
         <div className="App" id="asistencia">
@@ -143,8 +107,8 @@ export default function Asistencia(){
                 
             </div>
 
-            <button id="buton" className={`asistencia_tag button_asistencia presente_${Presente}`} onClick={() => {handle_click(is_here, SetPresente, Presente, Activiti.selection_id)}}>
-                { Presente == true ? "PRESENTE" : "AUSENTE"} 
+            <button id="buton" className={`asistencia_tag button_asistencia presente_${Activiti.atended}`} onClick={() => {handle_click(is_here, SetPresente, Presente, Activiti)}}>
+                { Activiti.atended === true ? "PRESENTE" : "AUSENTE"} 
             </button>
         </div>
     )

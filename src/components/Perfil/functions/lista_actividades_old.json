@@ -232,6 +232,12 @@
         "pilar": "Ingeniería del mañana",
         "actividades": [
             {
+                "id": ["100", "151", "179"],
+                "titulo": "Conf. Hebe Cremades",
+                "horario": "00:30 - 23:30",
+                "lugar": "Auditorio Accenture"
+            },
+            {
                 "id": null,
                 "titulo": "Hackaton",
                 "horario": "09:30 - 13:00",
@@ -289,6 +295,12 @@
                 "id": null,
                 "titulo": "Cierre del evento",
                 "horario": "17:45 - 18:15",
+                "lugar": "Auditorio Accenture"
+            },
+            {
+                "id": ["100", "151", "179"],
+                "titulo": "Conf. Hebe Cremades",
+                "horario": "18:30 - 23:30",
                 "lugar": "Auditorio Accenture"
             }
         ]

@@ -30,7 +30,6 @@ function Badges() {
 }
 
 function Img_modal ({Img}){
-    console.log(Img)
     return (
         <div className="badge_container">
             <img src={Img}></img>

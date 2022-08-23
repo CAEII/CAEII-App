@@ -15,18 +15,16 @@ export default function PorcentajeAsistencia() {
         headers: {
             "Accept": "application/json",
             Authorization: `Bearer ${token}`
-        }
+        },
     })
         .then(Response => {
-
-            // console.log(Response)
 
             let suma_asistencia = 0
 
             Response.data.user.enrollments.map( enrllment => {                      // Recorro los enrollments del usuario    
                 if (enrllment.event.name.includes("CAEII XX")) {                    // Reviso si el nombre del evento inclulle el string "CAEII XX"
                     enrllment.selections.map( section => {                          // Recorro las selecciones del usuario
-                        suma_asistencia = suma_asistencia + section.pivot.attended  // sumo todos los valores de "attended" en el evento, como minimo
+                        suma_asistencia = suma_asistencia + section.attended  // sumo todos los valores de "attended" en el evento, como minimo
                     })
                 } 
             })

@@ -52,7 +52,7 @@ export default function Perfil() {
 
         SetAsistencia(cookies.get('asistencia'))
 
-        PorcentajeAsistencia()
+        // PorcentajeAsistencia()
         
     }, [])
 

@@ -87,6 +87,7 @@ function Lineas2({actividad,index,SetSalas,Salas, SetActividad, executeScroll}) 
     var className       // en esta variable almaceno todas las clases del <tr> 
     // Reviso si el titulo de la actividad es "ALMUERZO", "TIEMPO LIBRE", "COFFEE" y si lo es resalto la linea
     if (actividad.titulo === "ALMUERZO" || actividad.titulo === "TIEMPO LIBRE" || actividad.titulo === "COFFEE") {
+        PorcentajeAsistencia()
         className = "conLinea resaltado"
     } else {
         className = ""

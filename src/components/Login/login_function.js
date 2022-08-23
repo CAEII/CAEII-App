@@ -33,7 +33,7 @@ export default function login (Email, Password){
             if (enrllment.event.name.includes("CAEII XX")) {                // Reviso si el nombre del evento inclulle el string "CAEII XX"
                 enrllment.selections.map( section => {                      // Recorro las selecciones del usuario
                     // Guardo el valor de la seleccion, este es id de la actividad dentro del evento
-                    actividades_segun_user.push({selection_value: section.pivot.value ,selection_id: section.pivot.id})     
+                    actividades_segun_user.push({selection_value: section.value ,selection_id: section.id})     
                 })
             } 
         })
