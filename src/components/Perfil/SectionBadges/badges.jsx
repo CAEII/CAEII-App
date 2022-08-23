@@ -1,32 +1,32 @@
-import pae from "../../../styles/badges/Insignia_PAE.png"
-import paee from "../../../styles/badges/Insignia_paee.png"
-import raizen from "../../../styles/badges/insignia_raizen.png"
-import invap from "../../../styles/badges/insignia_invap.png"
-import flor from "../../../styles/badges/insignia_flor.png"
-import Cookies from "universal-cookie"
+// cookies
+import Cookies from 'universal-cookie';
+// react
+import { useState } from "react"
 
+const cookies = new Cookies();
 
-function Badges(params) {
-    
+function Badges() {
+    const [Imgs, setImgs] = useState(cookies.get("insignias"))
+    // console.log(Imgs)
 
-    
-    return (<>
-        <section id="badges" /* hidden={Cookies.get().length == 0 ? true : false} */>
+    if (Imgs === undefined) {
+        return null
+    }
+
+    return (
+        <section id="badges">
             <h2> Insignias </h2>
             <div>
-                <img src={raizen} /* className="exclusive" */></img>
-                <img src={invap} /* className="premium" */></img>
-                <img src={flor} /* className="gold" */></img>
-                <img src={paee} /* className="silver" */></img>
-                <img src={pae} /* className="bronze" */></img>
-                <img src={raizen} /* className="exclusive" */></img>
-                <img src={invap} /* className="premium" */></img>
-                <img src={flor} /* className="gold" */></img>
-                <img src={paee} /* className="silver" */></img>
-                <img src={pae} /* className="bronze" */></img>
+                {cookies.get("insignias") ? insignia_Img (Imgs) : null}
             </div>
         </section> 
-    </>)
+    )
+}
+
+function insignia_Img (Imgs){
+    return Imgs.map( Img => {
+        return <img src={Img}></img>
+    })
 }
 
 export default Badges;
