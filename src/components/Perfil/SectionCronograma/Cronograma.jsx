@@ -3,6 +3,7 @@ import { useEffect } from "react"
 import { useState } from "react"
 // fucntions
 import {Que_dia_es_hoy, comparo_con_la_hora_actual} from "../Suport_functions"
+import PorcentajeAsistencia from "../functions/Porcentaje_asistencia";
 // json
 import json_actividades from "../functions/lista_actividades.json"
 // cookies

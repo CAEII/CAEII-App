@@ -15,7 +15,7 @@ import Admins from "./SectionAdmins/admins";
 import Badges from "./SectionBadges/badges"
 // functions
 // import {Asistencia} from "./Suport_functions"
-import PorcentajeAsistencia from "./functions/Porcentaje_asistencia";
+// import PorcentajeAsistencia from "./functions/Porcentaje_asistencia";
 //styles
 import "../../styles/perfil/css/Perfil.css";
 // imgs

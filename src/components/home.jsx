@@ -102,7 +102,7 @@ function Home() {
           <section id="registrarse" /* onClick={handleClickRegister} */>
             <h1>¿Estás preparado para el despegue?</h1>
             <div className="button">
-              <a href="https://inscripciones.aareii.org.ar/index.php/register" class="hyperspan">
+              <a href="https://inscripciones.aareii.org.ar/index.php/register" className="hyperspan">
                 <div className="circle">
                   <div className="rocket_container">
                     <img src={cohete} alt="cohete caeii"></img>
@@ -169,8 +169,8 @@ function Home() {
                {/* este no tiene que ser un className "derecaha" */}
               <h3> {json[2].data[0].info[0].title} </h3>
               <p> {json[2].data[0].info[1].title} </p>
-              <div class="img">
-                <div class="imgOrbit">
+              <div className="img">
+                <div className="imgOrbit">
                   <img src={json[2].data[0].info[0].img} alt="Conferencia 1" />
                   <div className="planet"></div>
                 </div>
@@ -235,17 +235,17 @@ function Home() {
 
             <article id="1">
               <h3> {json[1].data[0].info[0].title} </h3>
-              <p /* class="movile" */> {json[1].data[0].info[0].short} </p>
-              {/* <p class="desktop"> {json[1].data[0].info[0].short} </p>  */}
-              <div class="img">
-                <div class="imgOrbit">
+              <p /* className="movile" */> {json[1].data[0].info[0].short} </p>
+              {/* <p className="desktop"> {json[1].data[0].info[0].short} </p>  */}
+              <div className="img">
+                <div className="imgOrbit">
                   <img src={json[1].data[0].info[1].img} alt="visitas 1" />
                   <div className="planet"></div>
                 </div>
               </div>
             </article>
 
-            <article id="2" class="derecha">
+            <article id="2" className="derecha">
               <h3> {json[1].data[1].info[0].title} </h3>
               <p /* className="movile" */> {json[1].data[1].info[0].short} </p>
               {/* <p className="desktop"> {json[1].data[1].info[0].short} </p> */} {/* Si ocupa toda la pantalla debe ir la descripción entera */}
@@ -269,7 +269,7 @@ function Home() {
               </div>
             </article>
 
-            <article id="4" class="derecha">
+            <article id="4" className="derecha">
               <h3> {json[1].data[3].info[0].title} </h3>
               <p /* className="movile" */> {json[1].data[3].info[0].short} </p>
               {/* <p className="desktop"> {json[1].data[3].info[0].short} </p> */} {/* Si ocupa toda la pantalla debe ir la descripción entera */}
@@ -293,7 +293,7 @@ function Home() {
               </div>
             </article>
 
-            <article id="6" class="derecha">
+            <article id="6" className="derecha">
               <h3> {json[1].data[5].info[0].title} </h3>
               <p /* className="movile" */> {json[1].data[5].info[0].short} </p>
               {/* <p className="desktop"> {json[1].data[5].info[0].desciption} </p> */}
@@ -314,10 +314,10 @@ function Home() {
             <article id="1">
               <h3> {json[4].data[0].info[0].title} </h3>
               <p> {json[4].data[0].info[0].short} </p>
-              <div class="img">
-                <div class="imgOrbit">
+              <div className="img">
+                <div className="imgOrbit">
                   <img src={json[4].data[0].info[0].img} alt={json[4].data[0].info[0].title} />
-                  <div class="planet"></div>
+                  <div className="planet"></div>
                 </div>
               </div>
             </article>

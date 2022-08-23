@@ -37,7 +37,7 @@ export default function Admins() {
 function SalasBustelo() {
     const handleAddrTypeChange = (value) => cookies.set('admin', value.target.value, { path: '/', maxAge: 5184000 })
     return (
-        <div class="select">
+        <div className="select">
             <select  onChange={(value) =>  handleAddrTypeChange(value)}>
                 <option value={null}> seleciona una actividad: </option>
                 {
@@ -65,7 +65,7 @@ function SalasBustelo() {
 function VisitasTecnicas() {
     const handleAddrTypeChange = (value) => cookies.set('admin', value.target.value, { path: '/', maxAge: 5184000 })
     return (
-        <div class="select">
+        <div className="select">
             <select  onChange={(value) =>  handleAddrTypeChange(value)}>
                 <option value={null}> seleciona una visita: </option>
                 {
