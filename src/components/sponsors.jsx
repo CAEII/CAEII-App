@@ -2,15 +2,10 @@
 import { useState, useEffect } from "react";
 // styles
 import "../styles/sponsors/sponsors.css"
-// imagenes (PLACE HOLDRES)
-import PanAmerican from "../styles/sponsors/img/panAmerican.png"
-import UM from "../styles/sponsors/img/UM.png"
-import UNCUYO from "../styles/sponsors/img/UNCUYO.png"
+// imagenes
 import bottino1 from "../styles/sponsors/img/bottino.png"
 import bottino2 from "../styles/sponsors/img/ebottino.png"
 import pizarras from "../styles/sponsors/img/pizarras.png"
-
-
 import Accenture from "../styles/sponsors/img/accenture.png"
 import GrupoLTN from "../styles/sponsors/img/grupo_ltn.png"
 import PAE from "../styles/sponsors/img/panAmerican.png"
@@ -152,19 +147,10 @@ function SponsorsBody(props) {
                     setcuentaStop(true);       // detengo el contador
                     setradio1(true);           // seteo el radio buton 1 en true    (checked=true en el html)
                     setradio2(false);          // seteo el radio buton 2 en false   (checked=false en el html)
-                    /* setradio3(false);          // seteo el radio buton 3 en false   (checked=false en el html)
-                    setradio4(false);  */         // seteo el radio buton 4 en false   (checked=false en el html)
-                    /* setradio5(false); */          // seteo el radio buton 5 en false   (checked=false en el html)
                     }}
                 />
                 <span className="checkmark"></span>
                 <input type="radio" name="position" id="exclusive_2" checked={radio2} onClick={()=>{setcuentaStop(true);setradio1(false);setradio2(true);/* setradio3(false);setradio4(false);setradio5(false) */}}/>
-                <span className="checkmark"></span>
-                <input type="radio" name="position" id="exclusive_3" checked={radio3} onClick={()=>{setcuentaStop(true);setradio1(false);setradio2(false);setradio3(true);setradio4(false);setradio5(false)}}/>
-                <span className="checkmark"></span>
-                <input type="radio" name="position" id="exclusive_4" checked={radio4} onClick={()=>{setcuentaStop(true);setradio1(false);setradio2(false);setradio3(false);setradio4(true);setradio5(false)}}/>
-                <span className="checkmark"></span>
-                <input type="radio" name="position" id="exclusive_5" checked={radio5} onClick={()=>{setcuentaStop(true);setradio1(false);setradio2(false);setradio3(false);setradio4(false);setradio5(true)}}/>
                 <span className="checkmark"></span>
 
                 <Carrucel type={props.type} />
