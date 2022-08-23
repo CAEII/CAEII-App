@@ -8,6 +8,8 @@ import axios from "axios";
 import check_admin from "./functions/check_admin";
 import handle_click from "./functions/handle_click";
 import {comparo_con_la_hora_actual, Que_dia_es_hoy} from "../Perfil/Suport_functions"
+// Sweet Alert
+import Swal from 'sweetalert2'; 
 // cookies
 import Cookies from 'universal-cookie';
 // stiles
@@ -25,10 +27,20 @@ export default function Asistencia(){
     const [Asistencia, SetAsistencia] = useState(0);                                    // numero del porcentaje de asistencia
     const [Activiti, SetActiviti] = useState({title: '', id:'',selection_id:'',atended: false});       // nombre de la actividad actual
 
-    // en la constante Token guardo el Token de la cookie session
-    const token = cookies.get('session').token.substring(cookies.get('session').token.indexOf("|") + 1)
-
+    const navigate = useNavigate();
+    
     useEffect(() => {
+
+        if (cookies.get('session') === undefined) {       // si la cookie admin es igual a "undefinded" significa que el usuario no es un admin, por lo tanto lo redirijo al home
+            Swal.fire({         // si ocurrio algun error muestro este mensaje
+                title: `<strong>Deves iniciar secion para poder tomar asistencias</strong>`,
+                icon: 'error'
+            })
+            return navigate("/login")
+        } 
+    
+        // en la constante Token guardo el Token de la cookie session
+        const token = cookies.get('session').token.substring(cookies.get('session').token.indexOf("|") + 1)
 
         var info_del_back = []
 
@@ -42,6 +54,8 @@ export default function Asistencia(){
             }
         })
         .then(function (Response) {
+
+            console.log(Response.data)
 
             SetName(Response.data.user.first_name)
 
@@ -71,6 +85,7 @@ export default function Asistencia(){
                                         if (actividad_back.selection_value === activiti_id) {       // si el id de la actividad del back coinside con uno de los ids de la actividad del cronograma:
                                             // guardo en "SetActiviti" el nombre y id de la actividad
                                             SetActiviti({title: actividad.titulo, id: activiti_id, selection_id: actividad_back.selection_id, atended: actividad_back.atended === 0 ? false : true})        
+                                            //console.log(actividad_back.selection_id)
                                         }
                                     })
     
@@ -88,9 +103,6 @@ export default function Asistencia(){
             console.log(error);
         })
     }, [])
-
-
-    const navigate = useNavigate();
 
     // reviso si el usuario es un admin y si lo es reviso si las actividades coinciden (devuelo true, false, '' segun corresponda)
     const is_here = check_admin(navigate, Activiti, false);

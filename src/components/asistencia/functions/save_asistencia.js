@@ -11,7 +11,6 @@ export default function save_asistencia(Presente, SetPresente, activiti) {
     const cookies = new Cookies();
     const token = cookies.get('session').token.substring(cookies.get('session').token.indexOf("|") + 1)
     const url = `https://inscripciones.aareii.org.ar/api/v1/selections/${activiti.selection_id}/update`          // url para hacer la request con axios
-    // const url = `https://inscripciones.aareii.org.ar/api/v1/selections/1779/update`          // url para hacer la request con axios
 
     Swal.fire({         // mensaje de espera
         title: "<strong>Guardando . . . </strong>",
