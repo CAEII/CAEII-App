@@ -14,13 +14,11 @@ import logoAareii from "../styles/home/img/logo-aareii-desktop.png"
 const cookies = new Cookies();
 
 export default function HeaderBar() {
-  const [UserLoged, SetUserLoged] = useState(false)
+  const [UserLoged, SetUserLoged] = useState(true)
   
 
   useEffect(() => {
-    if (cookies.get('session') !== undefined) {
-      SetUserLoged(true)
-    } else {
+    if (cookies.get('session') === undefined) {
       SetUserLoged(false)
     }
 }, [])
@@ -53,7 +51,7 @@ export default function HeaderBar() {
                   </div>
                 </li>
 
-                {/* { UserLoged === true ? <Perfil/> : <Login/> } */}
+                { UserLoged === true ? <Perfil/> : <Login/> }
 
 
                 {/* <li>
@@ -96,7 +94,7 @@ export default function HeaderBar() {
               </div>
             </li>
 
-            {/* { UserLoged === true ? <Perfil/> : <Login/> } */}
+            { UserLoged === true ? <Perfil/> : <Login/> }
 
            {/*  <li>
               <div className="linea">

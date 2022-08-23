@@ -37,29 +37,60 @@ export default function Info_general() {
     let Swal_icono = ''
 
     if (codigos_empresas.includes(category)) {
-        var lista_insignias = cookies.get("insignias")
-        if (lista_insignias === undefined) {
-            cookies.set('insignias', [jsonDataCategory[0].title], { path: '/', maxAge: 5184000 });
+        var lista_insignias = []
 
-            Swal_title = `Conseguiste tu primer insignia!!`
-            
+        if (cookies.get("insignias")) {
+            lista_insignias = cookies.get("insignias")
 
-        } else {
-            if (lista_insignias.includes(jsonDataCategory[0].title)) {
+            if (lista_insignias.includes(jsonDataCategory[0].info[0].img)) {
                 
                 Swal_title = `oh no, parese que ya tenes esta insignia`
                 Swal_icono = 'error'
 
             } else {
                 console.log("Genial!, conseguiste la insignia de " + jsonDataCategory[0].title)
-                lista_insignias.push(jsonDataCategory[0].title)
-                cookies.set('insignias', lista_insignias, { path: '/', maxAge: 5184000 });
 
+                console.log(lista_insignias)
+
+                lista_insignias.push(jsonDataCategory[0].info[0].img)
                 
                 Swal_title = `Genial!, conseguiste la insignia de ${jsonDataCategory[0].title}`
                 Swal_icono = 'success'
             }
+        } else {
+            lista_insignias = [jsonDataCategory[0].info[0].img]
+            Swal_title = `Conseguiste tu primer insignia!!`
         }
+
+        // if (!cookies.get("insignias")) {
+        //     lista_insignias = [jsonDataCategory[0].info[0].img]
+
+        //     Swal_title = `Conseguiste tu primer insignia!!`
+
+           
+
+        // } else {
+
+        //     lista_insignias = cookies.get("insignias")
+
+        //     if (lista_insignias.includes(jsonDataCategory[0].title)) {
+                
+        //         Swal_title = `oh no, parese que ya tenes esta insignia`
+        //         Swal_icono = 'error'
+
+        //     } else {
+        //         console.log("Genial!, conseguiste la insignia de " + jsonDataCategory[0].title)
+
+        //         console.log(lista_insignias)
+
+        //         lista_insignias.push(jsonDataCategory[0].info[0].img)
+                
+        //         Swal_title = `Genial!, conseguiste la insignia de ${jsonDataCategory[0].title}`
+        //         Swal_icono = 'success'
+        //     }
+        // }
+
+        cookies.set('insignias', lista_insignias, { path: '/', maxAge: 5184000 });
 
         let timerInterval
             Swal.fire({
