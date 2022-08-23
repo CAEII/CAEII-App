@@ -85,10 +85,12 @@ export default function Perfil() {
                 <main>
 
                     {User.admin === true ? <Admins/> : <Badges/>}
+
+                    {/* {User.user_id === 3638 ? <Badges/> : ""} */}
                     
                     <Credencial nombre={User.name} asistencia={Asistencia} id={User.user_id}/>
 
-                    <Cronograma SetSalas={SetSalas}  Salas={Salas} SetActividad={SetActividad} executeScroll={executeScroll}/>
+                    <Cronograma SetSalas={SetSalas} Salas={Salas} SetActividad={SetActividad} executeScroll={executeScroll}/>
 
                     <SectionMapas salas={Salas} referencia={myRef}/>
 

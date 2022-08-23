@@ -1,0 +1,101 @@
+(function () {
+  const CLOCKIFY_ICON = `${window.APP_BASE_URL}/assets/img/clockify-icon.svg`;
+  const initUrl = APP_BASE_URL + '/init';
+
+  if (window.location.href !== initUrl) {
+    return;
+  }
+
+  function formatTime(durationInSeconds) {
+    const h = Math.floor(durationInSeconds / 3600);
+    const m = Math.floor(durationInSeconds % 3600 / 60);
+    const s = Math.floor(durationInSeconds % 3600 % 60);
+
+    const hh = h < 10 ? `0${h}` : h;
+    const mm = m < 10 ? `0${m}` : m;
+    const ss = s < 10 ? `0${s}` : s;
+
+    return `${hh}:${mm}:${ss}`;
+  }
+
+  window.TrelloPowerUp.initialize({
+    'card-badges': function (t, opts) {
+
+      return t.get('card', 'shared', 'inProgress', false).then(async function (inProgress) {
+        const badges = [];
+        try {
+          if (inProgress) {
+            badges.push({
+              icon: CLOCKIFY_ICON,
+              text: 'timer is running'
+            });
+
+            return badges;
+          }
+
+          const boardConfig = await t.get('board', 'shared', 'clockifyBoardConfig', null);
+          if (boardConfig === null || boardConfig.showTotalTimeOnCardFront === false) {
+            return [];
+          }
+
+          const totalTime = await t.get('card', 'shared', 'totalTime', null);
+          if (totalTime !== null) {
+            badges.push({
+              icon: CLOCKIFY_ICON,
+              text: 'total time: ' + formatTime(totalTime)
+            });
+          }
+
+          return badges;
+        } catch (error) {
+          return [];
+        }
+      }).catch(function (error) { })
+    },
+
+    'card-back-section': (t, cardBackSectionOptions) => {
+      return {
+        title: 'Clockify Integration',
+        icon: CLOCKIFY_ICON,
+        content: {
+          type: 'iframe',
+          url: t.signUrl('./card-back'),
+          height: 300
+        },
+        action: {}
+      };
+    },
+
+    'authorization-status': (t, authOptions) => {
+      return t.get('member', 'private', 'pupData').then((pupData) => {
+        // var authorized = pupData && pupData.trelloToken !== null && pupData.updatedAt > VALID_LOGIN_DATE;
+        const authorized = pupData && pupData.trelloToken !== null;
+
+        return { authorized };
+      })
+        .catch((error) => {
+          console.error('Cannot get auth info due to: ', error);
+
+          return { authorized: false };
+        });
+    },
+
+    'show-authorization': function showAuthorization(t, showAuthOptions) {
+      return t.popup({
+        title: 'Clockify Integration Auth',
+        url: './authorization',
+        height: 50
+      });
+    },
+
+    'show-settings': function showSettings(t, settingsOptions) {
+      return t.modal({
+        title: 'Clockify Integration Settings',
+        url: './powerup-settings',
+        height: 700,
+        args: {}
+      });
+    }
+  });
+})();
+

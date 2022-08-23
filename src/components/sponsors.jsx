@@ -6,6 +6,11 @@ import "../styles/sponsors/sponsors.css"
 import PanAmerican from "../styles/sponsors/img/panAmerican.png"
 import UM from "../styles/sponsors/img/UM.png"
 import UNCUYO from "../styles/sponsors/img/UNCUYO.png"
+import bottino1 from "../styles/sponsors/img/bottino.png"
+import bottino2 from "../styles/sponsors/img/ebottino.png"
+import pizarras from "../styles/sponsors/img/pizarras.png"
+
+
 import Accenture from "../styles/sponsors/img/accenture.png"
 import GrupoLTN from "../styles/sponsors/img/grupo_ltn.png"
 import PAE from "../styles/sponsors/img/panAmerican.png"
@@ -102,17 +107,9 @@ function SponsorsBody(props) {
         // si el Props.type es igual a "gold" no paso ningun carrusel si no el img_container
         return (
             <div className="img_container">
-                <img src={PanAmerican} alt="Pan American Energy"></img>
-                <img src={UNCUYO} alt="universidad nacional de cuyo"></img>
-                <img src={UM} alt="Universidad de Mendoza"></img>
-
-                <img src={PanAmerican} alt="Pan American Energy"></img>
-                <img src={UNCUYO} alt="universidad nacional de cuyo"></img>
-                <img src={UM} alt="Universidad de Mendoza"></img>
-
-                <img src={PanAmerican} alt="Pan American Energy"></img>
-                <img src={UNCUYO} alt="universidad nacional de cuyo"></img>
-                <img src={UM} alt="Universidad de Mendoza"></img>
+                <img src={pizarras} alt="Pizarras Blancas"></img>
+                <img src={bottino1} alt="Bottino HNOS S.A."></img>
+                <img src={bottino2} alt="Electromecánica Bottino HNOS S.A."></img>
             </div>
         )
     } else if (props.type === "exclusive") {
@@ -186,12 +183,12 @@ function Carrucel(props) {
         return (
             <div id="carousel">
                 <div class="item" >
-                    <img src={Techint} alt="Techint"></img>
-                    <img src={GrupoPeñaflor} alt="GrupoPeñaflor"></img>
+                    <img src={Techint} alt="Techint" className="premiumSize"></img>
+                    <img src={GrupoPeñaflor} alt="GrupoPeñaflor" className="premiumSize"></img>
                 </div>
                 <div class="item" >
-                    <img src={Invap} alt="Invap"></img>
-                    <img src={Coope} alt="Coope"></img>
+                    <img src={Invap} alt="Invap" className="premiumSize"></img>
+                    <img src={Coope} alt="Coope" className="premiumSize"></img>
                 </div>
             </div>
         )

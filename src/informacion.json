@@ -800,16 +800,16 @@
         ]
     },
     {
-        "category": "Talleres",
+        "category": "Noches CAEII",
         "data": [
             {
-                "title": "esto podria ser el pilar",
+                "title": "Cóctel de Bienvenida",
                 "info": [
                     {
-                        "title": "",
-                        "img": "",
-                        "short": "",
-                        "desciption": "",
+                        "title": "Cóctel de Bienvenida",
+                        "img": "/imgs/noches/club.webp",
+                        "short": "¡Les damos la bienvenida! El congreso arranca con un cóctel de bienvenida que no te podés perder. La noche del jueves, ¡nos vamos al Club Hípico!",
+                        "desciption": "¡Les damos la bienvenida! El congreso arranca el jueves con un cóctel de bienvenida a la noche que no te podés perder. La noche del jueves, ¡nos vamos al Club Hípico! (el ingreso viene incluido con la entrada al congreso). Inicia a las 22hs, e incluye una consumición y una ración de comida por persona.",
                         "items":[],
                         "links": [
                             {
@@ -820,7 +820,102 @@
                         ]
                     }
                 ]
-            } 
+            },
+            {
+                "title": "Noche en Bustelo",
+                "info": [
+                    {
+                        "title": "Noche en Bustelo",
+                        "img": "/imgs/noches/bustelo.webp",
+                        "short": "Tal vez lo vayas a ver muchas veces de día durante las actividades del congreso, pero la noche de viernes preparate para bailar y divertirte en el Auditori Bustelo.",
+                        "desciption": "Tal vez lo vayas a ver muchas veces de día durante las actividades del congreso, pero la noche de viernes preparate para bailar y divertirte en el Auditori Bustelo. ¡Arrancamos a la medianoche! Podés ingresar si adquiriste el pack noche o si compraste la entrada del día con un valor de $2000 (incluye una cerveza de consumición).",
+                        "items":[],
+                        "links": [
+                            {
+                                "type": "",
+                                "link": "",
+                                "icono": ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "Fiesta en Runner",
+                "info": [
+                    {
+                        "title": "Fiesta en Runner",
+                        "img": "/imgs/noches/runner.jfif",
+                        "short": "¿Qué hiciste el sábado? ¿Fuiste al Hackatón o a las charlas? Eso no importa. ¡Salgamos todos a Runner! El sábado a la noche nos volvemos a juntar todos. ",
+                        "desciption": "¿Qué hiciste el sábado? ¿Fuiste al Hackatón o a las charlas? Eso no importa. ¡Salgamos todos a Runner! El sábado a la noche nos volvemos a juntar todos. Esta noche empieza puntual a las 23:30 hs. Si querés participar deberás abonar el pack noche o la entrada para esta noche a $2000.",
+                        "items":[],
+                        "links": [
+                            {
+                                "type": "",
+                                "link": "",
+                                "icono": ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "Cena de gala",
+                "info": [
+                    {
+                        "title": "Cena de gala",
+                        "img": "/imgs/noches/bodega.jpg",
+                        "short": "El domingo es el último día de congreso... Así que para cerrar este increíble evento tenemos la cena de gala. Ahora sí, nos vestimos elegantes y nos preparamos para decirle adiós a Mendoza.",
+                        "desciption": "El domingo es el último día de congreso... Así que para cerrar este increíble evento tenemos la cena de gala. Ahora sí, nos vestimos elegantes y nos preparamos para decirle adiós a Mendoza. Para cerrar con broche de oro, nos vamos a la Bodega El Marqués de Montecristo. La cita es a las 22hs e inclye comida estilo lunch con gaseosas y vino libre durante la cena, y dos consumiciones.",
+                        "items":[],
+                        "links": [
+                            {
+                                "type": "",
+                                "link": "",
+                                "icono": ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "Pack noche",
+                "info": [
+                    {
+                        "title": "Pack Noche",
+                        "img": "/imgs/noches/pack.jfif",
+                        "short": "¿Querés ir a las dos noches (viernes y sábado)? ¡El pack noche es para vos! Te ofrecemos una promoción para que puedas ir a ambas noches.",
+                        "desciption": "¿Querés ir a las dos noches (viernes y sábado)? ¡El pack noche es para vos! Te ofrecemos una promoción para que puedas ir a ambas noches. Por $3000 tenés la entrada a ambas noches y una consumición para cada día. El pack noche o la venta individual es hasta el viernes 26 12 hs sin excepciones. Se puede comprar en el Auditorio Angel Bustelo. Al inicio del evento se informará el lugar exacto. Las entradas solo las podrán adquirir las personas que están inscriptas al congreso.",
+                        "items":[],
+                        "links": [
+                            {
+                                "type": "",
+                                "link": "",
+                                "icono": ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "Transporte",
+                "info": [
+                    {
+                        "title": "Transporte",
+                        "img": "/imgs/noches/transporte.jfif",
+                        "short": "¿Y cómo llego? Muy fácil en tu perfil tenés toda la información en el mapa, pero si lo que necesitás es transporte... Cuando compres tu entrada, ¡podrás comprar también el traslado!",
+                        "desciption": "¿Y cómo llego? Muy fácil en tu perfil tenés toda la información en el mapa, pero si lo que necesitás es transporte... Cuando compres tu entrada, ¡podrás comprar también el traslado! Se vende en el mismo lugar que el pack noche. Sale $1000 por noche y solo está disponible los días sábado y domingo, es decir, solo va a Runner y a la Bodega El Marqués de Montecristo y sale y vuelve al Bustelo. Se vende hasta el viernes 26 12:00 (se venden juntas la ida y la vuelta).",
+                        "items":[],
+                        "links": [
+                            {
+                                "type": "",
+                                "link": "",
+                                "icono": ""
+                            }
+                        ]
+                    }
+                ]
+            }
         ]
     },
     {
@@ -950,13 +1045,13 @@
                         "title": "Accenture",
                         "img": "/imgs/badges/exclusive/accenture-min.png",
                         "short": "",
-                        "desciption": "",
+                        "desciption": "Accenture Limited es una empresa multinacional de consultoría estratégica, servicios tecnológicos y externalización. Fue constituida en Hamilton, Bermudas, aunque el día 26 de mayo de 2009 se anunció la aprobación por parte del comité ejecutivo del traslado de su domicilio social a Irlanda.",
                         "items":[],
                         "links": [
                             {
-                                "type": "",
-                                "link": "",
-                                "icono": ""
+                                "type": "Sitio web",
+                                "link": "https://www.accenture.com/ar-es?c=acn_glb_brandexpressiongoogle_12820924&n=psgs_0122",
+                                "icono": "/imgs/iconos/web.png"
                             }
                         ]
                     }
@@ -974,13 +1069,13 @@
                         "title": "Grupo LTN",
                         "img": "/imgs/badges/exclusive/grupo ltn-min.png",
                         "short": "",
-                        "desciption": "",
+                        "desciption": "Nos comprometemos a brindar productos y servicios que cumplan con los requerimientos de nuestros clientes, para incrementar la eficiencia y calidad, con el objetivo de satisfacer las expectativas internas, bajo los lineamientos de la norma ISO 9001:2015. Para ello establecemos un sistema sustentado en la promoción del trabajo en equipo, posibilitando que las habilidades sean utilizadas en beneficio de la organización.",
                         "items":[],
                         "links": [
                             {
-                                "type": "",
-                                "link": "",
-                                "icono": ""
+                                "type": "Sitio web",
+                                "link": "https://grupoltn.com/",
+                                "icono": "/imgs/iconos/web.png"
                             }
                         ]
                     }
@@ -998,13 +1093,13 @@
                         "title": "Pan American Energy",
                         "img": "/imgs/badges/exclusive/pae-min.png",
                         "short": "",
-                        "desciption": "",
+                        "desciption": "Pan American Energy es una empresa de energía integrada argentina, que desarrolla actividades en upstream, midstream, downstream, en generación eléctrica y en el sector de las renovables. Fue fundada en 1997, con la fusión de las empresas Bridas y Amoco Corp.",
                         "items":[],
                         "links": [
                             {
-                                "type": "",
-                                "link": "",
-                                "icono": ""
+                                "type": "Sitio web",
+                                "link": "https://www.pan-energy.com/",
+                                "icono": "/imgs/iconos/web.png"
                             }
                         ]
                     }
@@ -1022,13 +1117,13 @@
                         "title": "Raizen",
                         "img": "/imgs/badges/exclusive/raizen-min.png",
                         "short": "",
-                        "desciption": "",
+                        "desciption": "Raízen es una empresa energética de origen brasileño con presencia en los sectores de producción de azúcar y etanol, distribución de combustibles y generación de energía. Su nombre está formado por la unión de las palabras ''raíz'' y ''energía''.",
                         "items":[],
                         "links": [
                             {
-                                "type": "",
-                                "link": "",
-                                "icono": ""
+                                "type": "Sitio web",
+                                "link": "https://www.raizen.com.br/es",
+                                "icono": "/imgs/iconos/web.png"
                             }
                         ]
                     }
@@ -1046,13 +1141,349 @@
                         "title": "Neural Soft",
                         "img": "/imgs/badges/exclusive/neural soft-min.png",
                         "short": "",
-                        "desciption": "",
+                        "desciption": "En el año 2000 NeuralSoft se convirtió en el primer proveedor de soluciones de negocios en la nube. Logramos que las Pymes accedan a una tecnología de avanzada que hasta entonces sólo estaba disponible para grandes corporaciones.",
                         "items":[],
                         "links": [
                             {
-                                "type": "",
-                                "link": "",
-                                "icono": ""
+                                "type": "Sitio web",
+                                "link": "https://www.neuralsoft.com/",
+                                "icono": "/imgs/iconos/web.png"
+                            }
+                        ]
+                    }
+                ]
+            } 
+        ]
+    },
+    {
+        "category": "jB098mQg2HOp",
+        "data": [
+            {
+                "title": "Techint",
+                "info": [
+                    {
+                        "title": "Techint",
+                        "img": "",
+                        "short": "",
+                        "desciption": "Techint es el mayor productor de acero de Argentina y el mayor productor global de tubos sin costura, usados principalmente en la industria petrolera. Es líder en las áreas de petroquímicos, refinería, minería, plantas industriales, plantas de tratamiento de aguas, tuberías, telecomunicaciones, tecnología de información, rutas y autopistas, terminales marinas, puentes, presas y aeropuertos.",
+                        "items":[],
+                        "links": [
+                            {
+                                "type": "Sitio web",
+                                "link": "https://www.techint.com/es",
+                                "icono": "/imgs/iconos/web.png"
+                            }
+                        ]
+                    }
+                ]
+            } 
+        ]
+    },
+    {
+        "category": "439hkqZor918",
+        "data": [
+            {
+                "title": "INVAP",
+                "info": [
+                    {
+                        "title": "INVAP",
+                        "img": "",
+                        "short": "",
+                        "desciption": "INVAP S. E. es una empresa argentina de alta tecnología dedicada al diseño, integración, y construcción de plantas, equipamientos y dispositivos en áreas de alta complejidad como energía nuclear, tecnología espacial, tecnología industrial y equipamiento médico y científico.",
+                        "items":[],
+                        "links": [
+                            {
+                                "type": "Sitio web",
+                                "link": "https://www.invap.com.ar/",
+                                "icono": "/imgs/iconos/web.png"
+                            }
+                        ]
+                    }
+                ]
+            } 
+        ]
+    },
+    {
+        "category": "CmMFXw4037Ym",
+        "data": [
+            {
+                "title": "Municipalidad de Guaymallén",
+                "info": [
+                    {
+                        "title": "Municipalidad de Guaymallén",
+                        "img": "",
+                        "short": "",
+                        "desciption": "Para hablar de la formación de Guaymallén como departamento, hay que remontarse a 1561, año en el que el capitán español Pedro del Castillo funda la provincia de Mendoza. Para que este hecho fuera posible, del Castillo tuvo que acordar con el cacique huarpe Hernando Goaymaye, dado que los Huarpes eran pobladores de lo que se conoce como Área Fundacional. Por aquel entonces, y en lo que hoy son los distritos de Pedro Molina y San José, se encontraba la mayor población de origen Huarpe de la región. La génesis del departamento como una zona de características agrícolas y productivas encuentra su correlato en el significado de su nombre. Guay-mayén, que en lengua huarpe significa «tierra de ciénagas, vegas o bañados».",
+                        "items":[],
+                        "links": [
+                            {
+                                "type": "Sitio web",
+                                "link": "https://www.guaymallen.gob.ar/",
+                                "icono": "/imgs/iconos/web.png"
+                            }
+                        ]
+                    }
+                ]
+            } 
+        ]
+    },
+    {
+        "category": "Ee1X20xMi1DA",
+        "data": [
+            {
+                "title": "Grupo Peñaflor",
+                "info": [
+                    {
+                        "title": "Grupo Peñaflor",
+                        "img": "",
+                        "short": "",
+                        "desciption": "Grupo Peñaflor es la empresa vitivinícola líder de la Argentina y actualmente se encuentra ubicada dentro de las 10 principales compañías productoras de vino a nivel mundial. Con exportaciones anuales por U$S 200 millones y presencia en más de 95 países, Grupo Peñaflor logró posicionarse como el principal exportador de vino embotellado del país y el productor Nº 1 de Malbec del mundo. Posee más de 3200 hectáreas productivas de viñedos en las principales zonas vitivinícolas de Argentina y emplea a más de 2900 personas.",
+                        "items":[],
+                        "links": [
+                            {
+                                "type": "Sitio web",
+                                "link": "https://www.grupopenaflor.com.ar/es",
+                                "icono": "/imgs/iconos/web.png"
+                            }
+                        ]
+                    }
+                ]
+            } 
+        ]
+    },
+    {
+        "category": "w0cxMp8cx1Wm",
+        "data": [
+            {
+                "title": "Pizarras Blancas",
+                "info": [
+                    {
+                        "title": "Pizarras Blancas",
+                        "img": "",
+                        "short": "",
+                        "desciption": "En Pizarras Blancas, acompañamos tus procesos… Desde esa inquietud, hasta convertir en realidad tus objetivos… Hace años que venimos trabajando en eso y hoy, tenemos un producto para cada necesidad. Cuando nos preguntan ¿Qué somos? Somos tus compañeros, somos Pizarrasblancas.com.ar. Una Librería especializada en pizarras",
+                        "items":[],
+                        "links": [
+                            {
+                                "type": "Sitio web",
+                                "link": "https://pizarrasblancas.com.ar/",
+                                "icono": "/imgs/iconos/web.png"
+                            }
+                        ]
+                    }
+                ]
+            } 
+        ]
+    },
+    {
+        "category": "Yp0a134WS106",
+        "data": [
+            {
+                "title": "Bottino HNO. S.A.",
+                "info": [
+                    {
+                        "title": "Bottino HNO. S.A.",
+                        "img": "",
+                        "short": "",
+                        "desciption": "A lo largo de todos estos años, la firma se impuso desafíos y potenció su gestión empresaria. Desde que Grundfos desembarcó en 1995 en Argentina, Bottino Hnos SA. fue primera en ventas en el país y , desde el 2006, número uno en ventas en Sudamérica. Hoy, además, es la primera empresa en el mundo que, sin pertenecer al grupo, ha comenzado a armar motores para la multinacional. Se trata de un dato relevante, porque nunca esta firma nórdica confió este tipo de trabajo a firmas externas.",
+                        "items":[],
+                        "links": [
+                            {
+                                "type": "Sitio web",
+                                "link": "http://www.bottinosa.com/",
+                                "icono": "/imgs/iconos/web.png"
+                            }
+                        ]
+                    }
+                ]
+            } 
+        ]
+    },
+    {
+        "category": "LNbPKi9Rh354",
+        "data": [
+            {
+                "title": "Polo Tic",
+                "info": [
+                    {
+                        "title": "Polo Tic",
+                        "img": "",
+                        "short": "",
+                        "desciption": "Somos una organización mixta, compuesta por el área académica, empresarial y pública vinculada a las Tecnologías de Información y Comunicación que tiene como misión insertar Mendoza en el Nuevo Paradigma de la Revolución Digital. El Mendoza TIC Parque Tecnológico es un modelo único en la República Argentina puesto que alojará, en un mismo espacio físico, al desarrollo productivo, académico e instituciones públicas del sector de Tecnologías de Información y Comunicación.",
+                        "items":[],
+                        "links": [
+                            {
+                                "type": "Sitio web",
+                                "link": "https://poloticmendoza.org/",
+                                "icono": "/imgs/iconos/web.png"
+                            }
+                        ]
+                    }
+                ]
+            } 
+        ]
+    },
+    {
+        "category": "DfP3d10ki1qc",
+        "data": [
+            {
+                "title": "INTI",
+                "info": [
+                    {
+                        "title": "INTI",
+                        "img": "",
+                        "short": "",
+                        "desciption": "El Instituto Nacional de Tecnología Industrial (INTI) es un ente autárquico argentino que funciona bajo la órbita del Ministerio de Desarrollo Productivo, cuya misión es acompañar e impulsar el crecimiento de las pymes argentinas, promoviendo el desarrollo industrial federal mediante la innovación y la transferencia de tecnología.",
+                        "items":[],
+                        "links": [
+                            {
+                                "type": "Sitio web",
+                                "link": "https://www.argentina.gob.ar/inti",
+                                "icono": "/imgs/iconos/web.png"
+                            }
+                        ]
+                    }
+                ]
+            } 
+        ]
+    },
+    {
+        "category": "a7o45GcX7NWR",
+        "data": [
+            {
+                "title": "Cameda",
+                "info": [
+                    {
+                        "title": "Cameda",
+                        "img": "",
+                        "short": "",
+                        "desciption": "Somos una asociación civil cuyo capital social son sus adherentes: pacientes, padres, profesionales de la salud, del derecho, de las ciencias. Desde el 2015 que comenzamos a construir un reconocimiento al uso del Cannabis Medicinal y también incidimos en muchas decisiones políticas, como la primera Ley de Cannabis Medicinal en Argentina. LEY N° 27.350. Llevamos realizadas en incidencia pública.",
+                        "items":[],
+                        "links": [
+                            {
+                                "type": "Sitio web",
+                                "link": "https://www.cannabismedicinal.com.ar/",
+                                "icono": "/imgs/iconos/web.png"
+                            }
+                        ]
+                    }
+                ]
+            } 
+        ]
+    },
+    {
+        "category": "rWEI56NM4LOy",
+        "data": [
+            {
+                "title": "Interbrain",
+                "info": [
+                    {
+                        "title": "Interbrain",
+                        "img": "",
+                        "short": "",
+                        "desciption": "InterBrain es una EdTech que acelera los procesos de aprendizaje de organizaciones mediante la metodología “Learning by Doing” o “Aprender Haciendo”. Desarrollamos recursos interactivos, inmersivos e innovadores; potenciados con tecnologías de última generación (como son la Gamificación, Realidad Virtual, Realidad Aumentada e Inteligencia Artificial) que se despliegan en una Plataforma propia de Gestión de Contenidos de Aprendizaje, que permite mejorar los talentos del equipo con el uso de Training Analytics.",
+                        "items":[],
+                        "links": [
+                            {
+                                "type": "Sitio web",
+                                "link": "https://interbrainco.com/",
+                                "icono": "/imgs/iconos/web.png"
+                            }
+                        ]
+                    }
+                ]
+            } 
+        ]
+    },
+    {
+        "category": "Ts8PxwN6o5eB",
+        "data": [
+            {
+                "title": "Universidad Nacional de Cuyo",
+                "info": [
+                    {
+                        "title": "Universidad Nacional de Cuyo",
+                        "img": "",
+                        "short": "",
+                        "desciption": "La Universidad Nacional de Cuyo, ubicada en Mendoza, República Argentina tiene formulados sus fines en el Estatuto donde se establece que es esencial el desarrollo y la difusión de la cultura en todas sus formas a través de la enseñanza, la investigación científica, la preparación técnica, la formación profesional y la elevación del nivel ético y estético. Su fundación se concretó el 21 de marzo en el año 1939 a través del decreto Nº 26.971 del Poder Ejecutivo Nacional; en tanto que el 16 de agosto del mismo año se iniciaron oficialmente los cursos con la conferencia inaugural de Ricardo Rojas.",
+                        "items":[],
+                        "links": [
+                            {
+                                "type": "Sitio web",
+                                "link": "https://www.uncuyo.edu.ar/",
+                                "icono": "/imgs/iconos/web.png"
+                            }
+                        ]
+                    }
+                ]
+            } 
+        ]
+    },
+    {
+        "category": "hTaPY4Jw75zk",
+        "data": [
+            {
+                "title": "Sol Inmobiliaria",
+                "info": [
+                    {
+                        "title": "Sol Inmobiliaria",
+                        "img": "",
+                        "short": "",
+                        "desciption": "S.O.L. Inmobiliaria es una empresa de servicios que se dedica al rubro inmobiliario y gestoría del automotor. nuestros tasadores visitan la propiedad con el objeto de hacer una tasación acorde a los valores de mercado. Una vez tasado, se hace la publicidad en medios gráficos, página web y portales inmobiliarios, además de proveer toda la cartelería, se publica en los diarios más prestigiosos.",
+                        "items":[],
+                        "links": [
+                            {
+                                "type": "Sitio web",
+                                "link": "http://www.solinmobiliariamdz.com/",
+                                "icono": "/imgs/iconos/web.png"
+                            }
+                        ]
+                    }
+                ]
+            } 
+        ]
+    },
+    {
+        "category": "z79vESY8bvO4",
+        "data": [
+            {
+                "title": "Instituto Tecnológico Nacional",
+                "info": [
+                    {
+                        "title": "Instituto Tecnológico Nacional",
+                        "img": "",
+                        "short": "",
+                        "desciption": "La Fundación Instituto Tecnológico Universitario está conformada por el Gobierno de la Provincia de Mendoza, la Universidad Nacional de Cuyo y su Fundación (FUNC), la Unión Comercial e Industrial de Mendoza, la Universidad Tecnológica Nacional y la Federación Económica de Mendoza. La FITU brinda servicios de educación continua, capacitación a personal de empresas, actividades de investigación y desarrollo, diseño de materiales educativos, asesoramiento y servicios a Instituciones públicas y privadas.",
+                        "items":[],
+                        "links": [
+                            {
+                                "type": "Sitio web",
+                                "link": "https://itu.uncuyo.edu.ar/",
+                                "icono": "/imgs/iconos/web.png"
+                            }
+                        ]
+                    }
+                ]
+            } 
+        ]
+    },
+    {
+        "category": "Te20z453RnIl",
+        "data": [
+            {
+                "title": "Cruz Roja",
+                "info": [
+                    {
+                        "title": "Cruz Roja",
+                        "img": "",
+                        "short": "",
+                        "desciption": "Nuestra misión es contribuir a mejorar la vida de las personas, en especial aquellas que se encuentran en situación de vulnerabilidad.",
+                        "items":[],
+                        "links": [
+                            {
+                                "type": "Sitio web",
+                                "link": "https://www.cruzroja.org.ar/",
+                                "icono": "/imgs/iconos/web.png"
                             }
                         ]
                     }
