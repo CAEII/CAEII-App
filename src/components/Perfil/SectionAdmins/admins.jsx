@@ -45,7 +45,7 @@ function SalasBustelo() {
                         // if (Que_dia_es_hoy() === dia.dia) {
                         if ("Jueves" === dia.dia) {
                             return dia.actividades.map((actividad, actividadIndex) => {
-                                if (actividad.id !== null && !visitas_tecnicas.includes(actividad.titulo) && !actividad.titulo.includes("Asistencia")) {
+                                if (actividad.id !== null && !visitas_tecnicas.includes(actividad.titulo) && !actividad.titulo.includes("Asistencia") && !actividad.titulo.includes("COFFEE")) {
                                     return <option key={`${diaIndex}-${actividadIndex}`} value={actividad.id}> {actividad.titulo} </option>
                                 }
                             })

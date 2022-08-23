@@ -35,6 +35,7 @@ export default function Asistencia(){
         axios({
             method: 'get',
             url: `https://inscripciones.aareii.org.ar/api/v1/users/${id}`,
+            // url: `https://inscripciones.aareii.org.ar/api/v1/users/3839`,
             headers: {
                 "Accept": "application/json",
                 Authorization: `Bearer ${token}`
@@ -56,6 +57,7 @@ export default function Asistencia(){
 
             Json_lista_de_actividades.map((dia, diaIndex ) => {                                     // recorro la lista de actividades
                 if (Que_dia_es_hoy() === dia.dia) {                                              // si el dia de hoy coniside con el dia del json:                                                     // si el dia de hoy coniside con el dia del json:
+                // if ("Domingo" === dia.dia) {                                              // si el dia de hoy coniside con el dia del json:                                                     // si el dia de hoy coniside con el dia del json:
                     return dia.actividades.map((actividad, actividadIndex) => {                     // recorro la lista de actividades de hoy
     
                         if (comparo_con_la_hora_actual(actividad.horario) === "En_progreso") {      // reviso que la actividad este en progreso
@@ -107,7 +109,7 @@ export default function Asistencia(){
                 
             </div>
 
-            <button id="buton" className={`asistencia_tag button_asistencia presente_${Activiti.atended}`} onClick={() => {handle_click(is_here, SetPresente, Presente, Activiti)}}>
+            <button id="buton" className={`asistencia_tag button_asistencia presente_${Activiti.atended === undefined ? false : Activiti.atended}`} onClick={() => {handle_click(is_here, SetPresente, Presente, Activiti)}}>
                 { Activiti.atended === true ? "PRESENTE" : "AUSENTE"} 
             </button>
         </div>
