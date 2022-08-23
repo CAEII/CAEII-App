@@ -8,7 +8,7 @@ import UM from "../styles/sponsors/img/UM.png"
 import UNCUYO from "../styles/sponsors/img/UNCUYO.png"
 import bottino1 from "../styles/sponsors/img/bottino.png"
 import bottino2 from "../styles/sponsors/img/ebottino.png"
-import pizarras from "../styles/sponsors/img/pizarras.png"
+import pizarras from "../styles/sponsors/img/pizarras"
 
 
 import Accenture from "../styles/sponsors/img/accenture.png"
