@@ -65,38 +65,33 @@ function Selects({SetMapa, Mapas,_useStates,valores_default}) {
     })
     return (
         <div className="section_of_sections">
-            <label htmlFor="salida" class="title_text">Estoy aquí: </label>
-                <div class="select" id="salida">
-                    <select onChange={(value) => {
-                        _useStates.salida(value.target.value);
-                        console.log(en_que_mapa(value.target.value,LlegadaState,json_lista_de_salas))
-                        SetMapa(en_que_mapa(value.target.value,valores_default.Sala_de_llegada,json_lista_de_salas))
-                    }} >
-                        <option id="default_option_salida" value={SalidaState} selected>  </option>
-                        {
-                            //Mapas.map((mapa, mapindex) => {                                                                               // Recorro el array de mapas y por cada mapa:
-                            prueba_mapas.map((mapa, mapindex) => {                                                                                 // Recorro el array de mapas y por cada mapa:
-                                return json_lista_de_salas[mapa].map((sala, salaIndex) => {                                                 // Recorro el array de salas y devuelvo un "<option>" con el valor de la sala
-                                   return <option key={mapindex+"_"+salaIndex} value={sala}> {sala.replace(/_/g, " ")} </option>
-                                })
+        <label htmlFor="salida" class="title_text">Estoy aquí: </label>
+            <div class="select" id="salida">
+                <select onChange={(value) => {_useStates.salida(value.target.value)}} >
+                    <option id="default_option_salida" value={SalidaState} selected>  </option>
+                    {
+                        Mapas.map((mapa, mapindex) => {                                                                                 // Recorro el array de mapas y por cada mapa:
+                            return json_lista_de_salas[mapa].map((sala, salaIndex) => {                                                 // Recorro el array de salas y devuelvo un "<option>" con el valor de la sala
+                               return <option key={mapindex+"_"+salaIndex} value={sala}> {sala.replace(/_/g, " ")} </option>
                             })
-                        }
-                    </select>
-                </div>
-                <label htmlFor="llegada" class="title_text">Voy a: </label>
-                <div class="select" id="llegada">
-                    <select onChange={(value) => {_useStates.llegada(value.target.value)}}>
-                        <option id="default_option_llegada" value={LlegadaState} selected>  </option>
-                        {
-                            Mapas.map((mapa, mapindex) => {
-                                return json_lista_de_salas[mapa].map((sala, salaIndex) => {
-                                   return <option key={mapindex+"_"+salaIndex} value={sala}> {sala.replace(/_/g, " ")} </option>
-                                })
+                        })
+                    }
+                </select>
+            </div>
+            <label htmlFor="llegada" class="title_text">Voy a: </label>
+            <div class="select" id="llegada">
+                <select onChange={(value) => {_useStates.llegada(value.target.value)}}>
+                    <option id="default_option_llegada" value={LlegadaState} selected>  </option>
+                    {
+                        Mapas.map((mapa, mapindex) => {
+                            return json_lista_de_salas[mapa].map((sala, salaIndex) => {
+                               return <option key={mapindex+"_"+salaIndex} value={sala}> {sala.replace(/_/g, " ")} </option>
                             })
-                        }
-                    </select>
-                </div>
-        </div>
+                        })
+                    }
+                </select>
+            </div>
+    </div>
     )
 }
 

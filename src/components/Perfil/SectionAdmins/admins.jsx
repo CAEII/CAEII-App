@@ -42,8 +42,8 @@ function SalasBustelo() {
                 <option value={null}> seleciona una actividad: </option>
                 {
                     Json_lista_de_actividades.map((dia, diaIndex ) => {
-                        if (Que_dia_es_hoy() === dia.dia) {
-                        // if ("Viernes" === dia.dia) {
+                        // if (Que_dia_es_hoy() === dia.dia) {
+                        if ("Jueves" === dia.dia) {
                             return dia.actividades.map((actividad, actividadIndex) => {
                                 if (actividad.id !== null && !visitas_tecnicas.includes(actividad.titulo) && !actividad.titulo.includes("Asistencia")) {
                                     return <option key={`${diaIndex}-${actividadIndex}`} value={actividad.id}> {actividad.titulo} </option>
@@ -71,7 +71,9 @@ function VisitasTecnicas() {
                 {
                     Json_lista_de_actividades.map((dia, diaIndex ) => {
                         if (Que_dia_es_hoy() === dia.dia) {
+                            // if ("Viernes" === dia.dia) {
                             return dia.actividades.map((actividad, actividadIndex) => {
+                                console.log(actividad.titulo)
                                 if (actividad.id !== null && visitas_tecnicas.includes(actividad.titulo)) {
                                     return <option key={`${diaIndex}-${actividadIndex}`} value={actividad.id}> {actividad.titulo} </option>
                                 }

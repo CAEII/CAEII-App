@@ -53,7 +53,7 @@
 }
 .nombre_de_la_actividad .activit_name{
     /* font-size: 3rem; */
-    font-size: 10vw;
+    font-size: 8vw;
     font-weight: bolder;
     height: 50%;
     text-align: center;
@@ -87,10 +87,17 @@
 } */
 
 
+.App#asistencia, .swal2-popup {
+    background-color: rgb(23, 22, 41) !important;
+}
+.swal2-title{
+    color: rgb(220, 218, 255) !important;
+}
 
 
 
-@media (prefers-color-scheme: light) {
+
+/* @media (prefers-color-scheme: light) {
     .App#asistencia, .swal2-popup { 
        background-color: rgb(220, 218, 255) !important;
    }
@@ -106,4 +113,4 @@
     .swal2-title{
         color: rgb(220, 218, 255) !important;
    }
-}
+} */
