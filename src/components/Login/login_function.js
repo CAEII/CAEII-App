@@ -24,19 +24,25 @@ export default function login (Email, Password){
         }
     }) 
     .then( Response => {
-
-        console.log(Response.data)
         // declaro una constatnte con la info que me interesa guardar en la cookie de session
         const session_cookie_info = {user: {user_id:Response.data.user.id, name: Response.data.user.full_name, admin:  Response.data.user.admin}, token: Response.data.token}
+
+
 
         Response.data.user.enrollments.map( enrllment => {                  // Recorro los enrollments del usuario    
             if (enrllment.event.name.includes("CAEII XX")) {                // Reviso si el nombre del evento inclulle el string "CAEII XX"
                 enrllment.selections.map( section => {                      // Recorro las selecciones del usuario
                     // Guardo el valor de la seleccion, este es id de la actividad dentro del evento
-                    actividades_segun_user.push({selection_value: section.pivot.value ,selection_id: section.pivot.id})     
+                    // actividades_segun_user.push({selection_value: section.value ,selection_id: section.id})   
+                    
+                    section.items.map( item => {
+                        actividades_segun_user.push({selection_value: item.id ,selection_id: section.id})    
+                    })
                 })
             } 
         })
+
+
 
         // creo dos cookies en la ruta "/" con una vida maxima de dos meses
         cookies.set('session', session_cookie_info, { path: '/' , maxAge: 5184000});        // "session" almacena datos del usuario como id, nombre, token y si es una admin o no

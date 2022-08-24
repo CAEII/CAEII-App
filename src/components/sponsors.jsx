@@ -2,15 +2,10 @@
 import { useState, useEffect } from "react";
 // styles
 import "../styles/sponsors/sponsors.css"
-// imagenes (PLACE HOLDRES)
-import PanAmerican from "../styles/sponsors/img/panAmerican.png"
-import UM from "../styles/sponsors/img/UM.png"
-import UNCUYO from "../styles/sponsors/img/UNCUYO.png"
+// imagenes
 import bottino1 from "../styles/sponsors/img/bottino.png"
 import bottino2 from "../styles/sponsors/img/ebottino.png"
-import pizarras from "../styles/sponsors/img/pizarras"
-
-
+import pizarras from "../styles/sponsors/img/pizarras.png"
 import Accenture from "../styles/sponsors/img/accenture.png"
 import GrupoLTN from "../styles/sponsors/img/grupo_ltn.png"
 import PAE from "../styles/sponsors/img/panAmerican.png"
@@ -127,17 +122,17 @@ function SponsorsBody(props) {
                     setradio6(false);          // seteo el radio buton 6 en false   (checked=false en el html)
                     }}
                 />
-                <span class="checkmark"></span>
+                <span className="checkmark"></span>
                 <input type="radio" name="position" id="exclusive_2" checked={radio2} onClick={()=>{setcuentaStop(true);setradio1(false);setradio2(true);setradio3(false);setradio4(false);setradio5(false);setradio6(false)}}/>
-                <span class="checkmark"></span>
+                <span className="checkmark"></span>
                 <input type="radio" name="position" id="exclusive_3" checked={radio3} onClick={()=>{setcuentaStop(true);setradio1(false);setradio2(false);setradio3(true);setradio4(false);setradio5(false);setradio6(false)}}/>
-                <span class="checkmark"></span>
+                <span className="checkmark"></span>
                 <input type="radio" name="position" id="exclusive_4" checked={radio4} onClick={()=>{setcuentaStop(true);setradio1(false);setradio2(false);setradio3(false);setradio4(true);setradio5(false);setradio6(false)}}/>
-                <span class="checkmark"></span>
+                <span className="checkmark"></span>
                 <input type="radio" name="position" id="exclusive_5" checked={radio5} onClick={()=>{setcuentaStop(true);setradio1(false);setradio2(false);setradio3(false);setradio4(false);setradio5(true);setradio6(false)}}/>
-                <span class="checkmark"></span>
+                <span className="checkmark"></span>
                 <input type="radio" name="position" id="exclusive_6" checked={radio6} onClick={()=>{setcuentaStop(true);setradio1(false);setradio2(false);setradio3(false);setradio4(false);setradio5(false);setradio6(true)}}/>
-                <span class="checkmark"></span>
+                <span className="checkmark"></span>
 
                 <Carrucel type={props.type} />
             </div>
@@ -147,24 +142,15 @@ function SponsorsBody(props) {
         // si el Props.type es igual a "premium" o "exclusive" regreso el sponsors_card_body correspondiente
         return(
             <form action="">
-            <div class="Sponsors_card_body dots">
+            <div className="Sponsors_card_body dots">
                 <input type="radio" name="position" id="exclusive_1" checked={radio1} onClick={()=>{    // al hacer click en un radio button:
                     setcuentaStop(true);       // detengo el contador
                     setradio1(true);           // seteo el radio buton 1 en true    (checked=true en el html)
                     setradio2(false);          // seteo el radio buton 2 en false   (checked=false en el html)
-                    /* setradio3(false);          // seteo el radio buton 3 en false   (checked=false en el html)
-                    setradio4(false);  */         // seteo el radio buton 4 en false   (checked=false en el html)
-                    /* setradio5(false); */          // seteo el radio buton 5 en false   (checked=false en el html)
                     }}
                 />
-                <span class="checkmark"></span>
-                <input type="radio" name="position" id="exclusive_2" checked={radio2} onClick={()=>{setcuentaStop(true);setradio1(false);setradio2(true);/* setradio3(false);setradio4(false);setradio5(false) */}}/>
-                <span class="checkmark"></span>
-                <input type="radio" name="position" id="exclusive_3" checked={radio3} onClick={()=>{setcuentaStop(true);setradio1(false);setradio2(false);setradio3(true);setradio4(false);setradio5(false)}}/>
-                <span class="checkmark"></span>
-                <input type="radio" name="position" id="exclusive_4" checked={radio4} onClick={()=>{setcuentaStop(true);setradio1(false);setradio2(false);setradio3(false);setradio4(true);setradio5(false)}}/>
                 <span className="checkmark"></span>
-                <input type="radio" name="position" id="exclusive_5" checked={radio5} onClick={()=>{setcuentaStop(true);setradio1(false);setradio2(false);setradio3(false);setradio4(false);setradio5(true)}}/>
+                <input type="radio" name="position" id="exclusive_2" checked={radio2} onClick={()=>{setcuentaStop(true);setradio1(false);setradio2(true);/* setradio3(false);setradio4(false);setradio5(false) */}}/>
                 <span className="checkmark"></span>
 
                 <Carrucel type={props.type} />
@@ -182,11 +168,11 @@ function Carrucel(props) {
         // si el type es premium envio dos imagesnes por item
         return (
             <div id="carousel">
-                <div class="item" >
+                <div className="item" >
                     <img src={Techint} alt="Techint" className="premiumSize"></img>
                     <img src={GrupoPeñaflor} alt="GrupoPeñaflor" className="premiumSize"></img>
                 </div>
-                <div class="item" >
+                <div className="item" >
                     <img src={Invap} alt="Invap" className="premiumSize"></img>
                     <img src={Coope} alt="Coope" className="premiumSize"></img>
                 </div>
@@ -197,22 +183,22 @@ function Carrucel(props) {
         // si el type es premium envio una imagesnes por item
         return(
             <div id="carousel">
-                <div class="item" id="item_1">
+                <div className="item" id="item_1">
                     <img src={Accenture} alt="Accenture"></img>
                 </div>
-                <div class="item" id="item_1">
+                <div className="item" id="item_1">
                     <img src={GrupoLTN} alt="Grupo LTE"></img>
                 </div>
-                <div class="item" id="item_1">
+                <div className="item" id="item_1">
                     <img src={PAE} alt="Panamerican Energy"></img>
                 </div>
-                <div class="item" id="item_1">
+                <div className="item" id="item_1">
                     <img src={NeuralSoft} alt="NeuralSoft"></img>
                 </div>
-                <div class="item" id="item_1">
+                <div className="item" id="item_1">
                     <img src={Raizen} alt="Raizen"></img>
                 </div>
-                <div class="item" id="item_1">
+                <div className="item" id="item_1">
                     <img src={Guaymallen} alt="Guaymallen"></img>
                 </div>
             </div>

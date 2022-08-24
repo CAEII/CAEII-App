@@ -3,6 +3,7 @@ import { useEffect } from "react"
 import { useState } from "react"
 // fucntions
 import {Que_dia_es_hoy, comparo_con_la_hora_actual} from "../Suport_functions"
+import PorcentajeAsistencia from "../functions/Porcentaje_asistencia";
 // json
 import json_actividades from "../functions/lista_actividades.json"
 // cookies
@@ -73,9 +74,9 @@ function Lineas({today_activities,SetSalas,Salas, SetActividad, executeScroll}){
             return <Lineas2 key={index} actividad={actividad} index={index} SetSalas={SetSalas} Salas={Salas} SetActividad={SetActividad} executeScroll={executeScroll}/>
         }
         // si el id de la actividad no es igual "null", significa que esa actividad corresponde solo a algunos de los participantes por lo tanto comparo la lista de ids de la actividad con los ids de actividades del usuario
-        return actividad.id.map( id => {
-            return activities.map( activiti => {
-                if (activiti.selection_value.indexOf(id) !== -1) {
+        return actividad.id.map( id => {    // json
+            return activities.map( activiti => {    //server
+                if (activiti.selection_value == id) {
                     return <Lineas2 key={index} actividad={actividad} index={index} SetSalas={SetSalas} Salas={Salas} SetActividad={SetActividad} executeScroll={executeScroll}/>
                 }
             })
@@ -87,6 +88,7 @@ function Lineas2({actividad,index,SetSalas,Salas, SetActividad, executeScroll}) 
     var className       // en esta variable almaceno todas las clases del <tr> 
     // Reviso si el titulo de la actividad es "ALMUERZO", "TIEMPO LIBRE", "COFFEE" y si lo es resalto la linea
     if (actividad.titulo === "ALMUERZO" || actividad.titulo === "TIEMPO LIBRE" || actividad.titulo === "COFFEE") {
+        PorcentajeAsistencia()
         className = "conLinea resaltado"
     } else {
         className = ""

@@ -37,10 +37,10 @@ export default function Login() {
         }, 1000);
     };
 
-    useEffect(() => {
-        if (cookies.get('session') !== undefined) {
+   useEffect(() => {
+      if (cookies.get('session') !== undefined) {
             navigate("/")
-        }
+       }
     })
 
 
