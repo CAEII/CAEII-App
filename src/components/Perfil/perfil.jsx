@@ -2,8 +2,6 @@
 import React, { useEffect, useState } from "react";
 import { useRef } from "react";
 import {useNavigate} from 'react-router-dom';
-// axios
-import axios from 'axios';
 // cookies
 import Cookies from 'universal-cookie';
 // components
@@ -13,9 +11,6 @@ import Cronograma from "./SectionCronograma/Cronograma";
 import SectionMapas from "./SectionMapas/Section_Mapas";
 import Admins from "./SectionAdmins/admins";
 import Badges from "./SectionBadges/badges"
-// functions
-// import {Asistencia} from "./Suport_functions"
-import PorcentajeAsistencia from "./functions/Porcentaje_asistencia";
 //styles
 import "../../styles/perfil/css/Perfil.css";
 // imgs
@@ -47,10 +42,10 @@ export default function Perfil() {
             // console.log(cookies.get('session').token.substring(cookies.get('session').token.indexOf("|") + 1));
             SetUser(cookies.get('session').user)
         } else {
-            navigate("/")
+            // return navigate("/")
         }
 
-        PorcentajeAsistencia()
+        // PorcentajeAsistencia()
 
         SetAsistencia(cookies.get('asistencia'))
     }, [])

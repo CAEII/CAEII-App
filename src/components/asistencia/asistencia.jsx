@@ -24,7 +24,7 @@ export default function Asistencia(){
     // las siguientes variables se optienen del enpoint:
     const [Presente, SetPresente] = useState(false);                                    // Info sobre la presensia del asistente (true= ya estuvo en la actividad, false= no ha estado en la actividad)
     const [Name, SetName] = useState('');                                               // Nombre del asistente
-    const [Asistencia, SetAsistencia] = useState(0);                                    // numero del porcentaje de asistencia
+    // const [Asistencia, SetAsistencia] = useState(0);                                    // numero del porcentaje de asistencia
     const [Activiti, SetActiviti] = useState({title: '', id:'',selection_id:'',atended: false});       // nombre de la actividad actual
 
     const navigate = useNavigate();
@@ -74,8 +74,8 @@ export default function Asistencia(){
 
 
             Json_lista_de_actividades.map((dia, diaIndex ) => {                                     // recorro la lista de actividades
-                // if (Que_dia_es_hoy() === dia.dia) {                                              // si el dia de hoy coniside con el dia del json:                                                     // si el dia de hoy coniside con el dia del json:
-                if ("Domingo" === dia.dia) {                                                        // si el dia de hoy coniside con el dia del json:                                                     // si el dia de hoy coniside con el dia del json:
+                if (Que_dia_es_hoy() === dia.dia) {                                              // si el dia de hoy coniside con el dia del json:                                                     // si el dia de hoy coniside con el dia del json:
+                // if ("Domingo" === dia.dia) {                                                        // si el dia de hoy coniside con el dia del json:                                                     // si el dia de hoy coniside con el dia del json:
                     return dia.actividades.map((actividad, actividadIndex) => {                     // recorro la lista de actividades de hoy
     
                         if (comparo_con_la_hora_actual(actividad.horario) === "En_progreso") {      // reviso que la actividad este en progreso
