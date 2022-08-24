@@ -1,0 +1,36 @@
+#preguntas h3{
+    text-transform: capitalize;
+    font-size: 1.5rem;
+}
+#preguntas .codigos_container{
+    /* display: flex;
+    flex-direction: column; */
+
+    display: grid;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+#preguntas h4{
+    grid-column: 1;
+    display: flex;
+}
+#preguntas strong{
+    grid-column: 3;
+}
+
+#preguntas .codigos_container *{
+   margin-top: 1.5%;
+   margin-bottom: 1.5%;
+   margin-top: 4%;
+   margin-bottom: 4%;
+
+   font-size: 1.4rem;
+}
+
+#preguntas button{
+    height: 100px;
+    width: 400px;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}

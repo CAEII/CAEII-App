@@ -8,7 +8,7 @@ const cookies = new Cookies();
 export default function check_admin(navigate, Activiti) {
     if (cookies.get('admin') === undefined) {       // si la cookie admin es igual a "undefinded" significa que el usuario no es un admin, por lo tanto lo redirijo al home
         Swal.fire({         // si ocurrio algun error muestro este mensaje
-            title: `<strong>Deves de seleccionar donde estas para poder reguistrar la asistencia</strong>`,
+            title: `<strong>Debés seleccionar dónde estás para poder reguistrar la asistencia</strong>`,
             icon: 'error'
         })
         return navigate("/perfil")
