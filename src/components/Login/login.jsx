@@ -61,16 +61,16 @@ export default function Login() {
                             <input type="text" name="user" placeholder="Usuario" value={User} onChange={event => setUser(event.target.value)} />
                             <input type="password" name="pass" placeholder="Contraseña" value={password} onChange={event => setpassword(event.target.value)} />
 
-                            <a href="" className="no_contra" >¿olvidaste tu contraseña?</a>
+                            <a href="https://inscripciones.aareii.org.ar/index.php/password/reset" className="no_contra" >¿olvidaste tu contraseña?</a>
                             <button type="submit">Ingresar</button>
                             <a href="https://inscripciones.aareii.org.ar/index.php/register">Registrate</a>
                         </form>
                     </div>
                 </main>
                 <footer id="footer-login">
-                    <div className="logo">
+                    {/* <div className="logo">
                         <a href="https://www.aareii.org.ar/"><img src={logoAareii} alt="Logo de AArEII" /></a>
-                    </div>
+                    </div> */}
                     <a href="https://www.aareii.org.ar/"><img id="logo_aareii_desktop" src={logoAareiiDesktop} alt="Logo de AArEII" /></a>
                 </footer>
             </div>

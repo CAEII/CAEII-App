@@ -2,8 +2,6 @@
 import React, { useEffect, useState } from "react";
 import { useRef } from "react";
 import {useNavigate} from 'react-router-dom';
-// axios
-import axios from 'axios';
 // cookies
 import Cookies from 'universal-cookie';
 // components
@@ -13,10 +11,10 @@ import Cronograma from "./SectionCronograma/Cronograma";
 import SectionMapas from "./SectionMapas/Section_Mapas";
 import Admins from "./SectionAdmins/admins";
 import Badges from "./SectionBadges/badges"
+import Preguntas from "./SectionPreguntas/preguntas"
 // functions
-// import {Asistencia} from "./Suport_functions"
-import PorcentajeAsistencia from "./functions/Porcentaje_asistencia";
-//styles
+import {Que_dia_es_hoy} from "./Suport_functions"
+// styles
 import "../../styles/perfil/css/Perfil.css";
 // imgs
 import CaeiiLogo from "../../styles/perfil/img/CAEII LOGO 1.png";
@@ -47,10 +45,10 @@ export default function Perfil() {
             // console.log(cookies.get('session').token.substring(cookies.get('session').token.indexOf("|") + 1));
             SetUser(cookies.get('session').user)
         } else {
-            navigate("/")
+            // return navigate("/")
         }
 
-        PorcentajeAsistencia()
+        // PorcentajeAsistencia()
 
         SetAsistencia(cookies.get('asistencia'))
     }, [])
@@ -83,15 +81,19 @@ export default function Perfil() {
             <BaseLayout>
                 <main>
 
-                    {User.admin === true ? <Admins/> : <Badges/>}
+                    {User.admin === true ? <Admins/> : Que_dia_es_hoy() === "Jueves" ? <Badges/> : null}
 
                     {User.user_id === 3638 ? <Badges/> : ""}
                     
                     <Credencial nombre={User.name} asistencia={Asistencia} id={User.user_id}/>
 
+                    <Preguntas/>
+
                     <Cronograma SetSalas={SetSalas} Salas={Salas} SetActividad={SetActividad} executeScroll={executeScroll}/>
 
                     <SectionMapas salas={Salas} referencia={myRef}/>
+
+                    {Que_dia_es_hoy() !== "Jueves" ? <Badges/> : null}
 
                     <section id="logo">
                         <img src={CaeiiLogo} alt="logo CAEII" />

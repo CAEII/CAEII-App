@@ -11,6 +11,7 @@
 .App#login main{
     height: 90%;
     z-index: 2;
+    overflow: visible;
 } 
 
 header{
@@ -27,7 +28,6 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 20;
 }
 svg{
     height: 130px;

@@ -659,6 +659,36 @@
                                 "icono": "/imgs/iconos/linkedin.png"
                             }
                         ]
+                    },
+                    {
+                        "title": "Un viaje por nuestra estrella",
+                        "img": "/imgs/profesionales/Hebe Cremades.jpg",
+                        "disertante": "Hebe Cremades | Ing. en Electrónica y Telecomunicaciones",
+                        "short": "",
+                        "desciption": "Exploraremos distintos aspectos de nuestra estrella, el Sol: su ciclo de actividad, fenómenos transitorios, y la conexión que guarda con nuestro planeta.",
+                        "items":[],
+                        "links": [
+                            {
+                                "type": "",
+                                "link": "",
+                                "icono": ""
+                            }
+                        ]
+                    },
+                    {
+                        "title": "De Mendoza a Marte",
+                        "img": "/imgs/profesionales/Gabriel Caballero.jpg",
+                        "disertante": "Gabriel Caballero | fundador The Mars Society",
+                        "short": "",
+                        "desciption": "En esta charla, descubrirás los misterios del planeta Marte, así como los desafíos que presenta a la hora de lograr que la humanidad se convierta, finalmente, en una especie multiplanetaria. Además, conocerás la historia de su exploración, con logros y fracasos incluidos, las oportunidades de negocios actuales y futuras y lo que se hace en Argentina en pos de crear cultura espacial.",
+                        "items":[],
+                        "links": [
+                            {
+                                "type": "Linkedin",
+                                "link": "https://ar.linkedin.com/in/gabriel-caballero",
+                                "icono": "/imgs/iconos/linkedin.png"
+                            }
+                        ]
                     }
                 ]
             },
@@ -754,6 +784,36 @@
                                 "icono": "/imgs/iconos/linkedin.png"
                             }
                         ]
+                    },
+                    {
+                        "title": "Industria 6.1",
+                        "img": "/imgs/profesionales/Ernesto Romito.jpg",
+                        "disertante": "Ernesto Romito | Ing. Industrial",
+                        "short": "",
+                        "desciption": "El avance de la tecnología, en materia de comunicaciones, robótica, interconectividad, super materiales e inteligencia artificial está creciendo de manera exponencial. Tan vertiginoso es este avance que resulta difícil imaginar hasta dónde podríamos llegar. En todo el mundo, las empresas de productos y servicios comienzan a hablar de la cuarta revolución industrial, que cambiará el desarrollo económico tal como lo hicieron las revoluciones anteriores. Algunos intrépidos ya están haciendo realidad desarrollos tecnológicos de aplicación cotidiana que nuestros padres veían como ciencia ficción en televisores en blanco y negro.¿Cómo imaginamos el mundo luego de que esta cuarta revolución ocurra? Durante esta charla, los invitaré a imaginar ese futuro.",
+                        "items":[],
+                        "links": [
+                            {
+                                "type": "Linkedin",
+                                "link": "https://www.linkedin.com/in/ernestoromito/?locale=es_ES",
+                                "icono": "/imgs/iconos/linkedin.png"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Título de la charla: Blockchain: presente y futuro",
+                        "img": "/imgs/profesionales/Arturo Grande.png",
+                        "disertante": "Arturo Grande | Co-founder de Bestem.dev",
+                        "short": "",
+                        "desciption": "Descipción: Charla facilitada por Arturo Grande, CEO y Co-founder de Bestem.dev (Blockchain Factory), Product Designer y co-founder de Knoly (red de validación de conocimientos p2p). Exposición sobre los fundamentos de Blockchain, sus usos y aplicaciones enfocado en el mundo crypto, NFTs y Metaverso. ¿Puede la blockchain generar nuevos modelos de coordinación para crear un mundo mejor? Te invito a descubrirlo en este espacio.",
+                        "items":[],
+                        "links": [
+                            {
+                                "type": "Linkedin",
+                                "link": "https://www.linkedin.com/in/arturo-grande/?originalSubdomain=es",
+                                "icono": "/imgs/iconos/linkedin.png"
+                            }
+                        ]
                     }
                 ]
             },
@@ -792,6 +852,26 @@
                                 "type": "Linkedin",
                                 "link": "https://www.linkedin.com/in/hernan-fagnilli-622b184/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=ar",
                                 "icono": "/imgs/iconos/linkedin.png"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "El futuro de la innovación: El rol del profesional de la ingeniería",
+                        "img": "/imgs/profesionales/Raymond Schefer.jpg",
+                        "short": "",
+                        "disertante": "Raymond Schefer | ing. industrial y Director MIND Program ADEN Business School",
+                        "desciption": "El contexto se está transformando y con ello, los paradigmas y los roles a cumplir para crear valor futuro,  para empresas y emprendimientos.Con mayor innovación y ciclos de vida más cortos, con desafíos climáticos y sociales, en contextos cada vez más frágiles, los nuevos profesionales tienen que incorporar enfoques y herramientas que les permitan ser actores de un cambio cada vez más vertiginoso.",
+                        "items":[],
+                        "links": [                    
+                            {
+                                "type": "Linkedin",
+                                "link": "https://www.linkedin.com/in/raymondschefer/?originalSubdomain=ar",
+                                "icono": "/imgs/iconos/linkedin.png"
+                            },
+                            {
+                                "type": "Instagram",
+                                "link": "https://www.instagram.com/raymondschefer/",
+                                "icono": "/imgs/iconos/instagram.png"
                             }
                         ]
                     }
@@ -845,7 +925,7 @@
                 "info": [
                     {
                         "title": "Fiesta en Runner",
-                        "img": "/imgs/noches/runner.jfif",
+                        "img": "/imgs/noches/runner.jpg",
                         "short": "¿Qué hiciste el sábado? ¿Fuiste al Hackatón o a las charlas? Eso no importa. ¡Salgamos todos a Runner! El sábado a la noche nos volvemos a juntar todos. ",
                         "desciption": "¿Qué hiciste el sábado? ¿Fuiste al Hackatón o a las charlas? Eso no importa. ¡Salgamos todos a Runner! El sábado a la noche nos volvemos a juntar todos. Esta noche empieza puntual a las 23:30 hs. Si querés participar deberás abonar el pack noche o la entrada para esta noche a $2000.",
                         "items":[],
@@ -883,7 +963,7 @@
                 "info": [
                     {
                         "title": "Pack Noche",
-                        "img": "/imgs/noches/pack.jfif",
+                        "img": "/imgs/noches/pack.png",
                         "short": "¿Querés ir a las dos noches (viernes y sábado)? ¡El pack noche es para vos! Te ofrecemos una promoción para que puedas ir a ambas noches.",
                         "desciption": "¿Querés ir a las dos noches (viernes y sábado)? ¡El pack noche es para vos! Te ofrecemos una promoción para que puedas ir a ambas noches. Por $3000 tenés la entrada a ambas noches y una consumición para cada día. El pack noche o la venta individual es hasta el viernes 26 12 hs sin excepciones. Se puede comprar en el Auditorio Angel Bustelo. Al inicio del evento se informará el lugar exacto. Las entradas solo las podrán adquirir las personas que están inscriptas al congreso.",
                         "items":[],

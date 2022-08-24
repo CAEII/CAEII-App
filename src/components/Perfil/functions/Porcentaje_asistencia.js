@@ -1,3 +1,4 @@
+import {useNavigate} from 'react-router-dom';
 // axios
 import axios from "axios";
 // cookies
@@ -6,7 +7,11 @@ import Cookies from 'universal-cookie';
 export default function PorcentajeAsistencia() {
 
     const cookies = new Cookies();
+    const navigate = useNavigate();
 
+    if (cookies.get('session') === undefined) {
+       return navigate("/")
+    }
     const token = cookies.get('session').token.substring(cookies.get('session').token.indexOf("|") + 1)
 
     axios({
