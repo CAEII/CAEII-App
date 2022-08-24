@@ -74,9 +74,9 @@ function Lineas({today_activities,SetSalas,Salas, SetActividad, executeScroll}){
             return <Lineas2 key={index} actividad={actividad} index={index} SetSalas={SetSalas} Salas={Salas} SetActividad={SetActividad} executeScroll={executeScroll}/>
         }
         // si el id de la actividad no es igual "null", significa que esa actividad corresponde solo a algunos de los participantes por lo tanto comparo la lista de ids de la actividad con los ids de actividades del usuario
-        return actividad.id.map( id => {
-            return activities.map( activiti => {
-                if (activiti.selection_value.indexOf(id) !== -1) {
+        return actividad.id.map( id => {    // json
+            return activities.map( activiti => {    //server
+                if (activiti.selection_value == id) {
                     return <Lineas2 key={index} actividad={actividad} index={index} SetSalas={SetSalas} Salas={Salas} SetActividad={SetActividad} executeScroll={executeScroll}/>
                 }
             })

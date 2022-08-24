@@ -47,7 +47,6 @@ export default function Asistencia(){
         axios({
             method: 'get',
             url: `https://inscripciones.aareii.org.ar/api/v1/users/${id}`,
-            // url: `https://inscripciones.aareii.org.ar/api/v1/users/3839`,
             headers: {
                 "Accept": "application/json",
                 Authorization: `Bearer ${token}`
@@ -61,31 +60,35 @@ export default function Asistencia(){
 
             Response.data.user.enrollments.map( enrllment => {                  // Recorro los enrollments del usuario    
                 if (enrllment.event.name.includes("CAEII XX")) {                // Reviso si el nombre del evento inclulle el string "CAEII XX"
+
                     enrllment.selections.map( section => {                      // Recorro las selecciones del usuario
                         // Guardo el valor de la seleccion, este es id de la actividad dentro del evento
-                        info_del_back.push({selection_value: section.value ,selection_id: section.id, atended: section.attended})     
+                        section.items.map( item => {
+                            info_del_back.push({selection_value: item.id ,selection_id: section.id, atended: item.pivot.attended})    
+                        })
+                         
+                         
                     })
                 } 
             })
 
 
             Json_lista_de_actividades.map((dia, diaIndex ) => {                                     // recorro la lista de actividades
-                if (Que_dia_es_hoy() === dia.dia) {                                              // si el dia de hoy coniside con el dia del json:                                                     // si el dia de hoy coniside con el dia del json:
-                // if ("Domingo" === dia.dia) {                                              // si el dia de hoy coniside con el dia del json:                                                     // si el dia de hoy coniside con el dia del json:
+                // if (Que_dia_es_hoy() === dia.dia) {                                                 // si el dia de hoy coniside con el dia del json:                                                     // si el dia de hoy coniside con el dia del json:
+                if ("Domingo" === dia.dia) {                                                     // si el dia de hoy coniside con el dia del json:                                                     // si el dia de hoy coniside con el dia del json:
                     return dia.actividades.map((actividad, actividadIndex) => {                     // recorro la lista de actividades de hoy
     
                         if (comparo_con_la_hora_actual(actividad.horario) === "En_progreso") {      // reviso que la actividad este en progreso
-                            // console.log(actividad)
                             if (actividad.id === null) {                                            // si el id es igual a "null":
                                 SetActiviti({title: actividad.titulo, id: null})                    // guardo en "SetActiviti" el nombre y id de la actividad
                             } else {                                                                // si el id es distinto de "null":
                                 actividad.id.map( activiti_id => {                                  // recorro la lista de ids
                                     info_del_back.map( actividad_back => {                          // por cada id de la actividad recorro la lista de actividades del usuario
                                         //console.log(info_del_back)
-                                        if (actividad_back.selection_value === activiti_id) {       // si el id de la actividad del back coinside con uno de los ids de la actividad del cronograma:
+                                        if (actividad_back.selection_value == activiti_id) {       // si el id de la actividad del back coinside con uno de los ids de la actividad del cronograma:
                                             // guardo en "SetActiviti" el nombre y id de la actividad
-                                            SetActiviti({title: actividad.titulo, id: activiti_id, selection_id: actividad_back.selection_id, atended: actividad_back.atended === 0 ? false : true})        
-                                            //console.log(actividad_back.selection_id)
+                                            
+                                            SetActiviti({title: actividad.titulo, id: activiti_id, selection_id: actividad_back.selection_id, atended: actividad_back.atended !== 0})        
                                         }
                                     })
     
@@ -122,7 +125,7 @@ export default function Asistencia(){
             </div>
 
             <button id="buton" className={`asistencia_tag button_asistencia presente_${Activiti.atended === undefined ? false : Activiti.atended}`} onClick={() => {handle_click(is_here, SetPresente, Presente, Activiti)}}>
-                { Activiti.atended === true ? "PRESENTE" : "AUSENTE"} 
+                { Activiti.atended ? "PRESENTE" : "AUSENTE"} 
             </button>
         </div>
     )

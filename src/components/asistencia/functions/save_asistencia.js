@@ -10,7 +10,7 @@ export default function save_asistencia(Presente, SetPresente, activiti) {
 
     const cookies = new Cookies();
     const token = cookies.get('session').token.substring(cookies.get('session').token.indexOf("|") + 1)
-    const url = `https://inscripciones.aareii.org.ar/api/v1/selections/${activiti.selection_id}/update`          // url para hacer la request con axios
+    const url = `https://inscripciones.aareii.org.ar/api/v1/selections/${activiti.selection_id}/items/${activiti.id}/update`          // url para hacer la request con axios
 
     Swal.fire({         // mensaje de espera
         title: "<strong>Guardando . . . </strong>",
@@ -24,12 +24,11 @@ export default function save_asistencia(Presente, SetPresente, activiti) {
             Authorization: `Bearer ${token}`
         },
         data: {
-            attended: !activiti.attended
+            attended: !activiti.atended
         },
     })
         .then(function (response) {
-            // handle success
-            console.log(response.data);
+            console.log(response)
 
             Swal.fire({     // si todo sale bien muestro este mensaje
                 title: "<strong>Asistencia confirmada</strong>",
