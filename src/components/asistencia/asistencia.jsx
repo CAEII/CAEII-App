@@ -33,7 +33,7 @@ export default function Asistencia(){
 
         if (cookies.get('session') === undefined) {       // si la cookie admin es igual a "undefinded" significa que el usuario no es un admin, por lo tanto lo redirijo al home
             Swal.fire({         // si ocurrio algun error muestro este mensaje
-                title: `<strong>Deves iniciar secion para poder tomar asistencias</strong>`,
+                title: `<strong>Debés iniciar secion para poder tomar asistencias</strong>`,
                 icon: 'error'
             })
             return navigate("/login")
@@ -74,8 +74,8 @@ export default function Asistencia(){
 
 
             Json_lista_de_actividades.map((dia, diaIndex ) => {                                     // recorro la lista de actividades
-                // if (Que_dia_es_hoy() === dia.dia) {                                                 // si el dia de hoy coniside con el dia del json:                                                     // si el dia de hoy coniside con el dia del json:
-                if ("Domingo" === dia.dia) {                                                     // si el dia de hoy coniside con el dia del json:                                                     // si el dia de hoy coniside con el dia del json:
+                // if (Que_dia_es_hoy() === dia.dia) {                                              // si el dia de hoy coniside con el dia del json:                                                     // si el dia de hoy coniside con el dia del json:
+                if ("Domingo" === dia.dia) {                                                        // si el dia de hoy coniside con el dia del json:                                                     // si el dia de hoy coniside con el dia del json:
                     return dia.actividades.map((actividad, actividadIndex) => {                     // recorro la lista de actividades de hoy
     
                         if (comparo_con_la_hora_actual(actividad.horario) === "En_progreso") {      // reviso que la actividad este en progreso
