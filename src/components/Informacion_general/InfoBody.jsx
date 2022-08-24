@@ -31,9 +31,9 @@ export default function InfoBody({rubro, jsonData}) {
         }  
     }
 
-    return cards.map((card, cardIndex) => {         // recorro la info del json y por cada item en la lista devuelvo un div class="info_card"
+    return cards.map((card, cardIndex) => {         // recorro la info del json y por cada item en la lista devuelvo un div className="info_card"
         return (
-            // <div class="info_card"  data-aos="zoom-in-up">
+            // <div className="info_card"  data-aos="zoom-in-up">
             <div className="info_card" id={`info_card_n${cardIndex}`} key={cardIndex}>
                 <div className="info_card_title"> <h3> {card.title} </h3> </div>
                 <div className="info_card_text">    
@@ -73,7 +73,7 @@ function Links({links}) {
 function Items({items}){
     return(
         <div className="info_items">
-            {/* <ul class="izquierda"> */}
+            {/* <ul className="izquierda"> */}
             <ul>
                 {items.map((item, itemIndex) => <li key={itemIndex}> {item} </li>)}
             </ul>

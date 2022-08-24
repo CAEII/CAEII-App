@@ -37,15 +37,15 @@ export default function Admins() {
 function SalasBustelo() {
     const handleAddrTypeChange = (value) => cookies.set('admin', value.target.value, { path: '/', maxAge: 5184000 })
     return (
-        <div class="select">
+        <div className="select">
             <select  onChange={(value) =>  handleAddrTypeChange(value)}>
                 <option value={null}> seleciona una actividad: </option>
                 {
                     Json_lista_de_actividades.map((dia, diaIndex ) => {
-                        // if (Que_dia_es_hoy() === dia.dia) {
-                        if ("Jueves" === dia.dia) {
+                        if (Que_dia_es_hoy() === dia.dia) {
+                        // if ("Jueves" === dia.dia) {
                             return dia.actividades.map((actividad, actividadIndex) => {
-                                if (actividad.id !== null && !visitas_tecnicas.includes(actividad.titulo) && !actividad.titulo.includes("Asistencia")) {
+                                if (actividad.id !== null && !visitas_tecnicas.includes(actividad.titulo) && !actividad.titulo.includes("Asistencia") && !actividad.titulo.includes("COFFEE")) {
                                     return <option key={`${diaIndex}-${actividadIndex}`} value={actividad.id}> {actividad.titulo} </option>
                                 }
                             })
@@ -65,7 +65,7 @@ function SalasBustelo() {
 function VisitasTecnicas() {
     const handleAddrTypeChange = (value) => cookies.set('admin', value.target.value, { path: '/', maxAge: 5184000 })
     return (
-        <div class="select">
+        <div className="select">
             <select  onChange={(value) =>  handleAddrTypeChange(value)}>
                 <option value={null}> seleciona una visita: </option>
                 {

@@ -131,7 +131,7 @@ export default function Nosotros() {
                 <div className="link">
                   <div className="linea">
                     <Link to="/info/Estaciones">{" Ingeniería del mañana >"}</Link>
-                    <div class="line_container Ingeniería_del_mañana"><div class="line"></div></div>
+                    <div className="line_container Ingeniería_del_mañana"><div className="line"></div></div>
                   </div>
                 </div>
 
@@ -186,7 +186,7 @@ export default function Nosotros() {
                   <i>Próximamente</i>
                 </p>
                 <div className="circle">
-                  <div class="rocket_container">
+                  <div className="rocket_container">
                     <img src={cohete} alt="cohete"></img>
                   </div>
                   <div className="circle2"></div>

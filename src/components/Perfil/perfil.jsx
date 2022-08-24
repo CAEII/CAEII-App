@@ -50,10 +50,9 @@ export default function Perfil() {
             navigate("/")
         }
 
-        SetAsistencia(cookies.get('asistencia'))
-
         PorcentajeAsistencia()
-        
+
+        SetAsistencia(cookies.get('asistencia'))
     }, [])
 
     const myRef = useRef(null)
@@ -86,7 +85,7 @@ export default function Perfil() {
 
                     {User.admin === true ? <Admins/> : <Badges/>}
 
-                    {/* {User.user_id === 3638 ? <Badges/> : ""} */}
+                    {User.user_id === 3638 ? <Badges/> : ""}
                     
                     <Credencial nombre={User.name} asistencia={Asistencia} id={User.user_id}/>
 
