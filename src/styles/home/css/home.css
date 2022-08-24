@@ -24,7 +24,7 @@ section article{
     border: 1px solid black;
 
     display: grid;
-    
+    overflow: hidden;
     grid-template-rows: 40% 60%;
 }
 section#conferencias_2 article{
