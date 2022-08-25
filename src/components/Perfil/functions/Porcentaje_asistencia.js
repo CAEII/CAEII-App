@@ -37,7 +37,7 @@ export default function PorcentajeAsistencia() {
                 } 
             })
 
-            const porcentaje_asistencia = (suma_asistencia / 5) * 100
+            const porcentaje_asistencia = suma_asistencia
 
             cookies.set('asistencia', porcentaje_asistencia, { path: '/', maxAge: 5184000 });        // "asistencia" almacena el porcentaje de asistencia del usuario, es solo estetico
         })
