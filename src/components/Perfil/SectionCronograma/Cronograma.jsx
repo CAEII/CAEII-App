@@ -88,7 +88,6 @@ function Lineas2({actividad,index,SetSalas,Salas, SetActividad, executeScroll}) 
     var className       // en esta variable almaceno todas las clases del <tr> 
     // Reviso si el titulo de la actividad es "ALMUERZO", "TIEMPO LIBRE", "COFFEE" y si lo es resalto la linea
     if (actividad.titulo === "ALMUERZO" || actividad.titulo === "TIEMPO LIBRE" || actividad.titulo === "COFFEE") {
-        PorcentajeAsistencia()
         className = "conLinea resaltado"
     } else {
         className = ""
@@ -104,6 +103,16 @@ function Lineas2({actividad,index,SetSalas,Salas, SetActividad, executeScroll}) 
         if (comparo_con_la_hora_actual(actividad.horario) === "En_progreso") {
             SetSalas({ salida: Salas.salida, llegada: actividad.lugar})
             SetActividad(actividad.titulo)
+
+            if (actividad.titulo === "ALMUERZO" || actividad.titulo === "TIEMPO LIBRE" || actividad.titulo === "COFFEE") {
+                PorcentajeAsistencia()
+            }
+
+            if (actividad.titulo === "Conf. Chris Meniw " || actividad.titulo === "Conf. Tomas Karagozian" || actividad.titulo === "Conf. Nicolás Fernandez" || actividad.titulo === "Conf. Damian Pedraza") {
+                let asistencia_magistral = cookies.get("asistencia")
+
+                cookies.set('asistencia', asistencia_magistral + 1, { path: '/', maxAge: 5184000 });        // "asistencia" almacena el porcentaje de asistencia del usuario, es solo estetico
+            }
         }
     }, [Salas.salida,SetSalas,actividad.lugar,actividad.horario])
 
