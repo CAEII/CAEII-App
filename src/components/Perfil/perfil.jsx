@@ -14,6 +14,7 @@ import Badges from "./SectionBadges/badges"
 import Preguntas from "./SectionPreguntas/preguntas"
 // functions
 import {Que_dia_es_hoy} from "./Suport_functions"
+import PorcentajeAsistencia from "./functions/Porcentaje_asistencia";
 // styles
 import "../../styles/perfil/css/Perfil.css";
 // imgs
@@ -50,7 +51,7 @@ export default function Perfil() {
 
         // PorcentajeAsistencia()
 
-        SetAsistencia(cookies.get('asistencia'))
+        SetAsistencia(((cookies.get('asistencia') / 9) * 100).toFixed(0))
     }, [])
 
     const myRef = useRef(null)
