@@ -2,7 +2,7 @@
     background-color: var(--fondoTituloTargeta);
     min-height: 400px;
     height: fit-content;
-
+    padding-bottom: 5vh;
     /* transition: max-height 1s; */
 }
 #credencial.asistente_certificado{
@@ -214,6 +214,19 @@ b.asistente_certificado{
     margin-bottom: 40px;
 }
 
+#badges_pilares {
+    width: 90vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.ins_pilares {
+    width: 10vh;
+    position: relative;
+    top: -35px;
+    z-index: 100;
+}
+
 
 @media only screen and (max-width: 300px){
     #credencial{
@@ -275,6 +288,11 @@ b.asistente_certificado{
     }
     #myModal svg{
         width: 60%;
+    }
+    .ins_pilares {
+        width: 15vh;
+        position: relative;
+        top: -250px;
     }
 }
 

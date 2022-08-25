@@ -87,6 +87,13 @@ export default function Perfil() {
                     
                     <Credencial nombre={User.name} asistencia={Asistencia} id={User.user_id}/>
 
+                    <div id="badges_pilares">
+                        <img src="/imgs/badges/pilares/ins_est.png" className="ins_pilares"></img>
+                        <img src="/imgs/badges/pilares/ins_log.png" className="ins_pilares"></img>                        
+                        <img src="/imgs/badges/pilares/ins_city.png" className="ins_pilares"></img>
+                        <img src="/imgs/badges/pilares/ins_ing.png" className="ins_pilares"></img>
+                    </div>
+
                     <Preguntas/>
 
                     <Cronograma SetSalas={SetSalas} Salas={Salas} SetActividad={SetActividad} executeScroll={executeScroll}/>
