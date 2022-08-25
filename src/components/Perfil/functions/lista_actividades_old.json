@@ -4,6 +4,12 @@
         "pilar": "Odisea Espacial",
         "actividades": [
             {
+                "id": null,
+                "titulo": "ALMUERZO",
+                "horario": "00:00 - 20:00",
+                "lugar": ""
+            },
+            {
                 "id": ["100", "151", "179"],
                 "titulo": "Acreditaciones y Feria de Empresas",
                 "horario": "08:00 - 15:00",

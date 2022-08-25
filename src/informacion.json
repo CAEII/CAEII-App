@@ -1570,5 +1570,173 @@
                 ]
             } 
         ]
+    },
+    {
+        "category": "9pP2rvwTX9pm",
+        "data": [
+            {
+                "title": "El astronauta",
+                "info": [
+                    {
+                        "title": "El astronauta",
+                        "img": "/imgs/badges/bronce/astronauta.png",
+                        "short": "",
+                        "desciption": "¿Sabías qué...? Los trajes de los astronautas tienen más de 90 metros de tuberías que regulan todo el sistema de refrigeración. El traje espacial es muy pesado, llegando a pesar alrededor de 127 kg.",
+                        "items":[],
+                        "links": [
+                            {
+                                "type": "",
+                                "link": "",
+                                "icono": ""
+                            }
+                        ]
+                    }
+                ]
+            } 
+        ]
+    },
+    {
+        "category": "5neL92pohTyb",
+        "data": [
+            {
+                "title": "El cometa",
+                "info": [
+                    {
+                        "title": "El cometa",
+                        "img": "/imgs/badges/bronce/cometa.png",
+                        "short": "",
+                        "desciption": "¿Sabías qué...? Los cometas son cuerpos formados por hielo, rocas y otros compuestos que viajan a toda velocidad por el espacio. Sus dimensiones alcanzan algunos kilómetros, pero cuando se acercan al Sol, la luz vaporiza su hielo, formando una cola de polvo y gas, que llega a medir por su cuenta varios millones de kilómetros.",
+                        "items":[],
+                        "links": [
+                            {
+                                "type": "",
+                                "link": "",
+                                "icono": ""
+                            }
+                        ]
+                    }
+                ]
+            } 
+        ]
+    },
+    {
+        "category": "13P2h9FpBo9B",
+        "data": [
+            {
+                "title": "La estrella",
+                "info": [
+                    {
+                        "title": "La estrella",
+                        "img": "/imgs/badges/bronce/estrella.png",
+                        "short": "",
+                        "desciption": "¿Sabías qué...? Las estrellas son cuerpos celestes gigantes, compuestos principalmente por hidrógeno y helio, que producen luz y calor desde sus arremolinadas fundiciones nucleares. Aparte del Sol, todos los puntos luminosos que vemos en el cielo se encuentran a años luz de la Tierra.",
+                        "items":[],
+                        "links": [
+                            {
+                                "type": "",
+                                "link": "",
+                                "icono": ""
+                            }
+                        ]
+                    }
+                ]
+            } 
+        ]
+    },
+    {
+        "category": "SO91uW8S8sce",
+        "data": [
+            {
+                "title": "El planeta",
+                "info": [
+                    {
+                        "title": "El planeta",
+                        "img": "/imgs/badges/bronce/planeta_2.png",
+                        "short": "",
+                        "desciption": "¿Sabías qué...? Un planeta es un objeto astronómico que orbita una estrella y que es lo suficientemente masivo como para ser redondeado por su propia gravedad, pero no lo suficientemente masivo como para causar fusión termonuclear, y que ha despejado su región vecina de planetesimales.",
+                        "items":[],
+                        "links": [
+                            {
+                                "type": "",
+                                "link": "",
+                                "icono": ""
+                            }
+                        ]
+                    }
+                ]
+            } 
+        ]
+    },
+    {
+        "category": "M7ZUc5jwO3Cx",
+        "data": [
+            {
+                "title": "El satélite natural",
+                "info": [
+                    {
+                        "title": "El satélite natural",
+                        "img": "/imgs/badges/bronce/planeta.png",
+                        "short": "",
+                        "desciption": "¿Sabías qué...? Un satélite natural es un cuerpo celeste que orbita alrededor de un planeta. Generalmente el satélite es más pequeño y acompaña al planeta en su órbita alrededor de su estrella madre. A diferencia de los fragmentos que orbitan formando un anillo, es el único cuerpo en su órbita.",
+                        "items":[],
+                        "links": [
+                            {
+                                "type": "",
+                                "link": "",
+                                "icono": ""
+                            }
+                        ]
+                    }
+                ]
+            } 
+        ]
+    },
+    {
+        "category": "hEEaq4dKM8W1",
+        "data": [
+            {
+                "title": "El satélite artificial",
+                "info": [
+                    {
+                        "title": "El satélite artificial",
+                        "img": "/imgs/badges/bronce/satelite.png",
+                        "short": "",
+                        "desciption": "¿Sabías qué...? En general, un satélite se diseña para tener una vida útil de entre 10 y 15 años. Los satélites pueden medir desde menos de uno hasta 36 metros de largo, y pesar entre un kilogramo y seis toneladas.",
+                        "items":[],
+                        "links": [
+                            {
+                                "type": "",
+                                "link": "",
+                                "icono": ""
+                            }
+                        ]
+                    }
+                ]
+            } 
+        ]
+    },
+    {
+        "category": "87nuzhX54T9K",
+        "data": [
+            {
+                "title": "Los asteroides",
+                "info": [
+                    {
+                        "title": "Los asteroides",
+                        "img": "/imgs/badges/bronce/asteroides.png",
+                        "short": "",
+                        "desciption": "¿Sabías qué...? Los asteroides no son redondos como planetas. Tienen formas dentadas e irregulares. Algunos asteroides tienen cientos de kilómetros de diámetro, pero la mayoría son tan pequeños como los guijarros. La mayoría están hechos de diferentes tipos de roca, pero algunos contienen arcilla o metal, como el níquel y el hierro.",
+                        "items":[],
+                        "links": [
+                            {
+                                "type": "",
+                                "link": "",
+                                "icono": ""
+                            }
+                        ]
+                    }
+                ]
+            } 
+        ]
     }
 ]

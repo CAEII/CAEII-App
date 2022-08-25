@@ -24,6 +24,7 @@ export default function Asistencia(){
     // las siguientes variables se optienen del enpoint:
     const [Presente, SetPresente] = useState(false);                                    // Info sobre la presensia del asistente (true= ya estuvo en la actividad, false= no ha estado en la actividad)
     const [Name, SetName] = useState('');                                               // Nombre del asistente
+    const [Email, SetEmail] = useState('kk');                                               // Nombre del asistente
     // const [Asistencia, SetAsistencia] = useState(0);                                    // numero del porcentaje de asistencia
     const [Activiti, SetActiviti] = useState({title: '', id:'',selection_id:'',atended: false});       // nombre de la actividad actual
 
@@ -57,6 +58,7 @@ export default function Asistencia(){
             console.log(Response.data)
 
             SetName(Response.data.user.first_name)
+            SetEmail(Response.data.user.email)
 
             Response.data.user.enrollments.map( enrllment => {                  // Recorro los enrollments del usuario    
                 if (enrllment.event.name.includes("CAEII XX")) {                // Reviso si el nombre del evento inclulle el string "CAEII XX"
@@ -124,7 +126,7 @@ export default function Asistencia(){
                 
             </div>
 
-            <button id="buton" className={`asistencia_tag button_asistencia presente_${Activiti.atended === undefined ? false : Activiti.atended}`} onClick={() => {handle_click(is_here, SetPresente, Presente, Activiti)}}>
+            <button id="buton" className={`asistencia_tag button_asistencia presente_${Activiti.atended === undefined ? false : Activiti.atended}`} onClick={() => {handle_click(is_here, SetPresente, Presente, Activiti, id, Email)}}>
                 { Activiti.atended ? "PRESENTE" : "AUSENTE"} 
             </button>
         </div>

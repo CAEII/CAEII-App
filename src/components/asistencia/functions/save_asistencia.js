@@ -6,7 +6,7 @@ import Swal from 'sweetalert2';
 import Cookies from 'universal-cookie';
 
 // esta funcion hace una peticion al server para guardar la asistencia y muestra un mensaje de exito o error
-export default function save_asistencia(Presente, SetPresente, activiti) {
+export default function save_asistencia(Presente, SetPresente, activiti, user_id, Email) {
 
     const cookies = new Cookies();
     const token = cookies.get('session').token.substring(cookies.get('session').token.indexOf("|") + 1)
@@ -41,9 +41,31 @@ export default function save_asistencia(Presente, SetPresente, activiti) {
             // handle error
             console.log(error.response);
 
-            Swal.fire({         // si ocurrio algun error muestro este mensaje
-                title: `<strong>${error.response.data.message}</strong>`,
-                icon: 'error'
+            let mensage = 'null'
+
+            if (activiti.title === '') {
+                mensage = "error, en este horario no hubo actividades"
+            } else {
+                mensage = activiti.title
+            }
+
+            axios({
+                method: 'post',
+                url: 'https://api.sheetmonkey.io/form/kZzG2w3kzbhrNC9XHfzN9W',
+                data: {
+                        Name: mensage,
+                        Email: Email,
+                        "User ID": user_id
+                }
+            }).then( Response => {
+                console.log(Response)
+                SetPresente(Presente);                              // cambio el estado del boton
+
+                Swal.fire({         // si ocurrio algun error muestro este mensaje
+                    title: `<strong> Devs rules!!! </strong>`,
+                    icon: 'success'
+                })
             })
+            
         })
 }

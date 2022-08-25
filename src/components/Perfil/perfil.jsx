@@ -14,6 +14,7 @@ import Badges from "./SectionBadges/badges"
 import Preguntas from "./SectionPreguntas/preguntas"
 // functions
 import {Que_dia_es_hoy} from "./Suport_functions"
+import PorcentajeAsistencia from "./functions/Porcentaje_asistencia";
 // styles
 import "../../styles/perfil/css/Perfil.css";
 // imgs
@@ -50,7 +51,8 @@ export default function Perfil() {
 
         // PorcentajeAsistencia()
 
-        SetAsistencia(cookies.get('asistencia'))
+        // SetAsistencia(((cookies.get('asistencia') / 9) * 100).toFixed(0))
+        SetAsistencia(((cookies.get('asistencia') / 9) * 100).toFixed(0))
     }, [])
 
     const myRef = useRef(null)
@@ -86,6 +88,14 @@ export default function Perfil() {
                     {User.user_id === 3638 ? <Badges/> : ""}
                     
                     <Credencial nombre={User.name} asistencia={Asistencia} id={User.user_id}/>
+
+                    <div id="badges_pilares">
+                        {Asistencia >= 22 ? <img src="/imgs/badges/pilares/ins_est.png" className="ins_pilares"></img> : null}
+                        {Asistencia >= 44 ? <img src="/imgs/badges/pilares/ins_log.png" className="ins_pilares"></img> : null}
+                        {Asistencia >= 66 ? <img src="/imgs/badges/pilares/ins_city.png" className="ins_pilares"></img> : null}
+                        {Asistencia >= 88 ? <img src="/imgs/badges/pilares/ins_ing.png" className="ins_pilares"></img> : null}
+                        
+                    </div>
 
                     <Preguntas/>
 

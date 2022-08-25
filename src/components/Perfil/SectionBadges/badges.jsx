@@ -4,14 +4,15 @@ import Cookies from 'universal-cookie';
 import { useState } from "react"
 // components
 import Modal from "../SectionCredencial/Modals";
+import { useEffect } from 'react';
 
 const cookies = new Cookies();
 
 function Badges() {
-    const [Imgs, setImgs] = useState(cookies.get("insignias"))
-    // console.log(Imgs)
 
-    if (Imgs !== undefined) {
+    const [Imgs, setImgs] = useState(cookies.get("insignias"))
+
+    if (Imgs !== "undefined" && Imgs !== undefined) {
         return (
             <section id="badges">
                 <h2> Insignias </h2>
