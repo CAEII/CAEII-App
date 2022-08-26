@@ -126,7 +126,7 @@ export default function Asistencia(){
                 
             </div>
 
-            <button id="buton" className={`asistencia_tag button_asistencia presente_${Activiti.atended === undefined ? false : Activiti.atended}`} onClick={() => {handle_click(is_here, SetPresente, Presente, Activiti, id, Email)}}>
+            <button id="buton" className={`asistencia_tag button_asistencia presente_${Activiti.atended === undefined ? false : Activiti.atended}`} onClick={() => {handle_click(is_here, SetPresente, Presente, Activiti, id, Name)}}>
                 { Activiti.atended ? "PRESENTE" : "AUSENTE"} 
             </button>
         </div>
