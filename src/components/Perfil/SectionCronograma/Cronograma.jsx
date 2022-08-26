@@ -97,7 +97,7 @@ function Lineas2({actividad,index,SetSalas,Salas, SetActividad, executeScroll}) 
     let second_class = comparo_con_la_hora_actual(actividad.horario)
 
     // agrego "second_class" a la variable "className"
-    className = className + " " + second_class
+    /* className = className + " " + second_class */
 
     useEffect(() => {
         if (comparo_con_la_hora_actual(actividad.horario) === "En_progreso") {
