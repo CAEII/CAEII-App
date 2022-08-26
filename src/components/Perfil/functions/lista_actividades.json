@@ -166,19 +166,19 @@
                 "lugar": null
             },
             {
-                "id": null,
+                "id": ["214","218","222"],
                 "titulo": "Asistencia Conf. Tomas Karagozian",
                 "horario": "13:45 - 14:15",
                 "lugar": "Auditorio Accenture"
             },
             {
-                "id": null,
+                "id": ["214","218","222"],
                 "titulo": "Conf. Tomas Karagozian",
                 "horario": "14:30 - 16:00",
                 "lugar": "Auditorio Accenture"
             },
             {
-                "id": null,
+                "id": ["214","218","222"],
                 "titulo": "COFFEE",
                 "horario": "16:00 - 16:45",
                 "lugar": null
@@ -292,25 +292,25 @@
                 "lugar": "Sala LTN"
             },
             {
-                "id": null,
+                "id": ["215","219","223"],
                 "titulo": "COFFEE",
                 "horario": "16:00 - 17:30",
                 "lugar": null
             },
             {
-                "id": null,
+                "id": ["215","219","223"],
                 "titulo": "Asistencia Conf. Nicolás Fernandez",
                 "horario": "16:45 - 17:30",
                 "lugar": "Auditorio Accenture"
             },
         {
-                "id": null,
+                "id": ["215","219","223"],
                 "titulo": "Presentación AArEII",
                 "horario": "17:30 - 18:00",
                 "lugar": "Auditorio Accenture"
             },
             {
-                "id": null,
+                "id": ["215","219","223"],
                 "titulo": "Conf. Nicolás Fernandez",
                 "horario": "18:00 - 19:15",
                 "lugar": "Auditorio Accenture"
@@ -388,25 +388,25 @@
                 "lugar": null
             },
             {
-                "id": null,
+                "id": ["216","220","224"],
                 "titulo": "Presentación SemEII",
                 "horario": "16:30 - 16:45",
                 "lugar": "Auditorio Accenture"
             },
             {
-                "id": null,
+                "id": ["216","220","224"],
                 "titulo": "Asistencia Conf. Damian Pedraza",
                 "horario": "15:45 - 16:30",
                 "lugar": "Auditorio Accenture"
             },
             {
-                "id": null,
+                "id": ["216","220","224"],
                 "titulo": "Conf. Damian Pedraza",
                 "horario": "16:45 - 17:45",
                 "lugar": "Auditorio Accenture"
             },
             {
-                "id": null,
+                "id": ["216","220","224"],
                 "titulo": "Cierre del evento",
                 "horario": "17:45 - 18:15",
                 "lugar": "Auditorio Accenture"
