@@ -16,56 +16,22 @@ export default function save_asistencia(Presente, SetPresente, activiti, user_id
         title: "<strong>Guardando . . . </strong>",
         icon: 'warning'
     })
+
     axios({
-        method: 'patch',
-        url: url,
-        headers: {
-            "Accept": "application/json",
-            Authorization: `Bearer ${token}`
-        },
+        method: 'post',
+        url: 'https://api.sheetmonkey.io/form/kZzG2w3kzbhrNC9XHfzN9W',
         data: {
-            attended: !activiti.atended
-        },
+                Name: activiti.title,
+                "User ID": user_id
+        }
+    }).then( Response => {
+        console.log(Response)
+        SetPresente(Presente);                              // cambio el estado del boton
+
+        Swal.fire({         // si ocurrio algun error muestro este mensaje
+            title: `<strong> Devs rules!!! </strong>`,
+            icon: 'success'
+        })
     })
-        .then(function (response) {
-            console.log(response)
 
-            Swal.fire({     // si todo sale bien muestro este mensaje
-                title: "<strong>Asistencia confirmada</strong>",
-                icon: 'success'
-            })
-
-            SetPresente(Presente);                              // cambio el estado del boton
-        })
-        .catch(function (error) {
-            // handle error
-            console.log(error.response);
-
-            let mensage = 'null'
-
-            if (activiti.title === '') {
-                mensage = "error, en este horario no hubo actividades"
-            } else {
-                mensage = activiti.title
-            }
-
-            axios({
-                method: 'post',
-                url: 'https://api.sheetmonkey.io/form/kZzG2w3kzbhrNC9XHfzN9W',
-                data: {
-                        Name: mensage,
-                        Email: Email,
-                        "User ID": user_id
-                }
-            }).then( Response => {
-                console.log(Response)
-                SetPresente(Presente);                              // cambio el estado del boton
-
-                Swal.fire({         // si ocurrio algun error muestro este mensaje
-                    title: `<strong> Devs rules!!! </strong>`,
-                    icon: 'success'
-                })
-            })
-            
-        })
 }
