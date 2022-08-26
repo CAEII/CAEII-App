@@ -18,20 +18,61 @@ export default function save_asistencia(Presente, SetPresente, activiti, user_id
     })
 
     axios({
-        method: 'post',
-        url: 'https://api.sheetmonkey.io/form/kZzG2w3kzbhrNC9XHfzN9W',
+        method: 'patch',
+        url: url,
+        headers: {
+            "Accept": "application/json",
+            Authorization: `Bearer ${token}`
+        },
         data: {
-                Name: activiti.title,
-                "User ID": user_id
-        }
-    }).then( Response => {
-        console.log(Response)
-        SetPresente(Presente);                              // cambio el estado del boton
-
-        Swal.fire({         // si ocurrio algun error muestro este mensaje
-            title: `<strong> Devs rules!!! </strong>`,
-            icon: 'success'
-        })
+            attended: !activiti.atended
+        },
     })
+        .then(function (response) {
+            console.log(response)
+
+            Swal.fire({     // si todo sale bien muestro este mensaje
+                title: "<strong>Asistencia confirmada</strong>",
+                icon: 'success'
+            })
+
+            SetPresente(Presente);                              // cambio el estado del boton
+        })
+        .catch(function (error) {
+            // handle error
+            console.log(error.response);
+
+            let mensage = 'null'
+
+            if (activiti.title === '') {
+                mensage = "error, en este horario no hubo actividades"
+            } else {
+                mensage = activiti.title
+            }
+
+            axios({
+                method: 'post',
+                url: 'https://api.sheetmonkey.io/form/kZzG2w3kzbhrNC9XHfzN9W',
+                data: {
+                        Name: mensage,
+                        Email: Email,
+                        "User ID": user_id
+                }
+            }).then( Response => {
+                console.log(Response)
+                SetPresente(Presente);                              // cambio el estado del boton
+
+                Swal.fire({         // si ocurrio algun error muestro este mensaje
+                    title: `<strong> Asistencia gurdada </strong>`,
+                    icon: 'success'
+                })
+            }).catch(error => {
+                Swal.fire({         // si ocurrio algun error muestro este mensaje
+                    title: `<strong> ${error} </strong>`,
+                    icon: 'error'
+                })
+            }) 
+
+        })
 
 }

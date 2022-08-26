@@ -83,14 +83,14 @@ export default function Perfil() {
             <BaseLayout>
                 <main>
 
-                    {User.admin === true ? <Admins/> : Que_dia_es_hoy() === "Jueves" ? <Badges/> : null}
+                    {User.admin === true ? <Admins/> : null}
 
                     {User.user_id === 3638 ? <Badges/> : ""}
                     
                     <Credencial nombre={User.name} asistencia={Asistencia} id={User.user_id}/>
 
                     <div id="badges_pilares">
-                        {Asistencia >= 22 ? <img src="/imgs/badges/pilares/ins_est.png" className="ins_pilares"></img> : null}
+                        <img src="/imgs/badges/pilares/ins_est.png" className="ins_pilares"></img>
                         {Asistencia >= 44 ? <img src="/imgs/badges/pilares/ins_log.png" className="ins_pilares"></img> : null}
                         {Asistencia >= 66 ? <img src="/imgs/badges/pilares/ins_city.png" className="ins_pilares"></img> : null}
                         {Asistencia >= 88 ? <img src="/imgs/badges/pilares/ins_ing.png" className="ins_pilares"></img> : null}
@@ -103,7 +103,7 @@ export default function Perfil() {
 
                     <SectionMapas salas={Salas} referencia={myRef}/>
 
-                    {Que_dia_es_hoy() !== "Jueves" ? <Badges/> : null}
+                    {/* {Que_dia_es_hoy() !== "Jueves" ? <Badges/> : null} */}
 
                     <section id="logo">
                         <img src={CaeiiLogo} alt="logo CAEII" />
