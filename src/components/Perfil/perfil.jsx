@@ -93,7 +93,7 @@ export default function Perfil() {
 
                     {User.user_id === 3638 ? <Badges/> : ""}
                     
-                    <Credencial nombre={User.name} asistencia={50} id={User.user_id}/>
+                    <Credencial nombre={User.name} asistencia={75} id={User.user_id}/>
 
                     <div id="badges_pilares">
                         <img src="/imgs/badges/pilares/ins_est.png" className="ins_pilares"></img>
