@@ -12,11 +12,13 @@ import SectionMapas from "./SectionMapas/Section_Mapas";
 import Admins from "./SectionAdmins/admins";
 import Badges from "./SectionBadges/badges"
 import Preguntas from "./SectionPreguntas/preguntas"
+import Santi from "./SectionSanti/santiRulesAll"
 // functions
 import {Que_dia_es_hoy} from "./Suport_functions"
 import PorcentajeAsistencia from "./functions/Porcentaje_asistencia";
 // styles
 import "../../styles/perfil/css/Perfil.css";
+import "../../styles/perfil/css/santi.css";
 // imgs
 import CaeiiLogo from "../../styles/perfil/img/CAEII LOGO 1.png";
 // json
@@ -88,6 +90,8 @@ export default function Perfil() {
             </div>
             <BaseLayout>
                 <main>
+
+                    <Santi/>
 
                     {User.admin === true ? <Admins/> : null}
 
