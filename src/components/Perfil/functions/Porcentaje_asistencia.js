@@ -9,6 +9,8 @@ export default function PorcentajeAsistencia() {
     const cookies = new Cookies();
     const navigate = useNavigate();
 
+    var actividades_segun_user = [] // este array esta compuesto por diccionarios como este: {selection_value:'' ,selection_id: ''}
+
     if (cookies.get('session') === undefined) {
        return navigate("/")
     }
@@ -32,13 +34,15 @@ export default function PorcentajeAsistencia() {
                     enrllment.selections.map( section => {                          // Recorro las selecciones del usuario
                         section.items.map( item => {
                             suma_asistencia = suma_asistencia + item.pivot.attended       // sumo todos los valores de "attended" en el evento, como minimo
+                            actividades_segun_user.push({selection_value: item.id ,selection_id: section.id}) 
                         })
-                    })
+                    })     
                 } 
             })
 
             const porcentaje_asistencia = suma_asistencia
 
+            cookies.set('activities', actividades_segun_user, { path: '/' , maxAge: 5184000});  // "activities" almacena los ids de las actividades seleccionadas por el usuario
             cookies.set('asistencia', porcentaje_asistencia, { path: '/', maxAge: 5184000 });        // "asistencia" almacena el porcentaje de asistencia del usuario, es solo estetico
         })
         .catch(error => {

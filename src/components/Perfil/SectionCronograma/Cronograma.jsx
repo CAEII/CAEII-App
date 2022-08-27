@@ -64,7 +64,6 @@ export default function Cronograma({SetSalas, Salas, SetActividad, executeScroll
 
 
 function Lineas({today_activities,SetSalas,Salas, SetActividad, executeScroll}){
-
     const activities = cookies.get("activities")    // guardo el contenido de la cookie "activities" en la constante activities
  
     // recorro las actividades de hoy
@@ -104,8 +103,10 @@ function Lineas2({actividad,index,SetSalas,Salas, SetActividad, executeScroll}) 
             SetSalas({ salida: Salas.salida, llegada: actividad.lugar})
             SetActividad(actividad.titulo)
 
+            // PorcentajeAsistencia()
+
             if (actividad.titulo === "ALMUERZO" || actividad.titulo === "TIEMPO LIBRE" || actividad.titulo === "COFFEE") {
-                PorcentajeAsistencia()
+               // PorcentajeAsistencia()
             }
 
             if (actividad.titulo === "Conf. Chris Meniw " || actividad.titulo === "Conf. Tomas Karagozian" || actividad.titulo === "Conf. Nicolás Fernandez" || actividad.titulo === "Conf. Damian Pedraza") {
