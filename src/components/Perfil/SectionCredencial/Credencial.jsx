@@ -70,7 +70,7 @@ export default function Credencial({ nombre, asistencia, id}) {
             </div>
 
             {/* si la asistencia es igual o mayor a 80 muestro el cartel del certificado, si no lo es, no muestro nada */}
-            {asistencia >= 80 ? <div className="congratulations_smg_container"><span> CERTIFICADO OBTENIDO </span></div> : null}
+            {asistencia >= 80 ? <div className="congratulations_smg_container"><span> ¡MUCHAS GRACIAS POR ASISTIR! </span></div> : null}
         </section>
     )
 }
