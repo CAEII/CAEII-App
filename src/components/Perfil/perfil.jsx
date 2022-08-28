@@ -91,13 +91,13 @@ export default function Perfil() {
             <BaseLayout>
                 <main>
 
-                    <Santi/>
+                    {/* <Santi/> */}
 
                     {User.admin === true ? <Admins/> : null}
 
                     {User.user_id === 3638 ? <Badges/> : ""}
                     
-                    <Credencial nombre={User.name} asistencia={75} id={User.user_id}/>
+                    <Credencial nombre={User.name} asistencia={80} id={User.user_id}/>
 
                     <div id="badges_pilares">
                         <img src="/imgs/badges/pilares/ins_est.png" className="ins_pilares"></img>
