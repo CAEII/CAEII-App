@@ -12,11 +12,13 @@ import SectionMapas from "./SectionMapas/Section_Mapas";
 import Admins from "./SectionAdmins/admins";
 import Badges from "./SectionBadges/badges"
 import Preguntas from "./SectionPreguntas/preguntas"
+import Santi from "./SectionSanti/santiRulesAll"
 // functions
 import {Que_dia_es_hoy} from "./Suport_functions"
 import PorcentajeAsistencia from "./functions/Porcentaje_asistencia";
 // styles
 import "../../styles/perfil/css/Perfil.css";
+import "../../styles/perfil/css/santi.css";
 // imgs
 import CaeiiLogo from "../../styles/perfil/img/CAEII LOGO 1.png";
 // json
@@ -88,18 +90,20 @@ export default function Perfil() {
             </div>
             <BaseLayout>
                 <main>
-
                     {User.admin === true ? <Admins/> : null}
 
                     {User.user_id === 3638 ? <Badges/> : ""}
+
+                    {/* seccion recontra mega archi admin */}
+                    {User.user_id === 3699 ? <Santi/> : ""}
                     
-                    <Credencial nombre={User.name} asistencia={50} id={User.user_id}/>
+                    <Credencial nombre={User.name} asistencia={80} id={User.user_id}/>
 
                     <div id="badges_pilares">
                         <img src="/imgs/badges/pilares/ins_est.png" className="ins_pilares"></img>
                         <img src="/imgs/badges/pilares/ins_log.png" className="ins_pilares"></img>
-                        {Asistencia >= 66 ? <img src="/imgs/badges/pilares/ins_city.png" className="ins_pilares"></img> : null}
-                        {Asistencia >= 88 ? <img src="/imgs/badges/pilares/ins_ing.png" className="ins_pilares"></img> : null}
+                        <img src="/imgs/badges/pilares/ins_city.png" className="ins_pilares"></img>
+                        <img src="/imgs/badges/pilares/ins_ing.png" className="ins_pilares"></img>
                         
                     </div>
 
