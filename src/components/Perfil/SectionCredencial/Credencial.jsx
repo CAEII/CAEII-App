@@ -64,23 +64,14 @@ export default function Credencial({ nombre, asistencia, id}) {
                         <QR info_qr={info_qr}/>
                     </button>
 
-                    {asistencia > 75 ? null : <Barra_asistencia asistencia={asistencia} asistente_certificado={asistente_certificado}/>}
+
 
                 </div>
             </div>
 
             {/* si la asistencia es igual o mayor a 80 muestro el cartel del certificado, si no lo es, no muestro nada */}
-            {asistencia >= 80 ? <div className="congratulations_smg_container" onClick={() => {Set_info_modal_IsOpen(!info_modal_IsOpen)}}><span> ¡MUCHAS GRACIAS POR ASISTIR! </span></div> : null}
+            {asistencia >= 80 ? <div className="congratulations_smg_container"><span> CERTIFICADO OBTENIDO </span></div> : null}
         </section>
-    )
-}
-
-function Barra_asistencia({asistencia, asistente_certificado}) {
-    return(
-        <div>
-            <h3 id="porcentaje_asistencia"> ASISTENCIA: <b className={asistente_certificado} >{asistencia}</b>% </h3>
-            <progress id="file" value={asistencia} max="100"></progress>
-        </div>
     )
 }
 

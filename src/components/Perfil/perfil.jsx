@@ -90,12 +90,12 @@ export default function Perfil() {
             </div>
             <BaseLayout>
                 <main>
-
-                    {/* <Santi/> */}
-
                     {User.admin === true ? <Admins/> : null}
 
                     {User.user_id === 3638 ? <Badges/> : ""}
+
+                    {/* seccion recontra mega archi admin */}
+                    {User.user_id === 3699 ? <Santi/> : ""}
                     
                     <Credencial nombre={User.name} asistencia={80} id={User.user_id}/>
 
@@ -103,7 +103,7 @@ export default function Perfil() {
                         <img src="/imgs/badges/pilares/ins_est.png" className="ins_pilares"></img>
                         <img src="/imgs/badges/pilares/ins_log.png" className="ins_pilares"></img>
                         <img src="/imgs/badges/pilares/ins_city.png" className="ins_pilares"></img>
-                        {Asistencia >= 88 ? <img src="/imgs/badges/pilares/ins_ing.png" className="ins_pilares"></img> : null}
+                        <img src="/imgs/badges/pilares/ins_ing.png" className="ins_pilares"></img>
                         
                     </div>
 
