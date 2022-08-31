@@ -17,7 +17,7 @@ export default function AsistenciaManual() {
     console.log(`__${DNI}__`)
 
     useEffect(() => {
-        // en la constante Token guardo el Token de la cookie session
+        // declaro la constante "token" con el token guardado dentro de la cookie "session"
         const token = cookies.get('session').token.substring(cookies.get('session').token.indexOf("|") + 1)
 
         var info_del_back = []

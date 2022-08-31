@@ -23,8 +23,8 @@ import cual_es_su_objetivo from "../styles/nosotros/img/Objetivos.jpeg"
 export default function Nosotros() {
   useEffect(() => {
     AOS.init({
-      duration: 1500, // values from 0 to 3000, with step 50ms
-      once: true, // whether animation should happen only once - while scrolling down
+      duration: 1500,       // values from 0 to 3000, with step 50ms
+      once: true,           // whether animation should happen only once - while scrolling down
     });
   }, []);
   return (

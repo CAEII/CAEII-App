@@ -57,8 +57,6 @@ function Selects({ SetMapa, Mapas, _useStates, valores_default }) {
     const [SalidaState, SetSalidaState] = useState(valores_default.Sala_de_salida)
     const [LlegadaState, SetLlegadaState] = useState(valores_default.Sala_de_llegada)
 
-    // const prueba_mapas = ["SegundoPiso", "PimerPiso", "AuditorioPrincipal", "PlantaBaja"]
-
     useEffect(() => {
         SetSalidaState(valores_default.Sala_de_salida)
         SetLlegadaState(valores_default.Sala_de_llegada)

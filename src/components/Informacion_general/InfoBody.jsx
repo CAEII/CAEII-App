@@ -8,8 +8,8 @@ import "aos/dist/aos.css";
 export default function InfoBody({rubro, jsonData}) {
     useEffect(() => {
         AOS.init({
-          duration: 1500, // values from 0 to 3000, with step 50ms
-          once: true, // whether animation should happen only once - while scrolling down
+          duration: 1500,   // values from 0 to 3000, with step 50ms
+          once: true,       // whether animation should happen only once - while scrolling down
         });
     }, []);
 
@@ -17,7 +17,7 @@ export default function InfoBody({rubro, jsonData}) {
     if (rubro === "default") {               // si el valor pasado por parametros para el rubro es igual a "default" le doy a la variable el titulo del primer rubro en la respectiva categoria del json
         rubro_interno = jsonData[0].title
         
-        setTimeout(() => {          // pongo un timeout de 100 milisegundos
+        setTimeout(() => {                   // pongo un timeout de 100 milisegundos
             document.getElementById(jsonData[0].title).checked = true;
         }, 100);
     }
