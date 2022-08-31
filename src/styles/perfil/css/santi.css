@@ -1,0 +1,21 @@
+#santi>div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: top;
+}
+
+#santi>div>input, #santi>div>button {
+    width: 35vw;
+    height: 10vh;
+    margin-bottom: 5vh;
+    font-size: 15px;
+}
+
+#santi>div>input {
+    padding: 10px;
+}
+
+#santi {
+    width: 90vw;
+}
