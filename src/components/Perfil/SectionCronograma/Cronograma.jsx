@@ -99,19 +99,18 @@ function Lineas2({actividad,index,SetSalas,Salas, SetActividad, executeScroll}) 
     /* className = className + " " + second_class */
 
     useEffect(() => {
+        // reviso si la hora actual esta dentro del intervalo de horas de la actividad
         if (comparo_con_la_hora_actual(actividad.horario) === "En_progreso") {
-            SetSalas({ salida: Salas.salida, llegada: actividad.lugar})
-            SetActividad(actividad.titulo)
-
-            // PorcentajeAsistencia()
-
+            SetSalas({ salida: Salas.salida, llegada: actividad.lugar})         // guardo el nombre de la sala donde se realiza la actividad en el usestate "Salas"
+            SetActividad(actividad.titulo)                                      // guardo el nombre de la actividad en el usestate "Actividad"
+            // reviso si el nombre de la actividad actual es igual a "ALMUERZO" o "TIEMPO LIBRE" o "COFFEE"
             if (actividad.titulo === "ALMUERZO" || actividad.titulo === "TIEMPO LIBRE" || actividad.titulo === "COFFEE") {
-               // PorcentajeAsistencia()
+                // PorcentajeAsistencia()           // llamo a la funcion "PorcentajeAsistencia" para actualizar el porcentaje de asistencia
             }
-
+            // reviso si el nombre la actividad actual coinside con el de alguna de las conferencias maguistrales:
             if (actividad.titulo === "Conf. Chris Meniw " || actividad.titulo === "Conf. Tomas Karagozian" || actividad.titulo === "Conf. Nicolás Fernandez" || actividad.titulo === "Conf. Damian Pedraza") {
                 let asistencia_magistral = cookies.get("asistencia")
-
+                // aumento la asistencia de forma artificial por que esta informacion no esta en la bbdd de aareii
                 cookies.set('asistencia', asistencia_magistral + 1, { path: '/', maxAge: 5184000 });        // "asistencia" almacena el porcentaje de asistencia del usuario, es solo estetico
             }
         }

@@ -7,9 +7,11 @@ import Cookies from 'universal-cookie';
 
 // esta funcion hace una peticion al server para guardar la asistencia y muestra un mensaje de exito o error
 export default function save_asistencia(Presente, SetPresente, activiti, user_id, Email) {
-
+    // declaro la constante cookies como un objeto cookie
     const cookies = new Cookies();
+    // declaro la constante "token" con el token guardado dentro de la cookie "session"
     const token = cookies.get('session').token.substring(cookies.get('session').token.indexOf("|") + 1)
+    // declaro la constante "url"
     const url = `https://inscripciones.aareii.org.ar/api/v1/selections/${activiti.selection_id}/items/${activiti.id}/update`          // url para hacer la request con axios
 
     Swal.fire({         // mensaje de espera

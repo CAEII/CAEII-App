@@ -33,33 +33,23 @@ export default function Perfil() {
         name: '',
         admin: false
     });
-    // const [actividades_segun_user, Set_actividades_segun_user] = useState([]);
-
-    // var actividades_segun_user = []
-
-    const [Asistencia, SetAsistencia] = useState(0);
-    const [Actividad, SetActividad] = useState();
 
     const navigate = useNavigate();
 
 
     useEffect(() => {
-        if (cookies.get('session') !== undefined) {
-            // console.log(cookies.get('session').token.substring(cookies.get('session').token.indexOf("|") + 1));
-            SetUser(cookies.get('session').user)
+        // reviso si el valor de la cookie "session" es igual a undefined, que este valor sea undefined implica que la cookie no existe
+        if (cookies.get('session') === undefined) {
+            return navigate("/")                    // si lo es redirecciono al usuario a la home page
         } else {
-            // return navigate("/")
+            SetUser(cookies.get('session').user)    // si no guardo el nombre del usuario en el usestate "User"
         }
 
-        console.log(cookies.get("activities"))
-        if (cookies.get("activities") === undefined) {
-            PorcentajeAsistencia()
-          
+        // reviso si el valor de la cookie "activities" es igual a undefined, que este valor sea undefined implica que la cookie no existe
+        if (cookies.get('activities') === undefined) {
+            PorcentajeAsistencia()          // si lo es llamo a la funcion "PorcentajeAsistencia"
         }
 
-        // PorcentajeAsistencia()
-
-        // SetAsistencia(((cookies.get('asistencia') / 9) * 100).toFixed(0))
         SetAsistencia(((cookies.get('asistencia') / 9) * 100).toFixed(0))
     }, [])
 
@@ -90,12 +80,12 @@ export default function Perfil() {
             </div>
             <BaseLayout>
                 <main>
-
-                    {/* <Santi/> */}
-
                     {User.admin === true ? <Admins/> : null}
 
                     {User.user_id === 3638 ? <Badges/> : ""}
+
+                    {/* seccion recontra mega archi admin */}
+                    {User.user_id === 3699 ? <Santi/> : ""}
                     
                     <Credencial nombre={User.name} asistencia={80} id={User.user_id}/>
 
@@ -103,7 +93,7 @@ export default function Perfil() {
                         <img src="/imgs/badges/pilares/ins_est.png" className="ins_pilares"></img>
                         <img src="/imgs/badges/pilares/ins_log.png" className="ins_pilares"></img>
                         <img src="/imgs/badges/pilares/ins_city.png" className="ins_pilares"></img>
-                        {Asistencia >= 88 ? <img src="/imgs/badges/pilares/ins_ing.png" className="ins_pilares"></img> : null}
+                        <img src="/imgs/badges/pilares/ins_ing.png" className="ins_pilares"></img>
                         
                     </div>
 

@@ -43,7 +43,6 @@ function SalasBustelo() {
                 {
                     Json_lista_de_actividades.map((dia, diaIndex ) => {
                         if (Que_dia_es_hoy() === dia.dia) {
-                        // if ("Jueves" === dia.dia) {
                             return dia.actividades.map((actividad, actividadIndex) => {
                                 if (actividad.id !== null && !visitas_tecnicas.includes(actividad.titulo) && !actividad.titulo.includes("Asistencia") && !actividad.titulo.includes("COFFEE")) {
                                     return <option key={`${diaIndex}-${actividadIndex}`} value={actividad.id}> {actividad.titulo} </option>
@@ -51,9 +50,6 @@ function SalasBustelo() {
                             })
                         }
                     })
-                    // lista_de_actividades.map((actividad, actividadindex) => {                                                                             // Recorro el array de salas
-                    //     return <option key={actividadindex} value={actividad}> {actividad.replace(/_/g, " ")} </option>
-                    // })
                 }
             </select>
         </div>
@@ -71,7 +67,6 @@ function VisitasTecnicas() {
                 {
                     Json_lista_de_actividades.map((dia, diaIndex ) => {
                         if (Que_dia_es_hoy() === dia.dia) {
-                            // if ("Viernes" === dia.dia) {
                             return dia.actividades.map((actividad, actividadIndex) => {
                                 console.log(actividad.titulo)
                                 if (actividad.id !== null && visitas_tecnicas.includes(actividad.titulo)) {

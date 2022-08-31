@@ -1,10 +1,7 @@
-//react
+// react
 import React, {useState } from "react";
-// style
-//styles
+// styles
 import "../../../styles/Preguntas/Preguntas.css";
-// functions
-import { Que_dia_es_hoy } from "../Suport_functions";
 
 export default function Preguntas() {
     return (
